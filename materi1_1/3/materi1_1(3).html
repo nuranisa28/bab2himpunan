@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Pengertian Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_1(3).css">
+</head>
+<body>
+	<script src="jsmateri1_1(3).js"></script>
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="../1/materi1_1(1).html" style="color: white;">Pengertian Himpunan</a></div>
+	    			<a href="../../materi1_2/1/materi1_2(1).html">Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				PENGERTIAN HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<img src="../img/pertanyaan.png" class="gambar"><br> 
+			Jawablah pertanyaan di bawah ini!<br>
+			<div class="pertanyaan">
+			    
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk2">
+      					<ul>
+      						<li>Pertanyaan ini terdiri dari 5 soal.</li>
+      						<li>Pilihlah salah satu alternatif jawaban antara <b>Himpunan</b> atau <b>Bukan Himpunan</b>.</li>
+      						<li>Jika jawaban kamu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span>.</li>
+      						<li>Jika jawaban kamu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span>.</li>
+      						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+
+					<!-- isi pertanyaan -->
+					<!--soal 1-->
+					<div class="soal soalAktif" id="soal1">
+						Soal 1 dari 5<br><br>
+						Apakah kumpulan di bawah ini merupakan Himpunan atau Bukan Himpunan?<br><br>
+						<center><b>Kumpulan nama Museum di Kalimantan Selatan</b><br>
+						<br>
+						Jawaban : 
+						<button class="cekulang" id="him1" onclick="him1()"><b>Himpunan</b></button>
+						<button class="cekulang" id="bhim1" onclick="bhim1()"><b>Bukan Himpunan</b></button>
+						<span id="icon1" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button>
+						<br>
+						</center>
+						<div class="bahas hilang" id="bahasbnr1">
+							<span class="bnr">Jawaban Kamu Benar</span><br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan nama Museum di Kalimantan Selatan merupakan <b>himpunan</b> karena anggotanya dapat di tentukan dengan tepat dan memiliki karakteristik sama atau terdefinisi dengan jelas.<br>
+							<center><b>Tahukah kamu nama Museum di Kalimantan Selatan?</b><br>
+							Diantaranya adalah Museum Wasaka dan Museum Lambung Mangkurat.</center>
+						</div>
+						<div class="bahas hilang" id="bahasslh1">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".<br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan nama Museum di Kalimantan Selatan merupakan <b>himpunan</b> karena anggotanya dapat di tentukan dengan tepat dan memiliki karakteristik sama atau terdefinisi dengan jelas.
+						</div>
+					</div>
+
+					<!--soal 2-->
+					<div class="soal" id="soal2">
+						Soal 2 dari 5<br><br>
+						Apakah kumpulan di bawah ini merupakan Himpunan atau Bukan Himpunan?<br><br>
+						<center><b>Kumpulan sungai di Banjarmasin yang sering dilewati klotok</b><br>
+						<br>
+						Jawaban : 
+						<button class="cekulang" id="him2" onclick="him2()"><b>Himpunan</b></button>
+						<button class="cekulang" id="bhim2" onclick="bhim2()"><b>Bukan Himpunan</b></button>
+						<span id="icon2" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button>
+						<br>
+						</center>
+						<div class="bahas hilang" id="bahasbnr2">
+							<span class="bnr">Jawaban Kamu Benar</span><br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan sungai di Banjarmasin yang sering dilewati klotok <b> bukan merupakan himpunan</b> karena anggotanya tidak dapat ditentukan secara tepat dan jelas. Bisa saja menurutmu sungai Martapura merupakan sungai yang sering dilewati klotok, tetapi menurut temanmu tidak.
+						</div>
+						<div class="bahas hilang" id="bahasslh2">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".<br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan sungai di Banjarmasin yang sering dilewati klotok <b> bukan merupakan himpunan</b> karena anggotanya tidak dapat ditentukan secara tepat dan jelas. Bisa saja menurutmu sungai Martapura merupakan sungai yang sering dilewati klotok, tetapi menurut temanmu tidak.
+						</div>
+					</div>
+
+					<!--soal 3-->
+					<div class="soal" id="soal3">
+						Soal 3 dari 5<br><br>
+						Apakah kumpulan di bawah ini merupakan Himpunan atau Bukan Himpunan?<br><br>
+						<center><b>Kumpulan hutan di Kalimantan yang lebat</b><br>
+						<br>
+						Jawaban : 
+						<button class="cekulang" id="him3" onclick="him3()"><b>Himpunan</b></button>
+						<button class="cekulang" id="bhim3" onclick="bhim3()"><b>Bukan Himpunan</b></button>
+						<span id="icon3" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button>
+						<br>
+						</center>
+						<div class="bahas hilang" id="bahasbnr3">
+							<span class="bnr">Jawaban Kamu Benar</span><br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan hutan di Kalimantan yang lebat <b> bukan merupakan himpunan</b> karena anggotanya tidak dapat ditentukan secara tepat dan jelas.
+						</div>
+						<div class="bahas hilang" id="bahasslh3">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".<br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan hutan di Kalimantan yang lebat <b> bukan merupakan himpunan</b> karena anggotanya tidak dapat ditentukan secara tepat dan jelas.
+						</div>
+					</div>
+
+					<!--soal 4-->
+					<div class="soal" id="soal4">
+						Soal 4 dari 5<br><br>
+						Apakah kumpulan di bawah ini merupakan Himpunan atau Bukan Himpunan?<br><br>
+						<center><b>Kumpulan buah khas Kalimantan</b><br>
+						<br>
+						Jawaban : 
+						<button class="cekulang" id="him4" onclick="him4()"><b>Himpunan</b></button>
+						<button class="cekulang" id="bhim4" onclick="bhim4()"><b>Bukan Himpunan</b></button>
+						<span id="icon4" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button>
+						<br>
+						</center>
+						<div class="bahas hilang" id="bahasbnr4">
+							<span class="bnr">Jawaban Kamu Benar</span><br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan buah khas Kalimantan merupakan <b>himpunan</b> karena anggotanya dapat di tentukan dengan tepat dan memiliki karakteristik sama atau terdefinisi dengan jelas.<br>
+							<center><b>Tahukah kamu apa saja buah khas Kalimantan?</b><br>
+							Diantaranya adalah buah Kalangka, buah Mundar, buah Mentega, dan buah Ramania.</center>
+						</div>
+						<div class="bahas hilang" id="bahasslh4">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".<br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan buah khas Kalimantan merupakan <b>himpunan</b> karena anggotanya dapat di tentukan dengan tepat dan memiliki karakteristik sama atau terdefinisi dengan jelas.
+						</div>
+					</div>
+
+					<!--soal 5-->
+					<div class="soal" id="soal5">
+						Soal 5 dari 5<br><br>
+						Apakah kumpulan di bawah ini merupakan Himpunan atau Bukan Himpunan?<br><br>
+						<center><b>Kumpulan motif kain sasirangan</b><br>
+						<br>
+						Jawaban : 
+						<button class="cekulang" id="him5" onclick="him5()"><b>Himpunan</b></button>
+						<button class="cekulang" id="bhim5" onclick="bhim5()"><b>Bukan Himpunan</b></button>
+						<span id="icon5" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button>
+						<br>
+						</center>
+						<div class="bahas hilang" id="bahasbnr5">
+							<span class="bnr">Jawaban Kamu Benar</span><br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan motif kain sasirangan merupakan <b>himpunan</b> karena anggotanya dapat di tentukan dengan tepat dan memiliki karakteristik sama atau terdefinisi dengan jelas.<br>
+							<center><b>Tahukah kamu apa saja motif kain sasirangan?</b><br>
+							Diantaranya adalah iris pudak, kambang kacang, bayam raja, kulat karikit, dan naga balimbur.</center>
+						</div>
+						<div class="bahas hilang" id="bahasslh5">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".<br><br>
+							<b><u>Pembahasan :</u></b><br>
+							Kumpulan motif kain sasirangan merupakan <b>himpunan</b> karena anggotanya dapat di tentukan dengan tepat dan memiliki karakteristik sama atau terdefinisi dengan jelas.
+						</div>
+					</div>
+
+					<!--tombol nomor soal-->
+					<center>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        	<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+					</center>
+			    
+			</div>
+			<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          <ul>
+	            <li><b>Himpunan</b> adalah kumpulan objek atau benda yang memiliki sifat sama dan dapat terdefisini dengan jelas.</li>
+	            <li><b>Bukan Himpunan</b> berarti objek  atau benda tidak memiliki sifat yang sama dan tidak dapat ditentukan secara jelas.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../2/materi1_1(2).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_1(1).html" class="tmbl">1</a>
+				<a href="../2/materi1_1(2).html" class="tmbl">2</a>
+				<a href="materi1_1(3).html" class="tmbl navaktif">3</a>
+				<a href="../../materi1_2/1/materi1_2(1).html" class="tmbl">Materi Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

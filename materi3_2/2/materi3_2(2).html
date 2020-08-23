@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Bagian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_2(2).css">
+</head>
+<body>
+	<script src="jsmateri3_2(2).js"></script>
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<div class="aktif2"><a href="../1/materi3_2(1).html" style="color: white;">Himpunan Bagian</a></div>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BAGIAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			Kemudian, bagaimana diagram venn dari <b>Himpuann Bagian</b>? Perhatikanlah Tabel 3.2.2 di bawah ini!
+			<center>
+				<table class="tabel1">
+		        <tr>
+		          <th class="lebar1">Himpunan</th>
+		          <th class="lebar2">Diagram Venn</th>
+		        </tr>
+		        <tr>
+		          <td >
+		            A = {<b><span class="merah">11, 12, 13</span></b>}<br>
+		            B = {10, <b><span class="merah">11, 12, 13</span></b>}<br><br>
+		            Semua anggota himpunan A juga menjadi anggota himpunan B.
+		            Maka, <b>A &sub; B</b><br>
+		            (A subset dari B)
+		          </td>
+		          <td >
+		            <img src="../img/subset1.png" class="gambar2">
+		          </td>
+		        </tr>
+		        <tr>
+		          <td colspan="2">
+		            Himpunan A digambarkan di dalam lingkaran himpunan B.
+		            Lingkaran himpunan A diarsir untuk menandai bahwa  <b>A &sub; B</b>.
+		          </td>
+		        </tr>
+		      </table>
+			</center>
+			<br>
+			Untuk lebih lengkapnya mengenai proses membuat diagram venn dari himpunan bagian, perhatikanlah animasi interaktif di bawah ini!
+			<!-- petunjuk -->
+		    <div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+		    <div class="tjk1" id="tjk1">
+		      	<ul>
+		      		<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
+	      			<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai. Perhatikanlah setiap arahan yang ditampilkan</li>
+	      			<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
+		      	</ul>
+		    </div>
+		    <center>
+		    <div class="divscratch" id="applet">
+				<iframe class="scratch" id="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/419249483/?autostart=true" frameborder="0" allowfullscreen></iframe>
+			</div>
+			</center>
+			<br>
+			<br>
+			<img src="../img/catatan.png" class="gambar"><br>
+			<div class="catat">
+				<center>Apa perbedaan dari <b>&isin;, &notin;, &sub;, dan &nsub;</b>?</center>
+				Perlu diingat bahwa:
+				<ul>
+					<li>&isin; dan &notin; digunakan untuk <b>anggota himpunan</b></li>
+					<li>&sub; dan &nsub; digunakan untuk <b>himpunan bagian</b></li>
+				</ul>
+				Contoh :
+				<ul>
+					<li>Diketahui A = {1, 2, 3}, maka <b>2 &isin; A</b> dan <b>4 &notin; A</b>.</li>
+					<li>Diketahui A = {1, 2, 3} dan B = {1, 2}, maka <b>B &sub; A</b> dan <b>A &nsub; B</b>.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi3_2(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_2(1).html" class="tmbl">1</a>
+				<a href="materi3_2(2).html" class="tmbl navaktif">2</a>
+				<a href="../3/materi3_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_2(4).html" class="tmbl">4</a>
+				<a href="../5/materi3_2(5).html" class="tmbl">5</a>
+				<a href="../6/materi3_2(6).html" class="tmbl">6</a>
+				<a href="../3/materi3_2(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

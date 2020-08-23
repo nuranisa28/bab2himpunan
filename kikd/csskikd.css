@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift;
+}
+
+body{
+	background-image: url(img/bg1.png);
+	background-size: 35%;
+}
+
+header{
+	width: 99%;
+	height: 7vw;
+	background-color: rgba(168, 194, 251, 0.5);
+	margin: 0.2vw;
+	padding: 1vw 0vw 1vw 0vw;
+	border-bottom: 15px solid rgb(3, 31, 75);
+}
+
+.himpimg{
+	width: 20%;
+}
+
+.nav{
+	width: 25%;
+	float: left;
+	padding: 1vw;
+}
+
+.home{
+	width: 20%;
+	margin: 1vw;
+}
+
+.isi{
+	width:  65%;
+	float: left;
+}
+
+.pilih button{
+	background-color: rgb(3, 31, 75);
+	border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 15px 15px;
+	  transition: 0.3s;
+	  font-size: 20px;
+	  border-radius: 10px 10px 10px 10px;
+	  color: white;
+}
+
+.pilih button:hover{
+	background-color: #187bcd;
+	color: white;
+}
+
+.pilih .tmblAktif {
+	background-color: rgb(168, 194, 251);
+	color: black;
+}
+
+.pilihan{
+	width: 65%;
+	margin-left: 35%; 
+}
+
+.isian{
+	width: 100%;
+	min-height: 23vw;
+	background-color: rgb(168, 194, 251);
+	border: 2px solid rgb(3, 31, 75);
+	border-radius: 10px;
+	padding: 2%;
+	display: none;
+	overflow: auto;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.isian li{
+	margin: 0% 2% 0% 4%;
+}
+
+.kd{
+	margin: 1vw;
+}
+
+.isiAktif{
+	display: block;
+}
+
+.petkon{
+	background-color: rgb(3, 31, 75);
+	cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.petkon:hover {
+    background-color: rgba(3, 31, 75, 0.61);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid #888;
+  width: 58%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+	header{
+		height: 20%;
+		padding: 5px 0px 5px 0px;
+	}
+	.himpimg{
+		width: 40%;
+	}
+	.home{
+		width: 45%;
+	}
+	.nav{
+		width: 92%;
+	}
+	.pilih{
+		margin: 0vw 3vw 0vw 3vw;
+	}
+	.pilih button{
+		font-size: 14px;
+		padding: 2vw 2vw;
+	}
+	.pilihan{
+		width: 40%;
+		margin-left: 35%; 
+	}
+	.isi{
+		width: 92%;
+		margin: 0vw 2vw 0vw 2vw;
+	}
+	.isian{
+		font-size: 14px;
+	}
+	.modal-content {
+		width: 90%;
+	}
+	.petkon{
+		font-size: 14px;
+		width: 25%;
+	}
+}

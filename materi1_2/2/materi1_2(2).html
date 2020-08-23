@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Notasi dan Anggota Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_2(2).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<div class="aktif2"><a href="materi1_2(1).html"  style="color: white;">Notasi dan Anggota Himpunan</a></div>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				NOTASI DAN ANGGOTA HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			Perhatikanlah teks dibawah ini.<br>
+			<center><img src="../img/bjm.png" class="gambar2"><br></center>
+			Jika B adalah himpunan huruf pembangun kata Banjarmasin, maka anggota himpunan B terdiri dari huruf apa saja? Coba kamu sebutkan pada kotak di bawah ini!
+			<!-- petunjuk -->
+      		<div class="kliktunjuk"><a href="#" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      		<div class="tjk1" id="tjk1">
+      			<ul>
+      				<li>Isilah tiap kotak kosong dengan 1 huruf berbeda.</li>
+      				<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b>.</li>
+      				<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b>.</li>
+      				<li>Pembahasan akan muncul jika semua jawaban kamu benar.</li>
+      			</ul>
+			</div>
+			<center>
+				<div class="coba">
+					Anggota himpunan B = 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="..."> , 
+					<input type="text" class="jawab" maxlength="1" placeholder="...">
+					<br><br>
+					<p id="ket"></p>
+				</div>
+				
+				<div class="bahas hilang" id="bahas">
+					<center><b><u>Pembahasan</u></b></center>
+					<br>
+					<p class="prf">Berdasarkan kegiatan di atas, kata Banjarmasin dibangun dari 8 huruf yaitu <b>b, a, n, j, r, m, s, dan i</b> sehingga dapat dikatakan bahwa huruf <b>b, a, n, j, r, m, s, dan i</b> adalah <b>anggota</b> dari himpunan B.<br>
+					Sedangkan, selain 8 huruf yang disebutkan tadi, seperti huruf c, d, dan e <b>bukan merupakan anggota</b> dari himpunan B.</p>
+					<br>
+					Dari pembahasan di atas, didapat pengertian anggota dan bukan anggota yang dapat dilihat pada tabel 1.2.1 di bawah ini.
+					<center>
+					<table class="tabel1">
+				        <tr>
+				            <th width="30%"></th>
+				            <th>Pengertian</th>
+				        </tr>
+				        <tr>
+				            <td width="30%"><center><b>Anggota</b></center></td>
+				            <td>Objek atau benda yang membentuk suatu himpunan disebut <b>anggota</b> himpunan dan dinotasikan dengan <b>&isin;</b>.</td>
+				        </tr>
+				        <tr>
+				            <td width="30%"><center><b>Bukan Anggota</b></center></td>
+				            <td>Objek atau benda yang tidak berada pada himpunan disebut <b>bukan anggota </b> himpunan dan dinotasikan dengan <b>&notin;</b>.</td>
+				        </tr>
+			    	</table>
+			    	</center>
+				</div>
+			</center>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi1_2(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_2(1).html" class="tmbl">1</a>
+				<a href="materi1_2(2).html" class="tmbl navaktif">2</a>
+				<a href="../3/materi1_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi1_2(4).html" class="tmbl">4</a>
+				<a href="../3/materi1_2(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+
+	<script src="jsmateri1_2(2).js"></script>
+</body>
+</html>

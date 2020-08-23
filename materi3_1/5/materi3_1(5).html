@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Pengertian Diagram Venn</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_1(5).css">
+</head>
+<body>
+	<script src="jsmateri3_1(5).js"></script>
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="../1/materi3_1(1).html" style="color: white;">Pengertian Diagram Venn</a></div>
+	    			<a href="../../materi3_2/1/materi3_2(1).html">Himpunan Bagian</a>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				PENGERTIAN DIAGRAM VENN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/pertanyaan.png" class="gambar"><br>
+			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
+			<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
+			    </div>
+			</div>
+
+			<!--pertanyaan 1-->
+			<div class="pertanya tanyaAktif" id="tanya1">
+				<!--isi pertanyaan-->
+
+				<!--nomor 1-->
+					Nomor 1<br>
+					<!-- petunjuk -->
+				    <div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+				    <div class="tjk1" id="tjk1">
+				      	<ul>
+				      		<li>Isilah kotak jawaban dengan jawaban yang tepat.</li>
+					        <li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+					        <li>Jika jawaban kamu benar, maka akan muncul icon <img src="../img/true.png" width="15px"></li>
+					        <li>Jika jawaban kamu salah, maka akan muncul icon <img src="../img/false.png" width="15px"> dan tombol "Ulang"</li>
+					        <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+					        <li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+				      	</ul>
+					</div>
+					<br>
+					Diketahui S = {y | -3 &le; y &le; 3, y &isin; bilangan bulat} dan N = {y | y &le; 3, y &isin; bilangan prima}. Nyatakanlah himpunan semesta dan himpunan N dengan metode tabulasi!<br>
+					<b>Jawaban :</b>
+					<center>
+					<table class="tabel1">
+						<tr>
+							<th>Himpunan Semesta</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" class="input1" id="s1" maxlength="1">
+								 = { 
+								 <input type="text" class="input2" id="sa1">
+								  }
+								<span id="icon1"></span>
+								<br><br>
+								<button class="cekulang" onclick="cek11()"><b>Cek Jawaban</b></button>
+	            				<button class="cekulang hilang" onclick="ulang11()" id="ulang11"><b>Ulang</b></button>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<table class="tabel1 hilang" id="lanjut1">
+						<tr>
+							<th>Himpunan N</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" class="input1" id="n1" maxlength="1">
+								 = { 
+								 <input type="text" class="input2" id="na1">
+								  }
+								<span id="icon2"></span>
+								<br><br>
+			            		<button class="cekulang" onclick="cek12()"><b>Cek Jawaban</b></button>
+	            				<button class="cekulang hilang" onclick="ulang12()" id="ulang12"><b>Ulang</b></button>
+							</td>
+						</tr>
+					</table>
+					</center>
+				
+
+				<!--nomor 2-->
+				<div class="hilang" id="lanjut2">
+					<br>
+					<hr>
+					<br>
+					Nomor 2<br>
+					<!-- petunjuk -->
+		      		<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+		      		<div class="tjk1" id="tjk2">
+		      			<ul>
+		      				<li>Isilah bagian kosong pada tabel "Langkah" dengan cara menarik salah satu pilihan yang ada pada tabel "Keterangan" dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
+		      				<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+					        <li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span></li>
+					        <li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span>.</li>
+					        <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+					        <li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+		      			</ul>
+					</div><br>
+					Urutkanlah langkah dalam menggambar diagram venn dengan melengkapi tabel <b>“Langkah”</b> di bawah ini!<br>
+					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
+					<center>
+					<table class="tabel3">
+						<tr>
+							<th>Keterangan</th>
+						</tr>
+						<tr>
+							<td id="ket1">
+								<span class='pilihan' id='langkah4' draggable='true' ondragstart='drag(event)'>
+									Tuliskan anggota himpunan S yang bukan merupakan anggota himpunan yang menjadi fokus pembicaran di luar lingkaran.
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td id="ket2">
+								<span class='pilihan' id='langkah1' draggable='true' ondragstart='drag(event)'>
+									Buatlah persegi panjang dan notasi S pada sudut kiri atas persegi panjang.
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td id="ket3">
+								<span class='pilihan' id='langkah3' draggable='true' ondragstart='drag(event)'>
+									Tuliskan anggota himpunan yang menjadi fokus pembicaraan dengan noktah/titik di dalam lingkaran.
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td id="ket4">
+								<span class='pilihan' id='langkah2' draggable='true' ondragstart='drag(event)'>
+									Gambarkan himpunan yang menjadi fokus pembicaraan dengan lingkaran/kurva tertutup.
+								</span>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<table class="tabel3" id="tabel3">
+						<tr>
+							<th colspan="2">Langkah</th>
+						</tr>
+						<tr>
+							<th>Langkah ke-</th>
+							<th>Keterangan</th>
+						</tr>
+						<tr>
+							<td class="lebar1">
+								<center>1</center>
+							</td>
+							<td>
+								<span id="lang1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+								<span id="icon21"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="lebar1">
+								<center>2</center>
+							</td>
+							<td>
+								<span id="lang2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+								<span id="icon22"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="lebar1">
+								<center>3</center>
+							</td>
+							<td>
+								<span id="lang3" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+								<span id="icon23"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="lebar1">
+								<center>4</center>
+							</td>
+							<td>
+								<span id="lang4" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+								<span id="icon24"></span>
+							</td>
+						</tr>
+					</table>
+					<button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
+				    <button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+				    <span id="info2"></span>
+					</center>
+				</div>
+
+				<!--nomor 3-->
+				<div class="hilang" id="lanjut3">
+					<br>
+					<hr>
+					<br>
+					Nomor 3<br>
+					<!-- petunjuk -->
+		      		<div class="kliktunjuk"><a href="#tjk2" onclick="tjk3('tjk3')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+		      		<div class="tjk1" id="tjk3">
+		      			<ul>
+		      				<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
+	      					<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai menggambar diagram venn. Perhatikanlah setiap arahan yang ditampilkan.</li>
+	      					<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
+		      			</ul>
+					</div><br>
+					Gambarlah diagram venn dari himpunan yang ada pada nomor 1!<br>
+					<center>
+					<div class="divscratch" id="applet">
+						<iframe id="scratch" class="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/419243758/?autostart=true" frameborder="0" allowfullscreen></iframe>
+					</div>
+					</center>
+				</div>
+			</div>
+
+			<!--pertanyaan 2-->
+			<div class="pertanya" id="tanya2">
+				<!-- petunjuk -->
+		      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk4('tjk4')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan pertunjuk)<br></a></div>
+		      	<div class="tjk1" id="tjk4">
+		      		<ul>
+				        <li>Isilah kotak jawaban dengan jawaban yang tepat.</li>
+					    <li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+					    <li>Jika jawaban kamu benar, maka akan muncul icon <img src="../img/true.png" width="15px"></li>
+					    <li>Jika jawaban kamu salah, maka akan muncul icon <img src="../img/false.png" width="15px"> dan tombol "Ulang"</li>
+					    <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+					    <li>Pembahasan akan muncul jika semua jawaban kamu benar.</li>
+		      		</ul>
+		      	</div>
+		      	<br>
+		      	<hr>
+		      	<br>
+		      	Diberikan diagram venn sebagai berikut.<br>
+		      	<center><img src="../img/venn7.png" class="gambar2"></center>
+		      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan M dengan metode tabulasi!
+		      	<center>
+		      	<table class="tabel1">
+		      		<tr>
+		      			<th>Himpunan Semesta</th>
+		      		</tr>
+		      		<tr>
+		      			<td>
+		      				<input type="text" class="input1" id="s11" maxlength="1"> = { <input type="text" class="input2" id="sa11"> }
+			            	<span id="ikon1"></span>
+			            	<br><br>
+			            	<button class="cekulang" onclick="cek31()"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang31()" id="ulang31"><b>Ulang</b></button>
+		      			</td>
+		      		</tr>
+		      	</table>
+		      	<br>
+		      	<table class="tabel1 hilang" id="lanjut4">
+		      		<tr>
+		      			<th>Himpunan M</th>
+		      		</tr>
+		      		<tr>
+		      			<td>
+		      				<input type="text" class="input1" id="m1" maxlength="1"> = { <input type="text" class="input2" id="ma1"> }
+			            	<span id="ikon2"></span>
+			            	<br><br>
+			            	<button class="cekulang" onclick="cek32()"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang32()" id="ulang32"><b>Ulang</b></button>
+		      			</td>
+		      		</tr>
+		      	</table>
+		      	<br>
+		      	<div class="bahas hilang" id="lanjut5">
+		      		<center><span class="bnr">Jawaban Kamu Benar</span></center>
+	            	Berdasarkan diagram venn yang diberikan, didapatkan :
+	            	<ol>
+	            		<li>
+	            			Himpunan Semesta<br>
+	            			S = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+	            		</li>
+	            		<li>
+	            			Himpunan M<br>
+	            			M = {1, 2, 3, 4, 5}
+	            		</li>
+	            	</ol>
+		      	</div>
+		      	</center>
+			</div>
+	      	<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          Dalam membuat Diagram Venn perlu diperhatikan beberapa hal, antara lain sebagai berikut :<br>
+	          <ul>
+	            <li>Himpunan semesta digambarkan dengan persegipanjang dan dinotasikan dengan huruf S yang ditulis pada sudut kiri atas persegipanjang.</li>
+	            <li>Himpunan lain yang menjadi fokus pembicaraan digambarkan dengan lingkaran atau kurva tertutup dan notasi himpunannya ditulis dekat lingkaran tersebut.</li>
+	            <li>Setiap anggota masing-masing himpunan digambarkan dengan noktah atau titik.</li>
+	            <li>Anggota himpunan semesta yang bukan anggota himpunan yang menjadi fokus pembicaraan diletakkan di luar lingkaran, tetapi masih di dalam persegipanjang.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../4/materi3_1(4).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_1(1).html" class="tmbl">1</a>
+				<a href="../2/materi3_1(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_1(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_1(4).html" class="tmbl">4</a>
+				<a href="materi3_1(5).html" class="tmbl navaktif">5</a>
+				<a href="../../materi3_2/1/materi3_2(1).html" class="tmbl">Materi Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

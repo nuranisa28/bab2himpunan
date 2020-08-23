@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Bagian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_2(5).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<div class="aktif2"><a href="../1/materi3_2(1).html" style="color: white;">Himpunan Bagian</a></div>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BAGIAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/menalar.png" class="gambar"><br>
+			<p class="prf">Tadi, kalian sudah bisa menyatakan banyak himpunan bagian dari B = {a, b, c, d, e, f, g, h} dengan rumus <b>2<sup>2</sup></b>. Namun, bagaimana jika pertanyaanya seperti ini :</p>
+			<div class="coba" id="pertanyaan1">
+				Diketahui B = {a, b, c, d, e, f, g, h}, maka tentukanlah banyak himpunan bagian dari himpunan B yang memiliki :
+				<ol type="a">
+					<li>5 anggota</li>
+					<li>Minimal 3 anggota</li>
+					<li>Maksimal 3 anggota</li>
+					<li>Kurang dari 3 anggota</li>
+					<li>Lebih dari 3 anggota</li>
+				</ol>
+			</div>
+			Caranya adalah dengan bantuan <b>Segitiga Pascal</b>. <h5>*klik segitiga pascal untuk melihat penjelasan.</h5><br>
+			<!--area kiri-->
+			<div class="kiri">
+				<center><img src="../img/pascal.png" usemap="#workmap" class="gambar2">
+				<map name="workmap">
+		          <area shape="rect" coords="134,34,167,0" onclick="penjelasan(event,'n0')" class="klik">
+		          <area shape="rect" coords="117,67,184,34" onclick="penjelasan(event,'n1')" class="klik">
+		          <area shape="rect" coords="100,99,199,68" onclick="penjelasan(event,'n2')" class="klik">
+		          <area shape="rect" coords="84,133,216,101" onclick="penjelasan(event,'n3')" class="klik">
+		          <area shape="rect" coords="67,166,233,134" onclick="penjelasan(event,'n4')" class="klik">
+		          <area shape="rect" coords="51,199,249,167" onclick="penjelasan(event,'n5')" class="klik">
+		          <area shape="rect" coords="33,233,266,199" onclick="penjelasan(event,'n6')" class="klik">
+		          <area shape="rect" coords="17,266,283,234" onclick="penjelasan(event,'n7')" class="klik">
+		          <area shape="rect" coords="0,299,299,267" onclick="penjelasan(event,'n8')" class="klik">
+		        </map>
+		        <br>dan seterusnya...
+		        </center>
+			</div>
+
+			<!--area kanan-->
+			<div class="kanan">
+				<div class="isijls">
+				Penjelasan :<br>
+				<div class="jelas" id="n0">
+		          <center><img src="../img/n0.png"></center>
+		          Untuk himpunan bagian dari A = { } dengan n(A) = 0. Banyak himpunan bagiannya adalah 2<sup>0</sup> = 1
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n1">
+		          <center><img src="../img/n1.png"></center>
+		          Untuk himpunan bagian dari A = {a} dengan n(A) = 1. Banyak himpunan bagiannya adalah 2<sup>1</sup> = 2
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n2">
+		          <center><img src="../img/n2.png"></center>
+		          Untuk himpunan bagian dari A = {a, b} dengan n(A) = 2. Banyak himpunan bagiannya adalah 2<sup>2</sup> = 4
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n3">
+		          <center><img src="../img/n3.png"></center>
+		          Untuk himpunan bagian dari A = {a, b, c} dengan n(A) = 3. Banyak himpunan bagiannya adalah 2<sup>3</sup> = 8
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n4">
+		          <center><img src="../img/n4.png"></center>
+		          Untuk himpunan bagian dari A = {a, b, c, d} dengan n(A) = 4. Banyak himpunan bagiannya adalah 2<sup>4</sup> = 16
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n5">
+		          <center><img src="../img/n5.png"></center>
+		          Untuk himpunan bagian dari A = {a, b, c, d, e} dengan n(A) = 5. Banyak himpunan bagiannya adalah 2<sup>5</sup> = 32
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n6">
+		          <center><img src="../img/n6.png"></center>
+		          Untuk himpunan bagian dari A = {a, b, c, d, e, f} dengan n(A) = 6. Banyak himpunan bagiannya adalah 2<sup>6</sup> = 64
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n7">
+		          <center><img src="../img/n7.png"></center>
+		          Untuk himpunan bagian dari A = {a, b, c, d, e, f, g} dengan n(A) = 7. Banyak himpunan bagiannya adalah 2<sup>7</sup> = 128
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        <div class="jelas" id="n8">
+		          <center><img src="../img/n8.png"></center>
+		          Untuk himpunan bagian dari A = {a, b, c, d, e, f, g, h} dengan n(A) = 8. Banyak himpunan bagiannya adalah 2<sup>8</sup> = 256
+		          <br><br>
+					Tekan tombol di bawah ini untuk melihat penjelasan bagaimana cara membuat segitiga pascal<br>
+					<center><a class="tombol" href="https://scratch.mit.edu/projects/419256124" target="_blank">Lihat Penjelasan</a></center>
+		        </div>
+		        </div>
+			</div>
+
+			<div class="teruss">
+				Jadi, angka-angka pada segitiga pascal ini <b>mewakili banyak himpunan bagian <u>sekian anggota</u></b>	dari suatu himpunan.
+				Lalu, bagaimana menggunakan segitiga pascal untuk menjawab <a href="#pertanyaan1">pertanyaan</a> di atas?<br>
+				<p class="prf">Perhatikan kembali himpunan B. Banyak anggota dari himpunan B adalah <b>8</b>, artinya segitiga pascal dibuat hingga bertemu angka 8. Sehingga didapatkan :</p>
+				<center><img src="../img/n8.png"></center>
+			</div>
+			
+			<div class="kiri">
+				Uraiannya dapat dilihat pada Tabel 3.2.4 di bawah ini.
+				<center>
+				<table class="tabel1">
+					<tr>
+						<th>Himpunan bagian dengan :</th>
+						<th>Banyak himpunan</th>
+					</tr>
+					<tr>
+			          <td>0 anggota</td>
+			          <td><span class="" id="ubah1">1</span></td>
+			        </tr>
+			        <tr>
+			          <td>1 anggota</td>
+			          <td><span class="" id="ubah2">8</span></td>
+			        </tr>
+			        <tr>
+			          <td>2 anggota</td>
+			          <td><span class="" id="ubah3">28</span></td>
+			        </tr>
+			        <tr>
+			          <td>3 anggota</td>
+			          <td><span class="" id="ubah4">56</span></td>
+			        </tr>
+			        <tr>
+			          <td>4 anggota</td>
+			          <td><span class="" id="ubah5">70</span></td>
+			        </tr>
+			        <tr>
+			          <td>5 anggota</td>
+			          <td><span class="" id="ubah6">56</span></td>
+			        </tr>
+			        <tr>
+			          <td>6 anggota</td>
+			          <td><span class="" id="ubah7">28</span></td>
+			        </tr>
+			        <tr>
+			          <td>7 anggota</td>
+			          <td><span class="" id="ubah8">8</span></td>
+			        </tr>
+			        <tr>
+			          <td>8 anggota</td>
+			          <td><span class="" id="ubah9">1</span></td>
+			        </tr>
+			        <tr>
+			          <td class="merah"><b>Total banyak himpunan bagian</b></td>
+			          <td class="merah"><b>256</b></td>
+			        </tr>
+				</table>
+				</center>
+			</div>
+
+			<div class="kanann">
+				<div class="isijlss">
+					<span class="" id="tekan">
+						Mari kita coba jawab <a href="#pertanyaan1">pertanyaan</a> di atas.
+						Tekan tombol di bawah ini untuk memunculkan pertanyaan<br>
+						<center><button class="cekulang" onclick="muncul()">Munculkan Pertanyaan</button></center>
+					</span>
+					<span class="hilang" id="muncul">
+					<!-- petunjuk-->
+					<div class="kliktunjuk"><a href="#" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+		      		<div class="tjk1" id="tjk1">
+		      			<ul>
+		      				<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+		      				<li>Setiap kamu mengklik kotak jawaban, akan ada petunjuk yang muncul pada Tabel 3.2.4. Ini berarti petunjuk untuk kamu menjawab soal.</li>
+		      				<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b>.</li>
+		      				<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b>.</li>
+		      				<li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+		      			</ul>
+					</div>
+					Banyak himpunan bagian dari B = {a, b, c, d, e, f, g, h} yang memiliki :
+					<ol type="a">
+						<li>
+							5 anggota<br>
+							Jawaban : <input type="text" class="jawab1" maxlength="2" onclick="ubah1()">
+							<span class="icon" id="icon1"></span>
+						</li>
+						<li class="hilang" id="lanjut1">
+							Minimal 3 anggota<br>
+							Minimal 3 anggota maksudnya adalah <u>paling sedikit</u> memiliki 3 anggota. Ini artinya <b>"lebih dari sama dengan 3"</b>, sehingga jawabannya adalah <b>jumlah</b> dari banyak himpunan bagian dengan 3 anggota, 4 anggota, 5 anggota, 6 anggota, 7 anggota, dan 8 anggota<br>
+							Jawaban : <input type="text" class="jawab1" maxlength="3" onclick="ubah2()">
+							<span class="icon" id="icon2"></span>
+						</li>
+						<li class="hilang" id="lanjut2">
+							Maksimal 3 anggota<br>
+							Maksimal 3 anggota maksudnya adalah <u>paling banyak</u> memiliki 3 anggota. Ini artinya <b>"kurang dari sama dengan 3"</b>, sehingga jawabannya adalah <b>jumlah</b> dari banyak himpunan bagian dengan 0 anggota, 1 anggota, 2 anggota, dan 3 anggota<br>
+							Jawaban : <input type="text" class="jawab1" maxlength="2" onclick="ubah3()">
+							<span class="icon" id="icon3"></span>
+						</li>
+						<li class="hilang" id="lanjut3">
+							Kurang dari 3 anggota<br>
+							Jawabannya adalah <b>jumlah</b> dari banyak himpunan bagian dengan 0 anggota, 1 anggota, dan 2 anggota<br>
+							Jawaban : <input type="text" class="jawab1" maxlength="2" onclick="ubah4()">
+							<span class="icon" id="icon4"></span>
+						</li>
+						<li class="hilang" id="lanjut4">
+							Lebih dari 3 anggota<br>
+							Jawabannya adalah <b>jumlah</b> dari banyak himpunan bagian dengan 4 anggota, 5 anggota, 6 anggota, 7 anggota, dan 8 anggota<br>
+							Jawaban : <input type="text" class="jawab1" maxlength="3" onclick="ubah5()">
+							<span class="icon" id="icon4"></span>
+						</li>
+					</ol>
+					</span>
+				</div>
+			</div>
+			
+			<div class="teruss hilang" id="lanjut5">
+				Berdasarkan kegiatan diatas, kalian mampu menyatakan banyak himpunan bagian yang mungkin dibuat dari suatu himpunan.
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../4/materi3_2(4).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi3_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_2(4).html" class="tmbl">4</a>
+				<a href="materi3_2(5).html" class="tmbl navaktif">5</a>
+				<a href="../6/materi3_2(6).html" class="tmbl">6</a>
+				<a href="../6/materi3_2(6).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+
+	<script src="jsmateri3_2(5).js"></script>
+</body>
+</html>

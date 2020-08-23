@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Pengertian Diagram Venn</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_1(2).css">
+</head>
+<body>
+	<script src="jsmateri3_1(2).js"></script>
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="../1/materi3_1(1).html" style="color: white;">Pengertian Diagram Venn</a></div>
+	    			<a href="../../materi3_2/1/materi3_2(1).html">Himpunan Bagian</a>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				PENGERTIAN DIAGRAM VENN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			<p class="prf">Untuk lebih memahami bagaimana proses/langkah dalam menggambar Diagram Venn dari suatu himpunan, perhatikanlah pembahasan pada video animasi di bawah ini.</p>
+			<!-- petunjuk -->
+	      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      	<div class="tjk1" id="tjk1">
+	      		<ul>
+	      			<li>Tekan icon <img src="../img/play.png" width="16px"> untuk memulai video animasi di bawah.</li>
+      				<li>Tekan <img src="../img/perbesar.jpg" width="16px"> untuk membuat video menjadi <i>full screen</i>.</li>
+      				<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
+	      		</ul>
+	      	</div>
+	      	<center>
+	      		<video class="video" controls>
+					<source src="video/materi3_1(2).mp4" type="video/mp4" />
+				</video>
+	      	</center>
+	      	<br>
+	      	<center>
+	      		Klik tombol di bawah ini untuk melihat tabel langkah menggambar diagram venn<br>
+	      		<button class="cekulang" onclick="lihat()"><b>Lihat Tabel</b></button>
+	      	</center>
+	      	<div class="hilang" id="lihat">
+	      		<br>
+	      		<center><b>Diketahui S = {1, 2, 3, 4, 5, 6, 7} dan G = {2, 4, 6}</b>.<br><br>
+	      		<table class="tabel1">
+			        <tr>
+			          <th>No.</th>
+			          <th>Langkah</th>
+			          <th>Diagram Venn</th>
+			        </tr>
+			        <tr>
+			          <td>1.</td>
+			          <td>Buatlah persegi panjang dan notasi S pada sudut kiri atas persegi panjang.</td>
+			          <td><center><img src="../img/venn1.png" class="gambar2"></center></td>
+			        </tr>
+			        <tr>
+			          <td>2.</td>
+			          <td>Gambarkan himpunan G (yang menjadi fokus pembicaraan) dengan lingkaran/kurva tertutup.</td>
+			          <td><center><img src="../img/venn2.png" class="gambar2"></center></td>
+			        </tr>
+			        <tr>
+			          <td>3.</td>
+			          <td>
+			            Perhatikan pada himpunan S dan himpunan G.<br>
+			            S = {1, <span class="merah"><b>2</b></span>, 3, <span class="merah"><b>4</b></span>, 5, <span class="merah"><b>6</b></span>, 7}<br>
+			            G = {<span class="merah"><b>2, 4, 6</b></span>}<br><br>
+			            Himpunan G terdiri dari {2, 4, 6} yang juga merupakan anggota himpunan S.<br><br>
+			            Tuliskan anggota himpunan G dengan noktah/titik di dalam lingkaran.
+			          </td>
+			          <td><center><img src="../img/venn3.png" class="gambar2"></center></td>
+			        </tr>
+			        <tr>
+			          <td>4.</td>
+			          <td>Tuliskan anggota himpunan S yang bukan merupakan anggota himpunan G di luar lingkaran.</td>
+			          <td><center><img src="../img/venn4.png" class="gambar2"></center></td>
+			        </tr>
+			    </table>
+			    *catatlah ke dalam buku catatanmu &#128516;
+			    </center>
+	      	</div>
+      		
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi3_1(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_1(1).html" class="tmbl">1</a>
+				<a href="materi3_1(2).html" class="tmbl navaktif">2</a>
+				<a href="../3/materi3_1(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_1(4).html" class="tmbl">4</a>
+				<a href="../5/materi3_1(5).html" class="tmbl">5</a>
+				<a href="../3/materi3_1(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

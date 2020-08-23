@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="img/logo1.png">
+	<title>HIMPUNAN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="csskikd.css">
+</head>
+<body>
+	<script src="jskikd.js"></script>
+
+	<center>
+		<header>
+			<img src="img/head.png" class="himpimg">
+		</header>
+	</center>
+
+	<a href="../index.html"><img src="img/home1.png" class="home"><br></a>
+	<div class="nav">
+		<div class="pilih">
+			<button class="pilihan tmblAktif" onclick="bukaIsi(event, 'isi1')">Kompetensi Inti</button><br><br>
+        	<button class="pilihan" onclick="bukaIsi(event, 'isi2')">Kompetensi Dasar</button><br><br>
+        	<button class="pilihan" onclick="bukaIsi(event, 'isi3')">Peta Konsep</button>
+		</div>
+	</div>
+	<div class="isi">
+		<!-- KI-->
+		<div class="isian isiAktif" id="isi1">
+			<center><h1>Kompetensi Inti</h1></center><br>
+			<ol>
+                <li>Menghargai dan menghayati ajaran agama yang dianutnya.</li>
+                <li>Menghargai dan menghayati perilaku jujur, disiplin, tanggungjawab, peduli (toleransi, gotong royong), santun, percaya diri, dalam berinteraksi secara efektif dengan lingkungan sosial dan alam dalam jangkauan pergaulan dan keberadaannya.</li>
+                <li>Memahami pengetahuan (faktual, konseptual, dan prosedural) berdasarkan rasa ingin tahunya tentang ilmu pengetahuan, teknologi, seni, budaya terkait fenomena dan kejadian tampak mata.</li>
+                <li> Mencoba, mengolah, dan menyaji dalam ranah konkret (menggunakan, mengurai, merangkai, memodifikasi, dan membuat) dan ranah abstrak (menulis, membaca, menghitung, menggambar, dan mengarang) sesuai dengan yang dipelajari di sekolah dan sumber lain yang sama dalam sudut pandang/teori.</li>
+            </ol>
+		</div>
+		<!--KD-->
+		<div class="isian" id="isi2">
+			<div class="kd">
+			<center><h1>Kompetensi Dasar</h1></center><br>
+			3.4 Menjelaskan himpunan, himpunan bagian, himpunan semesta, himpunan kosong, komplemen himpunan, dan melakukan operasi biner pada himpunan menggunakan masalah Kontekstual.<br>
+			3.5 Menjelaskan dan melakukan operasi biner pada himpunan menggunakan masalah kontekstual.<br>
+			4.4 Menyelesaikan masalah kontekstual yang berkaitan dengan himpunan, himpunan bagian, himpunan semesta, himpunan kosong, komplemen himpunan dan operasi biner pada himpunan.<br>
+			4.5 Menyelesaikan masalah kontekstual yang berkaitan dengan operasi biner pada himpunan.
+			</div>
+		</div>
+		<!--Petkon-->
+		<div class="isian" id="isi3">
+			<center><h1>Peta Konsep</h1><br>
+				<img src="img/petkon.png" width="30%"><br><br>
+				<button id="petkon" class="petkon" onclick="petkon()">Perbesar</button>
+				<div id="myModal" class="modal">
+		    		<div class="modal-content">
+		    			<span class="close">&times;</span>
+		    			<center><img src="img/petkon.png" width="100%" height="100%"></center>
+		  			</div>
+		  		</div>
+			</center>
+		</div>
+	</div>
+
+</body>
+</html>

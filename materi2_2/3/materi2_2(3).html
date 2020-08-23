@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Semesta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri2_2(3).css">
+</head>
+<body>
+	<script src="jsmateri2_2(3).js"></script>
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi2_1/1/materi2_1(1).html">Himpunan Kosong</a>
+	    			<div class="aktif2"><a href="../1/materi2_2(1).html" style="color: white;">Himpunan Semesta</a></div>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN SEMESTA
+			</div>
+		</center>
+		<div class="konten">
+			<img src="../img/pertanyaan.png" class="gambar"><br> 
+			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
+			<!-- petunjuk -->
+      		<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      		<div class="tjk1" id="tjk1">
+      			<ul>
+      				<li>Isilah bagian kosong pada tabel "Soal" dengan cara menarik salah satu pilihan yang ada pada tabel "Pilihan" dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
+      				<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+      				<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span> disertai dengan pembahasan</li>
+          			<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      				<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      			</ul>
+			</div>
+			<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
+			    </div>
+			    <!--pertanyaan 1-->
+			    <div class="pertanya tanyaAktif" id="tanya1">
+			    	<!-- isi pertanyaan -->
+			    	Dari beberapa himpunan semesta yang diberikan pada tabel “Pilihan”, tentukanlah himpunan semesta mana saja yang mungkin untuk A = {2, 3, 7, 11}? Jawablah dengan melengkapi tabel “Soal”!
+			    	<br>
+					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
+			        <br>
+					<hr>
+					<br>
+					<!--tabel pilihan-->
+					<center>
+						<table class="tabel1">
+				            <tr>
+				              <th colspan="2">Pilihan</th>
+				            </tr>
+				            <tr>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil11">
+				                <span class="pilihan" id="p11" draggable="true" ondragstart="drag(event)">{x | 1 < x < 12, x &isin; bilangan bulat}</span>
+				              </td>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil12">
+				                <span class="pilihan" id="p12" draggable="true" ondragstart="drag(event)">{x | x < 12, x &isin; bilangan cacah}</span>
+				              </td>
+				            </tr>
+				            <tr>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil13">
+				                <span class="pilihan" id="p13" draggable="true" ondragstart="drag(event)">{x | 1 < x &le; 11, x &isin; bilangan ganjil}</span>
+				              </td>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil14">
+				                <span class="pilihan" id="p14" draggable="true" ondragstart="drag(event)">{2, 3, 4, 5, 6, 7, 8, 9, 10, 11}</span>
+				              </td>
+				            </tr>
+				            <tr>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil15">
+				                <span class="pilihan" id="p15" draggable="true" ondragstart="drag(event)">{bilangan asli yang mempunyai sisa bagi 1}</span>
+				              </td>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil16">
+				                <span class="pilihan" id="p16" draggable="true" ondragstart="drag(event)">{bilangan genap}</span>
+				              </td>
+				            </tr>
+				          </table>
+					</center>
+					<br>
+					<!-- tabel soal-->
+					<center>
+					<table class="tabel1">
+			          <tr>
+			            <th colspan="2">Soal</th>
+			          </tr>
+			          <tr>
+			            <th>Himpunan</th>
+			            <th>Himpunan Semesta</th>
+			          </tr>
+			          <tr>
+			            <td rowspan="3">A = {2, 3, 7, 11}</td>
+			            <td class="rata">
+			              S = <span id="s11" class="jwb1" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+			              <span id="icon11"></span>
+			            </td>
+			          </tr>
+			          <tr>
+			            <td class="rata">
+			              S = <span id="s12" class="jwb1" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+			              <span id="icon12"></span>
+			            </td>
+			          </tr>
+			          <tr>
+			            <td class="rata">
+			              S = <span id="s13" class="jwb1" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+			              <span id="icon13"></span>
+			            </td>
+			          </tr>
+			        </table>
+			        <button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
+				    <button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+				    <div class="bahas" id="bahasbnr1">
+						<center><span class="bnr">Jawaban Kamu Benar</span></center>
+						<ol>
+							<li>
+								Himpunan Semesta yang memungkinkan untuk A = {2, 3, 7, 11} :
+								<ul>
+									<li>S = {x | 1 < x < 12, x &isin; bilangan bulat}</li>
+									<li>S = {x | x < 12, x &isin; bilangan cacah}</li>
+									<li>S = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11}</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+					<div class="bahas" id="bahasslh1">
+						<center><span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"</center>
+					</div>
+			    	</center>
+			    </div>
+
+			    <!--pertanyaan 2-->
+			    <div class="pertanya" id="tanya2">
+			    	<!--isi pertanyaan-->
+			    	Dari beberapa himpunan semesta yang diberikan pada tabel “Pilihan”, tentukanlah himpunan semesta mana saja yang mungkin untuk B = {Samarinda, Tanjung Selor, Banjarmasin}? Jawablah dengan melengkapi tabel “Soal”!
+			    	<br>
+					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
+			        <br>
+					<hr>
+					<br>
+					<!--tabel pilihan-->
+					<center>
+					<table class="tabel1">
+			            <tr>
+			              <th colspan="2">Pilihan</th>
+			            </tr>
+			            <tr>
+			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil21">
+			                <span class="pilihan" id="p21" draggable="true" ondragstart="drag(event)">{wilayah Indonesia bagian tengah (WITA)}</span>
+			              </td>
+			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil22">
+			                <span class="pilihan" id="p22" draggable="true" ondragstart="drag(event)">{nama ibu kota provinsi di pulau Sulawesi}</span>
+			              </td>
+			            </tr>
+			            <tr>
+			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil23">
+			                <span class="pilihan" id="p23" draggable="true" ondragstart="drag(event)">{nama ibu kota di negara Australia}</span>
+			              </td>
+			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil24">
+			                <span class="pilihan" id="p24" draggable="true" ondragstart="drag(event)">{nama ibu kota provinsi}</span>
+			              </td>
+			            </tr>
+			            <tr>
+			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil25">
+			                <span class="pilihan" id="p25" draggable="true" ondragstart="drag(event)">{nama ibu kota provinsi di pulau Kalimantan}</span>
+			              </td>
+			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil26">
+			                <span class="pilihan" id="p26" draggable="true" ondragstart="drag(event)">{wilayah Indonesia bagian barat (WIB)}</span>
+			              </td>
+			            </tr>
+			          </table>
+					</center>
+					<br>
+					<!-- tabel soal-->
+					<center>
+					<table class="tabel1">
+			          <tr>
+			            <th colspan="2">Soal</th>
+			          </tr>
+			          <tr>
+			            <th>Himpunan</th>
+			            <th>Himpunan Semesta</th>
+			          </tr>
+			          <tr>
+			            <td rowspan="3">B = {Samarinda, <br>Tanjung Selor,<br> Banjarmasin}</td>
+			            <td>
+			              S = <span id="s21" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+			              <span id="icon21"></span>
+			            </td>
+			          </tr>
+			          <tr>
+			            <td>
+			              S = <span id="s22" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+			              <span id="icon22"></span>
+			            </td>
+			          </tr>
+			          <tr>
+			            <td>
+			              S = <span id="s23" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+			              <span id="icon23"></span>
+			            </td>
+			          </tr>
+			        </table>
+			        <button class="cekulang" id="cek2" onclick="cek2()"><b>Cek Jawaban</b></button>
+				    <button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
+				    <div class="bahas" id="bahasbnr2">
+						<center><span class="bnr">Jawaban Kamu Benar</span></center>
+						<ol>
+							<li>
+								Himpunan Semesta yang memungkinkan untuk B = {Samarinda, Tanjung Selor, Banjarmasin} :
+								<ul>
+									<li>S = {wilayah Indonesia bagian tengah (WITA)}</li>
+									<li>S = {nama ibu kota provinsi}</li>
+									<li>S = {nama ibu kota provinsi di pulau Kalimantan}</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+					<div class="bahas" id="bahasslh2">
+						<center><span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"</center>
+					</div>
+					</center>
+			    </div>
+			</div>
+			<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          <ul>
+	            <li><b>Himpunan semesta</b> adalah himpunan yang memuat semua anggota dari himpunan yang sedang dibicarakan.</li>
+            	<li><b>Himpunan semesta </b> di notasikan dengan <b>S</b>.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../2/materi2_2(2).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi2_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi2_2(2).html" class="tmbl">2</a>
+				<a href="materi2_2(3).html" class="tmbl navaktif">3</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Menyatakan Suatu Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_3(1).css">
+</head>
+<body>
+	<script src="jsmateri1_3(1).js"></script>
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html" >Notasi dan Anggota Himpunan</a>
+	    			<div class="aktif2"><a href="materi1_3(1).html" style="color: white;">Menyatakan Suatu Himpunan</a></div>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				MENYATAKAN SUATU HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+		        <ol>
+		        	<li>Siswa sudah mampu menyatakan notasi dari suatu himpunan.</li>
+          			<li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+		        </ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan siswa mampu menyatakan himpunan dengan metode deskripsi, metode bersyarat, dan metode tabulasi.
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/mengingat.png" class="gambar"><br>
+			<div class="review">
+				Perlu diingat kembali bahwa :
+				<ul>
+					<li>Suatu himpunan dinotasikan dengan <b>huruf kapital (seperti A, B, C, ..., atau Z)</b>, dan</li>
+	            	<li>Elemen/anggota dari suatu himpunan dituliskan <b>di dalam tanda kurung kurawal {....}</b></li>
+				</ul>
+			</div>
+			<br>
+			<center><h4>Lalu, bagaimana cara menyatakan suatu himpunan?</h4></center>
+			<br>
+			<p>Terdapat 3 cara dalam menyatakan suatu himpunan, yaitu metode deskripsi, metode bersyarat, dan metode tabulasi.</p>
+        	<h5>*klik metode untuk melihat penjelasan.</h5>
+			<center>
+	          <a href="#metode" class="metode" id="metode" onclick="penjelasan(event, 'metdes')"><img src="../img/metdes.png" class="gambar2"></a>
+	          <a href="#metode" class="metode" onclick="penjelasan(event, 'metber')"><img src="../img/metber.png" class="gambar2"></a>
+	          <a href="#metode" class="metode" onclick="penjelasan(event, 'mettab')"><img src="../img/mettab.png" class="gambar2"></a>
+	        <div class="penjelasan" id="metdes">
+	          <center><h4>Metode Deskripsi</h4></center><br>
+	          Metode deskripsi adalah metode menyatakan himpunan dengan kata-kata dan menuliskan syarat keanggotaan himpunan di dalam tanda kurung kurawal. Struktur penulisannya :<br>
+	          <center><img src="../img/metdes2.png" class="gambar3"></center>
+	        </div>
+	        <div class="penjelasan" id="metber">
+	          <center><h4>Metode Bersyarat</h4></center><br>
+	          Metode bersyarat adalah metode menyatakan himpunan dengan notasi pembentuk himpunan dan dinyatakan dengan variabel yang diikuti garis tegak serta syarat keanggotaannya. Variabel yang dimaksud adalah sebuah huruf yang mewakilkan anggota himpunan. Struktur penulisannya :<br>
+	          <center><img src="../img/metber2.png" class="gambar4"></center>
+	        </div>
+	        <div class="penjelasan" id="mettab">
+	          <center><h4>Metode Tabulasi</h4></center><br>
+	          Metode tabulasi adalah metode menyatakan himpunan dengan menyebutkan anggota-anggotanya dan menuliskannya di dalam tanda kurung kurawal yang dipisahkan oleh tanda koma (,). Metode ini adalah metode yang paling umum digunakan karena termasuk metode yang paling mudah, kamu cukup menyebutkan anggota himpunannya terdiri dari apa saja. Struktur penulisannya :<br>
+	          <center><img src="../img/mettab2.png" class="gambar4"></center>
+	        </div>
+	        </center>
+			<br>
+			<br>
+			<img src="../img/catatan.png" class="gambar"><br>
+		    *catatlah ke dalam buku catatanmu &#128516;
+		    <div class="catat">
+	        	<center>Beberapa jenis himpunan bilangan yang perlu kamu ketahui.</center>
+		        <ol>
+		          <li>
+		            Himpunan bilangan asli<br>
+		            A = {1, 2, 3, 4, ...}
+		          </li>
+		          <li>
+		            Himpunan bilangan cacah<br>
+		            C = {0, 1, 2, 3, 4, ...}
+		          </li>
+		          <li>
+		            Himpunan bilangan bulat<br>
+		            B = {..., -3, -2, -1, 0, 1, 2, 3, ...}
+		          </li>
+		          <li>
+		            Himpunan bilangan genap<br>
+		            Himpunan bilangan asli yang habis dibagi 2<br>
+		            G = {2, 4, 6, 8, ...}
+		          </li>
+		          <li>
+		            Himpunan bilangan ganjil<br>
+		            Himpunan bilangan asli yang apabila dibagi 2 selalu sisa 1<br>
+		            L = {1, 3, 5, 7, ...}
+		          </li>
+		          <li>
+		            Himpunan bilangan prima<br>
+		            Himpunan bilangan cacah yang mempunyai dua faktor, yaitu 1 dan bilangan itu sendiri<br>
+		            P = {2, 3, 5, 7, ...}
+		          </li>
+		          <li>
+		            Himpunan bilangan komposit (tersusun)<br>
+		            Himpunan bilangan asli yang mempunyai lebih dari dua faktor<br>
+		            T = {4, 6, 8, 9, 10, 12, 14, ...}
+		          </li>
+		        </ol>
+        	</div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi1_2/4/materi1_2(4).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi1_3(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi1_3(2).html" class="tmbl">2</a>
+				<a href="../3/materi1_3(3).html" class="tmbl">3</a>
+				<a href="../4/materi1_3(4).html" class="tmbl">4</a>
+				<a href="../2/materi1_3(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

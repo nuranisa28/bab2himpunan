@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Bagian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_2(1).css">
+</head>
+<body>
+	<script src="jsmateri3_2(1).js"></script>
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<div class="aktif2"><a href="materi3_2(1).html" style="color: white;">Himpunan Bagian</a></div>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BAGIAN
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				<ol>
+					  <li>Siswa sudah mampu menyatakan notasi dari suatu himpunan</li>
+			          <li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+			          <li>Siswa sudah mampu menyatakan himpunan.</li>
+			          <li>Siswa sudah mampu menyatakan banyak anggota dari suatu himpunan.</li>
+			          <li>Siswa sudah mampu menyatakan himpunan kosong.</li>
+			          <li>Siswa sudah mampu menggambar diagram venn.</li>
+				</ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan :
+				<ol>
+					<li>Siswa mampu menentukan himpunan bagian dari himpunan yang lain.</li>
+					<li>Siswa mampu menentukan himpunan-himpunan bagian yang mungkin dibuat dari suatu himpunan.</li>
+					<li>Siswa mampu menyatakan banyak himpunan bagian yang mungkin dibuat dari suatu himpunan.</li>
+				</ol>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			Amatilah Tabel 3.2.1 di bawah ini!
+			<center>
+				<span id="tabel1"><b>Diketahui A = {11, 12, 13}, B = {10, 11, 12, 13}, dan C = {11, 12, 13, 14, 15}</b></span>
+			<table class="tabel2">
+				<tr>
+					<td>
+						<center>Perhatikanlah himpunan A dan himpunan B!</center>
+					</td>
+					<td>
+						<center>Apakah <b>semua</b> anggota himpunan A juga menjadi anggota himpunan B?<br>
+						<button class="cekulang" id="ya1" onclick="ya1()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak1" onclick="tidak1()"><b>Tidak</b></button>
+						<span id="icon1" class="icon"></span>
+						</center>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut1">
+					<td colspan="2">
+						<span class="hilang" id="bnr1">
+							<center>Yup! Jawaban kamu tepat!</center><br>
+						</span>
+						<span class="hilang" id="slh1">
+							<center>Ups! Jawaban kamu masih keliru.</center><br>
+						</span>
+						<b>Semua</b> anggota himpunan A juga menjadi anggota himpunan B<br>
+						<center>
+							A = {<span class="merah">11, 12, 13</span>} dan B = {10, <span class="merah">11, 12, 13</span>}
+						</center>
+						Sehingga dapat dikatakan bahwa, himpunan A merupakan <b>Himpunan Bagian</b> dari himpunan B, dan dapat dinotasikan menjadi : <b>A &sub; B</b>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut2">
+					<td>
+						<center>Perhatikanlah himpunan A dan himpunan C!</center>
+					</td>
+					<td>
+						<center>Apakah <b>semua</b> anggota himpunan A juga menjadi anggota himpunan C?<br>
+						<button class="cekulang" id="ya2" onclick="ya2()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak2" onclick="tidak2()"><b>Tidak</b></button>
+						<span id="icon2" class="icon"></span>
+						</center>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut3">
+					<td colspan="2">
+						<span class="hilang" id="bnr2">
+							<center>Yup! Jawaban kamu tepat!</center><br>
+						</span>
+						<span class="hilang" id="slh2">
+							<center>Ups! Jawaban kamu masih keliru.</center><br>
+						</span>
+						<b>Semua</b> anggota himpunan A juga menjadi anggota himpunan C<br>
+						<center>
+							A = {<span class="merah">11, 12, 13</span>} dan C = {<span class="merah">11, 12, 13</span>, 14, 15}
+						</center>
+						Sehingga dapat dikatakan bahwa, himpunan A merupakan <b>Himpunan Bagian</b> dari himpunan C, dan dapat dinotasikan menjadi : <b>A &sub; C</b>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut4">
+					<td>
+						<center>Perhatikanlah himpunan B dan himpunan C!</center>
+					</td>
+					<td>
+						<center>Apakah <b>semua</b> anggota himpunan B juga menjadi anggota himpunan C?<br>
+						<button class="cekulang" id="ya3" onclick="ya3()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak3" onclick="tidak3()"><b>Tidak</b></button>
+						<span id="icon3" class="icon"></span>
+						</center>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut5">
+					<td colspan="2">
+						<span class="hilang" id="bnr3">
+							<center>Yup! Jawaban kamu tepat!</center><br>
+						</span>
+						<span class="hilang" id="slh3">
+							<center>Ups! Jawaban kamu masih keliru.</center><br>
+						</span>
+						<b>Tidak semua</b> anggota himpunan B juga menjadi anggota himpunan C<br>
+						<center>
+							B = {10, <span class="merah">11, 12, 13</span>} dan C = {<span class="merah">11, 12, 13</span>, 14, 15}
+						</center>
+						Sehingga dapat dikatakan bahwa, himpunan B <b>Bukan Himpunan Bagian</b> dari himpunan C, dan dapat dinotasikan menjadi : <b>B &nsub; C</b>
+					</td>
+				</tr>
+			</table>
+			</center>
+			<br>
+			<div class="hilang" id="lanjut6">
+				Berdasarkan <a href="#tabel1">Tabel 3.2.1</a> diatas, didapatkan syarat <b>himpunan bagian</b>, yaitu :
+				<center>
+        		<div class="pengertian">
+		          Jika <b>semua anggota</b> dari sebuah himpunan juga terkandung di dalam himpunan lain, maka himpunan yang pertama adalah <b>himpunan bagian</b> dari himpunan yang kedua.
+		        </div>
+		        </center>
+		        <br>
+				<img src="../img/catatan.png" class="gambar"><br>
+			    *catatlah ke dalam buku catatanmu &#128516;
+			    <div class="catat">
+			        <ul>
+			          <li>
+			            <b>Himpunan bagian</b> dinotasikan dengan <b>&sub;</b> (subset).
+			          </li>
+			          <li>
+			          	<b>Bukan himpunan bagian</b> dinotasikan dengan <b>&nsub;</b>
+			          </li>
+			        </ul>
+			    </div>
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi3_1/5/materi3_1(5).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi3_2(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi3_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_2(4).html" class="tmbl">4</a>
+				<a href="../5/materi3_2(5).html" class="tmbl">5</a>
+				<a href="../6/materi3_2(6).html" class="tmbl">6</a>
+				<a href="../2/materi3_2(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

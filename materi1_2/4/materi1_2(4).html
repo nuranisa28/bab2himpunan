@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Notasi dan Anggota Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_2(4).css">
+</head>
+<body>
+	<script src="jsmateri1_2(4).js"></script>
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi1_2(1).html"  style="color: white;">Notasi dan Anggota Himpunan</a></div>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				NOTASI DAN ANGGOTA HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<img src="../img/pertanyaan.png" class="gambar"><br> 
+			Perhatikan animasi interaktif di bawah ini!<br>
+			<!-- petunjuk -->
+      		<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      		<div class="tjk1" id="tjk1">
+      			<ul>
+      				<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
+      				<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai. Perhatikanlah setiap arahan yang ditampilkan</li>
+      			</ul>
+			</div>
+			<center>
+				<div class="divscratch" id="applet">
+					<iframe class="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/418167902/?autostart=true" frameborder="0" allowfullscreen></iframe>
+				</div>
+			<img src="../img/sy.png" width="15px"> sebelum menjawab soal di bawah, harap mainkan video animasi interaktifnya terlebih dahulu.</center>
+			<br>
+			Lengkapilah pernyataan berikut berdasarkan informasi yang didapat dari animasi interaktif!<br>
+			<!-- petunjuk -->
+      		<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      		<div class="tjk1" id="tjk2">
+      			<ul>
+      				<li>Pertanyaan ini terdiri dari 5 soal.</li>
+      				<li>Isilah bagian kosong pada soal dengan cara menarik salah satu pilihan yang ada pada kotak abu-abu dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
+      				<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+      				<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span> disertai dengan pembahasan</li>
+          			<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      				<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      			</ul>
+			</div>
+			<h5>*jika kamu menggunakan perangkat HP, tekan sedikit agak lama untuk menarik pilihan yang ada pada kotak abu-abu</h5>
+			<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">2</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya3')">3</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya4')">4</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya5')">5</button>
+			    </div>
+			    <!--pertanyaan 1-->
+			    <div class="pertanya tanyaAktif" id="tanya1">
+			    	<center>
+	                <table class="kotak">
+	                	<tr id="pil1" ondragover="allowDrop(event)">
+	                		<td draggable='true' ondragstart='drag(event)' id='p11' class='pilihan'>∈</td>
+	                		<td draggable='true' ondragstart='drag(event)' id='p12' class='pilihan'>∉</td>
+	                	</tr>
+	              	</table>
+	            	<br>
+	            	Jika C adalah himpunan objek wisata susur sungai, maka Pasar Terapung Lok Baintan <span id="no1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> C.
+	            	<span id="icon1" class="icon"></span>
+	            	</center>
+	            	<br>
+	            	<button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+					<button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button>
+					<br>
+	            	<div class="bahas" id="bahasbnr1">
+						<span class="bnr">Jawaban Kamu Benar</span><br><br>
+						<b><u>Pembahasan :</u></b><br>
+						Pasar Terapung Lok Baintan merupakan <b>anggota</b> dari himpunan C. Sehingga dapat dinotasikan :<br>
+						<center>Pasar Terapung Lok Baintan &isin; C.</center>
+					</div>
+					<div class="bahas" id="bahasslh1">
+						<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"
+					</div>
+			    </div>
+
+			    <!--pertanyaan 2-->
+			    <div class="pertanya" id="tanya2">
+			    	<center>
+			    	<table class="kotak">
+			    		<tr id="pil2" ondragover="allowDrop(event)">
+			    			<td draggable='true' ondragstart='drag(event)' id='p21' class='pilihan'>∈</td>
+			    			<td draggable='true' ondragstart='drag(event)' id='p22' class='pilihan'>∉</td>
+			    		</tr>
+			    	</table>
+	            	<br>
+	            	Jika D adalah himpunan objek wisata susur sungai, maka Masjid Raya Sabilal Muhtadin <span id="no2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> D.
+	            	<span id="icon2" class="icon"></span>
+	            	</center>
+	            	<br>
+	            	<button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+					<button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button>
+					<br>
+	            	<div class="bahas" id="bahasbnr2">
+						<span class="bnr">Jawaban Kamu Benar</span><br><br>
+						<b><u>Pembahasan :</u></b><br>
+						Masjid Raya Sabilal Muhtadin <b>bukan anggota</b> dari himpunan D. Sehingga dapat dinotasikan :<br>
+						<center>Masjid Raya Sabilal Muhtadin &notin; D.</center>
+					</div>
+					<div class="bahas" id="bahasslh2">
+						<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"
+					</div>
+				</div>
+
+				<!--pertanyaan 3-->
+			    <div class="pertanya" id="tanya3">
+			    	<center>
+			    	<table class="kotak2">
+			    		<tr id="pil3"  ondragover="allowDrop(event)">
+			    			<td class='pilihan' id='p31' draggable='true' ondragstart='drag(event)'>Museum Wasaka</td>
+			    			<td class='pilihan' id='p32' draggable='true' ondragstart='drag(event)'>Museum Lambung Mangkurat</td>
+			    		</tr>
+			    	</table>
+	            	<br>
+	            	Jika A adalah himpunan objek wisata susur sungai, maka Rumah Makan Soto Banjar Bang Amat, Pasar Terapung Lok Baintan, <span id="no3" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>, Kampung Hijau &isin; A.<br><br>
+	            	<span id="icon3" class=""></span>
+	            	</center>
+	            	<br>
+	            	<button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+					<button class="cekulang ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button>
+					<br>
+	            	<div class="bahas" id="bahasbnr3">
+						<span class="bnr">Jawaban Kamu Benar</span><br><br>
+						<b><u>Pembahasan :</u></b><br>
+						Museum Wasaka merupakan <b>anggota</b> dari himpunan A.
+					</div>
+					<div class="bahas" id="bahasslh3">
+						<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"
+					</div>
+				</div>
+
+				<!--pertanyaan 4-->
+			    <div class="pertanya" id="tanya4">
+			    	<center>
+			    	<table class="kotak3">
+			    		<tr id="pil4" ondragover="allowDrop(event)">
+			    			<td class='pilihan' id='p41' draggable='true' ondragstart='drag(event)'>anggota</td>
+			    			<td class='pilihan' id='p42' draggable='true' ondragstart='drag(event)'>bukan anggota</td>
+			    		</tr>
+			    	</table>
+	            	<br>
+	            	Rumah Makan Soto Banjar Bang Amat merupakan <span id="no4" class="jwb3" ondrop="drop(event)" ondragover="allowDrop(event)"></span> dari himpunan objek wisata susur sungai.
+	            	<span id="icon4" class="icon"></span>
+	            	</center>
+	            	<br>
+	            	<button class="cekulang" onclick="cek4()"><b>Cek Jawaban</b></button>
+					<button class="cekulang ulang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button>
+					<br>
+	            	<div class="bahas" id="bahasbnr4">
+						<span class="bnr">Jawaban Kamu Benar</span><br><br>
+						<b><u>Pembahasan :</u></b><br>
+						Rumah Makan Soto Banjar Bang Amat merupakan <b>anggota</b> dari himpunan objek wisata susur sungai.
+					</div>
+					<div class="bahas" id="bahasslh4">
+						<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"
+					</div>
+				</div>
+
+				<!--pertanyaan 5-->
+			    <div class="pertanya" id="tanya5">
+			    	<center>
+			    	<table class="kotak3">
+			    		<tr id="pil5" ondragover="allowDrop(event)">
+			    			<td class='pilihan' id='p51' draggable='true' ondragstart='drag(event)'>anggota</td>
+			    			<td class='pilihan' id='p52' draggable='true' ondragstart='drag(event)'>bukan anggota</td>
+			    		</tr>
+			    	</table>
+	            	<br>
+	            	Pasar Intan Martapura <span id="no5" class="jwb3" ondrop="drop(event)" ondragover="allowDrop(event)"></span> dari himpunan objek wisata susur sungai.
+	            	<span id="icon5" class="icon"></span>
+	            	</center>
+	            	<br>
+	            	<button class="cekulang" onclick="cek5()"><b>Cek Jawaban</b></button>
+					<button class="cekulang ulang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button>
+					<br>
+	            	<div class="bahas" id="bahasbnr5">
+						<span class="bnr">Jawaban Kamu Benar</span><br><br>
+						<b><u>Pembahasan :</u></b><br>
+						Pasar Intan Martapura <b> bukan anggota</b> dari himpunan objek wisata susur sungai.
+					</div>
+					<div class="bahas" id="bahasslh5">
+						<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          <ul>
+	            <li><b>Anggota himpunan</b> dinotasikan dengan <b>&isin;</b>.</li>
+            	<li><b>Bukan anggota himpunan</b> dinotasikan dengan <b>&notin;</b>.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../3/materi1_2(3).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi1_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi1_2(3).html" class="tmbl">3</a>
+				<a href="materi1_2(4).html" class="tmbl navaktif">4</a>
+				<a href="../../materi1_3/1/materi1_3(1).html" class="tmbl">Materi Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

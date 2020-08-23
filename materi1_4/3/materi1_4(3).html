@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Berhingga dan Himpunan tak Berhingga</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_4(3).css">
+</head>
+<body>
+	<script src="jsmateri1_4(3).js"></script>
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html" >Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi1_4(1).html" style="color: white;">Himpunan Berhingga dan Himpunan tak Berhingga</a></div>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BERHINGGA DAN HIMPUNAN TAK BERHINGGA
+			</div>
+		</center>
+		<div class="konten">
+			<img src="../img/pertanyaan.png" class="gambar"><br> 
+			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
+			<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
+			    </div>
+			    <!--pertanyaan 1-->
+			    <div class="pertanya tanyaAktif" id="tanya1">
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk1">
+      					<ul>
+      						<li>Isilah bagian kosong pada tabel "Soal" dengan cara menarik salah satu pilihan yang ada pada tabel "Pilihan" dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
+      						<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+      						<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span> disertai dengan pembahasan</li>
+          					<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+					<!-- isi pertanyaan -->
+					Dari himpunan-himpunan yang diberikan pada tabel “Pilihan”, tentukanlah himpunan mana yang merupakan himpunan berhingga dan himpunan mana yang merupakan himpunan tak berhingga. Jawablah dengan melengkapi tabel “Soal”!
+					<br>
+					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
+					<!--tabel pilihan-->
+					<center>
+						<table class="tabel1">
+							<tr>
+								<th colspan="2">Pilihan</th>
+							</tr>
+							<tr>
+							  <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil2"> 
+								<span class="pilihan" id="p2" draggable="true" ondragstart="drag(event)">B = {5, 10, 15, ...}</span>
+				              </td>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil3">
+				                <span class="pilihan" id="p3" draggable="true" ondragstart="drag(event)">C = {1, 2, 4, 7, 10}</span>
+				              </td>
+							</tr>
+							<tr>
+							  <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil7">
+				                <span class="pilihan" id="p7" draggable="true" ondragstart="drag(event)">G = {1, 2, 4, ..., 256}</span>
+				              </td>
+				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil8">
+				                <span class="pilihan" id="p8" draggable="true" ondragstart="drag(event)">H = {0, 1, 2, 3, ...}</span>
+				              </td>
+							</tr>
+							<tr>
+							  <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil9">
+				                <span class="pilihan" id="p9" draggable="true" ondragstart="drag(event)">I = {7, 14, 21, 28, ...}</span>
+				              </td>
+				              <td colspan="3" ondrop="drop(event)" ondragover="allowDrop(event)" id="pil10">
+				                <span class="pilihan" id="p10" draggable="true" ondragstart="drag(event)">J = {1, 4, 9, 16, 25}</span>
+				              </td>
+							</tr>
+						</table>
+					</center>
+					<br>
+					<!-- tabel soal-->
+					<center>
+						<table class="tabel1">
+				          <tr>
+				            <th colspan="2">Soal</th>
+				          </tr>
+				          <tr>
+				            <th>Himpunan Berhingga</th>
+				            <th>Himpunan tak Berhingga</th>
+				          </tr>
+				          <tr>
+				            <td>
+				              <span id="b1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+				              <span id="iconb1"></span>
+				            </td>
+				            <td>
+				              <span id="tb1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+				              <span id="icontb1"></span>
+				            </td>
+				          </tr>
+				          <tr>
+				            <td>
+				              <span id="b2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+				              <span id="iconb2"></span>
+				            </td>
+				            <td>
+				              <span id="tb2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+				              <span id="icontb2"></span>
+				            </td>
+				          </tr>
+				          <tr>
+				            <td>
+				              <span id="b3" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+				              <span id="iconb3"></span>
+				            </td>
+				            <td>
+				              <span id="tb3" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+				              <span id="icontb3"></span>
+				            </td>
+				          </tr>
+				        </table>
+				        <button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
+				        <button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+				        <div class="bahas" id="bahasbnr1">
+							<center><span class="bnr">Jawaban Kamu Benar</span></center>
+							<ol>
+								<li>
+									Himpunan Berhingga :
+									<ul>
+										<li>C = {1, 2, 4, 7, 10}</li>
+										<li>G = {1, 2, 4, ..., 256}</li>
+										<li>J = {1, 4, 9, 16, 25}</li>
+									</ul>
+								</li>
+								<li>
+									Himpunan tak Berhingga :
+									<ul>
+										<li>B = {5, 10, 15, ...}</li>
+										<li>H = {0, 1, 2, 3, ...}</li>
+										<li>I = {7, 14, 21, 28, ...}</li>
+									</ul>
+								</li>
+							</ol>
+						</div>
+						<div class="bahas" id="bahasslh1">
+							<center><span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"</center>
+						</div>
+					</center>
+			    </div>
+
+			    <!--pertanyaan 2-->
+			    <div class="pertanya" id="tanya2">
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk2">
+      					<ul>
+      						<li>Pertanyaan ini berupa isian</li>
+      						<li>Isilah kolom jawaban dengan jawaban yang tepat</li>
+      						<li>Setelah menjawab, tekan tombol "Cek Jawaban"</li>
+      						<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span></li>
+      						<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      						<li>Contoh cara menjawab : <b>n(A) = 3</b></li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+
+					<!-- isi pertanyaan -->
+					<!--soal 1-->
+					<div class="soal soalAktif" id="soal1">
+						Soal 1 dari 5<br><br>
+						Tentukanlah banyak anggota dari J = {-5, -4, -3, -2, -1}!
+						<br><br>
+						Jawaban : <br>
+						<input type="text" class="input1" id="n1">
+						 = 
+						<input type="text" class="input2" id="a1">
+						<span id="icon1" class="icon"></span>
+						<br>
+						<button class="cekulang" onclick="cek21()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulang21()" id="ulang21"><b>Ulang</b></button><br><br>
+						<span id="ket1"></span>
+					</div>
+
+					<!--soal 2-->
+					<div class="soal" id="soal2">
+						Soal 2 dari 5<br><br>
+						Tentukanlah banyak anggota dari D = {bilangan cacah kurang dari 6}!
+						<br><br>
+						Jawaban : <br>
+						<input type="text" class="input1" id="n2">
+						 = 
+						<input type="text" class="input2" id="a2">
+						<span id="icon2" class="icon"></span>
+						<br>
+						<button class="cekulang" onclick="cek22()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulang22()" id="ulang22"><b>Ulang</b></button><br><br>
+						<span id="ket2"></span>
+					</div>
+
+					<!--soal 3-->
+					<div class="soal" id="soal3">
+						Soal 3 dari 5<br><br>
+						Tentukanlah banyak anggota dari K = {25, 30, 35, ..., 50}!
+						<br><br>
+						Jawaban : <br>
+						<input type="text" class="input1" id="n3">
+						 = 
+						<input type="text" class="input2" id="a3">
+						<span id="icon3" class="icon"></span>
+						<br>
+						<button class="cekulang" onclick="cek23()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulang23()" id="ulang23"><b>Ulang</b></button><br><br>
+						<span id="ket3"></span>
+					</div>
+
+					<!--soal 4-->
+					<div class="soal" id="soal4">
+						Soal 4 dari 5<br><br>
+						Tentukanlah banyak anggota dari L = {x | 1 < x &le; 14, x &isin; bilangan genap}!
+						<br><br>
+						Jawaban : <br>
+						<input type="text" class="input1" id="n4">
+						 = 
+						<input type="text" class="input2" id="a4">
+						<span id="icon4" class="icon"></span>
+						<br>
+						<button class="cekulang" onclick="cek24()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulang24()" id="ulang24"><b>Ulang</b></button><br><br>
+						<span id="ket4"></span>
+					</div>
+
+					<!--soal 5-->
+					<div class="soal" id="soal5">
+						Soal 5 dari 5<br><br>
+						Tentukanlah banyak anggota dari H = {x | 3 &le; x &le; 10, x &isin; bilangan bulat}!
+						<br><br>
+						Jawaban : <br>
+						<input type="text" class="input1" id="n5">
+						 = 
+						<input type="text" class="input2" id="a5">
+						<span id="icon5" class="icon"></span>
+						<br>
+						<button class="cekulang" onclick="cek25()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulang25()" id="ulang25"><b>Ulang</b></button><br><br>
+						<span id="ket5"></span>
+					</div>
+
+					<!--tombol nomor soal-->
+					<center>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        	<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+					</center>
+			    </div>
+			</div>
+			<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          <ul>
+	            <li><b>Himpunan berhingga</b> adalah himpunan yang memiliki banyak anggota berhingga</li>
+            	<li><b>Himpunan tak berhingga</b> adalah himpunan yang memiliki banyak anggota tak hingga.</li>
+            	<li>Banyak anggota pada suatu himpunan, misal pada himpunan G, dapat dinotasikan dengan <b>n(G)</b>.</li>
+            	<li>Jika himpunan G merupakan himpunan tak berhingga, maka untuk menyebutkan banyak anggotanya adalah <b>n(G) = &infin;</b>.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../2/materi1_4(2).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_4(1).html" class="tmbl">1</a>
+				<a href="../2/materi1_4(2).html" class="tmbl">2</a>
+				<a href="materi1_4(3).html" class="tmbl navaktif">3</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

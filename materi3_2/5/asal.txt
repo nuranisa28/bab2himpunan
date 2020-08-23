@@ -1,0 +1,9 @@
+ <area shape="rect" coords="134,34,167,0" onclick="penjelasan(event,'n0')" class="klik">
+		          <area shape="rect" coords="117,67,184,34" onclick="penjelasan(event,'n1')" class="klik">
+		          <area shape="rect" coords="100,99,199,68" onclick="penjelasan(event,'n2')" class="klik">
+		          <area shape="rect" coords="84,133,216,101" onclick="penjelasan(event,'n3')" class="klik">
+		          <area shape="rect" coords="67,166,233,134" onclick="penjelasan(event,'n4')" class="klik">
+		          <area shape="rect" coords="51,199,249,167" onclick="penjelasan(event,'n5')" class="klik">
+		          <area shape="rect" coords="33,233,266,199" onclick="penjelasan(event,'n6')" class="klik">
+		          <area shape="rect" coords="17,266,283,234" onclick="penjelasan(event,'n7')" class="klik">
+		          <area shape="rect" coords="0,299,299,267" onclick="penjelasan(event,'n8')" class="klik">

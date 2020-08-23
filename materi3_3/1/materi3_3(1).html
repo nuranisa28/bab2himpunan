@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Kuasa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_3(1).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<a href="../../materi3_2/1/materi3_2(1).html">Himpunan Bagian</a>
+	          		<div class="aktif2"><a href="materi3_3(1).html" style="color: white;">Himpunan Kuasa</a></div>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN KUASA
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				Siswa sudah mampu menentukan himpunan-himpunan bagian yang mungkin dibuat dari suatu himpunan.
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan siswa mampu menyatakan himpunan kuasa dari suatu himpunan.
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			<p class="prf">Himpunan kuasa adalah himpunan yang anggotanya merupakan <u>himpunan-himpunan bagian dari suatu himpunan</u> dan dipisahkan dengan tanda koma (,).</p>
+			<div class="kuasa">
+				<ul>
+					<li>Himpunan kuasa dari suatu himpunan, misal pada himpunan A, dinotasikan dengan <b>P(A)</b>.</li>
+					<li>Banyak anggota himpunan kuasa dari himpunan A dinotasikan dengan <b>n(P(A))</b>.</li>
+					<li>Rumus untuk menyatakan banyak anggota himpunan kuasa <u>sama</u> dengan rumus menyatakan banyak himpunan bagian dari suatu himpunan, yaitu <b>2<sup>n</sup></b> dengan n adalah banyak anggota himpunan.</li>
+				</ul>
+			</div>
+			Perhatikan contoh berikut.<br>
+			<div class="pengertian">
+				<!-- petunjuk -->
+	      		<div class="kliktunjuk"><a href="#" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      		<div class="tjk1" id="tjk1">
+	      			<ul>
+	      				<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+	      				<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b>.</li>
+	      				<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b>.</li>
+	      				<li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+	      			</ul>
+				</div>
+				Bagaimana menyatakan himpunan kuasa dari A = {5,6}?<br>
+				<ol>
+					<li>
+						Tentukan terlebih dahulu himpunan bagian yang mungkin dibuat dari A = {5,6}<br>
+						<table class="tabel1">
+	      					<tr>
+	      						<th colspan="2">Himpunan bagian yang mungkin dibuat dari A = {5,6}</th>
+	      					</tr>
+	      					<tr>
+	      						<th>
+	      							Himpunan bagian dengan :
+	      						</th>
+	      						<th>
+	      							Himpunan
+	      						</th>
+	      					</tr>
+	      					<tr>
+	      						<td>0 anggota</td>
+	      						<td>
+	      							{ }
+	      						</td>
+	      					</tr>
+	      					<tr>
+	      						<td>1 anggota</td>
+	      						<td>
+	      							{<input type="text" class="jawab2" maxlength="1">} , 
+	      							{<input type="text" class="jawab2" maxlength="1">}
+	      						</td>
+	      					</tr>
+	      					<tr class="hilang" id="lanjut1">
+	      						<td>2 anggota</td>
+	      						<td>
+	      							{<input type="text" class="jawab4">}
+	      						</td>
+	      					</tr>
+	      				</table>
+	      				<span class="hilang" id="lanjut2">
+	      					Didapatkan himpunan bagian dari himpunan A adalah { }, {5}, {6}, dan {5,6}.
+	      				</span>
+					</li>
+					<li class="hilang" id="lanjut3">
+						Karena anggota himpunan kuasa adalah himpunan bagian dari suatu himpunan yang dipisahkan dengan tanda koma (,), maka himpunan kuasa dari A = {5,6} adalah :
+						<center><b>P(A) = {{ }, {5}, {6}, {5,6}}</b></center>
+					</li>
+				</ol>
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi3_2/6/materi3_2(6).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi3_3(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi3_3(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_3(3).html" class="tmbl">3</a>
+				<a href="../2/materi3_3(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri3_3(1).js"></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-image: url(../img/bg1.png);
+	background-size: 35%;
+  font-family: Bahnschrift;
+}
+
+header{
+	width: 100%;
+	height: 40px;
+	background-color: rgb(3, 31, 75);
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.bar{
+  float: left;
+  margin-left: 10px;
+  width: 8%;
+}
+
+.home{
+	width: 3%;
+	float: right;
+	margin-right: 10px;
+}
+
+aside{
+	width: 18%;
+	float: left;
+	height: 567px;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(168, 194, 251);
+  padding-top: 5%;
+  overflow: auto;
+  display: block;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 3% 0px 3% 10%;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: Bahnschrift;
+}
+
+.sidenav a{
+	width: 90%;
+}
+
+.dropdown-btn{
+	width: 100%;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+  color: white;
+  background-color: rgb(3, 31, 75);
+}
+
+.aktif {
+  background-color: rgb(3, 31, 75);
+  color: white;
+}
+
+.sidenav a:hover{
+  background-color: #187bcd;
+  color: white;
+}
+
+.aktif2 {
+  background-color: #187bcd;
+  color: white;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(3, 31, 75);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: rgb(208, 223, 255);
+  padding-left: 8px;
+}
+
+.dropdown-containerr {
+  display: block;
+  background-color: rgb(208, 223, 255);
+  padding-left: 8px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 20px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dafis-hilang{
+  display: none;
+}
+
+main{
+	height: 100%;
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.main{
+  width: 82%;
+}
+
+.main-penuh{
+  width: 100%;
+  float: none;
+  padding: 0px;
+}
+
+.subbab{
+  width: 100%;
+  background-color: #187bcd;
+  color: white;
+  padding: 5px 0px 5px 0px;
+  font-size: 30px;
+}
+
+.konten{
+	margin: 10px;
+	background-color: white;
+	height: 447px;
+	padding: 15px 15px 15px 15px;
+  overflow: auto;
+  border: 3px dotted rgb(168, 194, 251);
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.gambar{
+  width: 17%;
+  margin-bottom: 3px;
+}
+
+.kliktunjuk{
+  margin: 5px 0px 5px 0px;
+  background-color: rgb(168, 194, 251);
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 36%;
+  font-size: 16px;
+}
+
+.kliktunjuk a{
+  text-decoration: none;
+  color: black;
+}
+
+.tjk1{
+  min-height: 5px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px 0px 5px 0px;
+  display: block !important;
+  margin-bottom: 20px;
+}
+
+.tjk1 li{
+  margin: 0px 25px 5px 35px;
+}
+
+.hilang {
+    display: none !important;
+}
+
+.bnr{
+  color: green;
+}
+
+.slh{
+  color: red;
+}
+
+.pertanyaan{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.number{
+  overflow: hidden;
+  background-color:#ddd;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.number button {
+  background-color: inherit;
+  float: left;
+  border: 2px solid;
+  border-color: rgb(3, 31, 75);
+  border-radius: 10px 10px 0px 0px;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  transition: 0.3s;
+  width: 33.33%;
+  font-size: 16px;
+}
+
+.number .tmblAktif {
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid white;
+}
+
+.pertanya{
+  min-height: 20px;
+  border: 2px solid rgb(3, 31, 75);
+  border-top: 2px solid white;
+  border-radius: 0px 0px 10px 10px;
+  padding: 15px;
+  display: none;
+}
+
+.tanyaAktif{
+  display: block;
+}
+
+.input1{
+  text-align: center;
+  width: 4%;
+  height: 25px;
+}
+
+.input2{
+  text-align: center;
+  width: 28%;
+  height: 25px;
+}
+
+.input3{
+  text-align: center;
+  width: 15%;
+  height: 25px;
+}
+
+.input4{
+  text-align: center;
+  width: 25%;
+  height: 25px;
+}
+
+.input5{
+  text-align: center;
+  width: 11%;
+  height: 25px;
+}
+
+.input6{
+  text-align: center;
+  width: 6%;
+  height: 25px;
+}
+
+.var{
+  width: 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+.boxmerah{
+  border: 2px solid red;
+}
+
+.icon{
+  margin-left: 10px;
+}
+
+.cekulang{
+  padding: 8px;
+  cursor: pointer;
+}
+
+.ulang{
+  display: none !important;
+}
+
+.bahas{
+  display: none !important;
+  margin-top: 8px;
+}
+
+.tampil{
+  display: inline-block !important;
+}
+
+.info{
+  font-size: 14px;
+}
+
+.soal1, .soal2, .soal3{
+  display: none;
+}
+
+.soalAktif{
+  display: block;
+}
+
+.stnomor{
+  background-color: rgb(168, 194, 251);
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.rangkum{
+  width: 99%;
+  min-height: 10px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  margin-top: 5px;
+  padding: 5px 0px 5px 0px;
+}
+
+.rangkum li{
+  margin: 5px 20px 5px 35px;
+  min-width: 40%;
+}
+
+.tmbl{
+  height: 20px;
+  background-color: rgb(168, 194, 251);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.nav a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 13px;
+  font-size: 14px;
+}
+
+.navaktif, .nmrAktif{
+  background-color: #187bcd;
+  color: white;
+}
+
+.top{
+  display: none;
+}
+
+@media screen and (max-width: 992px){
+  header{
+    width: 100%;
+    height: auto;
+  }
+  .bar{
+    width: 22%;
+    margin-top: 3px;
+  }
+  .home{
+    width: 8%;
+  }
+  aside{
+    display: none;
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .sidenav{
+    width: 100%;
+    height: auto;
+    position: none;
+    margin-top: 0px;
+    padding-top: 2%;
+  }
+  .sidenav a, .dropdown-btn {
+    padding: 2% 0px 2% 7%;
+    font-size: 14px;
+  }
+  .dafis-hilang{
+    display: block;
+  }
+  main{
+    width: 100%;
+    float: none;
+    font-size: 14px;
+  }
+  .main{
+    width: 100%;
+  }
+  .subbab{
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .konten{
+    margin: 0px 10px 10px 10px;
+    height: auto;
+  }
+  .gambar{
+    width: 37%;
+  }
+  .kliktunjuk{
+    width: 93%;
+    font-size: 12px;
+  }
+  .number button{
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .pertanya{
+    height: auto;
+  }
+  .input1{
+    width: 5%;
+    height: 20px;
+  }
+  .input2{
+    width: 70%;
+    height: 20px;
+  }
+  .input3{
+    width: 38%;
+    height: 20px;
+  }
+  .input4{
+    width: 63%;
+    height: 20px;
+  }
+  .input5{
+    width: 28%;
+    height: 20px;
+  }
+  .input6{
+    width: 10%;
+    height: 20px;
+  }
+  .cekulang{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .info{
+    font-size: 12px;
+  }
+  .stnomor{
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .tmbl{
+    height: 15px;
+  }
+  .nav a{
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+  .top {
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    border: 0px;
+    border-radius: 65px;
+    background-color: #187bcd;
+  }
+  .top:hover {
+    background-color: rgb(168, 194, 251);
+    color: black;
+  }
+}

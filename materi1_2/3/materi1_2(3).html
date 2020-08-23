@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Notasi dan Anggota Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_2(3).css">
+</head>
+<body>
+	
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi1_2(1).html"  style="color: white;">Notasi dan Anggota Himpunan</a></div>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				NOTASI DAN ANGGOTA HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/mencoba.png" class="gambar"><br>
+           	Cobalah menjawab soal di bawah ini!<br>
+           	<div class="contoh">
+           		<p class="prf">Diketahui himpunan nama-nama hari dalam seminggu yaitu Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, dan Minggu. Jika <b>A adalah himpunan nama hari yang berakhiran u</b>, maka sebutkanlah anggota himpunan A!<br><br>
+	           	<!-- petunjuk -->
+	      		<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      		<div class="tjk1" id="tjk1">
+	      			<ul>
+	      				<li>Isilah kotak kosong dengan dengan <b>1 nama hari</b>.</li>
+	      				<li>Setelah menjawab soal, tekan tombol "Cek Jawaban".</li>
+			            <li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b>.</li>
+      					<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b> dan akan muncul tombol "Ulang".</li>
+      					<li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
+			            <li>Pembahasan akan muncul jika semua jawaban kamu benar.</li>
+	      			</ul>
+	      		</div>
+	      		<br>
+	      		<!--tabel-->
+	      		<center>
+	      		<table class="tabel1">
+	      			<tr>
+	      				<th>Anggota himpunan A</th>
+	      			</tr>
+	      			<tr>
+	      				<td>
+	      					<input id="jawab0" class="jawab" type="text" placeholder="...." maxlength="6">
+	      					<span class="icon" id="icon0"></span>
+	      					<br>
+	      					<span class="ket "></span>
+	      				</td>
+	      			</tr>
+	      			<tr id="lanjut0" class="">
+	      				<td>
+	      					<input id="jawab1" class="jawab" type="text" placeholder="...." maxlength="6">
+	      					<span class="icon" id="icon1"></span>
+	      					<br>
+	      					<span class="ket "></span>
+	      				</td>
+	      			</tr>
+	      			<tr id="lanjut1" class="">
+	      				<td>
+	      					<input id="jawab2" class="jawab" type="text" placeholder="...." maxlength="6">
+	      					<span class="icon" id="icon2"></span>
+	      					<br>
+	      					<span class="ket "></span>
+	      				</td>
+	      			</tr>
+	      		</table>
+	      		<button class="cekulang" onclick="cek()"><b>Cek Jawaban</b></button>
+	      		<button class="cekulang hilang" id="ulang" onclick="ulang()"><b>Ulang</b></button>
+	      		</center>
+		        <br>
+		        <!--kesimpulan-->
+		        <div id="lanjut2" class="hilang">
+		        	Berdasarkan jawaban di atas, dapat disimpulkan bahwa Rabu, Sabtu, dan Minggu merupakan <b>anggota</b> dari himpunan A. Sehingga :<br>
+		        	<center><b>Rabu, Sabtu, Minggu &isin; A.</b></center><br>
+		        	Sedangkan nama hari selain 3 hari tadi, yaitu Senin, Selasa, Kamis, dan Jumat <b> bukan merupakan anggota</b> dari himpunan A. Sehingga :<br>
+		        	<center><b>Senin, Selasa, Kamis, Jumat &notin; A</b></center>
+		        </div>
+           	</div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../2/materi1_2(2).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi1_2(2).html" class="tmbl">2</a>
+				<a href="materi1_2(3).html" class="tmbl navaktif">3</a>
+				<a href="../4/materi1_2(4).html" class="tmbl">4</a>
+				<a href="../4/materi1_2(4).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+
+	<script src="jsmateri1_2(3).js"></script>
+</body>
+</html>

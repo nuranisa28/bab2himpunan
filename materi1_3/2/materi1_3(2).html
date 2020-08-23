@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Menyatakan Suatu Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_3(2).css">
+</head>
+<body>
+	<script src="jsmateri1_3(2).js"></script>
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html" >Notasi dan Anggota Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi1_3(1).html" style="color: white;">Menyatakan Suatu Himpunan</a></div>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				MENYATAKAN SUATU HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/mengingat.png" class="gambar"><br>
+			<div class="review">
+				Masih ingatkah kalian dengan simbol <b><, >, &le;, dan &ge;</b>?<br>
+				<center>
+				<table class="tabel1">
+					<tr>
+						<th>Simbol</th>
+						<th>Keterangan</th>
+					</tr>
+					<tr>
+						<td><</td>
+						<td>kurang dari</td>
+					</tr>
+					<tr>
+						<td>></td>
+						<td>lebih dari</td>
+					</tr>
+					<tr>
+						<td>&le;</td>
+						<td>kurang dari sama dengan</td>
+					</tr>
+					<tr>
+						<td>&ge;</td>
+						<td>lebih dari sama dengan</td>
+					</tr>
+				</table>
+				</center>
+				Misalkan :
+				<ul>
+					<li>bilangan asli <u>kurang dari</u> 3. Ini artinya angka 3 <u>tidak ikut disebutkan</u>.</li>
+	            	<li>bilangan asli <u>lebih dari</u> 5. Ini artinya angka 5 <u>tidak ikut disebutkan</u>.</b></li>
+	            	<li>bilangan asli <u>kurang dari sama dengan</u> 3. Ini artinya angka 3 <u>ikut disebutkan</u>.</li>
+	            	<li>bilangan asli <u>lebih dari sama dengan</u> 5. Ini artinya angka 5 <u>ikut disebutkan</u>.</b></li>
+				</ul>
+			</div>
+			<br>
+			<br>
+			<img src="../img/catatan.png" class="gambar"><br>
+		    *catatlah ke dalam buku catatanmu &#128516;
+		    <div class="catat">
+	        	<center>Apa perbedaan dari kata <b>"antara"</b> dan <b>"dari ... sampai ..."</b>?</center>
+	        	<br>
+	        	Pada bab himpunan, kamu akan sering menjumpai soal yang meminta kamu menyebutkan anggota dari suatu himpunan bilangan. Contoh :
+		        <ol>
+		          <li>
+		            A adalah himpunan bilangan asli <u>antara</u> 1 dan 5<br>
+		            Karena ada kata <b>antara</b>, maka 1 < ... < 5. Sehingga anggota himpunan A adalah 2, 3, dan 4 (angka 1 dan 5 tidak ikut disebutkan).
+		          </li>
+		          <li>
+		          	B adalah himpunan bilangan asli <u>dari</u> 5 <u>sampai</u> 8<br>
+		          	Karena ada kata <b>dari ... sampai ...</b>, maka 5 &le; ... &le; 8. Sehingga anggota himpunan B adalah 5, 6, 7, dan 8 (angka 5 dan 8 ikut disebutkan).
+		          </li>
+		        </ol>
+		    </div>
+		   	<br>
+		   	<br>
+			<img src="../img/amati.png" class="gambar"><br>
+           	Perhatikanlah pembahasan pada video animasi di bawah ini!<br>
+	        <!-- petunjuk -->
+	      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      	<div class="tjk1" id="tjk1">
+	      		<ul>
+	      			<li>Tekan icon <img src="../img/play.png" width="16px"> untuk memulai video animasi di bawah.</li>
+      				<li>Tekan <img src="../img/perbesar.jpg" width="16px"> untuk membuat video menjadi <i>full screen</i>.</li>
+	      		</ul>
+	      	</div>
+	      	<center>
+	      		<video class="video" controls>
+					<source src="video/materi1_3.mp4" type="video/mp4" />
+				</video>
+	      	</center>
+	      	<br>
+	      	<img src="../img/contoh.png" class="gambar"><br>
+	      	Pelajarilah contoh soal berikut!
+	      	<!--nomor contoh-->
+			<div class="number">
+			    <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">1</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">2</button>
+			</div>
+			<!--contoh 1-->
+			<div class="pertanya tanyaAktif" id="tanya1">
+				Diketahui A adalah himpunan bilangan asli kurang dari sama dengan 5. Nyatakanlah himpunan tersebut dengan metode deskripsi, metode bersyarat, dan metode tabulasi!<br><br>
+				<b>Penyelesaian :</b><br>
+				<ol type="a">
+					<li>
+						Metode deskripsi<br>
+						A = {bilangan asli kurang dari sama dengan 5}
+					</li>
+					<li>
+						Metode bersyarat<br>
+						A = {x | x &le; 5, x &isin; bilangan asli}
+					</li>
+					<li>
+						Metode tabulasi<br>
+						A = {1, 2, 3, 4, 5}
+					</li>
+				</ol>
+			</div>
+			<!--contoh 2-->
+			<div class="pertanya" id="tanya2">
+				Diketahui G adalah himpuan bilangan genap kurang dari 10. Nyatakanlah himpunan G dengan metode deskripsi, metode bersyarat, dan metode tabulasi!<br><br>
+				<b>Penyelesaian :</b><br>
+				<ol type="a">
+					<li>
+						Metode deskripsi<br>
+						G = {bilangan genap kurang dari 10}
+					</li>
+					<li>
+						Metode bersyarat<br>
+						G = {x | x < 10, x &isin; bilangan genap}
+					</li>
+					<li>
+						Metode tabulasi<br>
+						G = {2, 4, 6, 8}
+					</li>
+				</ol>
+			</div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi1_3(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_3(1).html" class="tmbl">1</a>
+				<a href="materi1_3(2).html" class="tmbl navaktif">2</a>
+				<a href="../3/materi1_3(3).html" class="tmbl">3</a>
+				<a href="../4/materi1_3(4).html" class="tmbl">4</a>
+				<a href="../3/materi1_3(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

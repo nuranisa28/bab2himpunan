@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Menyatakan Suatu Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_3(3).css">
+</head>
+<body>
+	
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html" >Notasi dan Anggota Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi1_3(1).html" style="color: white;">Menyatakan Suatu Himpunan</a></div>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				MENYATAKAN SUATU HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/mencoba.png" class="gambar"><br>
+           	Cobalah jawab soal di bawah ini!<br>
+           	<!-- petunjuk -->
+	      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan pertunjuk)<br></a></div>
+	      	<div class="tjk1" id="tjk1">
+	      		<ul>
+	      			<li>Setiap kamu mengklik kotak jawaban, warna kata pada soal akan berubah menjadi <span class="biru">warna biru</span>. Kata yang berubah menjadi <span class="biru">warna biru</span> berarti petunjuk jawaban.</li>
+			        <li>Isilah kotak isian sesuai dengan petunjuk yang muncul pada soal.</li>
+			        <li>Setelah menjawab soal, tekan tombol "Cek Jawaban".</li>
+			        <li>Jika jawaban kamu benar, maka akan muncul tulisan <span class="bnr">"Jawaban Kamu Benar"</span> disertai dengan pembahasan di bawahnya.</li>
+			        <li>Jika jawaban kamu salah, maka akan muncul tulisan <span class="slh">"Jawaban Kamu Salah"</span> dan tombol "Ulang".</li>
+			        <li>Kotak jawaban yang <span class="slh">berwarna merah</span> artinya masih ada yang keliru di jawabanmu.</li>
+			        <li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
+	      		</ul>
+	      	</div>
+
+	      	<p class="prf">Diketahui B adalah himpunan bilangan asli antara 4 dan 10. Nyatakanlah himpunan tersebut dengan metode deskripsi, metode bersyarat, dan metode tabulasi!</p><br>
+           	<!--nomor pertanyaan-->
+			<div class="number">
+			    <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Metode Deskripsi</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Metode Bersyarat</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya3')">Metode Tabulasi</button>
+			</div>
+			<!--pertanyaan 1-->
+			<div class="pertanya tanyaAktif" id="tanya1">
+				<center>
+					Diketahui <span id="h11" class="">B</span> adalah himpunan <span id="h12" class="">bilangan asli antara 4 dan 10</span>
+					<br><br>
+            		<input type="text" class="input1" id="himp1" onclick="ubah1_1()" maxlength="1">
+            		= { 
+            		<input type="text" class="input2" id="metdes1" onclick="ubah1_2()">
+            		 }
+            		<span id="icon1" class="icon"></span>
+            		<br><br>
+            		<br><br>
+            		<button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+            		<button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+            		<div class="bahas" id="bahasbnr1">
+						<center><span class="bnr">Jawaban Kamu Benar</span></center><br>
+						<b><u>Pembahasan :</u></b><br><br>
+						<b>B = {bilangan asli antara 4 dan 10}</b>
+						<br>
+						<br>
+						Jika dibaca : <u>Himpunan B adalah himpunan bilangan asli antara 4 dan 10</u>
+					</div>
+					<div class="bahas" id="bahasslh1">
+						<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang"
+					</div>
+				</center>
+			</div>
+
+			<!--pertanyaan 2-->
+			<div class="pertanya" id="tanya2">
+				<center>
+					Diketahui <span id="h21" class="">B</span> adalah himpunan <span id="h24" class="">bilangan asli</span> antara <span id="h22" class="">4</span> dan <span id="h23" class="">10</span>
+					<br><br>
+					<input type="text" class="input1" id="himp2" onclick="ubah2_1()" maxlength="1"> 
+					= {
+					<span class="popup lebar1"> 
+						<input type="text" class="input11" id="var1" onclick="info()" maxlength="1">
+						<span class="popuptext" id="infovar">variabel</span>
+					</span>
+					 | 
+					<input type="text" class="input1" id="ang1"  onclick="ubah2_2()" maxlength="1">
+					 < 
+					<span class="var" id="var2"></span>
+					 < 
+					<input type="text" class="input1" id="ang2"  onclick="ubah2_3()" maxlength="2">
+					 , 
+					<span class="var" id="var3"></span> &#8712; 
+					<input type="text" class="input3" id="metber1"  onclick="ubah2_4()">
+					 }
+					<span id="icon2" class="icon"></span>
+					<br><br>
+					<br><br>
+					<button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+            		<button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
+            		<div class="bahas" id="bahasbnr2">
+						<center><span class="bnr">Jawaban Kamu Benar</span></center><br>
+						<b><u>Pembahasan :</u></b><br><br>
+						<b>B = {<span id="kett1"></span> | 4 < <span id="kett2"></span> < 10, <span id="kett3"></span> &isin; bilangan asli}</b>
+						<br>
+						<br>
+						Jika dibaca : <u>Himpunan B dengan <span id="kett4"></span> dimana <span id="kett5"></span> lebih dari 4 dan <span id="kett6"></span> kurang dari 10, <span id="kett7"></span> merupakan anggota bilangan asli</u>
+					</div>
+					<div class="bahas" id="bahasslh2">
+						<span class="slh">Jawaban Kamu Salah</span>.<br>
+						<span id="ket"></span> Silahkan tekan tombol "Ulang"
+					</div>
+				</center>
+			</div>
+
+			<!--pertanyaan 3-->
+			<div class="pertanya" id="tanya3">
+				<center>
+					Diketahui <span id="h31" class="">B</span> adalah himpunan 
+		            <span id="h32" class="popup1">bilangan asli antara 4 dan 10
+		              <span class="popuptext1" id="myPopup1">5,6,7,8,9</span>
+		            </span>.
+		            <br><br>
+		            <input type="text" class="input1" id="himp3" onclick="ubah3_1()" maxlength="1"> 
+		            = { 
+		            <input type="text" class="input3" id="mettab1" onclick="ubah3_2()">
+		             }
+		            <span id="icon3" class="icon"></span>
+		            <br><br>
+		            <button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+            		<button class="cekulang ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br>
+            		<div class="bahas" id="bahasbnr3">
+						<center><span class="bnr">Jawaban Kamu Benar</span></center><br>
+						<b><u>Pembahasan :</u></b><br><br>
+						<b>B = {5, 6, 7, 8, 9}</b>
+						<br>
+						<br>
+						Jika dibaca : <u>Himpunan B terdiri dari 5, 6, 7, 8, dan 9</u>
+					</div>
+					<div class="bahas" id="bahasslh3">
+						<span class="slh">Jawaban Kamu Salah</span>.<br>
+						<span id="ket2"></span>. Silahkan tekan tombol "Ulang"
+					</div>
+				</center>
+			</div>
+           	<br>
+      		Berdasarkan kegiatan diatas kalian mampu menyatakan himpunan dengan metode deskripsi, metode bersyarat, dan metode tabulasi.
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../2/materi1_3(2).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi1_3(1).html" class="tmbl">1</a>
+				<a href="../2/materi1_3(2).html" class="tmbl">2</a>
+				<a href="materi1_3(3).html" class="tmbl navaktif">3</a>
+				<a href="../4/materi1_3(4).html" class="tmbl">4</a>
+				<a href="../4/materi1_3(4).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+
+	<script src="jsmateri1_3(3).js"></script>
+</body>
+</html>

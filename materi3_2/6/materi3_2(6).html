@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Bagian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_2(6).css">
+</head>
+<body>
+	
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<div class="aktif2"><a href="../1/materi3_2(1).html" style="color: white;">Himpunan Bagian</a></div>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BAGIAN
+			</div>
+		</center>
+		<div class="konten">
+			<img src="../img/pertanyaan.png" class="gambar"><br> 
+			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
+			<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
+			    </div>
+			    <!--pertanyaan 1-->
+			    <div class="pertanya tanyaAktif" id="tanya1">
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk1">
+      					<ul>
+      						<li>Pertanyaan ini terdiri dari 5 soal.</li>
+      						<li>Isilah bagian kosong pada soal dengan cara menarik salah satu pilihan yang ada pada kotak abu-abu dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
+      						<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+      						<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban Kamu Benar"</span></li>
+          					<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+					<!-- isi pertanyaan -->
+					<!--soal 1-->
+					<div class="soal soalAktif" id="soal1">
+						Soal 1 dari 5
+						<center>
+						<table class="kotak">
+		                	<tr id="pil1" ondragover="allowDrop(event)">
+		                		<td draggable='true' ondragstart='drag(event)' id='p11' class='pilihan'>⊂</td>
+		                		<td draggable='true' ondragstart='drag(event)' id='p12' class='pilihan'>⊄</td>
+		                	</tr>
+	              		</table>
+	              		Diketahui C = {1, 2, 3, 4, 5} dan B = {1, 5}, maka B <span id="no1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> C
+	              		<span id="icon1" class="icon"></span>
+	              		<br>
+	              		<br>
+	              		<button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr1">
+							<span class="bnr">Jawaban Kamu Benar</span>.<br>
+							 Himpunan B merupakan himpunan bagian dari himpunan C, karena himpunan C <b>memuat semua</b> anggota himpunan B.<br>
+							B = {<span class="slh"><b>1, 5</b></span>} dan C = {<span class="slh"><b>1</b></span>, 2, 3, 4, <span class="slh"><b>5</b></span>}
+						</div>
+						<div class="bahas" id="bahasslh1">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 2-->
+					<div class="soal" id="soal2">
+	            	<br>
+	            	<br>
+						Soal 2 dari 5
+						<center>
+						<table class="kotak">
+		                	<tr id="pil2" ondragover="allowDrop(event)">
+		                		<td draggable='true' ondragstart='drag(event)' id='p21' class='pilihan'>⊂</td>
+		                		<td draggable='true' ondragstart='drag(event)' id='p22' class='pilihan'>⊄</td>
+		                	</tr>
+	              		</table>
+	              		Diketahui A = {s, a, p, i} dan P = {p, i, s, a, n, g}, maka P <span id="no2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> A
+	              		<span id="icon2" class="icon"></span>
+	              		<br>
+	              		<br>
+	              		<button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr2">
+							<span class="bnr">Jawaban Kamu Benar</span>.<br>
+							 Himpunan P bukan merupakan himpunan bagian dari himpunan A, karena himpunan A <b>tidak memuat semua</b> anggota himpunan P.<br>
+							P = {<span class="slh"><b>p, i, s, a</b></span>, n, g} dan A = {<span class="slh"><b>s, a, p, i</b></span>}
+						</div>
+						<div class="bahas" id="bahasslh2">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 3-->
+					<div class="soal" id="soal3">
+						Soal 3 dari 5
+						<center>
+						<table class="kotak">
+		                	<tr id="pil3" ondragover="allowDrop(event)">
+		                		<td draggable='true' ondragstart='drag(event)' id='p31' class='pilihan'>⊂</td>
+		                		<td draggable='true' ondragstart='drag(event)' id='p32' class='pilihan'>⊄</td>
+		                	</tr>
+	              		</table>
+	              		Diketahui L = {h, a, l, o} dan K = {s, e, k, o, l, a, h}, maka L <span id="no3" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> K
+	              		<span id="icon3" class="icon"></span>
+	              		<br>
+	              		<br>
+	              		<button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr3">
+							<span class="bnr">Jawaban Kamu Benar</span>.<br>
+							 Himpunan L merupakan himpunan bagian dari himpunan K, karena himpunan K <b>memuat semua</b> anggota himpunan L.<br>
+							L = {<span class="slh"><b>h, a, l, o</b></span>} dan K = {s, e, k, <span class="slh"><b>o, l, a, h</b></span>}
+						</div>
+						<div class="bahas" id="bahasslh3">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 4-->
+					<div class="soal" id="soal4">
+						Soal 4 dari 5
+						<center>
+						<table class="kotak">
+		                	<tr id="pil4" ondragover="allowDrop(event)">
+		                		<td draggable='true' ondragstart='drag(event)' id='p41' class='pilihan'>⊂</td>
+		                		<td draggable='true' ondragstart='drag(event)' id='p42' class='pilihan'>⊄</td>
+		                	</tr>
+	              		</table>
+	              		Diketahui A = {huruf alfabet} dan B = {huruf vokal}, maka B <span id="no4" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> A
+	              		<span id="icon4" class="icon"></span>
+	              		<br>
+	              		<br>
+	              		<button class="cekulang" onclick="cek4()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr4">
+							<span class="bnr">Jawaban Kamu Benar</span>.<br>
+							 Himpunan B merupakan himpunan bagian dari himpunan A, karena himpunan A <b>memuat semua</b> anggota himpunan B.
+						</div>
+						<div class="bahas" id="bahasslh4">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 5-->
+					<div class="soal" id="soal5">
+						Soal 5 dari 5
+						<center>
+						<table class="kotak">
+		                	<tr id="pil5" ondragover="allowDrop(event)">
+		                		<td draggable='true' ondragstart='drag(event)' id='p51' class='pilihan'>⊂</td>
+		                		<td draggable='true' ondragstart='drag(event)' id='p52' class='pilihan'>⊄</td>
+		                	</tr>
+	              		</table>
+	              		Diketahui C = {x | x &le; 7, x &isin; bilangan cacah} dan D = {x | x &le; 7, x &isin; bilangan prima}, maka C <span id="no5" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> D
+	              		<span id="icon5" class="icon"></span>
+	              		<br>
+	              		<br>
+	              		<button class="cekulang" onclick="cek5()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr5">
+							<span class="bnr">Jawaban Kamu Benar</span>.<br>
+							 Himpunan C bukan merupakan himpunan bagian dari himpunan D, karena himpunan D <b>tidak memuat semua</b> anggota himpunan C.<br>
+							 C = {0, 1, <span class="slh"><b>2, 3</b></span>, 4, <span class="slh"><b>5</b></span>, 6, <span class="slh"><b>7</b></span>} dan D = {<span class="slh"><b>2, 3, 5, 7</b></span>}
+						</div>
+						<div class="bahas" id="bahasslh5">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--tombol nomor soal-->
+					<center>
+						<br>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        	<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+					</center>
+			    </div>
+
+			    <!--pertanyaan 2-->
+			    <div class="pertanya" id="tanya2">
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk2">
+      					<ul>
+      						<li>Pertanyaan ini berupa isian.</li>
+      						<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+		      				<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b> dan akan muncul icon <img src="../img/true.png" width="15px">.</li>
+		      				<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b> dan akan muncul icon <img src="../img/false.png" width="15px">.</li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+
+					<!--soal 1-->
+					<div class="soall soalAktif" id="soall1">
+						Soal 1 dari 3<br><br>
+						Diketahui B = {huruf pembentuk kata Bekantan}. Tentukanlah :
+						<div class="satu">
+						<ol type="a">
+							<li>
+								Banyak anggota himpunan B<br>
+								Jawaban : n(B) = <input type="text" class="jawab1" maxlength="1">
+								<span class="ikon1" id="ikon10"></span>
+							</li>
+							<li class="hilang" id="lanjut11">
+								Banyak himpunan bagian yang mungkin dibuat dari himpunan B<br>
+								Jawaban : 2<sup>6</sup> = <input type="text" class="jawab1" maxlength="2">
+								<span class="ikon1" id="ikon11"></span>
+							</li>
+							<li class="hilang" id="lanjut12">
+								Banyak himpunan bagian dari himpunan B yang memiliki 3 anggota<br>
+								Jawaban : <input type="text" class="jawab1" maxlength="2">
+								<span class="ikon1" id="ikon12"></span>
+							</li>
+							<li class="hilang" id="lanjut13">
+								Banyak himpunan bagian dari himpunan B yang memiliki minimal 4 anggota<br>
+								Jawaban : <input type="text" class="jawab1" maxlength="2">
+								<span class="ikon1" id="ikon13"></span>
+							</li>
+						</ol>
+						<span class="bnr hilang" id="lanjut14"><b>Jawaban Kamu Benar</b></span>
+						</div>
+					</div>
+
+					<!--soal 2-->
+					<div class="soall" id="soall2">
+						Soal 2 dari 3<br><br>
+						Diketahui G = {2, 4, 6, 8, 10}. Tentukanlah :
+						<div class="satu">
+						<ol type="a">
+							<li>
+								Banyak anggota himpunan G<br>
+								Jawaban : n(G) = <input type="text" class="jawab2" maxlength="1">
+								<span class="ikon2" id="ikon20"></span>
+							</li>
+							<li class="hilang" id="lanjut21">
+								Banyak himpunan bagian yang mungkin dibuat dari himpunan G<br>
+								Jawaban : 2<sup>5</sup> = <input type="text" class="jawab2" maxlength="2">
+								<span class="ikon2" id="ikon21"></span>
+							</li>
+							<li class="hilang" id="lanjut22">
+								Banyak himpunan bagian dari himpunan G yang memiliki 5 anggota<br>
+								Jawaban : <input type="text" class="jawab2" maxlength="1">
+								<span class="ikon2" id="ikon22"></span>
+							</li>
+							<li class="hilang" id="lanjut23">
+								Banyak himpunan bagian dari himpunan G yang memiliki maksimal 2 anggota<br>
+								Jawaban : <input type="text" class="jawab2" maxlength="2">
+								<span class="ikon2" id="ikon23"></span>
+							</li>
+						</ol>
+						<span class="bnr hilang" id="lanjut24"><b>Jawaban Kamu Benar</b></span>
+						</div>
+					</div>
+
+					<!--soal 3-->
+					<div class="soall" id="soall3">
+						Soal 3 dari 3<br><br>
+						Diketahui A = {x | x &le; 20, x &isin; bilangan asli kelipatan 5}. Tentukanlah :
+						<div class="satu">
+						<ol type="a">
+							<li>
+								Banyak anggota himpunan A<br>
+								Jawaban : n(A) = <input type="text" class="jawab3" maxlength="1">
+								<span class="ikon3" id="ikon30"></span>
+							</li>
+							<li class="hilang" id="lanjut31">
+								Banyak himpunan bagian yang mungkin dibuat dari himpunan A<br>
+								Jawaban : 2<sup>4</sup> = <input type="text" class="jawab3" maxlength="2">
+								<span class="ikon3" id="ikon31"></span>
+							</li>
+							<li class="hilang" id="lanjut32">
+								Banyak himpunan bagian dari himpunan A yang memiliki 2 anggota<br>
+								Jawaban : <input type="text" class="jawab3" maxlength="1">
+								<span class="ikon3" id="ikon32"></span>
+							</li>
+							<li class="hilang" id="lanjut33">
+								Banyak himpunan bagian dari himpunan A yang memiliki maksimal 3 anggota<br>
+								Jawaban : <input type="text" class="jawab3" maxlength="2">
+								<span class="ikon3" id="ikon33"></span>
+							</li>
+						</ol>
+						<span class="bnr hilang" id="lanjut34"><b>Jawaban Kamu Benar</b></span>
+						</div>
+					</div>
+
+					<!--tombol nomor soal-->
+					<center>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal2 nmrAktif" onclick="bukaSoal2(event, 'soall1')">1</button>
+			        	<button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall2')">2</button>
+			        	<button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall3')">3</button>
+					</center>
+			    </div>
+			</div>
+			<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          <ul>
+	            <li>Jika <b>semua anggota</b> dari sebuah himpunan juga terkandung di dalam himpunan lain, maka himpunan yang pertama adalah <b>himpunan bagian</b> dari himpunan yang kedua.</li>
+	            <li><b>Himpunan bagian</b> dinotasikan dengan <b>⊂</b> (subset).</li>
+	            <li><b>Bukan himpunan bagian</b> dinotasikan dengan <b>⊄</b>.</li>
+	            <li><b>Himpunan kosong</b> merupakan <b>himpunan bagian dari semua himpunan</b>.</li>
+	            <li>Rumus menentukan <b>banyak himpunan bagian</b> yang mungkin dibuat dari suatu himpunan yaitu <b>2<sup>n</sup></b> dengan <b>n</b> adalah <b>banyak anggota dari suatu himpunan</b>.</li>
+	            <li>Untuk menentukan <b>banyak himpunan bagian</b> dari suatu himpunan, juga dapat menggunakan bantuan <b>segitiga pascal</b>.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../5/materi3_2(5).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi3_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_2(4).html" class="tmbl">4</a>
+				<a href="../5/materi3_2(5).html" class="tmbl">5</a>
+				<a href="materi3_2(6).html" class="tmbl navaktif">6</a>
+				<a href="../../materi3_3/1/materi3_3(1).html" class="tmbl">Materi Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri3_2(6).js"></script>
+</body>
+</html>

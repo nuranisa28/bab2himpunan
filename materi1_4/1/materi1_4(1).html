@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Berhingga dan Himpunan tak Berhingga</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_4(1).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html" >Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<div class="aktif2"><a href="materi1_4(1).html" style="color: white;">Himpunan Berhingga dan Himpunan tak Berhingga</a></div>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BERHINGGA DAN HIMPUNAN TAK BERHINGGA
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				<ol>
+					<li>Siswa sudah mampu menyatakan notasi dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menyatakan himpunan.</li>
+				</ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan :
+				<ol>
+					<li>Siswa mampu membedakan himpunan mana yang merupakan himpunan berhingga dan himpunan mana yang merupakan himpunan tak berhingga.</li>
+					<li>Siswa mampu menyatakan banyak anggota dari suatu himpunan.</li>
+				</ol>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			<span id="tabel1">Perhatikanlah himpunan di bawah ini!</span><br>
+			<center>
+			<table class="tabel1">
+				<tr>
+					<th>A = {a, i, u, e, o}</th>
+				</tr>
+				<tr>
+					<td>
+						Apakah himpunan A dapat dinyatakan banyak anggotanya?<br>
+						<button class="cekulang" id="ya1" onclick="ya1()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak1" onclick="tidak1()"><b>Tidak</b></button>
+						<span id="icon11" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" id="ulang1" onclick="ulang1()"><b>Ulang</b></button>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut1">
+					<td>
+						<span class="hilang" id="bnr1">
+							Yup! Himpunan A dapat dinyatakan banyak anggotanya &#128516;<br>
+							<br>
+							Berapa banyak anggota dari himpunan A? Jawablah dengan mengisi kotak kosong di bawah ini &#128516;<br>
+							<input type="text" class="input1" id="byk1" placeholder="...." maxlength="1">
+							<span id="icon12" class="icon"></span>
+						</span>
+						<span class="hilang" id="slh1">
+							Ups! Jawabanmu masih keliru. Silahkan tekan tombol ulang.
+						</span>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut2">
+					<td class="rata">
+						<center>Yup! Jawaban kamu tepat sekali!</center><br>
+						Banyak anggota dari himpunan A adalah <b>5</b>.
+						Dengan demikian dapat dikatakan bahwa himpunan A merupakan <b>Himpunan Berhingga</b> karena anggota himpunannya dapat dinyatakan banyaknya.
+						Sehingga dapat dinotasikan :
+						<b>n(A) = 5</b>
+					</td>
+				</tr>	
+			</table>
+			<br>
+			<table class="tabel1 hilang" id="lanjut3">
+				<tr>
+					<th>C = {1, 2, 3, ..., 15}</th>
+				</tr>
+				<tr>
+					<td>
+						Apakah himpunan C dapat dinyatakan banyak anggotanya?<br>
+						<button class="cekulang" id="ya2" onclick="ya2()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak2" onclick="tidak2()"><b>Tidak</b></button>
+						<span id="icon21" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" id="ulang2" onclick="ulang2()"><b>Ulang</b></button>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut4">
+					<td>
+						<span class="hilang" id="bnr2">
+							Yup! Himpunan C dapat dinyatakan banyak anggotanya &#128516;<br>
+							<br>
+							Berapa banyak anggota dari himpunan C? Jawablah dengan mengisi kotak kosong di bawah ini &#128516;<br>
+							<input type="text" class="input1" id="byk2" placeholder="...." maxlength="2">
+							<span id="icon22" class="icon"></span>
+						</span>
+						<span class="hilang" id="slh2">
+							Ups! Jawabanmu masih keliru. Silahkan tekan tombol ulang.
+						</span>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut5">
+					<td class="rata">
+						<center>Yup! Jawaban kamu tepat sekali!</center><br>
+						Banyak anggota dari himpunan C adalah <b>15</b>.
+						Dengan demikian dapat dikatakan bahwa himpunan C merupakan <b>Himpunan Berhingga</b> karena anggota himpunannya dapat dinyatakan banyaknya.
+						Sehingga dapat dinotasikan :
+						<b>n(C) = 15</b>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table class="tabel1 hilang" id="lanjut6">
+				<tr>
+					<th>D = {1, 3, 5, 7, ...}</th>
+				</tr>
+				<tr>
+					<td>
+						Apakah himpunan D dapat dinyatakan banyak anggotanya?<br>
+						<button class="cekulang" id="ya3" onclick="ya3()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak3" onclick="tidak3()"><b>Tidak</b></button>
+						<span id="icon31" class="icon"></span>
+						<br>
+						<button class="cekulang hilang" id="ulang3" onclick="ulang3()"><b>Ulang</b></button>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut7">
+					<td class="rata">
+						<span class="hilang" id="bnr3">
+							<center>Yup! Jawaban kamu tepat &#128516;</center>
+							Berbeda dengan himpunan sebelumnya, yaitu himpunan A dan himpunan C, himpunan D tidak dapat dinyatakan banyak anggotanya dengan bilangan.<br><br>
+							<center><b>Mengapa?</b></center>
+							Karena himpunan tersebut <b>tidak memiliki batas</b>. Coba perhatikan kembali himpunan D, kita tidak tahu setelah angka 7 akan berhenti di angka berapa, maka dari itu dituliskan dengan titik-titik.
+							Dengan demikian dapat dikatakan bahwa himpunan D merupakan <b>Himpunan tak Berhingga</b> karena memiliki anggota tak hingga (tidak memiliki batas). 
+							Sehingga dapat dinotasikan :
+							<b>n(D) = &infin;</b>
+						</span>
+						<span class="hilang" id="slh3">
+							<center>Ups! Jawabanmu masih keliru. Silahkan tekan tombol ulang.</center>
+						</span>
+					</td>
+				</tr>
+			</table>
+			</center>
+			
+			<div class="hilang" id="lanjut8">
+				<br>
+				Dari kegiatan di atas, maka didapatkan pengertian dari Himpunan Berhingga dan Himpunan tak Berhingga yang dapat dilihat pada Tabel 1.4.1 di bawah ini.
+				<center>
+				<table class="tabel1">
+		          <tr>
+		            <th></th>
+		            <th>Pengertian</th>
+		          </tr>
+		          <tr>
+		            <td><center><b>Himpunan Berhingga</b></center></td>
+		            <td class="rata">Himpunan berhingga adalah himpunan yang memiliki banyak anggota berhingga (dapat dinyatakan banyaknya).</td>
+		          </tr>
+		          <tr>
+		            <td><center><b>Himpunan tak Berhingga</b></center></td>
+		            <td class="rata">Himpunan tak berhingga adalah himpunan yang memiliki banyak anggota tak hingga (tidak memiliki batas).</td>
+		          </tr>
+		        </table>
+		        </center>
+			</div>
+			
+			<div class="hilang" id="lanjut9">
+				<br>
+				<br>
+				<img src="../img/catatan.png" class="gambar"><br>
+			    *catatlah ke dalam buku catatanmu &#128516;
+			    <div class="catat">
+		        	<ul>
+			        	<li>Banyak anggota pada suatu himpunan, misal pada himpunan G, dapat dinotasikan dengan <b>n(G)</b>.</li>
+		          		<li>Jika himpunan G merupakan <u>himpunan berhingga</u>, maka <u>banyak anggotanya dapat dinyatakan dengan bilangan</u>.</li>
+		          		<li>Namun, jika himpunan G merupakan <u>himpunan tak berhingga</u>, maka <u>banyak anggotanya tidak dapat dinyatakan dengan suatu bilangan</u>, tetapi dinyatakan dengan simbol &infin; (<i>infinity</i>), sehingga menjadi <b>n(G) = &infin;</b>.</li>
+			        </ul>
+			    </div>
+			</div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi1_3/4/materi1_3(4).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi1_4(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi1_4(2).html" class="tmbl">2</a>
+				<a href="../3/materi1_4(3).html" class="tmbl">3</a>
+				<a href="../2/materi1_4(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri1_4(1).js"></script>
+</body>
+</html>

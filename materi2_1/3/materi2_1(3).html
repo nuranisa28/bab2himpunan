@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Kosong</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri2_1(3).css">
+</head>
+<body>
+	<script src="jsmateri2_1(3).js"></script>
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="../1/materi2_1(1).html" style="color: white;">Himpunan Kosong</a></div>
+	    			<a href="../../materi2_2/1/materi2_2(1).html">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN KOSONG
+			</div>
+		</center>
+		<div class="konten">
+			<img src="../img/pertanyaan.png" class="gambar"><br> 
+			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
+			<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
+			    </div>
+			    <!--pertanyaan 1-->
+			    <div class="pertanya tanyaAktif" id="tanya1">
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk1">
+      					<ul>
+      						<li>Pertanyaan ini terdiri dari 5 soal. Jawablah dengan memilih pilihan Ya atau Tidak.</li>
+      						<li>Jika jawabanmu benar, akan muncul tulisan <span class="bnr">"Jawaban Kamu Benar"</span> disertai dengan pembahasan</li>
+      						<li>Jika jawabanmu salah, akan muncul tombol "Ulang" dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+					<!-- isi pertanyaan -->
+					<!--soal 1-->
+					<div class="soal soalAktif" id="soal1">
+						Soal 1 dari 5<br><br>
+						Apakah himpunan di bawah ini merupakan himpunan kosong?<br><br>
+						<center><b>U = {huruf vokal pada kata BANJARMASIN}</b><br><br>
+						<button class="cekulang" id="ya1" onclick="ya1()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak1" onclick="tidak1()"><b>Tidak</b></button>
+						<button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr1">
+							<span class="bnr">Jawaban Kamu Benar</span>. U bukan merupakan himpunan kosong.<br>
+							Huruf vokal pada kata Banjarmasin terdiri dari <b>a dan i</b>, sehingga <b>U = {a, i}</b> dengan banyak anggota <b>n(U) = 2</b>.
+						</div>
+						<div class="bahas" id="bahasslh1">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 2-->
+					<div class="soal" id="soal2">
+						Soal 2 dari 5<br><br>
+						Apakah himpunan di bawah ini merupakan himpunan kosong?<br><br>
+						<center><b>K = {bilangan ganjil yang habis dibagi 2}</b><br><br>
+						<button class="cekulang" id="ya2" onclick="ya2()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak2" onclick="tidak2()"><b>Tidak</b></button>
+						<button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr2">
+							<span class="bnr">Jawaban Kamu Benar</span>. K merupakan himpunan kosong.<br>
+							Tidak ada bilangan ganjil yang habis dibagi 2.
+						</div>
+						<div class="bahas" id="bahasslh2">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 3-->
+					<div class="soal" id="soal3">
+						Soal 3 dari 5<br><br>
+						Apakah himpunan di bawah ini merupakan himpunan kosong?<br><br>
+						<center><b>B = {x | 0 < x < 1, x &isin; bilangan bulat}</b><br><br>
+						<button class="cekulang" id="ya3" onclick="ya3()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak3" onclick="tidak3()"><b>Tidak</b></button>
+						<button class="cekulang ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr3">
+							<span class="bnr">Jawaban Kamu Benar</span>. B merupakan himpunan kosong.<br>
+							Tidak ada bilangan bulat antara 0 dan 1.
+						</div>
+						<div class="bahas" id="bahasslh3">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 4-->
+					<div class="soal" id="soal4">
+						Soal 4 dari 5<br><br>
+						Apakah himpunan di bawah ini merupakan himpunan kosong?<br><br>
+						<center><b>A = {hewan mamalia}</b><br><br>
+						<button class="cekulang" id="ya4" onclick="ya4()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak4" onclick="tidak4()"><b>Tidak</b></button>
+						<button class="cekulang ulang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr4">
+							<span class="bnr">Jawaban Kamu Benar</span>. A bukan merupakan himpunan kosong.<br>
+							Hewan mamalia diantaranya terdiri dari Kucing, Kambing, Anjing, dan Kuda</b>.
+						</div>
+						<div class="bahas" id="bahasslh4">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--soal 5-->
+					<div class="soal" id="soal5">
+						Soal 5 dari 5<br><br>
+						Apakah himpunan di bawah ini merupakan himpunan kosong?<br><br>
+						<center><b>D = {x | x &isin; nama-nama bulan yang berawalan G}</b><br><br>
+						<button class="cekulang" id="ya5" onclick="ya5()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak5" onclick="tidak5()"><b>Tidak</b></button>
+						<button class="cekulang ulang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnr5">
+							<span class="bnr">Jawaban Kamu Benar</span>. D merupakan himpunan kosong.<br>
+							Tidak ada nama bulan yang berawalan G.
+						</div>
+						<div class="bahas" id="bahasslh5">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+						</center>
+					</div>
+
+					<!--tombol nomor soal-->
+					<center>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        	<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+					</center>
+			    </div>
+
+			    <!--pertanyaan 2-->
+			    <div class="pertanya" id="tanya2">
+			    	<!-- petunjuk -->
+      				<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      				<div class="tjk1" id="tjk2">
+      					<ul>
+      						<li>Pertanyaan ini terdiri dari 2 soal berupa <i>Checkbox</i>.</li>
+      						<li>Jawablah dengan memberi tanda centang (&#10004;) pada kotak pilihan yang memungkinkan</li>
+      						<li>Setelah menjawab, tekan tombol "Cek Jawaban"</li>
+      						<li>Jika jawabanmu benar, akan muncul tulisan <span class="bnr">"Jawaban Kamu Benar"</span> disertai dengan pembahasan</li>
+      						<li>Jika jawabanmu salah, akan muncul tombol "Ulang" dan tulisan <span class="slh">"Jawaban Kamu Salah"</span></li>
+      						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+      					</ul>
+			        </div>
+			        <br>
+					<hr>
+					<br>
+
+					<!--soal 1-->
+					<div class="soall soalAktif" id="soall1">
+						Soal 1 dari 2<br><br>
+						Dari himpunan di bawah ini, himpunan manakah yang merupakan himpunan kosong?<br>
+			            <input type="checkbox" name="pilihan1" value="1"> H = {bilangan prima yang habis dibagi 4}.<br>
+			            <input type="checkbox" name="pilihan1" value="0"> E = {x | x &le; 12, x &isin; bilangan cacah}.<br>
+			            <input type="checkbox" name="pilihan1" value="0"> P = {x | x < 10, x &isin; bilangan prima}.<br>
+			            <input type="checkbox" name="pilihan1" value="1"> I = {x | x &isin; nama hari yang diawali dengan huruf D}.<br>
+			            <br>
+						<button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulangg1()" id="ulangg1"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnrr1">
+							<span class="bnr">Jawaban Kamu Benar</span>. Himpunan H dan himpunan I merupakan himpunan kosong.
+							<ul>
+								<li>Himpunan H tidak memiliki anggota karena tidak ada bilangan prima yang habis dibagi 4.</li>
+								<li>Himpunan I tidak memiliki anggota karena tidak ada nama hari yang diawali dengan huruf D.</li>
+							</ul>
+						</div>
+						<div class="bahas" id="bahasslhh1">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+					</div>
+
+					<!--soal 2-->
+					<div class="soall" id="soall2">
+						Soal 2 dari 2<br><br>
+						Dari himpunan di bawah ini, himpunan manakah yang bukan merupakan himpunan kosong?<br>
+			            <input type="checkbox" name="pilihan2" value="0"> B = {x | x < 10, x &isin; bilangan kelipatan 12}.<br>
+			            <input type="checkbox" name="pilihan2" value="1"> D = {7 huruf terakhir dalam alfabet}.<br>
+			            <input type="checkbox" name="pilihan2" value="1"> L = {warna pelangi}.<br>
+			            <input type="checkbox" name="pilihan2" value="0"> O = {nama bulan yang memiliki 32 hari}.<br>
+			            <br>
+						<button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+						<button class="cekulang ulang" onclick="ulangg2()" id="ulangg2"><b>Ulang</b></button><br>
+						<div class="bahas" id="bahasbnrr2">
+							<span class="bnr">Jawaban Kamu Benar</span>. Himpunan D dan himpunan L bukan merupakan himpunan kosong.
+							<ul>
+								<li>Himpunan D bukan merupakan himpunan kosong, karena himpunan D memiliki anggota yaitu a, b, c, d, e, f, dan g. Sehingga dapat dinyatakan :<br>
+								D = {a, b, c, d, e, f, g} dengan n(D) = 7</li>
+								<li>Himpunan L bukan merupakan himpunan kosong, karena himpunan L memiliki anggota yaitu merah, jingga, kuning, hijau, biru, nila, dan ungu. Sehingga dapat dinyatakan :<br>
+								L = {merah, jingga, kuning, hijau, biru, nila, ungu} dengan n(L) = 7</li>
+							</ul>
+						</div>
+						<div class="bahas" id="bahasslhh2">
+							<span class="slh">Jawaban Kamu Salah</span>. Silahkan tekan tombol "Ulang".
+						</div>
+					</div>
+
+					<!--tombol nomor soal-->
+					<center>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal2 nmrAktif" onclick="bukaSoal2(event, 'soall1')">1</button>
+			        	<button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall2')">2</button>
+					</center>
+			    </div>
+			</div>
+			<br>
+			<!--rangkuman-->
+			<img src="../img/rangkuman.png" class="gambar"><br>
+			*catatlah ke dalam buku catatanmu &#128516;<br>
+			<div class="rangkum">
+	          <ul>
+	            <li><b>Himpunan kosong</b> adalah himpunan yang tidak memiliki anggota</li>
+            	<li><b>Himpunan kosong </b> di notasikan dengan <b>{ }</b> atau <b>&empty;</b>.</li>
+	          </ul>
+	        </div>
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../2/materi2_1(2).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi2_1(1).html" class="tmbl">1</a>
+				<a href="../2/materi2_1(2).html" class="tmbl">2</a>
+				<a href="materi2_1(3).html" class="tmbl navaktif">3</a>
+				<a href="../../materi2_2/1/materi2_2(1).html" class="tmbl">Materi Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Kuasa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_3(2).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<a href="../../materi3_2/1/materi3_2(1).html">Himpunan Bagian</a>
+	          		<div class="aktif2"><a href="../1/materi3_3(1).html" style="color: white;">Himpunan Kuasa</a></div>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN KUASA
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/contoh.png" class="gambar"><br>
+			Pelajarilah contoh soal di bawah ini!
+			<!--nomor pertanyaan-->
+			<div class="number">
+			    <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">1</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">2</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya3')">3</button>
+			</div>
+
+			<!--pertanyaan 1-->
+			<div class="pertanya tanyaAktif" id="tanya1">
+				Himpunan kuasa dari A = {2,3} adalah ....<br>
+				<br>
+				<b>Penyelesaian :</b><br>
+				<ol>
+					<li>
+						Tentukan terlebih dahulu himpunan bagian yang mungkin dibuat dari A = {2,3}
+						<table class="tabel1">
+	      					<tr>
+	      						<th>
+	      							Himpunan bagian dengan :
+	      						</th>
+	      						<th>
+	      							Himpunan
+	      						</th>
+	      					</tr>
+	      					<tr>
+	      						<td>0 anggota</td>
+	      						<td>
+	      							{ }
+	      						</td>
+	      					</tr>
+	      					<tr>
+	      						<td>1 anggota</td>
+	      						<td>
+	      							{2}, {3}
+	      						</td>
+	      					</tr>
+	      					<tr class="" id="lanjut1">
+	      						<td>2 anggota</td>
+	      						<td>
+	      							{2,3}
+	      						</td>
+	      					</tr>
+						</table>
+						Didapatkan himpunan bagian dari A = {2,3} adalah { }, {2}, {3}, dan {2,3}
+					</li>
+					<li>
+						Sehingga, himpunan kuasa dari himpunan A adalah <b>P(A) = {{ }, {2}, {3}, {2,3}}</b>
+					</li>
+				</ol>
+			</div>
+
+			<!--pertanyaan 2-->
+			<div class="pertanya" id="tanya2">
+				Himpunan kuasa dari B = {warna lampu lalu lintas} adalah ....<br>
+				<br>
+				<b>Penyelesaian :</b><br>
+				<ol>
+					<li>
+						Anggota dari himpunan B adalah merah, kuning, dan hijau. Sehingga B = {merah, kuning, hijau} dengan n(B) = 3
+					</li>
+					<li>
+						Tentukan himpunan bagian yang mungkin dibuat dari B = {merah, kuning, hijau}
+						<table class="tabel1">
+	      					<tr>
+	      						<th>
+	      							Himpunan bagian dengan :
+	      						</th>
+	      						<th>
+	      							Himpunan
+	      						</th>
+	      					</tr>
+	      					<tr>
+	      						<td>0 anggota</td>
+	      						<td>
+	      							{ }
+	      						</td>
+	      					</tr>
+	      					<tr>
+	      						<td>1 anggota</td>
+	      						<td>
+	      							{merah}, {kuning}, {hijau}
+	      						</td>
+	      					</tr>
+	      					<tr class="" id="lanjut1">
+	      						<td>2 anggota</td>
+	      						<td>
+	      							{merah,kuning}, {merah,hijau}, {kuning,hijau}
+	      						</td>
+	      					</tr>
+	      					<tr class="" id="lanjut1">
+	      						<td>3 anggota</td>
+	      						<td>
+	      							{merah,kuning,hijau}
+	      						</td>
+	      					</tr>
+						</table>
+						Didapatkan himpunan bagian dari B = {merah,kuning,hijau} adalah { }, {merah}, {kuning}, {hijau}, {merah,kuning}, {merah,hijau}, {kuning,hijau}, dan {merah,kuning,hijau}
+					</li>
+					<li>
+						Sehingga, himpunan kuasa dari himpunan B adalah <b>P(B) = {{ }, {merah}, {kuning}, {hijau}, {merah,kuning}, {merah,hijau}, {kuning,hijau}, {merah,kuning,hijau}}</b>
+					</li>
+				</ol>
+			</div>
+
+			<!--pertanyaan 3-->
+			<div class="pertanya" id="tanya3">
+				Himpunan kuasa dari C = {x | x < 5, x &isin; bilangan asli} adalah ....<br>
+				<br>
+				<b>Penyelesaian :</b><br>
+				<ol>
+					<li>
+						Anggota dari himpunan C adalah 1, 2, 3, dan 4. Sehingga C = {1, 2, 3, 4} dengan n(C) = 4
+					</li>
+					<li>
+						Tentukan himpunan bagian yang mungkin dibuat dari C = {1, 2, 3, 4}
+						<table class="tabel1">
+	      					<tr>
+	      						<th>
+	      							Himpunan bagian dengan :
+	      						</th>
+	      						<th>
+	      							Himpunan
+	      						</th>
+	      					</tr>
+	      					<tr>
+	      						<td>0 anggota</td>
+	      						<td>
+	      							{ }
+	      						</td>
+	      					</tr>
+	      					<tr>
+	      						<td>1 anggota</td>
+	      						<td>
+	      							{1}, {2}, {3}, {4}
+	      						</td>
+	      					</tr>
+	      					<tr class="" id="lanjut1">
+	      						<td>2 anggota</td>
+	      						<td>
+	      							{1,2}, {1,3}, {1,4}, {2,3}, {2,4}, {3,4}
+	      						</td>
+	      					</tr>
+	      					<tr class="" id="lanjut1">
+	      						<td>3 anggota</td>
+	      						<td>
+	      							{1,2,3}, {1,2,4}, {1,3,4}, {2,3,4}
+	      						</td>
+	      					</tr>
+	      					<tr class="" id="lanjut1">
+	      						<td>4 anggota</td>
+	      						<td>
+	      							{1,2,3,4}
+	      						</td>
+	      					</tr>
+						</table>
+						Didapatkan himpunan bagian dari C = {1,2,3,4} adalah { }, {1}, {2}, {3}, {4}, {1,2}, {1,3}, {1,4}, {2,3}, {2,4}, {3,4}, {1,2,3}, {1,2,4}, {1,3,4}, {2,3,4}, dan {1,2,3,4}
+					</li>
+					<li>
+						Sehingga, himpunan kuasa dari himpunan C adalah <b>P(C) = {{ }, {1}, {2}, {3}, {4}, {1,2}, {1,3}, {1,4}, {2,3}, {2,4}, {3,4}, {1,2,3}, {1,2,4}, {1,3,4}, {2,3,4}, dan {1,2,3,4}}</b>
+					</li>
+				</ol>
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi3_3(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_3(1).html" class="tmbl">1</a>
+				<a href="materi3_3(2).html" class="tmbl navaktif">2</a>
+				<a href="../3/materi3_3(3).html" class="tmbl">3</a>
+				<a href="../3/materi3_3(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri3_3(2).js"></script>
+</body>
+</html>

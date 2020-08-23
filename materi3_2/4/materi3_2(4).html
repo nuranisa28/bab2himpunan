@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Bagian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_2(4).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<div class="aktif2"><a href="../1/materi3_2(1).html" style="color: white;">Himpunan Bagian</a></div>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN BAGIAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			<p class="prf">Tadi, kita sudah belajar bagaimana menentukan himpunan-himpunan bagian yang mungkin dibuat dari suatu himpunan. Selanjutnya, bagaimana menyatakan <u>banyak himpunan bagian</u> dari suatu himpunan? Perhatikanlah dan coba lengkapi Tabel 3.2.3 di bawah ini!</p>
+			<!-- petunjuk-->
+			<div class="kliktunjuk"><a href="#" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      		<div class="tjk1" id="tjk1">
+      			<ul>
+      				<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+      				<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b>.</li>
+      				<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b>.</li>
+      				<li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+      			</ul>
+			</div>
+			<center>
+			<table class="tabel1" id="tabel1">
+				<tr>
+					<th colspan="3">Himpunan bagian yang mungkin dibuat dari A = {a, b, c}</th>
+				</tr>
+				<tr>
+					<th>Himpunan bagian dengan :</th>
+					<th>Himpunan</th>
+					<th>Banyak himpunan</th>
+				</tr>
+				<tr>
+					<td>0 anggota</td>
+					<td>{ }</td>
+					<td>
+						1
+					</td>
+				</tr>
+				<tr class="" id="lanjut1">
+					<td>1 anggota</td>
+					<td>{a}, {b}, {c}</td>
+					<td>
+						<input type="text" class="jawab3" maxlength="1">
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut2">
+					<td>2 anggota</td>
+					<td>{a,b}, {a,c}, {b,c}</td>
+					<td>
+						<input type="text" class="jawab3" maxlength="1">
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut3">
+					<td>3 anggota</td>
+					<td>{a,b,c}</td>
+					<td>
+						<input type="text" class="jawab3" maxlength="1">
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut4">
+					<td colspan="2"><b>Total banyak himpunan bagian dari himpunan A</b></td>
+					<td>
+						<input type="text" class="jawab3" maxlength="1">
+						<span class="icon" id="icon1"></span>
+					</td>
+				</tr>
+			</table>
+			</center>
+			<div class="hilang" id="lanjut5">
+				Himpunan bagian dari A = {a, b, c} adalah { }, {a}, {b}, {a,b}, {a,c}, {b,c}, dan {a,b,c} sehingga <b>banyak himpunan bagian</b> dari A adalah <b>8</b>.<br>
+				<br>
+				<p class="prf">Lalu bagaimana jika kamu ditanya banyak himpunan bagian yang mungkin dibuat dari <b>B = {a, b, c, d, e, f, g, h}</b> dengan <b>n(B) = 8</b>? Tentu akan sulit jika harus mendaftarkan satu persatu himpunan bagian dari 0 anggota hingga 8 anggota. Maka, ada rumus untuk menyatakan <b>banyak himpunan bagian</b> dari suatu himpunan. Perhatikan kembali <a href="#tabel1">Tabel 3.2.3</a> di atas, kemudian isilah kotak kosong di bawah ini!</p>
+				<center>
+				<table class="tabel1">
+					<tr>
+						<th>Banyak anggota himpunan A</th>
+					</tr>
+					<tr>
+						<td>
+							n(A) = <input type="text" class="jawab2" maxlength="1">
+							<span class="icon" id="icon2"></span>
+						</td>
+					</tr>
+					<tr class="hilang" id="lanjutt6">
+						<th>Banyak himpunan bagian dari himpunan A</th>
+					</tr>
+					<tr class="hilang" id="lanjuttt6">
+						<td>
+							<input type="text" class="jawabb2" maxlength="1">
+							<span class="icon" id="icon3"></span>
+						</td>
+					</tr>
+					<tr class="hilang" id="lanjut6">
+						<td>
+							Banyak anggota himpunan A adalah <b>3</b> dan banyak himpunan bagiannya adalah <b>8</b>.
+						</td>
+					</tr>
+				</table>
+				</center>
+			</div>
+			<div class="hilang" id="lanjut7">
+				Jika kalian perhatikan, <b>8 merupakan hasil dari 2<sup>3</sup></b>. Sehingga didapatkan rumus menyatakan <b>banyak himpunan bagian</b> dari suatu himpunan, yaitu :
+				<center>
+				<div class="pengertian">
+					<b>2<sup>n</sup></b>
+				</div>
+				</center>
+				dengan <b>n</b> adalah <b>banyak anggota himpunan</b>.
+				<br>
+				<br>
+				Jadi, untuk menjawab banyak himpunan bagian dari B = {a, b, c, d, e, f, g, h} dengan n(B) = 8, adalah :
+				<div class="coba">
+					Diketahui : B = {a, b, c, d, e, f, g, h} dan  n(B) = 8<br>
+					Ditanya : Banyak himpunan bagian dari himpunan B?
+					<br>
+					<br>
+					<b>Penyelesaian :</b><br>
+					Banyak himpunan bagian dari B = 2<sup>n</sup><br>
+					<span class="mundur">
+						 = 2<sup>
+							<input type="text" class="jawab1" maxlength="1">
+						</sup>
+					</span><br>
+					<span class="hilang" id="lanjut8">
+						 <span class="mundur">= <input type="text" class="jawab4" maxlength="3"></span>
+						 <span id="icon4"></span>
+					</span>
+					<span class="hilang" id="lanjut9">
+						<br>
+						<br>
+						Banyak himpunan bagian dari B = {a, b, c, d, e, f, g, h} adalah 256.
+					</span>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../3/materi3_2(3).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi3_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi3_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_2(3).html" class="tmbl">3</a>
+				<a href="materi3_2(4).html" class="tmbl navaktif">4</a>
+				<a href="../5/materi3_2(5).html" class="tmbl">5</a>
+				<a href="../6/materi3_2(6).html" class="tmbl">6</a>
+				<a href="../5/materi3_2(5).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+
+	<script src="jsmateri3_2(4).js"></script>
+</body>
+</html>

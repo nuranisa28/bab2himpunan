@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Himpunan Kosong</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri2_1(1).css">
+</head>
+<body>
+	<script src="jsmateri2_1(1).js"></script>
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="materi2_1(1).html" style="color: white;">Himpunan Kosong</a></div>
+	    			<a href="../../materi2_2/1/materi2_2(1).html">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				HIMPUNAN KOSONG
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				<ol>
+					<li>Siswa sudah mampu menyatakan notasi dari suatu himpunan</li>
+					<li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menyatakan suatu himpunan.</li>
+					<li>Siswa sudah mampu menyatakan banyak anggota dari suatu himpunan.</li>
+				</ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan siswa mampu membedakan himpunan mana yang merupakan himpunan kosong dan himpunan mana yang bukan merupakan himpunan kosong.
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			Perhatikanlah himpunan di bawah ini!<br>
+			<center>
+			<table class="tabel1">
+				<tr>
+					<td><center>J = {x | 0 < x < 3, x &isin; bilangan bulat}</center></td>
+					<td>
+						<center>
+						Apakah himpunan J memiliki anggota?<br>
+						<button class="cekulang" id="ya1" onclick="ya1()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak1" onclick="tidak1()"><b>Tidak</b></button>
+						<span id="icon1" class="icon"></span>
+						</center>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut1">
+					<td colspan="2">
+						<span class="hilang" id="bnr1">
+							<center>Yup! Benar sekali!</center><br>
+						</span>
+						<span class="hilang" id="slh1">
+							<center>Ups! Jawabanmu masih keliru.</center><br>
+						</span>
+							Himpunan J <b>memiliki anggota</b> yaitu 1 dan 2, sehingga himpunan J dapat dinyatakan : <b>J = {1, 2} dengan n(J) = 2</b>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut2">
+					<td><center>A adalah himpunan nama bulan dalam setahun yang diakhiri dengan huruf r</td>
+					<td>
+						<center>
+						Apakah himpunan A memiliki anggota?<br>
+						<button class="cekulang" id="ya2" onclick="ya2()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak2" onclick="tidak2()"><b>Tidak</b></button>
+						<span id="icon2" class="icon"></span>
+						</center>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut3">
+					<td colspan="2">
+						<span class="hilang" id="bnr2">
+							<center>Yup! Benar sekali!</center><br>
+						</span>
+						<span class="hilang" id="slh2">
+							<center>Ups! Jawabanmu masih keliru.</center><br>
+						</span>
+							Himpunan A <b>memiliki anggota</b> yaitu September, Oktober, November, dan Desember, sehingga himpunan A dapat dinyatakan : <b>A = {September, Oktober, November, Desember} dengan n(A) = 4</b>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut4">
+					<td><center>F = {x | 7 < x < 9, x &isin; bilangan ganjil}</center></td>
+					<td>
+						<center>
+						Apakah himpunan F memiliki anggota?<br>
+						<button class="cekulang" id="ya3" onclick="ya3()"><b>Ya</b></button>
+						<button class="cekulang" id="tidak3" onclick="tidak3()"><b>Tidak</b></button>
+						<span id="icon3" class="icon"></span>
+						</center>
+					</td>
+				</tr>
+				<tr class="hilang" id="lanjut5">
+					<td colspan="2">
+						<span class="hilang" id="bnr3">
+							<center>Yup! Benar sekali!</center><br>
+						</span>
+						<span class="hilang" id="slh3">
+							<center>Ups! Jawabanmu masih keliru.</center><br>
+						</span>
+							Himpunan F <b>tidak memiliki anggota</b>. Mengapa? Coba perhatikan kembali pada himpunan F, apakah ada bilangan ganjil di antara 7 dan 9? Sedangkan yang telah kita pelajari, bilangan ganjil sehabis 7 adalah 9.<br>
+							<br>
+							Dengan demikian, dapat dikatakan bahwa himpunan F merupakan <b>Himpunan Kosong</b>, karena himpunannya tidak memiliki anggota dan dapat dinotasikan :<br>
+							<center><b>F = { } <u>atau</u> F = &empty;</b></center>
+					</td>
+				</tr>
+			</table>
+			</center>
+			<br>
+			<div class="hilang" id="lanjut6">
+				Dari kegiatan mengamati tadi, didapatkan pengertian <b>Himpunan Kosong</b>, yaitu :
+				<center>
+		        <div class="pengertian">
+		          <b>Himpunan kosong</b> adalah himpunan yang tidak memiliki anggota dan dinotasikan dengan <b>{ }</b> atau <b>&empty;</b>.<br>
+		          Jika himpunan A merupakan <b>himpunan kosong</b>, maka himpunan A <b>tidak memiliki anggota</b>. Dengan kata lain <b>A = { }</b> atau <b>A = &empty;</b>.
+		        </div>
+		    	</center>
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="materi2_1(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi2_1(2).html" class="tmbl">2</a>
+				<a href="../3/materi2_1(3).html" class="tmbl">3</a>
+				<a href="../2/materi2_1(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+</body>
+</html>

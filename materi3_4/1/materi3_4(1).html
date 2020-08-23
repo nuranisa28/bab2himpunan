@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Komplemen Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri3_4(1).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Himpunan</a>
+	    			<a href="">Notasi dan Anggota Himpunan</a>
+	    			<a href="">Menyatakan Suatu Himpunan</a>
+	    			<a href="">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">Pengertian Diagram Venn</a>
+	    			<a href="../../materi3_2/1/materi3_2(1).html">Himpunan Bagian</a>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">Himpunan Kuasa</a>
+	    			<div class="aktif2"><a href="materi3_4(1).html" style="color: white;">Komplemen Himpunan</a></div>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				KOMPLEMEN HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				<ol>
+					<li>Siswa sudah mampu menyatakan notasi dari suatu himpunan</li>
+					<li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menyatakan himpunan.</li>
+					<li>Siswa sudah mampu menentukan himpunan semesta dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menggambar diagram venn.</li>
+				</ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan siswa mampu menyatakan komplemen dari suatu himpunan.
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			<!-- <p class="prf"><b>Komplemen himpunan</b> adalah himpunan yang anggotanya terdiri atas himpunan semesta <u>dan</u> bukan anggota himpunan </p> -->
+			Amatilah Tabel 3.4.1 di bawah ini!
+			<center>
+			<table class="tabel1">
+				<tr>
+					<th>Himpunan Semesta</th>
+					<th>Himpunan A</th>
+				</tr>
+				<tr>
+					<td>S = {1, 2, 3, 4, 5, 6}</td>
+					<td>A = {3, 4, 6}</td>
+				</tr>
+			</table>
+			</center>
+			<br>
+			Dari himpunan semesta dan himpunan A pada Tabel 3.4.1 di atas, adakah anggota himpunan semesta yang <b><u>bukan anggota</u></b> himpunan A?<br>
+			<h5>*jawablah dengan menekan salah satu tombol di bawah ini</h5>
+			<button class="cekulang" id="ada1" onclick="ada1()"><b>Ada</b></button>
+			<button class="cekulang" id="tdk1" onclick="tdk1()"><b>Tidak Ada</b></button>
+			<button class="cekulang hilang" id="ulang1" onclick="ulang1()"><b>Ulang</b></button>
+			<span class="icon" id="icon1"></span>
+			
+			<span class="hilang" id="slh1">
+				<br>
+				Ups! Jawabanmu masih keliru. Silahkan tekan tombol Ulang.
+			</span>
+			<span class="hilang" id="bnr1">
+				<br>
+				<p class="prf">
+					Yapp! Benar sekali &#128516; Terdapat anggota himpunan semesta yang bukan anggota himpunan A. Apa saja itu? Coba kalian sebutkan dengan mengisi kotak kosong di bawah ini<br>
+					<h5>*isilah setiap kotak dengan 1 angka</h5>
+					<input type="text" class="jawab1" maxlength="1"> , 
+					<input type="text" class="jawab1" maxlength="1"> , 
+					<input type="text" class="jawab1" maxlength="1">
+					<span class="icon" id="icon2"></span>
+				</p>
+			</span>	
+				<span class="hilang" id="lanjut1">
+					<br>
+					<p class="prf">Benar! Anggota himpunan semesta yang bukan anggota himpunan A terdiri dari <b>1, 2, dan 5</b>. Maka, dapat dikatakan bahwa <b>komplemen dari himpunan A</b> adalah 1, 2, dan 5. Komplemen himpunan A dinotasikan dengan <b>A' <u>atau</u> A<sup>c</sup></b>, sehingga <b>A' = {1, 2, 5}</b> atau <b>A<sup>c</sup> = {1, 2, 5}</b>.<br></p>
+					<br>
+					Dari kegiatan mengamati di atas, didapatkan pengertian dari <b>Komplemen Himpunan</b>, yaitu :
+					<div class="pengertian">
+						<b>Komplemen himpunan</b> adalah himpunan yang anggotanya terdiri atas himpunan semesta <u>dan</u> anggota tersebut bukan anggota dari himpunan yang menjadi fokus pembicaraan.
+					</div>
+					<br>
+					Untuk lebih memahami apa itu komplemen himpunan, perhatikanlah animasi interaktf di bawah ini.
+					<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      			<div class="tjk1" id="tjk1">
+		      			<ul>
+		      				<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
+		      				<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai. Perhatikanlah setiap arahan yang ditampilkan.</li>
+		      				<li>Tekan tombol 'enter' pada <i>keyboard</i> kalian atau tekan icon <img src="../img/ceklist.png" width="19px"> pada layar animasi interaktif untuk memasukkan jawaban dari pertanyaan yang diberikan.</li>
+		      			</ul>
+					</div>
+					<center>
+			      		<div class="divscratch" id="applet">
+							<iframe class="scratch" id="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/419694814/?autostart=true" frameborder="0" allowfullscreen></iframe>
+						</div>
+			      	</center>
+					<br><br>
+					<img src="../img/catatan.png" class="gambar"><br>
+					*catatlah ke dalam buku catatanmu &#128516;
+					<div class="catat">
+						<ul>
+							<li>Komplemen dari suatu himpunan, misal himpunan A, dinotasikan dengan <b>A' <u>atau</u> A<sup>c</sup></b>.</li>
+							<li>Banyak anggota komplemen himpunan A dinotasikan dengan <b>n(A') <u>atau</u> n(A<sup>c</sup>)</b>.</li>
+						</ul>
+					</div>
+				</span>
+
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi3_3/3/materi3_3(3).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi3_4(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi3_4(2).html" class="tmbl">2</a>
+				<a href="../3/materi3_4(3).html" class="tmbl">3</a>
+				<a href="../4/materi3_4(4).html" class="tmbl">4</a>
+				<a href="../2/materi3_4(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri3_4(1).js"></script>
+</body>
+</html>

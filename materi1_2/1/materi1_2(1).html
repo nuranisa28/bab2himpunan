@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Notasi dan Anggota Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri1_2(1).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		HIMPUNAN
+		<a href="../../index.html"><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="../../apersepsi/aper.html">Apersepsi</a>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">Pengertian Himpunan</a>
+	    			<div class="aktif2"><a href="materi1_2(1).html"  style="color: white;">Notasi dan Anggota Himpunan</a></div>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Himpunan Kosong</a>
+	    			<a href="">Himpunan Semesta</a>
+	    			<a href="">Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Pengertian Diagram Venn</a>
+	    			<a href="">Himpunan Bagian</a>
+	          		<a href="">Himpunan Kuasa</a>
+	    			<a href="">Komplemen Himpunan</a>
+	    			<a href="">Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Irisan Himpunan</a>
+	    			<a href="">Gabungan Himpunan</a>
+	          		<a href="">Selisih Dua Himpunan</a>
+	    			<a href="">Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">Kuis 5</a>
+	  			</div>
+	  		<a href="">Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				NOTASI DAN ANGGOTA HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+		        Siswa sudah mampu membedakan kumpulan objek mana yang merupakan himpunan dan mana yang bukan merupakan himpunan.
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan :
+				<ol>
+					<li>Siswa mampu menyatakan notasi dari suatu himpunan.</li>
+          			<li>Siswa mampu menyebutkan anggota dari suatu himpunan.</li>
+          			<li>Siswa mampu membedakan mana yang termasuk anggota dan mana yang bukan anggota dari suatu himpunan.</li>
+				</ol>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			<p class="prf">Suatu himpunan dinotasikan dengan <b>huruf kapital, misal A, B, C, ..., atau Z</b>.</p>
+			Perhatikan contoh di bawah ini :
+			<div class="jelas">
+				<ol>
+					<li>Jika himpunan makanan khas Banjarmasin dinotasikan dengan B, maka <b>B adalah himpunan makanan khas Banjarmasin</b>.</li>
+					<li>Jika himpunan tarian daerah Kalimantan Selatan dinotasikan dengan A, maka <b>A adalah himpunan tarian daerah Kalimantan Selatan</b>.</li>
+					<li>Jika himpunan destinasi wisata Banjarmasin dinotasikan dengan C, maka <b>C adalah himpunan destinasi wisata Banjarmain</b>.</li>
+				</ol>
+			</div>
+			<br>
+			<img src="../img/mencoba.png" class="gambar"><br>
+			<!-- petunjuk -->
+      		<div class="kliktunjuk"><a href="#" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+      		<div class="tjk1" id="tjk1">
+      			<ul>
+      				<li>Isilah kotak kosong dengan notasi himpunan.</li>
+      				<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b> dan akan muncul icon <img src="../img/true.png" width="15px">.</li>
+      				<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b> dan akan muncul icon <img src="../img/false.png" width="15px">.</li>
+      				<li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+      			</ul>
+			</div>
+			Notasikanlah himpunan di bawah ini dengan huruf kapital!
+			<center>
+				<table class="tabel2">
+					<tr>
+						<th>Himpunan</th>
+						<th>Notasi </th>
+					</tr>
+					<tr>
+						<td>Himpunan varian rasa wadai bikang</td>
+						<td>
+							<span class="bg_jwb"><input type="text" class="jawab" maxlength="1" placeholder="...."></span>
+							<span class="icon" id="icon0"></span>
+						</td>
+					</tr>
+					<tr class="ket hilang" id="ket">
+						<td colspan="2" id="keter0">
+							
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table class="tabel2 hilang" id="lanjut1">
+					<tr>
+						<th>Himpunan</th>
+						<th>Notasi </th>
+					</tr>
+					<tr>
+						<td>Himpunan motif kain sasirangan</td>
+						<td>
+							<span class="bg_jwb"><input type="text" class="jawab" maxlength="1" placeholder="...."></span>
+							<span class="icon" id="icon1"></span>
+						</td>
+					</tr>
+					<tr class="ket hilang" id="ket">
+						<td colspan="2" id="keter1">
+							
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table class="tabel2 hilang" id="lanjut2">
+					<tr>
+						<th>Himpunan</th>
+						<th>Notasi </th>
+					</tr>
+					<tr>
+						<td>Himpunan seniman Kalimantan Selatan</td>
+						<td>
+							<span class="bg_jwb"><input type="text" class="jawab" maxlength="1" placeholder="...."></span>
+							<span class="icon" id="icon2"></span>
+						</td>
+					</tr>
+					<tr class="ket hilang" id="ket">
+						<td colspan="2" id="keter2">
+							
+						</td>
+					</tr>
+				</table>		
+			</center>
+			<div class="hilang" id="catat">
+				<br>
+				<img src="../img/catatan.png" class="gambar"><br>
+				*catatlah ke dalam buku catatanmu &#128516;
+				<div class="catat">
+			        <ul>
+			          	<li>Dalam matematika, suatu <b>himpunan</b> dinotasikan dengan <b>huruf kapital</b> (seperti A, B, C, ..., atau Z).</li>
+			          	<li><b>Anggota dari suatu himpunan</b> dituliskan di dalam tanda kurung kurawal {....}.</li>
+			        </ul>
+		        </div>
+			</div>
+			
+
+			<!-- <br>
+			Perhatikanlah teks dibawah ini.<br>
+			<center><img src="../img/bjm.png" class="gambar2"><br></center><br>
+			Berdasarkan pengamatan dari teks diatas, kata <b>BANJARMASIN</b> dibangun dari 8 huruf yaitu :<br>
+			<table class="tabel1">
+			    <tr>
+		          <td>B</td>
+		          <td>A</td>
+		          <td>N</td>
+		          <td>J</td>
+		          <td>R</td>
+		          <td>M</td>
+		          <td>S</td>
+		          <td>I</td>
+		        </tr>
+			</table><br>
+			<p class="prf">maka dapat disebutkan bahwa huruf <b>B, A, N, J, R, M, S,</b> dan <b>I</b> merupakan <b>anggota</b> dari kumpulan huruf pembentuk kata <b>BANJARMASIN</b>. Sedangkan, <u>selain</u> 8 huruf yang disebutkan <b>bukan anggota </b>kumpulan huruf pembentuk kata <b>BANJARMASIN.</b></p><br>
+			<img src="../img/catatan.png" class="gambar"><br>
+		    *catatlah ke dalam buku catatanmu &#128516;
+		    <div class="catat">
+	        	<ul>
+		          <li>Objek atau benda yang membentuk suatu himpunan disebut <b>anggota</b> himpunan dan dinotasikan sebagai <b>&isin;</b>.</li>
+		          <li>Objek atau benda yang tidak berada pada himpunan disebut <b>bukan anggota </b> himpunan dan dinotasikan sebagai <b>&notin;</b>.</li>
+	          	</ul>
+        	</div>
+        	<br>
+        	<p class="prf">Seperti yang sudah diketahui, huruf <b>B, A, N, J, R, M, S,</b> dan <b>I</b> merupakan <b>anggota</b> dari kumpulan huruf pembentuk kata <b>BANJARMASIN</b>. Maka dapat dituliskan :</p>
+        	<center>
+	        	<div class="kotak lebar1">
+	        		B, A, N, J, R, M, S, I <b>&isin;</b> huruf pembentuk kata BANJARMASIN
+	        	</div>
+        	</center>
+        	Sedangkan, <u>selain</u> 8 huruf yang disebutkan <b>bukan anggota </b>kumpulan huruf pembentuk kata <b>BANJARMASIN</b>. Huruf-huruf tersebut diantaranya adalah <b>C, D, E, dan lainnya</b>. Dapat dituliskan seperti di bawah ini : <br>
+        	<center>
+        		<div class="kotak lebar2">
+	        		C <b>&notin;</b> huruf pembentuk kata BANJARMASIN<br>
+	        		D <b>&notin;</b> huruf pembentuk kata BANJARMASIN<br>
+	        		E <b>&notin;</b> huruf pembentuk kata BANJARMASIN<br>
+	        	</div>
+        	</center> -->
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi1_1/3/materi1_1(3).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi1_2(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi1_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi1_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi1_2(4).html" class="tmbl">4</a>
+				<a href="../2/materi1_2(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+
+	<script src="jsmateri1_2(1).js"></script>
+</body>
+</html>
