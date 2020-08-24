@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Berikut ini yang bukan merupakan himpunan adalah ....",
+        "a": "Kumpulan kendaraan roda empat",
+        "b": "Kumpulan hewan bertelur",
+        "c": "Kumpulan bunga yang harum",
+        "d": "Kumpulan alat makan",
+        "benar": "c",
+        "nih": "Kumpulan bunga yang harum"
+    }
+}, {
+    "soal1": {
+        "soal": "Perhatikan kumpulan berikut.<br><ol class='lisoal' type='i'><li>Kumpulan nama bulan dalam setahun</li><li>Kumpulan bilangan asli</li><li>Kumpulan transportasi darat</li><li>Kumpulan siswa yang tinggi di kelas</li></ol>Dari kumpulan diatas, yang termasuk himpunan adalah ....",
+        "a": "i, iii, dan iv",
+        "b": "i, ii, dan iv",
+        "c": "ii, iii, dan iv",
+        "d": "i, ii, dan iii",
+        "benar": "d",
+        "nih": "i, ii, dan iii"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Perhatikan himpunan dibawah ini.<br>P = {huruf pembentuk kata “KOMPUTER”}<br>Q = {huruf vokal}<br>Di antara pernyataan berikut, yang merupakan pernyataan yang benar berdasarkan himpunan di atas adalah, kecuali ....",
+        "a": "u &isin; P",
+        "b": "u &isin; Q",
+        "c": "r &notin; Q",
+        "d": "a &isin; P",
+        "benar": "d",
+        "nih": "a &isin; P"
+    }
+}, {
+    "soal3": {
+        "soal": "Diketahui B = {bilangan prima kurang dari 15}. Bilangan yang tidak termasuk anggota himpunan B adalah ....",
+        "a": "5",
+        "b": "7",
+        "c": "11",
+        "d": "12",
+        "benar": "d",
+        "nih": "12"
+    }
+}, {
+    "soal4": {
+        "soal": "Diketahui I = {2, 4, 6, 8}. Bentuk metode deskripsi dari himpunan I adalah, kecuali ....",
+        "a": "I = {bilangan genap kurang dari 8}",
+        "b": "I = {bilangan asli antara 1 dan 9}",
+        "c": "I = {bilangan genap kurang dari 10}",
+        "d": "I = {bilangan asli kelipatan 2 yang kurang dari 9}",
+        "benar": "a",
+        "nih": "I = {bilangan genap kurang dari 8}"
+    }
+}, {
+    "soal5": {
+        "soal": "Jika diketahui A = {1, 2, 3, 4, 5} maka yang bukan termasuk metode bersyarat dari himpunan A adalah ....",
+        "a": "A = {x | x < 5, x &isin; bilangan asli}",
+        "b": "A = {x | 0 < x &le; 5, x &isin; bilangan cacah}",
+        "c": "A = {x | 1 &le; x < 6, x &isin; bilangan bulat}",
+        "d": "A = {x | x < 6, x &isin; bilangan asli}",
+        "benar": "a",
+        "nih": "A = {x | x < 5, x &isin; bilangan asli}"
+    }
+}, {
+    "soal6": {
+        "soal": "Diketahui P = {x | 1 < x &le; 10, x &isin; bilangan ganjil}. Bentuk metode tabulasi dari himpunan P adalah ....",
+        "a": "P = {1, 3, 5, 7, 9}",
+        "b": "P = {3, 5, 7, 9, 10}",
+        "c": "P = {3, 5, 7, 9}",
+        "d": "P = {1, 3, 5, 7, 9, 10}",
+        "benar": "c",
+        "nih": "P = {3, 5, 7, 9}"
+    }
+}, {
+    "soal7": {
+        "soal": "Dari himpunan berikut, yang merupakan himpunan berhingga adalah ....",
+        "a": "A = {bilangan bulat}",
+        "b": "B = {bilangan cacah kurang dari 10}",
+        "c": "C = {bilangan asli kelipatan 3}",
+        "d": "D = {bilangan ganjil}",
+        "benar": "b",
+        "nih": "B = {bilangan cacah kurang dari 10}"
+    }
+}, {
+    "soal8": {
+        "soal": "Dari himpunan berikut, yang merupakan himpunan tak berhingga adalah ....",
+        "a": "E = {bilangan genap kurang dari 50}",
+        "b": "F = {5, 10, 15, 20, 25, …, 50}",
+        "c": "G = {bilangan prima kurang dari 10}",
+        "d": "H = {…, -3, -2, -1, 0, 1, 2, 3, …}",
+        "benar": "d",
+        "nih": "H = {…, -3, -2, -1, 0, 1, 2, 3, …}"
+    }
+}, {
+    "soal9": {
+        "soal": "Perhatikan himpunan berikut.<br><ol class='lisoal'><li>J = {huruf pembentuk kata BANUA}</li><li>K = {warna bendera Indonesia}</li><li>L = {nama bulan dalam setahun yang berakhiran r}</li></ol> Banyak anggota himpunan dari himpunan diatas secara berurut adalah ....",
+        "a": "n(J) = 5; n(K) = 2; n(L) = 4",
+        "b": "n(J) = 4; n(K) = 2; n(L) = 5",
+        "c": "n(J) = 4; n(K) = 2; n(L) = 4",
+        "d": "n(J) = 5; n(K) = 3; n(L) = 4",
+        "benar": "c",
+        "nih": "n(J) = 4; n(K) = 2; n(L) = 4"
+    }
+}]
