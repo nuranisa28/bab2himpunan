@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Berikut ini yang merupakan himpunan kosong adalah ....",
+        "a": "K = {hewan yang memiliki ekor}",
+        "b": "L = {nama bulan dalam setahun yang berawalan dengan huruf B}",
+        "c": "M = {huruf alfabet}",
+        "d": "N = {bilangan asli yang habis dibagi 2}",
+        "benar": "b",
+        "nih": "L = {nama bulan dalam setahun yang berawalan dengan huruf B}"
+    }
+}, {
+    "soal1": {
+        "soal": "Perhatikan himpunan berikut.<br><ol class='lisoal' type='i'><li>A = {x | 10 < x < 12, x &isin; bilangan genap}</li><li>B = {x | x &le; 50, x &isin; bilangan asli kelipatan 10}</li><li>C = {persegi yang panjang sisinya tidak sama}</li><li>D = {peralatan makan}</li></ol>Di antara himpunan di atas, yang merupakan himpunan kosong adalah ....",
+        "a": "i dan ii",
+        "b": "ii dan iv",
+        "c": "iv dan iii",
+        "d": "i dan iii",
+        "benar": "d",
+        "nih": "i dan iii"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Himpunan berikut yang merupakan himpunan kosong adalah ....",
+        "a": "R = {bilangan prima antara 8 dan 10}",
+        "b": "E = {bilangan cacah kurang dari 5}",
+        "c": "D = {bilangan ganjil kurang dari 100}",
+        "d": "I = {bilangan asli kelipatan 12}",
+        "benar": "a",
+        "nih": "R = {bilangan prima antara 8 dan 10}"
+    }
+}, {
+    "soal3": {
+        "soal": "Di antara himpunan berikut yang merupakan himpunan kosong adalah ....",
+        "a": "G = {bilangan asli yang habis di bagi 2}",
+        "b": "H = {warna lampu lalu lintas}",
+        "c": "I = {bilangan cacah kurang dari 0}",
+        "d": "J = {nama universitas se-Indonesia}",
+        "benar": "c",
+        "nih": "I = {bilangan cacah kurang dari 0}"
+    }
+}, {
+    "soal4": {
+        "soal": "Perhatikan himpunan-himpunan berikut.<br><ol class='lisoal' type='i'><li>A = {bilangan asli kurang 10}</li><li>W = {bilangan cacah kurang dari 1}</li><li>H = {bilangan prima antara 2 dan 5}</li><li>E = {bilangan genap antara 4 dan 6}</li></ol>Di antara himpunan di atas, yang merupakan himpunan kosong adalah ....",
+        "a": "i",
+        "b": "ii",
+        "c": "iii",
+        "d": "iv",
+        "benar": "d",
+        "nih": "iv"
+    }
+}, {
+    "soal5": {
+        "soal": "Diketahui M = {kucing, sapi, kambing, anjing}. Himpunan semesta berikut yang mungkin untuk himpunan M adalah ....",
+        "a": "S = {hewan mamalia}",
+        "b": "S = {hewan berkaki dua}",
+        "c": "S = {hewan omnivora}",
+        "d": "S = {hewan karnivora}",
+        "benar": "a",
+        "nih": "S = {hewan mamalia}"
+    }
+}, {
+    "soal6": {
+        "soal": "Perhatikan himpunan semesta berikut.<br><ol class='lisoal' type='i'><li>S = {bilangan asli}</li><li>S = {bilangan prima}</li><li>S = {bilangan cacah yang habis dibagi 2}</li><li>S = {bilangan asli kelipatan 10}</li></ol>Diantara himpunan semesta diatas, yang mungkin untuk F = {30, 40, 50, 60, 70} adalah ....",
+        "a": "i, ii, dan iii",
+        "b": "ii, iii, dan iv",
+        "c": "i, iii, dan iv",
+        "d": "i, ii, dan iv",
+        "benar": "c",
+        "nih": "i, iii, dan iv"
+    }
+}, {
+    "soal7": {
+        "soal": "Himpunan semesta yang mungkin untuk P = {7, 11, 13, 17, 19} adalah, kecuali ....",
+        "a": "S = {bilangan ganjil}",
+        "b": "S = {bilangan genap}",
+        "c": "S = {bilangan asli}",
+        "d": "S = {bilangan prima}",
+        "benar": "b",
+        "nih": "S = {bilangan genap}"
+    }
+}, {
+    "soal8": {
+        "soal": "Diketahui C = {merah, kuning, hijau}. Himpunan semesta yang mungkin untuk himpunan C adalah, kecuali ....",
+        "a": "S = {warna pelangi}",
+        "b": "S = {warna lampu lalu lintas}",
+        "c": "S = {warna}",
+        "d": "S = {warna zebra cross}",
+        "benar": "d",
+        "nih": "S = {warna zebra cross}"
+    }
+}, {
+    "soal9": {
+        "soal": "Perhatikan himpunan semesta berikut.<br><ol class='lisoal' type='i'><li>S = {nama-nama bulan dalam setahun}</li><li>S = {nama-nama bulan dalam setahun yang memiliki kurang dari 30 hari}</li><li>S = {nama-nama bulan dalam setahun yang berakhiran dengan huruf i}</li><li>S = {nama-nama bulan dalam setahun yang berawalan dengan huruf J}</li></ol>Diantara himpunan semesta diatas, yang mungkin untuk B = {Januari, Juni, Juli} adalah ....",
+        "a": "i, ii, dan iii",
+        "b": "i, iii, dan iv",
+        "c": "ii, iii, dan iv",
+        "d": "i, ii, dan iv",
+        "benar": "b",
+        "nih": "i, iii, dan iv"
+    }
+}]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="../img/logo1.png">
+    <title>HIMPUNAN | Hasil Kuis 2</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="bg">
+
+        <div class="atas">
+            <div class="kiri">
+                <p>HIMPUNAN</p>
+            </div>
+        </div>
+        <center></center>
+        <div class="konten batsatas">
+            
+            <div class="isinya">
+                <h1>HASIL KUIS 2</h1>
+                <hr>
+                <div class="bgnya">
+
+                    <label for="nama"> Sekolah :
+                        <select id="sekolah" name="sekolah" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                            <option value="0" selected="selected">-- PILIH SEKOLAH --</option>
+                            <option value="1">SMP Negeri 2 Banjarmasin</option>
+                            <option value="2">SMP Negeri 9 Banjarmasin</option>
+                        </select>
+                    </label>
+                    <label for="nama"> Kelas :
+                        <select id="kelas" name="kelas" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                            <option value="0" selected="selected">-- PILIH KELAS --</option>
+                            <option value="1">7A</option>
+                            <option value="2">7B</option>
+                            <option value="3">7C</option>
+                            <option value="4">7D</option>
+                            <option value="5">7E</option>
+                            <option value="6">7F</option>
+                            <option value="7">7G</option>
+                            <option value="8">7H</option>
+                            <option value="9">7I</option>
+                        </select>
+                    </label>
+                    <div class="cari" onclick="readlah()">Cari</div>
+
+                </div>
+                <br><br>
+
+                <div>
+                    <table class="jrkbawah">
+                        <tr>
+                            <td class="ukr1">Sekolah</td>
+                            <td class="ukr3">Kelas</td>
+                            <td class="ukr1">Nama</td>
+                            <td class="ukr3">Skor</td>
+                            <td class="ukr2">Hari</td>
+                            <td class="ukr2">Waktu</td>
+                        </tr>
+                    </table>
+                    <table class="disini"></table>
+                </div>
+
+
+
+                <div class=" clear"></div>
+            </div>
+            
+        </div></center>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+    <script src="script2.js"></script>
+
+
+
+</body>
+
+</html>
