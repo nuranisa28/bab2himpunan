@@ -14,7 +14,7 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
 	padding: 5px 0px 5px 0px;
 }
@@ -192,6 +192,7 @@ main{
 	header{
 		width: 100%;
 		height: auto;
+		font-size: 28px;
 	}
 	.bar{
 		width: 22%;
