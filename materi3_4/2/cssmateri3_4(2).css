@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -252,7 +253,7 @@ main{
 .tabel1{
   border-collapse: collapse;
   text-align: center;
-  width: 70%;
+  width: 90%;
 }
 
 .tabel1 td, .tabel1 th {
@@ -393,10 +394,7 @@ main{
 }
 
 .gambar2{
-  width: 60%;
-  margin:0;
-  top: 0;
-  bottom: 0;
+  width: 50%;
 }
 
 .divscratch{
@@ -438,6 +436,7 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 24px;
   }
   .bar{
     width: 22%;
@@ -475,7 +474,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
   }
   .konten{

@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -276,6 +277,7 @@ main{
   padding: 10px;
   margin-top: 10px;
   display: none;
+  width: 97%;
 }
 
 .bahas li{
@@ -322,6 +324,7 @@ main{
   width: 13%;
   height: 20px;
   padding: 10px;
+  /*margin-left: 170px;*/
 }
 
 .kotak td{
@@ -399,6 +402,7 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 24px;
   }
   .bar{
     width: 22%;
@@ -436,7 +440,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
   }
   .konten{
@@ -457,6 +461,9 @@ main{
   }
   .pertanya{
     height: auto;
+  }
+  .bahas{
+    width: 93%;
   }
   .bahas li{
     margin: 0px 0px 0px 20px;

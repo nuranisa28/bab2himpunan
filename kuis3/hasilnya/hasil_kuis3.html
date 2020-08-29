@@ -13,7 +13,7 @@
 
         <div class="atas">
             <div class="kiri">
-                <p>HIMPUNAN</p>
+                <center><img src="../img/head.png" width="25%"></center>
             </div>
         </div>
         <center></center>
@@ -45,23 +45,31 @@
                             <option value="9">7I</option>
                         </select>
                     </label>
-                    <div class="cari" onclick="readlah()">Cari</div>
+                    <div class="cari" onclick="readlah()">
+                        <img src="../img/cari.png" width="20%"> Cari
+                    </div>
+                    <!-- tombol cetak -->
+                    <div class="download cari hilang" id="btnExport">
+                        <img src="../img/save.png" width="20%"> Simpan
+                    </div>
 
                 </div>
                 <br><br>
 
                 <div>
-                    <table class="jrkbawah">
-                        <tr>
-                            <td class="ukr1">Sekolah</td>
-                            <td class="ukr3">Kelas</td>
-                            <td class="ukr1">Nama</td>
-                            <td class="ukr3">Skor</td>
-                            <td class="ukr2">Hari</td>
-                            <td class="ukr2">Waktu</td>
-                        </tr>
+                    <table id="table_wrapper">
+                        <thead class="jrkbawah">
+                            <tr>
+                                <td class="ukr1">Sekolah</td>
+                                <td class="ukr3">Kelas</td>
+                                <td class="ukr1">Nama</td>
+                                <td class="ukr3">Nilai</td>
+                                <td class="ukr2">Hari</td>
+                                <td class="ukr2">Waktu</td>
+                            </tr>
+                        </thead>
+                        <tbody class="disini"></tbody>
                     </table>
-                    <table class="disini"></table>
                 </div>
 
 

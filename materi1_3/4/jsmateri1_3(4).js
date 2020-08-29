@@ -566,7 +566,7 @@ function cek31(){
   y = y.replace(/\s+/g, '');
 
   //cek
-  if(himp.value=="E" && y==x){
+  if(himp.value=="D" && y==x){
     document.getElementById("icon31").innerHTML = "<img src='../img/true.png' width='15px'>";
     bahasbnr.className += " tampil";
   } else{
@@ -576,7 +576,7 @@ function cek31(){
   }
 
   //boxmerah
-  if(himp.value!="E"){
+  if(himp.value!="D"){
     himp.className += " boxmerah";
   }
   if(y!=x){
@@ -646,7 +646,7 @@ function cek32(){
   z = z.replace(/\s+/g, '');
   
   //cek
-  if(himp.value=="E" && x!=0 && y!==0 && ang1.value==2 && ang2.value==16 && z==w){
+  if(himp.value=="D" && x!=0 && y!==0 && ang1.value==2 && ang2.value==16 && z==w){
     document.getElementById("icon32").innerHTML = "<img src='../img/true.png' width='15px'>";
     bahasbnr.className += " tampil";
     for(var i=1; i<=3; i++){
@@ -659,7 +659,7 @@ function cek32(){
   }
   
   //boxmerah
-  if(himp.value!="E"){
+  if(himp.value!="D"){
     himp.className += " boxmerah";
   }
   if(x==0 || y==0 || var1.value==""){
@@ -737,7 +737,7 @@ function cek33(){
   }
 
   //cek
-  if(himp.value=="E" && a==7){
+  if(himp.value=="D" && a==7){
     document.getElementById("icon33").innerHTML = "<img src='../img/true.png' width='15px'>";
     bahasbnr.className += " tampil";
   } else{
@@ -747,7 +747,7 @@ function cek33(){
   }
 
   //boxmerah
-  if(himp.value!="E"){
+  if(himp.value!="D"){
     himp.className += " boxmerah";
   }
   if(a!=7){

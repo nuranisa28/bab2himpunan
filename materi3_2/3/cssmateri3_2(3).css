@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -332,7 +333,7 @@ main{
 
 .catat{
   width: 96%;
-  min-height: 50px;
+  min-height: 5px;
   border-style: dotted;
   border-color:rgb(3, 31, 75);
   border-radius: 10px;
@@ -461,6 +462,7 @@ td .lebar2{
   header{
     width: 100%;
     height: auto;
+    font-size: 24px;
   }
   .bar{
     width: 22%;
@@ -498,7 +500,7 @@ td .lebar2{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
   }
   .konten{

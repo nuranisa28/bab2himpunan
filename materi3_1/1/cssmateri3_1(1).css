@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -193,6 +194,7 @@ main{
   border-radius: 10px;
   margin: 0px 10px 10px 10px;
   background-color: #f2f2f2;
+  padding: 5px;
 }
 
 .syarat li{
@@ -281,6 +283,7 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 24px;
   }
   .bar{
     width: 22%;
@@ -318,7 +321,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
   }
   .konten{
@@ -333,6 +336,9 @@ main{
     width: 95%;
     margin: 5px 5px 10px 2px;
   }
+  .syarat li{
+    margin: 5px 10px 5px 25px;
+  }
   .tujuan{
     margin: 5px 5px 0px 2px;
   }
@@ -344,6 +350,9 @@ main{
   }
   .gambar{
     width: 37%;
+  }
+  .subb li{
+    margin: 5px 10px 5px 20px;
   }
   .gambar2{
     width: 45%;

@@ -22,26 +22,26 @@
 }, {
     "soal2": {
         "soal": "Himpunan berikut yang merupakan himpunan kosong adalah ....",
-        "a": "R = {bilangan prima antara 8 dan 10}",
-        "b": "E = {bilangan cacah kurang dari 5}",
+        "a": "A = {bilangan prima antara 8 dan 10}",
+        "b": "C = {bilangan cacah kurang dari 5}",
         "c": "D = {bilangan ganjil kurang dari 100}",
-        "d": "I = {bilangan asli kelipatan 12}",
+        "d": "B = {bilangan asli kelipatan 12}",
         "benar": "a",
-        "nih": "R = {bilangan prima antara 8 dan 10}"
+        "nih": "A = {bilangan prima antara 8 dan 10}"
     }
 }, {
     "soal3": {
         "soal": "Di antara himpunan berikut yang merupakan himpunan kosong adalah ....",
-        "a": "G = {bilangan asli yang habis di bagi 2}",
-        "b": "H = {warna lampu lalu lintas}",
-        "c": "I = {bilangan cacah kurang dari 0}",
-        "d": "J = {nama universitas se-Indonesia}",
+        "a": "F = {bilangan asli yang habis di bagi 2}",
+        "b": "G = {warna lampu lalu lintas}",
+        "c": "C = {bilangan cacah kurang dari 0}",
+        "d": "D = {nama universitas se-Indonesia}",
         "benar": "c",
-        "nih": "I = {bilangan cacah kurang dari 0}"
+        "nih": "C = {bilangan cacah kurang dari 0}"
     }
 }, {
     "soal4": {
-        "soal": "Perhatikan himpunan-himpunan berikut.<br><ol class='lisoal' type='i'><li>A = {bilangan asli kurang 10}</li><li>W = {bilangan cacah kurang dari 1}</li><li>H = {bilangan prima antara 2 dan 5}</li><li>E = {bilangan genap antara 4 dan 6}</li></ol>Di antara himpunan di atas, yang merupakan himpunan kosong adalah ....",
+        "soal": "Perhatikan himpunan-himpunan berikut.<br><ol class='lisoal' type='i'><li>A = {bilangan asli kurang 10}</li><li>C = {bilangan cacah kurang dari 1}</li><li>B = {bilangan prima antara 2 dan 5}</li><li>E = {bilangan genap antara 4 dan 6}</li></ol>Di antara himpunan di atas, yang merupakan himpunan kosong adalah ....",
         "a": "i",
         "b": "ii",
         "c": "iii",
@@ -51,7 +51,7 @@
     }
 }, {
     "soal5": {
-        "soal": "Diketahui M = {kucing, sapi, kambing, anjing}. Himpunan semesta berikut yang mungkin untuk himpunan M adalah ....",
+        "soal": "Diketahui K = {kucing, sapi, kambing, anjing}. Himpunan semesta berikut yang mungkin untuk himpunan K adalah ....",
         "a": "S = {hewan mamalia}",
         "b": "S = {hewan berkaki dua}",
         "c": "S = {hewan omnivora}",
@@ -71,7 +71,7 @@
     }
 }, {
     "soal7": {
-        "soal": "Himpunan semesta yang mungkin untuk P = {7, 11, 13, 17, 19} adalah, kecuali ....",
+        "soal": "Himpunan semesta yang mungkin untuk C = {7, 11, 13, 17, 19} adalah, kecuali ....",
         "a": "S = {bilangan ganjil}",
         "b": "S = {bilangan genap}",
         "c": "S = {bilangan asli}",
@@ -81,7 +81,7 @@
     }
 }, {
     "soal8": {
-        "soal": "Diketahui C = {merah, kuning, hijau}. Himpunan semesta yang mungkin untuk himpunan C adalah, kecuali ....",
+        "soal": "Diketahui D = {merah, kuning, hijau}. Himpunan semesta yang mungkin untuk himpunan D adalah, kecuali ....",
         "a": "S = {warna pelangi}",
         "b": "S = {warna lampu lalu lintas}",
         "c": "S = {warna}",

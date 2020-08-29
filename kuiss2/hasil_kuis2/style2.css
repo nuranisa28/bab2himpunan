@@ -206,21 +206,21 @@ td {
 }
 
 .ukr1 {
-    width: 25%;
+    width: 300px;
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .ukr2 {
-    width: 22%;
+    width: 200px;
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .ukr3 {
-    width: 17%;
+    width: 90px;
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .jrkbawah {
@@ -228,6 +228,9 @@ td {
     background-color:rgb(168, 194, 251);
 }
 
+.hilang{
+    display: none !important;
+}
 
 
 /* ------------------------------------------------------------- */

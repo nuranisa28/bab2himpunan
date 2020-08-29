@@ -160,9 +160,9 @@ function allowDrop(ev) {
     document.getElementById("pil2").innerHTML = "<span class='pilihan' id='p2' draggable='true' ondragstart='drag(event)'>B = {5, 10, 15, ...}</span>";
     document.getElementById("pil3").innerHTML = "<span class='pilihan' id='p3' draggable='true' ondragstart='drag(event)'>C = {1, 2, 4, 7, 10}</span>";
     document.getElementById("pil7").innerHTML = "<span class='pilihan' id='p7' draggable='true' ondragstart='drag(event)'>G = {1, 2, 4, ..., 256}</span>";
-    document.getElementById("pil8").innerHTML = "<span class='pilihan' id='p8' draggable='true' ondragstart='drag(event)'>H = {0, 1, 2, 3, ...}</span>";
-    document.getElementById("pil9").innerHTML = "<span class='pilihan' id='p9' draggable='true' ondragstart='drag(event)'>I = {7, 14, 21, 28, ...}</span>";
-    document.getElementById("pil10").innerHTML = "<span class='pilihan' id='p10' draggable='true' ondragstart='drag(event)'>J = {1, 4, 9, 16, 25}</span>";
+    document.getElementById("pil8").innerHTML = "<span class='pilihan' id='p8' draggable='true' ondragstart='drag(event)'>F = {0, 1, 2, 3, ...}</span>";
+    document.getElementById("pil9").innerHTML = "<span class='pilihan' id='p9' draggable='true' ondragstart='drag(event)'>A = {7, 14, 21, 28, ...}</span>";
+    document.getElementById("pil10").innerHTML = "<span class='pilihan' id='p10' draggable='true' ondragstart='drag(event)'>D = {1, 4, 9, 16, 25}</span>";
   }
 
 
@@ -210,12 +210,12 @@ function cek21(){
   //cek
   if(x=="n(J)" && y==5){
     document.getElementById("icon1").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket1").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket1").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket1").style.color = "green";
   } else{
     document.getElementById("icon1").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className += " tampil";
-    document.getElementById("ket1").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket1").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket1").style.color = "red";
   }
 
@@ -259,12 +259,12 @@ function cek22(){
   //cek
   if(x=="n(D)" && y==6){
     document.getElementById("icon2").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket2").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket2").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket2").style.color = "green";
   } else{
     document.getElementById("icon2").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className += " tampil";
-    document.getElementById("ket2").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket2").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket2").style.color = "red";
   }
 
@@ -308,12 +308,12 @@ function cek23(){
   //cek
   if(x=="n(K)" && y==6){
     document.getElementById("icon3").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket3").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket3").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket3").style.color = "green";
   } else{
     document.getElementById("icon3").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className += " tampil";
-    document.getElementById("ket3").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket3").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket3").style.color = "red";
   }
 
@@ -355,19 +355,19 @@ function cek24(){
   y = y.replace(/\s+/g, '');
 
   //cek
-  if(x=="n(L)" && y==7){
+  if(x=="n(C)" && y==7){
     document.getElementById("icon4").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket4").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket4").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket4").style.color = "green";
   } else{
     document.getElementById("icon4").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className += " tampil";
-    document.getElementById("ket4").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket4").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket4").style.color = "red";
   }
 
   //box merah
-  if(x!="n(L)"){
+  if(x!="n(C)"){
     n.className += " boxmerah";
   }
   if(y!=7){
@@ -406,12 +406,12 @@ function cek25(){
   //cek
   if(x=="n(H)" && y==8){
     document.getElementById("icon5").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket5").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket5").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket5").style.color = "green";
   } else{
     document.getElementById("icon5").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className += " tampil";
-    document.getElementById("ket5").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket5").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket5").style.color = "red";
   }
 

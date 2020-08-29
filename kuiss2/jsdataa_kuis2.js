@@ -321,7 +321,7 @@ dat.onreadystatechange = function () {
                 let waktunya = waktu();
                 let harinya = hari();
                 
-                createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya);
+                createTask(sekolahfix, namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya);
 
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value;

@@ -79,81 +79,119 @@ function tjk1(tjk1) {
   }
 }
 
-/*jawaban ke 4*/
-let jawab1 = document.querySelector('.jawab1');
+function cek1(){
+  var jawab = document.getElementById('jawab1');
+  var anggota = ["merah","putih"];
+  var ada = 0;
 
-// function agar saat di enter tidak dijalankan 
-jawab1.addEventListener('keypress', function(e){
-  if (e.keyCode == 13) {
-            e.preventDefault();
-            return false;
-        }
-});
-
-jawab1.addEventListener('keyup', function(){
-  
-  //jika kotak kosong
-  if(jawab1.value.length==0){
-    if(jawab1.className.indexOf('boxhijau') == -1){
-          jawab1.className = jawab1.className.replace('boxmerah', "");
-        }
-        if (jawab1.className.indexOf('boxmerah') == -1){
-          jawab1.className = jawab1.className.replace('boxhijau', "");
-        }
-    document.getElementById('icon1').innerHTML = "";
-  }
-
-  //jika kotak berisi
-  if(jawab1.value.length!=0){
-
-    let benar = ["merah","putih"];
-    var x = jawab1.value;
-    x = x.replace(/\s+/g, '');
-    var jawaban = x.split(",");
-
-    var a = 0;
-    for (var i =0; i<2; i++){
-      for(var j=0; j<jawaban.length; j++){
-        if(benar[i]==jawaban[j]){
-          a+=1;
-        }
+  var x = jawab.value.toLowerCase();
+  x = x.replace(/\s+/g, '');
+  var angg = x.split(",");
+  for(var j=0; j<anggota.length; j++){
+    for(var k=0; k<angg.length; k++){
+      if(anggota[j]==angg[k]){
+        ada+=1;
       }
     }
-    console.log(jawaban);
-
-
-    if(a==2){
-      setTimeout(function(){
-        //box warna
-        if (jawab1.className.indexOf('boxhijau') == -1) {
-          if (jawab1.className.indexOf('boxmerah') == -1) {
-            jawab1.className += ' boxhijau';
-          } else {
-            jawab1.className = jawab1.className.replace('boxmerah', 'boxhijau');
-          }
-        }
-        document.getElementById('lanjut1').className = document.getElementById('lanjut1').className.replace('hilang','');
-        document.getElementById('icon1').innerHTML = "<img src='../img/true.png' width='15px'>";
-      }, 500)
-    } else{
-      setTimeout(function(){
-        //box warna
-        if (jawab1.className.indexOf('boxmerah') == -1) {
-          if (jawab1.className.indexOf('boxhijau') == -1) {
-            jawab1.className += ' boxmerah';
-          } else {
-            jawab1.className = jawab1.className.replace('boxhijau', 'boxmerah');
-          }
-        }
-        document.getElementById('icon1').innerHTML = "<img src='../img/false.png' width='15px'>";
-      }, 1000)
-      
-    }
-
   }
 
+  if(ada==2){
+    jawab.className += " boxhijau";
+    document.getElementById('icon1').innerHTML = "<img src='../img/true.png' width='15px'>";
+    document.getElementById('cek1').className += " hilang";
+    document.getElementById('lanjut1').className = document.getElementById('lanjut1').className.replace('hilang','');
+  } else{
+    jawab.className += " boxmerah";
+    document.getElementById('icon1').innerHTML = "<img src='../img/false.png' width='15px'>";
+    document.getElementById('ulang1').className = document.getElementById('ulang1').className.replace('hilang','');
+  }
+}
 
-})
+function ulang1(){
+  var jawab = document.getElementById('jawab1');
+
+  jawab.value = "";
+  jawab.className = jawab.className.replace('boxmerah','');
+  document.getElementById('icon1').innerHTML = "";
+  document.getElementById('ulang1').className += " hilang";
+}
+
+/*jawaban ke 4*/
+// let jawab1 = document.querySelector('.jawab1');
+
+// // function agar saat di enter tidak dijalankan 
+// jawab1.addEventListener('keypress', function(e){
+//   if (e.keyCode == 13) {
+//             e.preventDefault();
+//             return false;
+//         }
+// });
+
+// jawab1.addEventListener('keyup', function(){
+  
+//   //jika kotak kosong
+//   if(jawab1.value.length==0){
+//     if(jawab1.className.indexOf('boxhijau') == -1){
+//           jawab1.className = jawab1.className.replace('boxmerah', "");
+//         }
+//         if (jawab1.className.indexOf('boxmerah') == -1){
+//           jawab1.className = jawab1.className.replace('boxhijau', "");
+//         }
+//     document.getElementById('icon1').innerHTML = "";
+//   }
+
+//   //jika kotak berisi
+//   if(jawab1.value.length!=0){
+
+//     let benar = ["merah","putih"];
+//     var x = jawab1.value;
+//     x = x.toLowerCase();
+//     x = x.replace(/\s+/g, '');
+//     var jawaban = x.split(",");
+
+//     var a = 0;
+//     for (var i =0; i<2; i++){
+//       for(var j=0; j<jawaban.length; j++){
+//         if(benar[i]==jawaban[j]){
+//           a+=1;
+//         }
+//       }
+//     }
+//     console.log(jawaban);
+
+
+//     if(a==2){
+//       setTimeout(function(){
+//         //box warna
+//         if (jawab1.className.indexOf('boxhijau') == -1) {
+//           if (jawab1.className.indexOf('boxmerah') == -1) {
+//             jawab1.className += ' boxhijau';
+//           } else {
+//             jawab1.className = jawab1.className.replace('boxmerah', 'boxhijau');
+//           }
+//         }
+//         document.getElementById('lanjut1').className = document.getElementById('lanjut1').className.replace('hilang','');
+//         document.getElementById('icon1').innerHTML = "<img src='../img/true.png' width='15px'>";
+//       }, 500)
+//     } else{
+//       setTimeout(function(){
+//         //box warna
+//         if (jawab1.className.indexOf('boxmerah') == -1) {
+//           if (jawab1.className.indexOf('boxhijau') == -1) {
+//             jawab1.className += ' boxmerah';
+//           } else {
+//             jawab1.className = jawab1.className.replace('boxhijau', 'boxmerah');
+//           }
+//         }
+//         document.getElementById('icon1').innerHTML = "<img src='../img/false.png' width='15px'>";
+//       }, 1000)
+      
+//     }
+
+//   }
+
+
+// })
 
 //jawaban ke 2
 let jawabb2 = document.querySelector('.jawab2');
@@ -231,6 +269,7 @@ for(let i=0; i < jawab2.length; i++){
     let sudah = 0;
     console.log(jawab2[i].value);
     jawab2[i].value = jawab2[i].value.replace(/\s+/g, '');
+    jawab2[i].value = jawab2[i].value.toLowerCase();
 
     if(jawab2[i].value.length==0){
       if(jawab2[i].className.indexOf('boxhijau') == -1){
@@ -249,6 +288,7 @@ for(let i=0; i < jawab2.length; i++){
       if(jawab2[i].value.match(alpha)){
         
         if(i==0){
+        if(jawab2[0].value=="merah" || jawab2[0].value=="putih"){
 
           //cek apakah input ada diarray
           for(var x=0; x<2; x++){
@@ -279,8 +319,10 @@ for(let i=0; i < jawab2.length; i++){
           }
 
         }
+        }
 
-        if (i==1){
+        if(i==1){
+        if (jawab2[1].value=="merah" || jawab2[1].value=="putih"){
 
           //cek apakah input ada diarray
           for(var x=0; x<2; x++){
@@ -310,6 +352,7 @@ for(let i=0; i < jawab2.length; i++){
             }
           }
 
+        }
         }
 
         if(benar==2){
@@ -353,6 +396,7 @@ jawab4.addEventListener('keyup', function(){
     let benar = ["merah","putih"];
     var x = jawab4.value;
     x = x.replace(/\s+/g, '');
+    x = x.toLowerCase();
     var jawaban = x.split(",");
 
     var a = 0;
@@ -436,6 +480,8 @@ function jawab5(){
     for(var i=1; i<=2; i++){
       document.getElementById('ubah'+i).className = document.getElementById('ubah'+i).className.replace('boxbiru','');
     }
+    document.getElementById('cek5').className += " hilang";
+    document.getElementById('ket1').innerHTML = "Himpunan kuasa dari himpunan B adalah P(B) = {{ }, {merah}, {putih}, {merah,putih}}";
   } else{
     document.getElementById('icon4').innerHTML = "<img src='../img/false.png' width='15px'>";
     document.getElementById('ulang5').className = document.getElementById('ulang5').className.replace('hilang','');

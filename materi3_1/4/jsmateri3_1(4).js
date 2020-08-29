@@ -134,7 +134,7 @@ function cek2(){
     }
   }
 
-  if (g.value=="G" && b==5){
+  if (g.value=="A" && b==5){
     lanjut.className = lanjut.className.replace('hilang','');
     document.getElementById("icon2").innerHTML = "<img src='../img/true.png' width='15px'>";
   } else {
@@ -142,7 +142,7 @@ function cek2(){
     document.getElementById("icon2").innerHTML = "<img src='../img/false.png' width='15px'>";
   }
 
-  if(g.value!="G"){
+  if(g.value!="A"){
     g.className += " boxmerah";
   }
   if(b!=5){

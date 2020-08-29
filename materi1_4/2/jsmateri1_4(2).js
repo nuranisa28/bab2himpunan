@@ -108,12 +108,12 @@ function cek21(){
   //cek
   if(x=="n(B)" && y==3){
     document.getElementById("icon1").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket1").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket1").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket1").style.color = "green";
   } else{
     document.getElementById("icon1").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className = ulang.className.replace('hilang','');
-    document.getElementById("ket1").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket1").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket1").style.color = "red";
   }
 
@@ -155,19 +155,19 @@ function cek22(){
   y = y.replace(/\s+/g, '');
 
   //cek
-  if(x=="n(I)" && y==7){
+  if(x=="n(D)" && y==7){
     document.getElementById("icon2").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket2").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket2").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket2").style.color = "green";
   } else{
     document.getElementById("icon2").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className = ulang.className.replace('hilang','');
-    document.getElementById("ket2").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket2").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket2").style.color = "red";
   }
 
   //box merah
-  if(x!="n(I)"){
+  if(x!="n(D)"){
     n.className += " boxmerah";
   }
   if(y!=7){
@@ -206,12 +206,12 @@ function cek23(){
   //cek
   if(x=="n(G)" && y==5){
     document.getElementById("icon3").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket3").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket3").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket3").style.color = "green";
   } else{
     document.getElementById("icon3").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className = ulang.className.replace('hilang','');
-    document.getElementById("ket3").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket3").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket3").style.color = "red";
   }
 
@@ -255,12 +255,12 @@ function cek24(){
   //cek
   if(x=="n(A)" && y==16){
     document.getElementById("icon4").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket4").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket4").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket4").style.color = "green";
   } else{
     document.getElementById("icon4").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className = ulang.className.replace('hilang','');
-    document.getElementById("ket4").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket4").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket4").style.color = "red";
   }
 
@@ -302,19 +302,19 @@ function cek25(){
   y = y.replace(/\s+/g, '');
 
   //cek
-  if(x=="n(D)" && y==12){
+  if(x=="n(C)" && y==12){
     document.getElementById("icon5").innerHTML = "<img src='../img/true.png' width='15px'>";
-    document.getElementById("ket5").innerHTML = "Jawaban Kamu Benar";
+    document.getElementById("ket5").innerHTML = "Jawaban kamu benar";
     document.getElementById("ket5").style.color = "green";
   } else{
     document.getElementById("icon5").innerHTML = "<img src='../img/false.png' width='15px'>";
     ulang.className = ulang.className.replace('hilang','');
-    document.getElementById("ket5").innerHTML = "Jawaban Kamu Salah";
+    document.getElementById("ket5").innerHTML = "Jawaban kamu salah";
     document.getElementById("ket5").style.color = "red";
   }
 
   //box merah
-  if(x!="n(D)"){
+  if(x!="n(C)"){
     n.className += " boxmerah";
   }
   if(y!=12){

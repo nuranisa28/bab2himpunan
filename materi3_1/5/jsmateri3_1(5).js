@@ -273,12 +273,12 @@ function cek1(){
     }
 
     if(a==4 && b==0){
-      document.getElementById("info2").innerHTML = "Jawaban Kamu Benar";
+      document.getElementById("info2").innerHTML = "Jawaban kamu benar";
       document.getElementById("info2").style.color = "green";
       lanjut.className = lanjut.className.replace('hilang','');
       document.getElementById('scratch').src = document.getElementById('scratch').src
     } else{
-      document.getElementById("info2").innerHTML = "Jawaban Kamu Salah";
+      document.getElementById("info2").innerHTML = "Jawaban kamu salah";
       document.getElementById("info2").style.color = "red";
       ulang.className = ulang.className.replace("hilang","");
     }

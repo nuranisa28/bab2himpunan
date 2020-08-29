@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -254,13 +255,13 @@ main{
   height: auto;
   background-color: #ddd;
   padding: 10px;
-  width: 85%;
+  width: 90%;
   text-align: justify;
   margin-bottom: 10px;
 }
 
 .bahas li{
-  margin: 0px 15px 5px 25px;
+  margin: 0px 5px 5px 20px;
 }
 
 .prf{
@@ -329,6 +330,7 @@ main{
 @media screen and (max-width: 992px){
   header{
     width: 100%;
+    font-size: 28px;
     height: auto;
   }
   .bar{
@@ -367,7 +369,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 10px;
   }
   .konten{
@@ -389,7 +391,7 @@ main{
     padding: 5px;
   }
   .bahas{
-    width: 95%;
+    width: 93%;
   }
   .gambar2, .gambar3{
     width: 40%;

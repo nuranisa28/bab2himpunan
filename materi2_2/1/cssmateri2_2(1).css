@@ -14,14 +14,15 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma
 }
 
 .bar{
   float: left;
-  margin-left: 10px;
+  margin: 0px 20px 0px 10px;
   width: 8%;
 }
 
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -248,7 +249,7 @@ main{
 }
 
 .tabel2{
-  width: 80%;
+  width: 90%;
   text-align: justify;
 }
 
@@ -316,6 +317,8 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 18px;
+    text-align: left;
   }
   .bar{
     width: 22%;
@@ -323,6 +326,7 @@ main{
   }
   .home{
     width: 8%;
+    margin-top: -18px;
   }
   aside{
     display: none;
@@ -353,7 +357,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
   }
   .konten{

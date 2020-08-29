@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -255,6 +256,7 @@ main{
   border-radius: 0px 0px 10px 10px;
   padding: 15px;
   display: none;
+  text-align: left;
 }
 
 .pertanya li{
@@ -428,7 +430,7 @@ main{
   background-color: #f2f2f2;
   padding: 10px;
   margin-top: 10px;
-  width: 57%;
+  width: 97%;
   display: none;
 }
 
@@ -474,6 +476,7 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 28px;
   }
   .bar{
     width: 22%;
@@ -511,7 +514,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
   }
   .konten{
@@ -559,6 +562,7 @@ main{
   }
   .popup1 .popuptext1 {
     margin-left: -50px;
+    display: inline-block;
   }
   .bahas{
     width: 93%;

@@ -93,28 +93,71 @@ function muncul(){
   document.getElementById('muncul').className = document.getElementById('muncul').className.replace('hilang','');
 }
 
+// if (jawaban[0].className.indexOf('boxhijau') == -1) {
+//             if (jawaban[0].className.indexOf('boxmerah') == -1) {
+//               jawaban[0].className += ' boxhijau';
+//             } else {
+//               jawaban[0].className = jawaban[0].className.replace('boxmerah', 'boxhijau');
+//             }
+//           }
+
 //petunjuk
 function ubah1(){
-  document.getElementById('ubah6').className += " boxbiru";
+  var ubah6 = document.getElementById('ubah6');
+  if(ubah6.className.indexOf('boxbiru') == -1){
+    if(ubah6.className.indexOf('boxhijau') == -1){
+      ubah6.className += " boxbiru";
+    } else{
+      ubah6.className = ubah6.className.replace('','boxbiru');
+    }
+  }
 }
 function ubah2(){
   for(var i=4; i<=9; i++){
-    document.getElementById('ubah'+i).className += " boxbiru";
+    var ubah = document.getElementById('ubah'+i);
+    if(ubah.className.indexOf('boxbiru') == -1){
+      if(ubah.className.indexOf('boxhijau') == -1){
+        ubah.className += " boxbiru";
+      } else{
+        ubah.className = ubah.className.replace('','boxbiru');
+      }
+    }
   }
 }
 function ubah3(){
   for(var i=1; i<=4; i++){
-    document.getElementById('ubah'+i).className += " boxbiru";
+    var ubah = document.getElementById('ubah'+i);
+    if(ubah.className.indexOf('boxbiru') == -1){
+      if(ubah.className.indexOf('boxhijau') == -1){
+        ubah.className += " boxbiru";
+      } else{
+        ubah.className = ubah.className.replace('','boxbiru');
+      }
+    }
   }
 }
 function ubah4(){
   for(var i=1; i<=3; i++){
-    document.getElementById('ubah'+i).className += " boxbiru";
+    var ubah = document.getElementById('ubah'+i);
+    if(ubah.className.indexOf('boxbiru') == -1){
+      if(ubah.className.indexOf('boxhijau') == -1){
+        ubah.className += " boxbiru";
+      } else{
+        ubah.className = ubah.className.replace('','boxbiru');
+      }
+    }
   }
 }
 function ubah5(){
   for(var i=5; i<=9; i++){
-    document.getElementById('ubah'+i).className += " boxbiru";
+    var ubah = document.getElementById('ubah'+i);
+    if(ubah.className.indexOf('boxbiru') == -1){
+      if(ubah.className.indexOf('boxhijau') == -1){
+        ubah.className += " boxbiru";
+      } else{
+        ubah.className = ubah.className.replace('','boxbiru');
+      }
+    }
   }
 }
 
@@ -147,6 +190,8 @@ for(let i=0; i<jawaban.length; i++){
 
       if(i==0){
 
+        var ubah6 = document.getElementById('ubah6');
+        
         if(jawaban[0].value==56){
           icon[0].innerHTML = "<img src='../img/true.png' width='15px'>";
           if (jawaban[0].className.indexOf('boxhijau') == -1) {
@@ -158,7 +203,9 @@ for(let i=0; i<jawaban.length; i++){
           }
           setTimeout(function (){
             document.getElementById('lanjut1').className = document.getElementById('lanjut1').className.replace('hilang','');
-            document.getElementById('ubah6').className = document.getElementById('ubah6').className.replace('boxbiru','');
+            if(ubah6.className.indexOf('boxhijau') == -1){
+              ubah6.className = ubah6.className.replace('boxbiru', "");
+            }
           }, 1000)
         } else{
           icon[0].innerHTML = "<img src='../img/false.png' width='15px'>";
@@ -187,7 +234,10 @@ for(let i=0; i<jawaban.length; i++){
           setTimeout(function (){
             document.getElementById('lanjut2').className = document.getElementById('lanjut1').className.replace('hilang','');
             for(var i=4; i<=9; i++){
-              document.getElementById('ubah'+i).className = document.getElementById('ubah'+i).className.replace('boxbiru','');
+              var ubah = document.getElementById('ubah'+i);
+              if(ubah.className.indexOf('boxhijau') == -1){
+                ubah.className = ubah.className.replace('boxbiru', "");
+              }
             }
           }, 1000)
         } else{
@@ -217,7 +267,10 @@ for(let i=0; i<jawaban.length; i++){
           setTimeout(function (){
             document.getElementById('lanjut3').className = document.getElementById('lanjut1').className.replace('hilang','');
             for(var i=1; i<=4; i++){
-              document.getElementById('ubah'+i).className = document.getElementById('ubah'+i).className.replace('boxbiru','');
+              var ubah = document.getElementById('ubah'+i);
+              if(ubah.className.indexOf('boxhijau') == -1){
+                ubah.className = ubah.className.replace('boxbiru', "");
+              }
             }
           }, 1000)
         } else{
@@ -247,7 +300,10 @@ for(let i=0; i<jawaban.length; i++){
           setTimeout(function (){
             document.getElementById('lanjut4').className = document.getElementById('lanjut1').className.replace('hilang','');
             for(var i=1; i<=3; i++){
-              document.getElementById('ubah'+i).className = document.getElementById('ubah'+i).className.replace('boxbiru','');
+              var ubah = document.getElementById('ubah'+i);
+              if(ubah.className.indexOf('boxhijau') == -1){
+                ubah.className = ubah.className.replace('boxbiru', "");
+              }
             }
           }, 1000)
         } else{
@@ -277,7 +333,10 @@ for(let i=0; i<jawaban.length; i++){
           setTimeout(function (){
             document.getElementById('lanjut5').className = document.getElementById('lanjut1').className.replace('hilang','');
             for(var i=5; i<=9; i++){
-              document.getElementById('ubah'+i).className = document.getElementById('ubah'+i).className.replace('boxbiru','');
+              var ubah = document.getElementById('ubah'+i);
+              if(ubah.className.indexOf('boxhijau') == -1){
+                ubah.className = ubah.className.replace('boxbiru', "");
+              }
             }
           }, 1000)
         } else{

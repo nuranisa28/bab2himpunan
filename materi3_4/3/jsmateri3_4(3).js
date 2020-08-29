@@ -185,7 +185,7 @@ function cek2(){
   var ang = document.getElementById('jawab6');
   var komp = document.getElementById('jawab5');
 
-  if(himp.value=="N"){
+  if(himp.value=="A"){
     benar+=1;
     himp.className += " boxhijau";
   } else{

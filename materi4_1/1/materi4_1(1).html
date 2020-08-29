@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Irisan Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri4_1(1).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		4. OPERASI HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">1.1 Pengertian Himpunan</a>
+	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">1.5 Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">2.1 Himpunan Kosong</a>
+	    			<a href="">2.2 Himpunan Semesta</a>
+	    			<a href="">2.3 Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">3.1 Pengertian Diagram Venn</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.5 Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="materi4_1(1).html" style="color: white;">4.1 Irisan Himpunan</a></div>
+	    			<a href="../../materi4_2/1/materi4_2(1).html">4.2 Gabungan Himpunan</a>
+	          		<a href="../../materi4_3/1/materi4_3(1).html">4.3 Selisih Dua Himpunan</a>
+	    			<a href="">4.4 Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">5. Penerapan Konsep Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">5.2 Kuis 5</a>
+	  			</div>
+	  		<a href="">6. Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				4.1 IRISAN HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				<ol>
+					<li>Siswa sudah mampu menyatakan notasi dari suatu himpunan</li>
+					<li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menyatakan himpunan.</li>
+					<li>Siswa sudah mampu menentukan himpunan semesta dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menggambar diagram venn.</li>
+				</ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan siswa mampu menentukan irisan himpunan.
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<center><img src="../img/irisan1.png" class="gambar2"></center>
+			<p class="prf">Irisan himpunan adalah himpunan yang anggotanya memuat anggota himpunan pertama <b><u>dan</u></b> anggota himpunan kedua. Misalnya, pada himpunan A dan B, irisan himpunan A dan B dinotasikan dengan <b>A &cap; B</b>, dibaca <b>A irisan B</b>. Banyak anggota irisan himpunan A dan B dinotasikan dengan <b>n(A &cap; B)</b>.</p>
+			<br>
+			<br>
+			<img src="../img/amati.png" class="gambar"><br>
+			Perhatikanlah contoh di bawah ini!
+			<div class="pengertian">
+				<p class="prf">Misalkan Anang dan Galuh ditanya buah-buahan yang mereka sukai. Anang menyukai pisang, apel, jeruk, dan semangka. Sedangkan Galuh menyukai anggur, mangga, dan jeruk. Jika A adalah himpunan buah-buahan yang disukai Anang dan G adalah himpunan buah-buahan yang disukai Galuh, maka cobalah kalian nyatakan himpunannya dengan mengisi kotak kosong di bawah ini. Gunakanlah metode tabulasi untuk menyatakan himpunannya.</p>
+				<ol>
+					<li>
+						Himpunan A<br>
+						<input type="text" class="input1" id="jawab1"> = {<input type="text" class="input2" id="jawab2">}
+						<span class="icon" id="icon1"></span><br>
+						<button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" id="ulang1" onclick="ulang1()"><b>Ulang</b></button>
+					</li>
+					<li class="hilang" id="lanjut1">
+						Himpunan G<br>
+						<input type="text" class="input1" id="jawab3"> = {<input type="text" class="input2" id="jawab4">}
+						<span class="icon" id="icon2"></span><br>
+						<button class="cekulang" id="cek2" onclick="cek2()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" id="ulang2" onclick="ulang2()"><b>Ulang</b></button>
+					</li>
+				</ol>
+				<center>
+				<div class="contoh hilang" id="lanjutt1">
+					A = {pisang, apel, jeruk, semangka}<br>
+					G= {anggur, mangga, jeruk}
+				</div>
+				</center>
+				<div class="hilang" id="lanjutt2">
+				Perhatikan kembali himpunan A dan G. Apakah ada anggota himpunan yang sama di antara himpunan A dan G?
+				<button class="cekulang" id="ada1" onclick="ada1()"><b>Ada</b></button>
+				<button class="cekulang" id="tdk1" onclick="tdk1()"><b>Tidak Ada</b></button>
+				<button class="cekulang hilang" id="ulang3" onclick="ulang3()"><b>Ulang</b></button>
+				<span class="icon" id="icon3"></span>
+				</div>
+				
+				<div class="hilang"  id="lanjut2">
+					<p class="prf"><span class="hilang" id="bnr1">Jawaban kamu tepat! </span>
+					<span class="hilang" id="slh1">Ups! Jawaban kamu masih keliru. </span>
+					Terdapat anggota yang <b><u>sama</u></b> di antara himpunan A dan G yaitu <b>jeruk</b>, karena buah jeruk sama-sama disukai oleh Anang dan Galuh.
+					<center>
+					<div class="contoh">
+						A = {pisang, apel, <span class="slh"><b>jeruk</b></span>, semangka} dan G = {anggur, mangga, <span class="slh"><b>jeruk</b></span>}
+					</div>
+					</center>
+					Sehingga dapat disimpulkan bahwa irisan himpunan A dan himpunan G adalah <b><u>jeruk</u></b> dan dapat dinyatakan sebagai berikut :
+					<center>
+					<div class="contoh2">
+						<b>A &cap; G = {jeruk}</b>
+					</div>
+					</center>
+					dibaca <b>A irisan G adalah jeruk</b> dengan <b>n(A &cap; G) = 1</b>.
+					</p>
+				</div>
+			</div>
+			<div class="hilang" id="lanjut3">
+				<br>
+				<br>
+				<img src="../img/catatan.png" class="gambar"><br>
+				<div class="catat">
+					<ul>
+						<li>Notasi pembentuk himpunan dari irisan himpunan A dan B adalah : <b>A &cap; B = {x| x &isin; A <u>dan</u> x &isin; B}</b>.</li>
+						<li>Kata <b>"dan"</b> berarti <u>kedua syarat harus dipenuhi</u>. Dengan kata lain, himpunan A dan himpunan B bersama-sama mempunyai x sebagai anggota himpunan.</li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="materi4_1(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi4_1(2).html" class="tmbl">2</a>
+				<a href="../3/materi4_1(3).html" class="tmbl">3</a>
+				<a href="../4/materi4_1(4).html" class="tmbl">4</a>
+				<a href="../2/materi4_1(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri4_1(1).js"></script>
+</body>
+</html>

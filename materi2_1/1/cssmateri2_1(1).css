@@ -11,24 +11,25 @@ body{
 
 header{
 	width: 100%;
-	height: 40px;
+	min-height: 10px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
-	text-align: center;
-	padding-top: 5px;
+	font-size: 30px;
+  text-align: center;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
   float: left;
-  margin-left: 10px;
+  margin: 0px 20px 0px 10px;
   width: 8%;
 }
 
 .home{
 	width: 3%;
 	float: right;
-	margin-right: 10px;
+	margin-right : 10px;
 }
 
 aside{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -233,7 +234,7 @@ main{
 
 .tabel1{
   border-collapse: collapse;
-  width: 70%;
+  width: 97%;
 }
 
 .tabel1 td, .tabel1 th {
@@ -316,6 +317,8 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 18px;
+    text-align: left;
   }
   .bar{
     width: 22%;
@@ -323,6 +326,7 @@ main{
   }
   .home{
     width: 8%;
+    margin-top: -18px;
   }
   aside{
     display: none;
@@ -353,7 +357,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
   }
   .konten{
@@ -366,7 +370,10 @@ main{
   }
   .syarat{
     width: 95%;
-    padding: 5px 5px 0px 2px;
+    padding: 5px 5px 5px 2px;
+  }
+  .syarat li{
+    margin: 5px 15px 5px 25px;
   }
   .tujuan{
     margin: 5px 5px 0px 2px;
@@ -378,7 +385,7 @@ main{
     width: 37%;
   }
   .tabel1{
-    width: 90%;
+    width: 100%;
   }
   .cekulang{
     padding: 5px;

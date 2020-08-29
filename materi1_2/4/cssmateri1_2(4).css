@@ -14,9 +14,10 @@ header{
 	height: 40px;
 	background-color: rgb(3, 31, 75);
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
 }
 
 .bar{
@@ -153,7 +154,7 @@ main{
   background-color: #187bcd;
   color: white;
   padding: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .konten{
@@ -228,6 +229,10 @@ main{
 .pertanyaan{
   width: 100%;
   margin-top: 5px;
+}
+
+.pertanya{
+  text-align: left;
 }
 
 .number{
@@ -317,7 +322,7 @@ main{
 }
 
 .jwb2{
-  width: 25%;
+  width: 21%;
   height: 20px;
   border-bottom: 1px solid black;
   display: inline-block;
@@ -341,6 +346,7 @@ main{
 .cekulang{
   padding: 8px;
   cursor: pointer;
+  margin: 5px 0px 5px 0px;
 }
 
 .ulang{
@@ -406,6 +412,7 @@ main{
   header{
     width: 100%;
     height: auto;
+    font-size: 28px;
   }
   .bar{
     width: 22%;
@@ -443,7 +450,7 @@ main{
     width: 100%;
   }
   .subbab{
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
   }
   .konten{
@@ -489,8 +496,8 @@ main{
     padding-left: 10%;
   }
   .jwb2{
-    width: 70%;
-    padding-left: 10%;
+    width: 45%;
+    padding-left: 5%;
   }
   .jwb3{
     width: 40%;
