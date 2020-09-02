@@ -5,7 +5,7 @@
 
 body {
     background-image: url(../img/bg1.png);
-	background-size: 35%;
+    background-size: 35%;
   font-family: Tahoma;
 }
 
@@ -32,6 +32,7 @@ h1 {
 .kiri {
     width: 100%;
     box-sizing: border-box;
+    padding-top: 15px;
 }
 
 .kiri p {
@@ -39,7 +40,7 @@ h1 {
     font-size: 8vw;
     font-weight: bold;
     text-align: center;
-    padding-top: 10px;
+    
 }
 
 
@@ -50,7 +51,7 @@ h1 {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: white;
-    margin: 10px;
+    margin: 10px 10px 10px 30px;
 }
 
 .isinya {
@@ -175,7 +176,6 @@ label {
     display: inline-block;
     text-align: center;
     width: 90%;
-    display: inline-block;
 }
 
 .cari {

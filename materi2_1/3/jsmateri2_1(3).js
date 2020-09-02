@@ -263,13 +263,13 @@ function cek1(){
   if(benar==2 && salah==0){
     bahasbnr.className += " tampil";
   } 
-  if (salah>0){
+  if (benar!=2 || salah>0){
     bahasslh.className += " tampil";
+    document.getElementById('salah1').innerHTML = "Kamu menjawab benar sebanyak " + benar + ". <span class='slh'>Ada " + salah + " jawabanmu yang masih keliru</span>. Silahkan tekan tombol ulang dan periksa kembali jawabanmu.";
     ulang.className += " tampil";
   }
   if(checked==false){
-    bahasslh.className += " tampil";
-    ulang.className += " tampil";
+    alert('Ups! Kamu belum menjawab soal. Jawab terlebih dahulu ya~');
   }
 }
 function ulangg1(){
@@ -282,6 +282,7 @@ function ulangg1(){
   }
   ulang.className = ulang.className.replace("tampil","");
   bahasslh.className = bahasslh.className.replace("tampil","");
+  document.getElementById('salah1').innerHTML = "";
 }
 
 /*soal 2*/
@@ -308,13 +309,13 @@ function cek2(){
   if(benar==2 && salah==0){
     bahasbnr.className += " tampil";
   } 
-  if (salah>0){
+  if (benar!=2 || salah>0){
     bahasslh.className += " tampil";
+    document.getElementById('salah2').innerHTML = "Kamu menjawab benar sebanyak " + benar + ". <span class='slh'>Ada " + salah + " jawabanmu yang masih keliru</span>. Silahkan tekan tombol ulang dan periksa kembali jawabanmu.";
     ulang.className += " tampil";
   }
   if(checked==false){
-    bahasslh.className += " tampil";
-    ulang.className += " tampil";
+    alert('Ups! Kamu belum menjawab soal. Jawab terlebih dahulu ya~');
   }
 }
 function ulangg2(){
@@ -327,4 +328,5 @@ function ulangg2(){
   }
   ulang.className = ulang.className.replace("tampil","");
   bahasslh.className = bahasslh.className.replace("tampil","");
+  document.getElementById('salah2').innerHTML = "";
 }

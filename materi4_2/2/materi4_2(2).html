@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Gabungan Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri4_2(2).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		4. OPERASI HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">1.1 Pengertian Himpunan</a>
+	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">1.5 Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">2.1 Himpunan Kosong</a>
+	    			<a href="">2.2 Himpunan Semesta</a>
+	    			<a href="">2.3 Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">3.1 Pengertian Diagram Venn</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.5 Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi4_1/1/materi4_1(1).html" >4.1 Irisan Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi4_2(1).html" style="color: white;">4.2 Gabungan Himpunan</a></div>
+	          		<a href="../../materi4_3/1/materi4_3(1).html">4.3 Selisih Dua Himpunan</a>
+	    			<a href="">4.4 Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">5. Penerapan Konsep Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">5.2 Kuis 5</a>
+	  			</div>
+	  		<a href="">6. Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				4.2 GABUNGAN HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/amati.png" class="gambar"><br>
+			Kemudian, bagaimana diagram venn dari gabungan himpunan? Perhatikanlah Tabel 4.2.1 di bawah ini!
+			<center>
+			<table class="tabel1">
+				<tr>
+		          <th class="lebar1">Himpunan</th>
+		          <th class="lebar2">Diagram Venn</th>
+		        </tr>
+		        <tr>
+		          <td >
+		           	A = {5, 15, 18, 20, 24} dan B = {12, 15, 18, 21, 24}<br>
+		            <br>
+		            Karena himpunan A dan himpunan B memiliki anggota yang <b>sama</b>, maka lingkaran A dan lingkaran B digambarkan <u>saling beririsan</u> dan anggota yang sama tersebut cukup ditulis sekali saja.<br><br>
+		            Sehingga,<br>
+		            <b>A &cup; B = {5, 12, 15, 18, 20, 21, 24}</b>
+		          </td>
+		          <td >
+		            <img src="../img/gab3.png" class="gambar2">
+		          </td>
+		        </tr>
+		        <tr>
+		          <td colspan="2">
+		            Lingkaran A dan lingkaran B diarsir untuk menandakan bahwa area yang diarsir tersebut merupakan gabungan himpunan A dan B.
+		          </td>
+		        </tr>
+			</table>
+			</center>
+			<br>
+			Untuk lebih lengkapnya mengenai proses menggambar diagram venn dari gabungan himpunan, perhatikanlah animasi interaktif di bawah ini!
+			<!-- petunjuk -->
+		    <div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+		    <div class="tjk1" id="tjk1">
+		      	<ul>
+		      		<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
+	      			<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai. Perhatikanlah setiap arahan yang ditampilkan</li>
+	      			<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
+		      	</ul>
+		    </div>
+		    <center>
+		    <div class="divscratch" id="applet">
+				<iframe class="scratch" id="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/421543268/?autostart=true" frameborder="0" allowfullscreen></iframe>
+			</div>
+			</center>
+			<br>
+			<br>
+			<img src="../img/catatan.png" class="gambar"><br>
+			<div class="catat">
+				Rumus untuk menentukan banyak anggota himpunan gabungan, misal pada himpunan A dan himpunan B adalah <b>n(A &cup; B) = n(A) + n(B) – n(A &cap; B)</b>
+			</div>
+		
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi4_2(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi4_2(1).html" class="tmbl">1</a>
+				<a href="materi4_2(2).html" class="tmbl navaktif" >2</a>
+				<a href="../3/materi4_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi4_2(4).html" class="tmbl">4</a>
+				<a href="../3/materi4_2(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri4_2(2).js"></script>
+</body>
+</html>

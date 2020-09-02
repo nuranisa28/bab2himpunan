@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Gabungan Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri4_2(1).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		4. OPERASI HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">1.1 Pengertian Himpunan</a>
+	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">1.5 Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">2.1 Himpunan Kosong</a>
+	    			<a href="">2.2 Himpunan Semesta</a>
+	    			<a href="">2.3 Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">3.1 Pengertian Diagram Venn</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.5 Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi4_1/1/materi4_1(1).html" >4.1 Irisan Himpunan</a>
+	    			<div class="aktif2"><a href="materi4_2(1).html" style="color: white;">4.2 Gabungan Himpunan</a></div>
+	          		<a href="../../materi4_3/1/materi4_3(1).html">4.3 Selisih Dua Himpunan</a>
+	    			<a href="">4.4 Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">5. Penerapan Konsep Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">5.2 Kuis 5</a>
+	  			</div>
+	  		<a href="">6. Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				4.2 GABUNGAN HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<div class="kliksyarat">
+				<a href="#syarat" onclick="syarat('syarat')"><img src="../img/sy.png" width="15px" height="15px"> Prasyarat (klik saya)<br></a>
+			</div>
+			<div class="syarat" id="syarat">
+				<ol>
+					<li>Siswa sudah mampu menyatakan notasi dari suatu himpunan</li>
+					<li>Siswa sudah mampu menyebutkan anggota dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menyatakan himpunan.</li>
+					<li>Siswa sudah mampu menentukan himpunan semesta dari suatu himpunan.</li>
+					<li>Siswa sudah mampu menggambar diagram venn.</li>
+					<li>Siswa sudah mampu menentukan  irisan himpunan.</li>
+				</ol>
+		    </div>
+			<div class="kliktujuan"><a href="#tujuan" onclick="tujuan('tujuan')"><img src="../img/tj.png" width="15px" height="15px"> Tujuan Pembelajaran (klik saya)<br></a></div>
+			<div class="tujuan" id="tujuan">
+				Setelah mempelajari topik ini, diharapkan siswa mampu menentukan gabungan himpunan.
+			</div>
+			<br>
+			<hr>
+			<br>
+			<!--isi-->
+			<center><img src="../img/gab1.png" class="gambar2"> atau <img src="../img/gab2.png" class="gambar2"></center>
+			<p class="prf">Gabungan himpunan, misal pada himpunan A dan B, adalah himpunan yang anggotanya merupakan anggota himpunan A <b><u>atau</u></b> anggota himpunan B. Gabungan himpunan A dan B dinotasikan dengan <b>A &cup; B</b>, dibaca <b>A gabungan B</b> atau <b>A <i>union</i> B</b>. Banyak anggota gabungan himpunan A dan B dinotasikan dengan <b>n(A &cup; B)</b>.</p>
+			<br>
+			<br>
+			<img src="../img/amati.png" class="gambar"><br>
+			Perhatikanlah contoh di bawah ini!
+			<div class="pengertian">
+				<p>Diketahui A = {5, 15, 18, 20, 24} dan B = {12, 15, 18, 21, 24}. Tentukanlah gabungan dari himpunan A dan himpunan B! </p>
+				<br>
+				<b>Penyelesaian : </b>
+				<ol>
+					<li>
+						Perhatikanlah himpunan A dan himpunan B. Apakah ada anggota himpunan yang sama di antara kedua himpunan tersebut?<br>
+						<button class="cekulang" id="ada1" onclick="ada1()"><b>Ada</b></button>
+						<button class="cekulang" id="tdk1" onclick="tdk1()"><b>Tidak Ada</b></button>
+						<span class="icon" id="icon1"></span>
+						<div class="hilang" id="lanjut1">
+							<span class="hilang" id="bnr1">Jawaban kamu benar! </span>
+							<span class="hilang" id="slh1">Ups! Jawaban kamu masih keliru. </span>
+							Terdapat anggota yang <b><u>sama</u></b> di antara himpunan A dan B yaitu <b>15, 18, dan 24</b>.<br>
+							<center>
+							<div class="contoh">
+								A = {5, <span class="slh"><b>15, 18</b></span>, 20, <span class="slh"><b>24</b></span>}<br>
+								B = {12, <span class="slh"><b>15, 18</b></span>, 21, <span class="slh"><b>24</b></span>}
+							</div>
+							</center>
+						</div>
+					</li>
+					<li class="hilang" id="lanjut2">
+						Gabungkan semua anggota himpunan A dan himpunan B. Perlu diperhatikan, karena himpunan A dan himpunan B memiliki anggota yang <b><u>sama</u></b>, maka anggota tersebut cukup ditulis <u>sekali saja</u>.<br>
+						A &cup; B = {
+						<span class="popup lebar1"> 
+							<input type="text" class="input2" id="jawab1" onclick="info()">
+							<span class="popuptext" id="info">5, 12, 15, 18, 20, 21, 24</span>
+						</span>
+						}
+						<span class="icon" id="icon2"></span><br>
+						<button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" id="ulang1" onclick="ulang1()"><b>Ulang</b></button>
+						<div class="hilang" id="lanjut3">
+							Jawaban kamu benar!<b> A &cup; B = {5, 12, 15, 18, 20, 21, 24}</b>, jika dibaca : "A gabungan B adalah 5, 12, 15, 18, 20, 21, dan 24" dengan <b>n(A &cup; B) = 7</b>.
+						</div>
+						<!-- Gabungkan semua anggota himpunan A dan himpunan B. Sehingga didapatkan :
+						<center>
+							<div class="contoh">
+								<b>A &cup; B = {5, 12, 15, 18, 20, 21, 24}</b>
+							</div>
+						</center>
+						Perlu diperhatikan, karena himpunan A dan himpunan B memiliki anggota yang <b><u>sama</u></b>, maka anggota tersebut cukup ditulis <u>sekali saja</u>. -->
+					</li>
+				</ol>
+			</div>
+			<div class="hilang" id="lanjut4">
+				<br>
+				<br>
+				<img src="../img/catatan.png" class="gambar"><br>
+				<div class="catat">
+					<ul>
+						<li>Notasi pembentuk himpunan dari gabungan himpunan A dan B adalah : <b>A &cup; B = {x| x &isin; A <u>atau</u> x &isin; B}</b>.</li>
+						<li>
+							Kata <b>"atau"</b> disana mempunyai 3 kemungkinan, yaitu :
+							<ol type="a">
+								<li>x &isin; A saja, atau </li>
+								<li>x &isin; B saja, atau</li>
+								<li>x &isin; A <b>dan</b> x &isin; B</li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+		
+	</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../../materi4_1/4/materi4_1(4).html" class="tmbl">Materi Sebelumnya</a>
+				<a href="materi4_2(1).html" class="tmbl navaktif">1</a>
+				<a href="../2/materi4_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi4_2(3).html" class="tmbl">3</a>
+				<a href="../4/materi4_2(4).html" class="tmbl">4</a>
+				<a href="../2/materi4_2(2).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri4_2(1).js"></script>
+</body>
+</html>

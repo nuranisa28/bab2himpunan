@@ -351,9 +351,11 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-                if(hasilakhir<=75){
+                if(hasilakhir<75){
                     let ulang = document.getElementById("ulang");
                     ulang.className = ulang.className.replace("hilang","");
+                } else{
+                    document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Kuis 3 &#128516;";
                 }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');

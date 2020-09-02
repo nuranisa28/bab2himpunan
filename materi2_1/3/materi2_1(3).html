@@ -21,10 +21,10 @@
 			<a href="../../apersepsi/aper.html">Apersepsi</a>
 	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button> 
 	  			<div class="dropdown-container">
-	    			<a href="">1.1 Pengertian Himpunan</a>
-	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
-	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
-	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="../../materi1_1/1/materi1_1(1).html">1.1 Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
 	    			<a href="">1.5 Kuis 1</a>
 	  			</div>
 	  		<button class="dropdown-btn aktif" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
@@ -189,7 +189,7 @@
       				<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
       				<div class="tjk1" id="tjk2">
       					<ul>
-      						<li>Pertanyaan ini terdiri dari 2 soal berupa <i>Checkbox</i>.</li>
+      						<li>Pertanyaan ini terdiri dari 2 soal berupa <i>checkbox</i>.</li>
       						<li>Jawablah dengan memberi tanda centang (&#10004;) pada kotak pilihan yang memungkinkan</li>
       						<li>Setelah menjawab, tekan tombol "Cek Jawaban"</li>
       						<li>Jika jawabanmu benar, akan muncul tulisan <span class="bnr">"Jawaban kamu benar"</span> disertai dengan pembahasan</li>
@@ -204,7 +204,7 @@
 					<!--soal 1-->
 					<div class="soall soalAktif" id="soall1">
 						Soal 1 dari 2<br><br>
-						Dari himpunan di bawah ini, himpunan manakah yang merupakan himpunan kosong?<br>
+						Dari himpunan di bawah ini, himpunan mana saja yang merupakan himpunan kosong? (pilih 2 jawaban)<br>
 			            <input type="checkbox" name="pilihan1" value="1"> H = {bilangan prima yang habis dibagi 4}.<br>
 			            <input type="checkbox" name="pilihan1" value="0"> A = {x | x &le; 12, x &isin; bilangan cacah}.<br>
 			            <input type="checkbox" name="pilihan1" value="0"> P = {x | x < 10, x &isin; bilangan prima}.<br>
@@ -219,14 +219,14 @@
 							</ul>
 						</div>
 						<div class="bahas" id="bahasslhh1">
-							<span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang".
+							<span id="salah1"></span>
 						</div>
 					</div>
 
 					<!--soal 2-->
 					<div class="soall" id="soall2">
 						Soal 2 dari 2<br><br>
-						Dari himpunan di bawah ini, himpunan manakah yang bukan merupakan himpunan kosong?<br>
+						Dari himpunan di bawah ini, himpunan mana saja yang bukan merupakan himpunan kosong? (pilih 2 jawaban)<br>
 			            <input type="checkbox" name="pilihan2" value="0"> B = {x | x < 10, x &isin; bilangan kelipatan 12}.<br>
 			            <input type="checkbox" name="pilihan2" value="1"> D = {7 huruf terakhir dalam alfabet}.<br>
 			            <input type="checkbox" name="pilihan2" value="1"> L = {warna pelangi}.<br>
@@ -243,7 +243,7 @@
 							</ul>
 						</div>
 						<div class="bahas" id="bahasslhh2">
-							<span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang".
+							<span id="salah2">Jawaban kamu salah</span>
 						</div>
 					</div>
 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Gabungan Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri4_2(4).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		4. OPERASI HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">1.1 Pengertian Himpunan</a>
+	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">1.5 Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">2.1 Himpunan Kosong</a>
+	    			<a href="">2.2 Himpunan Semesta</a>
+	    			<a href="">2.3 Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">3.1 Pengertian Diagram Venn</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.5 Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi4_1/1/materi4_1(1).html" >4.1 Irisan Himpunan</a>
+	    			<div class="aktif2"><a href="../1/materi4_2(1).html" style="color: white;">4.2 Gabungan Himpunan</a></div>
+	          		<a href="../../materi4_3/1/materi4_3(1).html">4.3 Selisih Dua Himpunan</a>
+	    			<a href="">4.4 Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">5. Penerapan Konsep Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">5.2 Kuis 5</a>
+	  			</div>
+	  		<a href="">6. Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				4.2 GABUNGAN HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/pertanyaan.png" class="gambar"><br>
+			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!
+			<!-- petunjuk -->
+	      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      	<div class="tjk1" id="tjk1">
+	      		<ul>
+	      			<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+	      			<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+			      	<li>Jika jawaban kamu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan keterangan <span class="bnr">"Jawaban kamu benar"</span>.</li>
+			      	<li>Jika jawaban kamu salah, akan muncul icon <img src="../img/false.png" width="15px">, keterangan <span class="slh">"Jawaban kamu salah"</span>, dan tombol "Ulang".</li>
+			      	<li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
+	      		</ul>
+			</div>
+			<!--nomor pertanyaan-->
+			<div class="number">
+			    <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
+			</div>
+
+			<!--pertanyaan 1--> 
+			<div class="pertanya tanyaAktif" id="tanya1">
+
+				<!-- isi pertanyaan -->
+				<!--soal 1-->
+				<div class="soal soalAktif" id="soal1">
+					Soal 1 dari 5<br>
+					<br>
+					Tentukanlah A &cup; B jika diketahui A = {7, 8, 9, 10} dan B = {3, 5, 7, 9}!<br>
+					<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb11" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb12" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb13">
+					 }
+					<span class="icon" id="icon11"></span>
+					<br>
+					<button class="cekulang" id="cek11" onclick="cek11()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang11()" id="ulang11"><b>Ulang</b></button>
+					<span id="ket11"></span>
+				</div>
+
+				<!--soal 2-->
+				<div class="soal" id="soal2">
+					Soal 2 dari 5<br>
+					<br>
+					Diketahui C = {11, 13, 15, 17} dan D = {15, 17, 18, 19}, tentukanlah C ∪ D!<br>
+					<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb14" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb15" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb16">
+					 }
+					<span class="icon" id="icon12"></span>
+					<br>
+					<button class="cekulang" id="cek12" onclick="cek12()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang12()" id="ulang12"><b>Ulang</b></button>
+					<span id="ket12"></span>
+				</div>
+
+				<!--soal 3-->
+				<div class="soal" id="soal3">
+					Soal 3 dari 5<br>
+					<br>
+					Tentukanlah E &cup; F jika diketahui E = {x | x < 5, x &isin; bilangan asli} dan F = {x | 5 < x < 9, x &isin; bilangan genap}!<br>
+					<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb17" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb18" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb19">
+					 }
+					<span class="icon" id="icon13"></span>
+					<br>
+					<button class="cekulang" id="cek13" onclick="cek13()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang13()" id="ulang13"><b>Ulang</b></button>
+					<span id="ket13"></span>
+				</div>
+
+				<!--soal 4-->
+				<div class="soal" id="soal4">
+					Soal 4 dari 5<br>
+					<br>
+					Diketahui G = {huruf vokal} dan H = {huruf pembentuk kata “sasirangan”}, tentukanlah G &cup; H!<br>
+					<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb110" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb111" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb112">
+					 }
+					<span class="icon" id="icon14"></span>
+					<br>
+					<button class="cekulang" id="cek14" onclick="cek14()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang14()" id="ulang14"><b>Ulang</b></button>
+					<span id="ket14"></span>
+				</div>
+
+				<!--soal 5-->
+				<div class="soal" id="soal5">
+					Soal 5 dari 5<br>
+					<br>
+					Tentukanlah B &cup; D jika diketahui B = {1, 3, 5} dan D = {2, 4, 6}!<br>
+					<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb113" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb114" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb115">
+					 }
+					<span class="icon" id="icon15"></span>
+					<br>
+					<button class="cekulang" id="cek15" onclick="cek15()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang15()" id="ulang15"><b>Ulang</b></button>
+					<span id="ket15"></span>
+				</div>
+
+				<!--tombol nomor soal-->
+				<center>
+					Nomor Soal : 
+					<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        <button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+				</center>
+
+			</div>
+
+			<!--pertanyaan 2-->
+			<div class="pertanya" id="tanya2">
+				<!--soal 1-->
+				<div class="soall soalAktif" id="soall1">
+					Soal 1 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.
+					<center><img src="../img/tanya1.png" class="gambar2"><br></center>
+					Berdasarkan diagram venn di atas, tentukanlah gabungan himpunan A dan B!<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb21" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb22" maxlength="1">
+					  = {
+					<input type="text" class="input3" id="jwb23">
+					 }
+					<span class="icon" id="icon21"></span>
+					<br>
+					<button class="cekulang" id="cek21" onclick="cek21()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang21()" id="ulang21"><b>Ulang</b></button>
+					<span id="ket21"></span>
+				</div>
+
+				<!--soal 2-->
+				<div class="soall" id="soall2">
+					Soal 2 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.
+					<center><img src="../img/tanya2.png" class="gambar2"><br></center>
+					Berdasarkan diagram venn di atas, tentukanlah gabungan himpunan C dan D!<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb24" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb25" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb26">
+					 }
+					<span class="icon" id="icon22"></span>
+					<br>
+					<button class="cekulang" id="cek22" onclick="cek22()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang22()" id="ulang22"><b>Ulang</b></button>
+					<span id="ket22"></span>
+				</div>
+
+				<!--soal 3-->
+				<div class="soall" id="soall3">
+					Soal 3 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.
+					<center><img src="../img/tanya3.png" class="gambar2"><br></center>
+					Berdasarkan diagram venn di atas, tentukanlah gabungan himpunan D dan E!<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb27" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb28" maxlength="1">
+					  = {
+					<input type="text" class="input3" id="jwb29">
+					 }
+					<span class="icon" id="icon23"></span>
+					<br>
+					<button class="cekulang" id="cek23" onclick="cek23()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang23()" id="ulang23"><b>Ulang</b></button>
+					<span id="ket23"></span>
+				</div>
+
+				<!--soal 4-->
+				<div class="soall" id="soall4">
+					Soal 4 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.
+					<center><img src="../img/tanya4.png" class="gambar2"><br></center>
+					Berdasarkan diagram venn di atas, tentukanlah gabungan himpunan F dan G!<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb210" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb211" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb212">
+					 }
+					<span class="icon" id="icon24"></span>
+					<br>
+					<button class="cekulang" id="cek24" onclick="cek24()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang24()" id="ulang24"><b>Ulang</b></button>
+					<span id="ket24"></span>
+				</div>
+
+				<!--soal 5-->
+				<div class="soall" id="soall5">
+					Soal 5 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.
+					<center><img src="../img/tanya5.png" class="gambar2"><br></center>
+					Berdasarkan diagram venn di atas, tentukanlah gabungan himpunan B dan C!<br>
+					Jawaban : <br>
+					<input type="text" class="input1" id="jwb213" maxlength="1">
+					 &cup; 
+					 <input type="text" class="input1" id="jwb214" maxlength="1">
+					  = {
+					<input type="text" class="input2" id="jwb215">
+					 }
+					<span class="icon" id="icon25"></span>
+					<br>
+					<button class="cekulang" id="cek25" onclick="cek25()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang25()" id="ulang25"><b>Ulang</b></button>
+					<span id="ket25"></span>
+				</div>
+
+				<!--tombol nomor soal-->
+				<center>
+					Nomor Soal : 
+					<button class="stnomor nomorsoal2 nmrAktif" onclick="bukaSoal2(event, 'soall1')">1</button>
+			        <button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall2')">2</button>
+					<button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall3')">3</button>
+					<button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall4')">4</button>
+					<button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall5')">5</button>
+				</center>
+
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../3/materi4_2(3).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi4_2(1).html" class="tmbl">1</a>
+				<a href="../2/materi4_2(2).html" class="tmbl">2</a>
+				<a href="../3/materi4_2(3).html" class="tmbl">3</a>
+				<a href="materi4_2(4).html" class="tmbl navaktif">4</a>
+				<a href="../../materi4_3/1/materi4_3(1).html" class="tmbl">Materi Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri4_2(4).js"></script>
+</body>
+</html>

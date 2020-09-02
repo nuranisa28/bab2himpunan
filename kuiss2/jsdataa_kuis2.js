@@ -276,6 +276,9 @@ dat.onreadystatechange = function () {
 
         //cek jawaban
         let selesai = document.querySelector(".selesai");
+        let pil_user = [];
+        new_jwb_urut = [];
+        new_jwb_urut_no = [];
 
         selesai.addEventListener("click", function(){
             let sarat = 0;
@@ -295,6 +298,34 @@ dat.onreadystatechange = function () {
                 benarr = 0;
                 salahh = jwbs.length;
 
+                // let pils_soal = document.querySelectorAll('input');
+
+                // for (let i = 0; i < jwbs.length; i++) {
+                //     let a = i+1;
+                //     for (let j = 0; j < pils_soal.length; j++) {
+                //         if (j == 0) {
+
+                //         } else {
+                //             // menonaktifkan pilihan
+                //             // pils_soal[j].setAttribute('disabled', 'true');
+                //             if (pils_soal[j].attributes.name.nodeValue == 'radio' + a) {
+                //                 if (pils_soal[j].checked == true) {
+                //                     // cek jawaban dengan kunci
+                //                     console.log(pils_soal[j].value);
+                //                     console.log(jwbs[i]);
+                //                     pil_user.push(pils_soal[j].value);
+                //                     if (pils_soal[j].value == jwbs[i]) {
+                //                         hasilakhir = hasilakhir + 10;
+                //                         benarr = benarr + 1;
+                //                     } else {
+                //                         hasilakhir = hasilakhir;
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+
                 for (let i = 0; i < jwbs.length; i++) {
                     let a = i+1;
                     let namaradio = document.getElementsByName("radio"+a);
@@ -302,6 +333,7 @@ dat.onreadystatechange = function () {
                     for (let j = 0; j < namaradio.length; j++) {
                         if(namaradio[j].checked){
                             checked = true;
+                            pil_user.push(namaradio[j].value);
                             if(namaradio[j].value == jwbs[i]){
                                 hasilakhir = hasilakhir + 10;
                                 benarr = benarr + 1;
@@ -312,6 +344,18 @@ dat.onreadystatechange = function () {
                     }
                 }
 
+
+                for (let i = 0; i < cek.length; i++) {
+                    for (let j = 0; j < cek.length; j++) {
+                        if (i == cek[j]) {
+                            new_jwb_urut.push(pil_user[j]);
+                            new_jwb_urut_no.push(cek[j]);
+                        }
+                    }
+                }
+                console.log("jwb_user_urut_no :" + new_jwb_urut_no);
+                console.log("jwb_user_urut :" + new_jwb_urut);
+
                 
                 // simpan kedatabase----------
                 console.log(namanya.value);
@@ -321,7 +365,7 @@ dat.onreadystatechange = function () {
                 let waktunya = waktu();
                 let harinya = hari();
                 
-                createTask(sekolahfix, namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya);
+                createTask(sekolahfix, namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya, new_jwb_urut);
 
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value;
@@ -350,9 +394,11 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-                if(hasilakhir<=75){
+                if(hasilakhir<75){
                     let ulang = document.getElementById("ulang");
                     ulang.className = ulang.className.replace("hilang","");
+                } else{
+                    document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Kuis 2 &#128516;";
                 }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
@@ -416,7 +462,7 @@ function hari() {
     
 // })
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
     counter += 1;
     var task = {
         id: counter,
@@ -425,7 +471,8 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
         kelas: kelas,
         nilai: nilai,
         waktu: waktunya,
-        hari: hari
+        hari: hari,
+        jawabannya: jwb
     }
 
     let db = firebase.database().ref("kuis2/" + counter);

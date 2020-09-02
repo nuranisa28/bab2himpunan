@@ -21,10 +21,10 @@
 			<a href="../../apersepsi/aper.html">Apersepsi</a>
 	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button> 
 	  			<div class="dropdown-container">
-	    			<a href="">1.1 Pengertian Himpunan</a>
-	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
-	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
-	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="../../materi1_1/1/materi1_1(1).html">1.1 Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
 	    			<a href="">1.5 Kuis 1</a>
 	  			</div>
 	  		<button class="dropdown-btn aktif" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
@@ -68,210 +68,153 @@
 		</center>
 		<div class="konten">
 			<img src="../img/pertanyaan.png" class="gambar"><br> 
-			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
-			<!-- petunjuk -->
-      		<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+			Jawablah pertanyaan di bawah ini!<br>
+			<!--petunjuk-->
+			<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
       		<div class="tjk1" id="tjk1">
       			<ul>
-      				<li>Isilah bagian kosong pada tabel "Soal" dengan cara menarik salah satu pilihan yang ada pada tabel "Pilihan" dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
+      				<li>Pertanyaan ini terdiri dari 5 soal berupa <i>checkbox</i>.</li>
+      				<li>Jawablah dengan memberi tanda centang (&#10004;) pada kotak pilihan yang memungkinkan</li>
       				<li>Setelah menjawab soal, tekan tombol "Cek Jawaban".</li>
-      				<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban kamu benar"</span> disertai dengan pembahasan.</li>
-          			<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban kamu salah"</span>.</li>
+      				<li>Jika jawabanmu benar, akan muncul  tulisan <span class="bnr">"Jawaban kamu benar"</span> disertai dengan pembahasan.</li>
+          			<li>Jika jawabanmu salah, akan muncul  tulisan <span class="slh">"Jawaban kamu salah"</span>.</li>
       				<li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
       			</ul>
 			</div>
-			<div class="pertanyaan">
-				<!--nomor pertanyaan-->
-				<div class="number">
-			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">Pertanyaan 1</button>
-			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">Pertanyaan 2</button>
-			    </div>
-			    <!--pertanyaan 1-->
-			    <div class="pertanya tanyaAktif" id="tanya1">
-			    	<!-- isi pertanyaan -->
-			    	Dari beberapa himpunan semesta yang diberikan pada tabel “Pilihan”, tentukanlah himpunan semesta mana saja yang mungkin untuk A = {2, 3, 7, 11}? Jawablah dengan melengkapi tabel “Soal”!
-			    	<br>
-					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
-			        <br>
-					<hr>
+			<div class="pertanya">
+				
+				<!--soal 1-->
+				<div class="soal soalAktif" id="soal1">
+					Soal 1 dari 5<br>
 					<br>
-					<!--tabel pilihan-->
-					<center>
-						<table class="tabel1">
-				            <tr>
-				              <th colspan="2">Pilihan</th>
-				            </tr>
-				            <tr>
-				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil11">
-				                <span class="pilihan" id="p11" draggable="true" ondragstart="drag(event)">{x | 1 < x < 12, x &isin; bilangan bulat}</span>
-				              </td>
-				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil12">
-				                <span class="pilihan" id="p12" draggable="true" ondragstart="drag(event)">{x | x < 12, x &isin; bilangan cacah}</span>
-				              </td>
-				            </tr>
-				            <tr>
-				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil13">
-				                <span class="pilihan" id="p13" draggable="true" ondragstart="drag(event)">{x | 1 < x &le; 11, x &isin; bilangan ganjil}</span>
-				              </td>
-				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil14">
-				                <span class="pilihan" id="p14" draggable="true" ondragstart="drag(event)">{2, 3, 4, 5, 6, 7, 8, 9, 10, 11}</span>
-				              </td>
-				            </tr>
-				            <tr>
-				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil15">
-				                <span class="pilihan" id="p15" draggable="true" ondragstart="drag(event)">{bilangan asli yang mempunyai sisa bagi 1}</span>
-				              </td>
-				              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil16">
-				                <span class="pilihan" id="p16" draggable="true" ondragstart="drag(event)">{bilangan genap}</span>
-				              </td>
-				            </tr>
-				          </table>
-					</center>
-					<br>
-					<!-- tabel soal-->
-					<center>
-					<table class="tabel1">
-			          <tr>
-			            <th colspan="2">Soal</th>
-			          </tr>
-			          <tr>
-			            <th>Himpunan</th>
-			            <th>Himpunan Semesta</th>
-			          </tr>
-			          <tr>
-			            <td rowspan="3">A = {2, 3, 7, 11}</td>
-			            <td class="rata">
-			              S = <span id="s11" class="jwb1" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-			              <span id="icon11"></span>
-			            </td>
-			          </tr>
-			          <tr>
-			            <td class="rata">
-			              S = <span id="s12" class="jwb1" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-			              <span id="icon12"></span>
-			            </td>
-			          </tr>
-			          <tr>
-			            <td class="rata">
-			              S = <span id="s13" class="jwb1" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-			              <span id="icon13"></span>
-			            </td>
-			          </tr>
-			        </table>
-			        <button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
-				    <button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
-				    <div class="bahas" id="bahasbnr1">
-						<center><span class="bnr">Jawaban kamu benar</span></center>
-						<ol>
-							<li>
-								Himpunan Semesta yang memungkinkan untuk A = {2, 3, 7, 11} :
-								<ul>
-									<li>S = {x | 1 < x < 12, x &isin; bilangan bulat}</li>
-									<li>S = {x | x < 12, x &isin; bilangan cacah}</li>
-									<li>S = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11}</li>
-								</ul>
-							</li>
-						</ol>
+					Dari himpunan di bawah ini, himpunan semesta mana saja yang mungkin untuk A = {2, 3, 7, 11}? (pilih 3 jawaban)<br>
+					<input type="checkbox" name="pilihan1" value="1"> S = {x | 1 < x < 12, x &isin; bilangan bulat}<br>
+			        <input type="checkbox" name="pilihan1" value="1"> S = {x | x < 12, x &isin; bilangan cacah}<br>
+			        <input type="checkbox" name="pilihan1" value="0"> S = {x | 1 < x &le; 11, x &isin; bilangan ganjil}<br>
+			        <input type="checkbox" name="pilihan1" value="1"> S = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11}<br>
+			        <button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+					<div class="bahas hilang" id="bahasbnr1">
+					<span class="bnr">Jawaban kamu benar</span>. Himpunan semesta yang mungkin untuk A = {2, 3, 7, 11} adalah :
+						<ul>
+							<li>S = {x | 1 < x < 12, x &isin; bilangan bulat}</li>
+							<li>S = {x | x < 12, x &isin; bilangan cacah}</li>
+							<li>S = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11}</li>
+						</ul>
 					</div>
-					<div class="bahas" id="bahasslh1">
-						<span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang".
+					<div class="bahas hilang" id="bahasslh1">
+						<span id="salah"></span>
 					</div>
-			    	</center>
-			    </div>
+				</div>
 
-			    <!--pertanyaan 2-->
-			    <div class="pertanya" id="tanya2">
-			    	<!--isi pertanyaan-->
-			    	Dari beberapa himpunan semesta yang diberikan pada tabel “Pilihan”, tentukanlah himpunan semesta mana saja yang mungkin untuk B = {Samarinda, Tanjung Selor, Banjarmasin}? Jawablah dengan melengkapi tabel “Soal”!
-			    	<br>
-					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
-			        <br>
-					<hr>
+				<!--soal 2-->
+				<div class="soal" id="soal2">
+					Soal 2 dari 5<br>
 					<br>
-					<!--tabel pilihan-->
-					<center>
-					<table class="tabel1">
-			            <tr>
-			              <th colspan="2">Pilihan</th>
-			            </tr>
-			            <tr>
-			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil21">
-			                <span class="pilihan" id="p21" draggable="true" ondragstart="drag(event)">{wilayah Indonesia bagian tengah (WITA)}</span>
-			              </td>
-			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil22">
-			                <span class="pilihan" id="p22" draggable="true" ondragstart="drag(event)">{nama ibu kota provinsi di pulau Sulawesi}</span>
-			              </td>
-			            </tr>
-			            <tr>
-			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil23">
-			                <span class="pilihan" id="p23" draggable="true" ondragstart="drag(event)">{nama ibu kota di negara Australia}</span>
-			              </td>
-			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil24">
-			                <span class="pilihan" id="p24" draggable="true" ondragstart="drag(event)">{nama ibu kota provinsi}</span>
-			              </td>
-			            </tr>
-			            <tr>
-			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil25">
-			                <span class="pilihan" id="p25" draggable="true" ondragstart="drag(event)">{nama ibu kota provinsi di pulau Kalimantan}</span>
-			              </td>
-			              <td ondrop="drop(event)" ondragover="allowDrop(event)" id="pil26">
-			                <span class="pilihan" id="p26" draggable="true" ondragstart="drag(event)">{wilayah Indonesia bagian barat (WIB)}</span>
-			              </td>
-			            </tr>
-			          </table>
-					</center>
+					Dari himpunan di bawah ini, himpunan semesta mana saja yang mungkin untuk B = {Samarinda, Tanjung Selor, Banjarmasin}? (pilih 3 jawaban)<br>
+					<input type="checkbox" name="pilihan2" value="1"> S = {wilayah Indonesia bagian tengah (WITA)}<br>
+			        <input type="checkbox" name="pilihan2" value="0"> S = {wilayah Indonesia bagian barat (WIB)}<br>
+			        <input type="checkbox" name="pilihan2" value="1"> S = {nama ibu kota provinsi}<br>
+			        <input type="checkbox" name="pilihan2" value="1"> S = {nama ibu kota provinsi di pulau Kalimantan}<br>
+			        <button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
+					<div class="bahas hilang" id="bahasbnr2">
+					<span class="bnr">Jawaban kamu benar</span>. Himpunan semesta yang mungkin untuk B = {Samarinda, Tanjung Selor, Banjarmasin} adalah :
+						<ul>
+							<li>S = {wilayah Indonesia bagian tengah (WITA)}</li>
+							<li>S = {nama ibu kota provinsi}</li>
+							<li>S = {nama ibu kota provinsi di pulau Kalimantan}</li>
+						</ul>
+					</div>
+					<div class="bahas hilang" id="bahasslh2">
+						<span id="salah2"></span>
+					</div>
+				</div>
+
+				<!--soal 3-->
+				<div class="soal" id="soal3">
+					Soal 3 dari 5<br>
 					<br>
-					<!-- tabel soal-->
-					<center>
-					<table class="tabel1">
-			          <tr>
-			            <th colspan="2">Soal</th>
-			          </tr>
-			          <tr>
-			            <th>Himpunan</th>
-			            <th>Himpunan Semesta</th>
-			          </tr>
-			          <tr>
-			            <td rowspan="3">B = {Samarinda, <br>Tanjung Selor,<br> Banjarmasin}</td>
-			            <td>
-			              S = <span id="s21" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-			              <span id="icon21"></span>
-			            </td>
-			          </tr>
-			          <tr>
-			            <td>
-			              S = <span id="s22" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-			              <span id="icon22"></span>
-			            </td>
-			          </tr>
-			          <tr>
-			            <td>
-			              S = <span id="s23" class="jwb2" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-			              <span id="icon23"></span>
-			            </td>
-			          </tr>
-			        </table>
-			        <button class="cekulang" id="cek2" onclick="cek2()"><b>Cek Jawaban</b></button>
-				    <button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
-				    <div class="bahas" id="bahasbnr2">
-						<center><span class="bnr">Jawaban kamu benar</span></center>
-						<ol>
-							<li>
-								Himpunan Semesta yang memungkinkan untuk B = {Samarinda, Tanjung Selor, Banjarmasin} :
-								<ul>
-									<li>S = {wilayah Indonesia bagian tengah (WITA)}</li>
-									<li>S = {nama ibu kota provinsi}</li>
-									<li>S = {nama ibu kota provinsi di pulau Kalimantan}</li>
-								</ul>
-							</li>
-						</ol>
+					Dari himpunan di bawah ini, himpunan semesta mana saja yang mungkin untuk C = {1, 2, 3, 4, 5}? (pilih 3 jawaban)<br>
+					<input type="checkbox" name="pilihan3" value="0"> S = {bilangan prima}<br>
+			        <input type="checkbox" name="pilihan3" value="1"> S = {bilangan asli}<br>
+			        <input type="checkbox" name="pilihan3" value="1"> S = {bilangan cacah}<br>
+			        <input type="checkbox" name="pilihan3" value="1"> S = {bilangan bulat}<br>
+			        <button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br>
+					<div class="bahas hilang" id="bahasbnr3">
+					<span class="bnr">Jawaban kamu benar</span>. Himpunan semesta yang mungkin untuk C = {1, 2, 3, 4, 5} adalah :
+						<ul>
+							<li>S = {bilangan asli}</li>
+							<li>S = {bilangan cacah}</li>
+							<li>S = {bilangan bulat}</li>
+						</ul>
 					</div>
-					<div class="bahas" id="bahasslh2">
-						<span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang".
+					<div class="bahas hilang" id="bahasslh3">
+						<span id="salah3"></span>
 					</div>
-					</center>
-			    </div>
+				</div>
+
+				<!--soal 4-->
+				<div class="soal" id="soal4">
+					Soal 4 dari 5<br>
+					<br>
+					Dari himpunan di bawah ini, himpunan semesta mana saja yang mungkin untuk D = {2, 3, 5, 7}? (pilih 3 jawaban)<br>
+					<input type="checkbox" name="pilihan4" value="1"> S = {bilangan cacah kurang dari 15}<br>
+			        <input type="checkbox" name="pilihan4" value="1"> S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}<br>
+			        <input type="checkbox" name="pilihan4" value="1"> S = {bilangan prima}<br>
+			        <input type="checkbox" name="pilihan4" value="0"> S = {x | x &le; 10, x &isin; bilangan ganjil}<br>
+			        <button class="cekulang" onclick="cek4()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button><br>
+					<div class="bahas hilang" id="bahasbnr4">
+					<span class="bnr">Jawaban kamu benar</span>. Himpunan semesta yang mungkin untuk D = {2, 3, 5, 7} adalah :
+						<ul>
+							<li>S = {bilangan cacah kurang dari 15}</li>
+							<li>S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</li>
+							<li>S = {bilangan prima}</li>
+						</ul>
+					</div>
+					<div class="bahas hilang" id="bahasslh4">
+						<span id="salah4"></span>
+					</div>
+				</div>
+
+				<!--soal 5-->
+				<div class="soal" id="soal5">
+					Soal 5 dari 5<br>
+					<br>
+					Dari himpunan di bawah ini, himpunan semesta mana saja yang mungkin untuk E = {5, 10, 15, 20}? (pilih 3 jawaban)<br>
+					<input type="checkbox" name="pilihan5" value="1"> S = {bilangan asli kelipatan 5}<br>
+			        <input type="checkbox" name="pilihan5" value="1"> S = {bilangan cacah kurang dari 50}<br>
+			        <input type="checkbox" name="pilihan5" value="0"> S = {bilangan ganjil}<br>
+			        <input type="checkbox" name="pilihan5" value="1"> S = {bilangan bulat}<br>
+			        <button class="cekulang" onclick="cek5()"><b>Cek Jawaban</b></button>
+					<button class="cekulang hilang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button><br>
+					<div class="bahas hilang" id="bahasbnr5">
+					<span class="bnr">Jawaban kamu benar</span>. Himpunan semesta yang mungkin untuk E = {5, 10, 15, 20} adalah :
+						<ul>
+							<li>S = {bilangan asli kelipatan 5}</li>
+							<li>S = {bilangan cacah kurang dari 50}</li>
+							<li>S = {bilangan bulat}</li>
+						</ul>
+					</div>
+					<div class="bahas hilang" id="bahasslh5">
+						<span id="salah5"></span>
+					</div>
+				</div>
+
+				<!--tombol nomor soal-->
+				<center>
+					Nomor Soal : 
+					<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        <button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+				</center>
 			</div>
+			
+			<br>
 			<br>
 			<!--rangkuman-->
 			<img src="../img/rangkuman.png" class="gambar"><br>

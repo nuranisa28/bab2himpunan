@@ -136,6 +136,10 @@ function cek11(){
       }
     }
 
+    if(himp1.value != "A" && himp1.value != "B"){
+      himp1.className += " boxmerah";
+    }
+
     for(var i=0; i<2; i++){
       if(himp2.value==himpunan[i]){
         ada1 += 1;
@@ -217,13 +221,6 @@ jwb14.addEventListener('keyup',function(){
 
     if(jwb14.value==3){
       setTimeout(function(){
-            if (jwb14.className.indexOf('boxhijau') == -1) {
-              if (jwb14.className.indexOf('boxmerah') == -1) {
-                jwb14.className += ' boxhijau';
-              } else {
-                jwb14.className = jwb14.className.replace('boxmerah', 'boxhijau');
-              }
-            }
             document.getElementById('icon12').innerHTML = "<img src='../img/true.png' width='15px'>";
             document.getElementById('lanjut12').className = document.getElementById('lanjut12').className.replace('hilang','');
             document.getElementById('scratch1').src = document.getElementById('scratch1').src;
@@ -265,6 +262,10 @@ function cek21(){
         ada1 += 1;
         himpunan[i] = "";
       }
+    }
+
+    if(himp1.value != "F" && himp1.value != "G"){
+      himp1.className += " boxmerah";
     }
 
     for(var i=0; i<2; i++){
@@ -398,6 +399,10 @@ function cek31(){
       }
     }
 
+    if(himp1.value != "A" && himp1.value != "B"){
+      himp1.className += " boxmerah";
+    }
+
     for(var i=0; i<2; i++){
       if(himp2.value==himpunan[i]){
         ada1 += 1;
@@ -443,7 +448,7 @@ function cek31(){
 function ulang31(){
   for(var i=1; i<=3; i++){
     document.getElementById('jwb3'+i).value= "";
-    document.getElementById('jwb3'+i).className = document.getElementById('jwb2'+i).className.replace('boxmerah', "");
+    document.getElementById('jwb3'+i).className = document.getElementById('jwb3'+i).className.replace('boxmerah', "");
   }
   document.getElementById('icon31').innerHTML = "";
   document.getElementById('ulang31').className += ' hilang';
