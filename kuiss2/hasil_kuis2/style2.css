@@ -232,6 +232,25 @@ td {
     display: none !important;
 }
 
+.tombol{
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    background-color: rgb(168, 194, 251);
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.tombol:hover{
+    background-color: #2196F3;
+    color: white;
+}
+
+.tmblAktif{
+    background-color: rgb(3, 31, 75);
+    color: white;
+}
+
 
 /* ------------------------------------------------------------- */
 

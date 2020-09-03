@@ -318,11 +318,165 @@ td {
     color: white;
 }
 
+.bg_pertanyaan {
+    width: 96%;
+    text-align: justify;
+    padding: 10px;
+    margin: 0px 0px 20px 15px;
+    border: 3px solid rgb(3, 31, 75);
+    border-radius: 10px;
+}
+
+.no {
+    padding: 10px;
+}
+.no p {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.inti_pertanyaan {
+    padding: 5px 10px;
+}
+.pertanyaannya, .jwbbenar {
+    border-left: 4px solid rgb(168, 194, 251);
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.batas {
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(131, 176, 190);
+}
+
+.bg_pilihan,
+.checkbox {
+    position: relative;
+    margin: 20px 0;
+    display: block;
+    font-size: 18px;
+    padding: -10px;
+}
+
+.bg_pilihan :hover,
+.checkbox:hover {
+    cursor: pointer;
+}
+
+
+.checkbox {
+    display: block;
+}
+
+.bg_pilihan input,
+.checkbox input {
+    position: absolute;
+    margin: 5px;
+    padding: 0;
+    visibility: hidden;
+}
+
+.bg_pilihan .textnya,
+.checkbox .textnya {
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.nav_pilihan,
+.fake-checkbox {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(9, 64, 82);
+    background-color: rgb(131, 176, 190);
+}
+
+.nav_pilihan:after,
+.fake-checkbox:after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background: rgb(9, 64, 82);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nav_pilihan {
+    border-radius: 50%;
+}
+
+.nav_pilihan:after {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked+span .nav_pilihan:after {
+    display: block;
+}
+
+.lisoal li{
+    margin-left: 50px;
+}
+
+.jwbbenar{
+    font-size: 30px;
+}
+
+.judul{
+    font-size: 30px;
+}
+
+#pilihannya0, #pilihannya1, #pilihannya2, #pilihannya3{
+    font-size: 30px;
+}
+
 /* ------------------------------------------------------------- */
 
 @media (min-width : 992px) {
-    label {
+    #pilihannya0, #pilihannya1, #pilihannya2, #pilihannya3{
         font-size: 18px;
+    }
+    .jwbbenar{
+        font-size: 18px;
+    }
+    .lisoal li{
+        margin-left: 25px;
+    }
+    .nav_pilihan,
+    .fake-checkbox{
+        width: 16px;
+        height: 16px;
+    }
+    .nav_pilihan:after,
+    .fake-checkbox:after {
+        width: 12px;
+    }
+    .bg_pilihan,
+    .checkbox {
+        font-size: 18px;
+    }
+    .pertanyaannya {
+        
+        padding-left: 15px;
+        font-size: 18px;
+    }
+    .inti_pertanyaan {
+        padding: 10px 20px;
+    }
+    .no {
+        padding: 10px 0;
+    }
+    
+    .no p {
+        margin-left: 24px !important;
+        
+    }
+    label {
+        font-size: 14px;
     }
     .konten{
         margin: 10px 10px 10px 30px;
