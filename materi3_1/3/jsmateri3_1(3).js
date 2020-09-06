@@ -69,126 +69,19 @@ function tjk2(tjk2) {
   }
 }
 
-function cek1(){
-  var s = document.getElementById("s1");
-  var sa = document.getElementById("sa1");
-  var tabel2 = document.getElementById("tabel2");
-  var ulang = document.getElementById("ulang1");
-  var tabel1 = document.getElementById("tabel1");
-
-  var x = sa.value;
-
-  //memecah input sa1 dan na1 menjadi array dengan tanda koma
-  var angsa = x.split(",");
-
-  //array anggota himpunan
-  var himpS = [1,2,3,4,5];
-
-  //cek array himpunan S
-  var a = 0;
-  for (var i = 0; i < 5; i++){
-    for (var j = 0; j < 5; j++){
-      if(himpS[i]==angsa[j]){
-        a=a+1;
-      }
-    }
+/*pertanyaan*/
+function bukaTanya(evt, nmrTanya,scratch) {
+  var i, pertanya, nomortanya;
+  pertanya = document.getElementsByClassName("pertanya");
+  for (i = 0; i < pertanya.length; i++) {
+    pertanya[i].style.display = "none";
   }
-
-  //cek
-  if(s.value=="S" && a==5){
-      document.getElementById("icon1").innerHTML = "<img src='../img/true.png' width='15px'>";
-      tabel2.className = tabel2.className.replace("hilang","");
-      tabel1.scrollIntoView();
-  } else {
-    document.getElementById("icon1").innerHTML = "<img src='../img/false.png' width='15px'>";
-    ulang.className = ulang.className.replace("hilang","");
+  nomortanya = document.getElementsByClassName("nomortanya");
+  for (i = 0; i < nomortanya.length; i++) {
+    nomortanya[i].className = nomortanya[i].className.replace(" tmblAktif", "");
   }
-
-  //jika salah box merah
-  if(s.value!="S"){
-    s.className += " boxmerah";
-  }
-  if(a!=5){
-    sa.className += " boxmerah";
-  }
-}
-function ulang1(){
-  var s = document.getElementById("s1");
-  var sa = document.getElementById("sa1");
-  var ulang = document.getElementById("ulang1");
-
-  s.value = "";
-  sa.value = "";
-  document.getElementById("icon1").innerHTML = "";
-  ulang.className += " hilang";
-
-  //menghilangan kotak merah
-  if(s.className.indexOf("benar") == -1){
-    s.className = s.className.replace("boxmerah","");
-  }
-  if(sa.className.indexOf("benar") == -1){
-    sa.className = sa.className.replace("boxmerah","");
-  }
+  document.getElementById(nmrTanya).style.display = "block";
+  document.getElementById(scratch).src = document.getElementById(scratch).src;
+  evt.currentTarget.className += " tmblAktif";
 }
 
-function cek2(){
-  var n = document.getElementById("n1");
-  var na = document.getElementById("na1");
-  var soalgambar = document.getElementById("soalgambar");
-  var ulang = document.getElementById("ulang2");
-  var tabel2 = document.getElementById("tabel2");
-
-  var y = na.value;
-
-  //memecah input sa1 dan na1 menjadi array dengan tanda koma
-  var angna = y.split(",");
-
-  //array anggota himpunan
-  var himpN = [2,3,5];
-
-  //cek array himpunan N
-  var b = 0;
-  for (var i = 0; i < 3; i++){
-    for (var j = 0; j < 3; j++){
-      if(himpN[i]==angna[j]){
-        b=b+1;
-      }
-    }
-  }
-
-  if (n.value=="N" && b==3){
-    document.getElementById("icon2").innerHTML = "<img src='../img/true.png' width='15px'>";
-    soalgambar.className = soalgambar.className.replace("hilang","");
-    document.getElementById('scratch').src = document.getElementById('scratch').src;
-    tabel2.scrollIntoView();
-  } else {
-    ulang.className = ulang.className.replace("hilang","");
-    document.getElementById("icon2").innerHTML = "<img src='../img/false.png' width='15px'>";
-  }
-
-  //jika salah box merah
-  if(n.value!="N"){
-    n.className += " boxmerah";
-  }
-  if(b!=3){
-    na.className += " boxmerah";
-  }
-}
-function ulang2(){
-  var n = document.getElementById("n1");
-  var na = document.getElementById("na1");
-  var ulang = document.getElementById("ulang2");
-
-  n.value = "";
-  na.value = "";
-  document.getElementById("icon2").innerHTML = "";
-  ulang.className += " hilang";
-
-  //menghilangan kotak merah
-  if(n.className.indexOf("benar") == -1){
-    n.className = n.className.replace("boxmerah","");
-  }
-  if(na.className.indexOf("benar") == -1){
-    na.className = na.className.replace("boxmerah","");
-  }
-}

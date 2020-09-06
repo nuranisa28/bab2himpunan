@@ -101,63 +101,94 @@
 				<br>
 				<b>Penyelesaian : </b>
 				<ol type="a">
-					<li></li>
-				</ol>
-					<!-- <li>
-						Perhatikanlah himpunan A dan himpunan B. Apakah ada anggota himpunan yang sama di antara kedua himpunan tersebut?<br>
-						<button class="cekulang" id="ada1" onclick="ada1()"><b>Ada</b></button>
-						<button class="cekulang" id="tdk1" onclick="tdk1()"><b>Tidak Ada</b></button>
-						<span class="icon" id="icon1"></span>
-						<div class="hilang" id="lanjut1">
-							<span class="hilang" id="bnr1">Jawaban kamu benar! </span>
-							<span class="hilang" id="slh1">Ups! Jawaban kamu masih keliru. </span>
-							Terdapat anggota yang <b><u>sama</u></b> di antara himpunan A dan B yaitu <b>15, 18, dan 24</b>.<br>
-							<center>
-							<div class="contoh">
-								A = {5, <span class="slh"><b>15, 18</b></span>, 20, <span class="slh"><b>24</b></span>}<br>
-								B = {12, <span class="slh"><b>15, 18</b></span>, 21, <span class="slh"><b>24</b></span>}
-							</div>
-							</center>
-						</div>
+					<li>C – D
+						<ul>
+							<li>
+								Perhatikan kembali himpunan C dan himpunan D, apakah ada anggota himpunan C yang juga merupakan anggota himpunan D?<br>
+								<button class="cekulang" id="ada1" onclick="ada1()"><b>Ada</b></button>
+								<button class="cekulang" id="tdk1" onclick="tdk1()"><b>Tidak Ada</b></button>
+								<span class="icon" id="icon1"></span>
+								<div class="hilang" id="lanjut1">
+									<span class="hilang" id="bnr1">Jawabanmu tepat! </span>
+									<span class="hilang" id="slh1">Ups! Jawabanmu masih keliru. </span>
+									<br>
+									Terdapat anggota himpunan C yang juga merupakan anggota himpunan D. Apa saja itu? Coba kalian sebutkan dengan mengisi kotak kosong di bawah ini<br>
+									<h5>*isilah setiap kotak dengan 1 angka</h5>
+									<input type="text" class="input1" maxlength="1"> , 
+									<input type="text" class="input1" maxlength="1">
+									<span class="icon" id="icon2"></span>
+								</div>
+								<div class="hilang" id="lanjut2">
+									Jawabanmu tepat! 3 dan 5 merupakan anggota himpunan C yang juga merupakan anggota himpunan D.
+									<center>
+									<div class="contoh">
+										C = {1, <span class="slh"><b>3, 5</b></span>, 7} dan D = {<span class="slh"><b>3</b></span>, 4, <span class="slh"><b>5</b></span>, 6}
+									</div>
+									</center>
+								</div>
+							</li>
+							<li class="hilang" id="lanjut3">
+								Perlu diingat kembali, selisih dua himpunan adalah himpunan yang anggotanya merupakan <u>anggota himpunan pertama yang bukan anggota himpunan kedua</u>. Maka, 3 dan 5 kita coret/hilangkan dari himpunan C
+								<center>
+								<div class="contoh">
+									C = {1, <span class="slh"><b><s>3, 5</s></b></span>, 7}
+								</div>
+								</center>
+								Setelah 3 dan 5 dihilangkan, maka anggota himpunan C sisa apa saja? Coba kalian sebutkan dengan mengisi kotak kosong di bawah ini<br>
+								<h5>*isilah setiap kotak dengan 1 angka</h5>
+								<input type="text" class="input2" maxlength="1"> , 
+								<input type="text" class="input2" maxlength="1">
+								<span class="icon" id="icon3"></span>
+								<div class="hilang" id="lanjut4">
+									Jawabanmu tepat! Sehingga, selisih himpunan C terhadap himpunan D adalah :
+									<center>
+									<div class="contoh">
+										<b>C – D = {1, 7}</b> dengan n(C – D) = 2
+									</div>
+									</center>
+								</div>
+							</li>
+						</ul>
 					</li>
-					<li class="hilang" id="lanjut2">
-						Gabungkan semua anggota himpunan A dan himpunan B. Perlu diperhatikan, karena himpunan A dan himpunan B memiliki anggota yang <b><u>sama</u></b>, maka anggota tersebut cukup ditulis <u>sekali saja</u>.<br>
-						A &cup; B = {
-						<span class="popup lebar1"> 
-							<input type="text" class="input2" id="jawab1" onclick="info()">
-							<span class="popuptext" id="info">5, 12, 15, 18, 20, 21, 24</span>
-						</span>
-						}
-						<span class="icon" id="icon2"></span><br>
-						<button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
-						<button class="cekulang hilang" id="ulang1" onclick="ulang1()"><b>Ulang</b></button>
-						<div class="hilang" id="lanjut3">
-							Jawaban kamu benar!<b> A &cup; B = {5, 12, 15, 18, 20, 21, 24}</b>, jika dibaca : "A gabungan B adalah 5, 12, 15, 18, 20, 21, dan 24" dengan <b>n(A &cup; B) = 7</b>.
-						</div> -->
-						<!-- Gabungkan semua anggota himpunan A dan himpunan B. Sehingga didapatkan :
-						<center>
-							<div class="contoh">
-								<b>A &cup; B = {5, 12, 15, 18, 20, 21, 24}</b>
-							</div>
-						</center>
-						Perlu diperhatikan, karena himpunan A dan himpunan B memiliki anggota yang <b><u>sama</u></b>, maka anggota tersebut cukup ditulis <u>sekali saja</u>. -->
-					<!-- </li> -->
-				
+					<li class="hilang" id="lanjut5">
+						D – C
+						<ul>
+							<li>
+								Kita sudah mengetahui bahwa 3 dan 5 merupakan anggota himpunan D yang juga merupakan anggota himpunan C. Maka untuk menentukan D – C, anggota 3 dan 5 kita coret/hilangkan dari himpunan D
+								<center>
+								<div class="contoh">
+									D = {<span class="slh"><b><s>3</s></b></span>, 4, <span class="slh"><b><s>5</s></b></span>, 6}
+								</div>
+								</center>
+								Setelah 3 dan 5 dihilangkan, maka anggota himpunan D sisa apa saja? Coba kalian sebutkan dengan mengisi kotak kosong di bawah ini<br>
+								<h5>*isilah setiap kotak dengan 1 angka</h5>
+								<input type="text" class="input3" maxlength="1"> , 
+								<input type="text" class="input3" maxlength="1">
+								<span class="icon" id="icon4"></span>
+								<div class="hilang" id="lanjut6">
+									Jawabanmu tepat! Sehingga, selisih himpunan D terhadap himpunan C adalah :
+									<center>
+									<div class="contoh">
+										<b>D – C = {4, 6}</b> dengan n(D – C) = 2
+									</div>
+									</center>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ol>
 			</div>
-			<div class="hilang" id="lanjut4">
+			<div class="hilang" id="lanjut7">
 				<br>
 				<br>
-				<img src="../img/catatan.png" class="gambar"><br>
+				<img src="../img/catatan.png" class="gambar">
+				<br>
+				*catatlah ke dalam buku catatanmu &#128516;<br>
 				<div class="catat">
 					<ul>
-						<li>Notasi pembentuk himpunan dari gabungan himpunan A dan B adalah : <b>A &cup; B = {x| x &isin; A <u>atau</u> x &isin; B}</b>.</li>
+						<li>Notasi pembentuk himpunan dari selisih himpunan A terhadap himpunan B adalah : <b>A &minus; B = {x | x &isin; A dan x &notin; B}</b>.</li>
 						<li>
-							Kata <b>"atau"</b> disana mempunyai 3 kemungkinan, yaitu :
-							<ol type="a">
-								<li>x &isin; A saja, atau </li>
-								<li>x &isin; B saja, atau</li>
-								<li>x &isin; A <b>dan</b> x &isin; B</li>
-							</ol>
+							Kata <b>"dan"</b> berarti <u>kedua syarat harus dipenuhi</u>. Dengan kata lain, x adalah anggota himpunan A dan x bukan anggota himpunan B.
 						</li>
 					</ul>
 				</div>

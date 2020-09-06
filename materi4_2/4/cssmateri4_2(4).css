@@ -502,6 +502,21 @@ main{
   margin-top: 8px;
 }
 
+.rangkum{
+  width: 99%;
+  min-height: 10px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  margin-top: 5px;
+}
+
+.rangkum li{
+  margin: 10px 20px 10px 35px;
+  min-width: 40%;
+}
+
 .tmbl{
   height: 20px;
   background-color: rgb(168, 194, 251);

@@ -146,7 +146,7 @@ for(let i=0; i < jawab1.length; i++){
               ada =1;
             }
           }
-
+          console.log(ada);
           if(ada==1){
             if (jawab1[0].className.indexOf('boxhijau') == -1) {
               if (jawab1[0].className.indexOf('boxmerah') == -1) {

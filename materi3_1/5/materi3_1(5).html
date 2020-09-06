@@ -22,24 +22,24 @@
 			<a href="">Apersepsi</a>
 	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
 	  			<div class="dropdown-container">
-	    			<a href="">1.1 Pengertian Himpunan</a>
-	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
-	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
-	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
-	    			<a href="">1.5 Kuis 1</a>
+	    			<a href="../../materi1_1/1/materi1_1(1).html">1.1 Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="../../kuiss1/kuis_1.html">1.5 Kuis 1</a>
 	  			</div>
 	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
 	  			<div class="dropdown-container">
-	    			<a href="">2.1 Himpunan Kosong</a>
-	    			<a href="">2.2 Himpunan Semesta</a>
-	    			<a href="">2.3 Kuis 2</a>
+	    			<a href="../../materi2_1/1/materi2_1(1).html">2.1 Himpunan Kosong</a>
+	    			<a href="../../materi2_2/1/materi2_2(1).html">2.2 Himpunan Semesta</a>
+	    			<a href="../../kuiss2/kuis_2.html">2.3 Kuis 2</a>
 	  			</div>
 	  		<button class="dropdown-btn aktif" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
 	  			<div class="dropdown-containerr">
 	    			<div class="aktif2"><a href="../1/materi3_1(1).html" style="color: white;">3.1 Pengertian Diagram Venn</a></div>
-	    			<a href="../../materi3_2/1/materi3_2(1).html">3.2 Himpunan Bagian</a>
-	          		<a href="../../materi3_3/1/materi3_3(1).html">3.3 Himpunan Kuasa</a>
-	    			<a href="../../materi3_4/1/materi3_4(1).html">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
 	    			<a href="">3.5 Kuis 3</a>
 	  			</div>
 	  		<button class="dropdown-btn" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
@@ -71,6 +71,18 @@
 			<!--isi-->
 			<img src="../img/pertanyaan.png" class="gambar"><br>
 			Jawablah pertanyaan 1 dan pertanyaan 2 di bawah ini!<br>
+			<!-- petunjuk -->
+			<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+			<div class="tjk1" id="tjk1">
+				<ul>
+				    <li>Isilah kotak jawaban dengan jawaban yang tepat.</li>
+					<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+					<li>Jika jawaban kamu benar, maka akan muncul icon <img src="../img/true.png" width="15px"></li>
+					<li>Jika jawaban kamu salah, maka akan muncul icon <img src="../img/false.png" width="15px"> dan tombol "Ulang"</li>
+					<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
+					<li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+				</ul>
+			</div>
 			<div class="pertanyaan">
 				<!--nomor pertanyaan-->
 				<div class="number">
@@ -81,260 +93,560 @@
 
 			<!--pertanyaan 1-->
 			<div class="pertanya tanyaAktif" id="tanya1">
-				<!--isi pertanyaan-->
 
-				<!--nomor 1-->
-					Nomor 1<br>
-					<!-- petunjuk -->
-				    <div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
-				    <div class="tjk1" id="tjk1">
-				      	<ul>
-				      		<li>Isilah kotak jawaban dengan jawaban yang tepat.</li>
-					        <li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
-					        <li>Jika jawaban kamu benar, maka akan muncul icon <img src="../img/true.png" width="15px"></li>
-					        <li>Jika jawaban kamu salah, maka akan muncul icon <img src="../img/false.png" width="15px"> dan tombol "Ulang"</li>
-					        <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
-					        <li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
-				      	</ul>
+				<!--soal 1-->
+				<div class="soal soalAktif" id="soal1">
+					Soal 1 dari 5<br>
+					<br>
+					Diketahui S = {x | x &le; 5, x &isin; bilangan asli} dan A = {x | x < 7, x &isin; bilangan prima}. Tentukanlah :
+					<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb11">
+							 = {
+							 <input type="text" class="input2" id="jwb12">
+							}
+							<span id="icon11"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek11()" id="cek11"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang11()" id="ulang11"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut11">
+							Himpunan A dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb13">
+							 = {
+							 <input type="text" class="input2" id="jwb14">
+							}
+							<span id="icon12"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek12()" id="cek12"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang12()" id="ulang12"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut12">
+							Dari diagram venn di bawah ini, diagram venn manakah yang menggambarkan himpunan semesta dan himpunan A? (pilih salah satu)<br>
+							<center>
+				            <div class="hiddenradio">
+				              <label>
+				                <span class="pilihan">
+					                <input type="radio" name="pilih1" value="1" onclick="benar1()">
+					                <img src="../img/t1s1a.png" class="gambar2" id="benar1">
+				                </span>
+				              </label>
+				              <label>
+				              	<span class="pilihan">
+					                <input type="radio" name="pilih1" value="0" onclick="salah1()">
+					                <img src="../img/t1s1b.png" class="gambar2" id="salah1">
+					            </span>
+				              </label>
+				              <span id="icon13"></span>
+				            </div>
+				            <button class="cekulang hilang" onclick="ulang13()" id="ulang13"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjut13">
+						<span class="bnr">Jawaban kamu benar</span>. Diketahui S = {1, 2, 3, 4, 5} dan A = {2, 3, 5} dengan diagram venn sebagai berikut :<br>
+						<center>
+							<img src="../img/t1s1a.png" class="gambar2">
+						</center>
 					</div>
+				</div>
+
+				<!--soal 2-->
+				<div class="soal" id="soal2">
+					Soal 2 dari 5<br>
 					<br>
-					Diketahui S = {y | -3 &le; y &le; 3, y &isin; bilangan bulat} dan N = {y | y &le; 3, y &isin; bilangan prima}. Nyatakanlah himpunan semesta dan himpunan N dengan metode tabulasi!<br>
-					<b>Jawaban :</b>
-					<center>
-					<table class="tabel1">
-						<tr>
-							<th>Himpunan semesta</th>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" class="input1" id="s1" maxlength="1">
-								 = { 
-								 <input type="text" class="input2" id="sa1">
-								  }
-								<span id="icon1"></span>
-								<br><br>
-								<button class="cekulang" onclick="cek11()"><b>Cek Jawaban</b></button>
-	            				<button class="cekulang hilang" onclick="ulang11()" id="ulang11"><b>Ulang</b></button>
-							</td>
-						</tr>
-					</table>
+					Diketahui S = {x | -3 &le; x &le; 3, x &isin; bilangan bulat} dan B = {x | x &le; 2, x &isin; bilangan cacah}. Tentukanlah :
+					<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb21">
+							 = {
+							 <input type="text" class="input2" id="jwb22">
+							}
+							<span id="icon21"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek21()" id="cek21"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang21()" id="ulang21"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut21">
+							Himpunan B dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb23">
+							 = {
+							 <input type="text" class="input2" id="jwb24">
+							}
+							<span id="icon22"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek22()" id="cek22"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang22()" id="ulang22"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut22">
+							Dari diagram venn di bawah ini, diagram venn manakah yang menggambarkan himpunan semesta dan himpunan B? (pilih salah satu)<br>
+							<center>
+				            <div class="hiddenradio">
+				              <label>
+				                <span class="pilihan">
+				                	<input type="radio" name="pilih2" value="0" onclick="salah2()">
+				                	<img src="../img/t1s2b.png" class="gambar2" id="salah2">
+				                </span>
+				              </label>
+				              <label>
+				              	<span class="pilihan">
+					                <input type="radio" name="pilih2" value="1" onclick="benar2()">
+					                <img src="../img/t1s2a.png" class="gambar2" id="benar2">
+				            	</span>
+				              </label>
+				              <span id="icon23"></span>
+				            </div>
+				            <button class="cekulang hilang" onclick="ulang23()" id="ulang23"><b>Ulang</b></button>
+						</li>
+					</ol>
 					<br>
-					<table class="tabel1 hilang" id="lanjut1">
-						<tr>
-							<th>Himpunan N</th>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" class="input1" id="n1" maxlength="1">
-								 = { 
-								 <input type="text" class="input2" id="na1">
-								  }
-								<span id="icon2"></span>
-								<br><br>
-			            		<button class="cekulang" onclick="cek12()"><b>Cek Jawaban</b></button>
-	            				<button class="cekulang hilang" onclick="ulang12()" id="ulang12"><b>Ulang</b></button>
-							</td>
-						</tr>
-					</table>
-					</center>
+					<div class="bahas hilang" id="lanjut23">
+						<span class="bnr">Jawaban kamu benar</span>. Diketahui S = {-3, -2, -1, 0, 1, 2, 3} dan B = {0, 1, 2} dengan diagram venn sebagai berikut :<br>
+						<center>
+							<img src="../img/t1s2a.png" class="gambar2">
+						</center>
+					</div>
+				</div>
+
+				<!--soal 3-->
+				<div class="soal" id="soal3">
+					Soal 3 dari 5<br>
+					<br>
+					Diketahui S = {huruf pembangun kata "banjarmasin"} dan C = {huruf vokal pada kata "banjarmasin"}. Tentukanlah :
+					<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb31">
+							 = {
+							 <input type="text" class="input2" id="jwb32">
+							}
+							<span id="icon31"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek31()" id="cek31"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang31()" id="ulang31"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut31">
+							Himpunan C dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb33">
+							 = {
+							 <input type="text" class="input2" id="jwb34">
+							}
+							<span id="icon32"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek32()" id="cek32"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang32()" id="ulang32"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut32">
+							Dari diagram venn di bawah ini, diagram venn manakah yang menggambarkan himpunan semesta dan himpunan C? (pilih salah satu)<br>
+							<center>
+				            <div class="hiddenradio">
+				              <label>
+				                <span class="pilihan">
+				                	<input type="radio" name="pilih3" value="1" onclick="benar3()">
+				                	<img src="../img/t1s3a.png" class="gambar2" id="benar3">
+				                </span>
+				              </label>
+				              <label>
+				              	<span class="pilihan">
+					                <input type="radio" name="pilih3" value="0" onclick="salah3()">
+					                <img src="../img/t1s3b.png" class="gambar2" id="salah3">
+				            	</span>
+				              </label>
+				              <span id="icon33"></span>
+				            </div>
+				            <button class="cekulang hilang" onclick="ulang33()" id="ulang33"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjut33">
+						<span class="bnr">Jawaban kamu benar</span>. Diketahui S = {b, a, n, j, r, m, s, i} dan C = {a, i} dengan diagram venn sebagai berikut :<br>
+						<center>
+							<img src="../img/t1s3a.png" class="gambar2">
+						</center>
+					</div>
+				</div>
+
+				<!--soal 4-->
+				<div class="soal" id="soal4">
+					Soal 4 dari 5<br>
+					<br>
+					Diketahui S = {warna pelangi} dan D = {warna lampu lalu lintas}. Tentukanlah :
+					<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb41">
+							 = {
+							 <input type="text" class="input3" id="jwb42">
+							}
+							<span id="icon41"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek41()" id="cek41"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang41()" id="ulang41"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut41">
+							Himpunan D dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb43">
+							 = {
+							 <input type="text" class="input4" id="jwb44">
+							}
+							<span id="icon42"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek42()" id="cek42"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang42()" id="ulang42"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut42">
+							Dari diagram venn di bawah ini, diagram venn manakah yang menggambarkan himpunan semesta dan himpunan D? (pilih salah satu)<br>
+							<center>
+				            <div class="hiddenradio">
+				              <label>
+				                <span class="pilihan">
+				                	<input type="radio" name="pilih4" value="1" onclick="benar4()">
+				                	<img src="../img/t1s4a.png" class="gambar2" id="benar4">
+				                </span>
+				              </label>
+				              <label>
+				              	<span class="pilihan">
+					                <input type="radio" name="pilih4" value="0" onclick="salah4()">
+					                <img src="../img/t1s4b.png" class="gambar2" id="salah4">
+				            	</span>
+				              </label>
+				              <span id="icon43"></span>
+				            </div>
+				            <button class="cekulang hilang" onclick="ulang43()" id="ulang43"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjut43">
+						<span class="bnr">Jawaban kamu benar</span>. Diketahui S = {merah, jingga, kuning, hijau, biru, nila, ungu} dan D = {merah, kuning, hijau} dengan diagram venn sebagai berikut :<br>
+						<center>
+							<img src="../img/t1s4a.png" class="gambar2">
+						</center>
+					</div>
+				</div>
+
+				<!--soal 5-->
+				<div class="soal" id="soal5">
+					Soal 5 dari 5<br>
+					<br>
+					Diketahui S = {x | x &le; 8, x &isin; bilangan asli} dan E = {x | x < 8, x &isin; bilangan ganjil}. Tentukanlah :
+					<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb51">
+							 = {
+							 <input type="text" class="input2" id="jwb52">
+							}
+							<span id="icon51"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek51()" id="cek51"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang51()" id="ulang51"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut51">
+							Himpunan E dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jwb53">
+							 = {
+							 <input type="text" class="input2" id="jwb54">
+							}
+							<span id="icon52"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cek52()" id="cek52"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulang52()" id="ulang52"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjut52">
+							Dari diagram venn di bawah ini, diagram venn manakah yang menggambarkan himpunan semesta dan himpunan E? (pilih salah satu)<br>
+							<center>
+				            <div class="hiddenradio">
+				              <label>
+				                <span class="pilihan">
+				                	<input type="radio" name="pilih5" value="0" onclick="salah5()">
+					                <img src="../img/t1s5b.png" class="gambar2" id="salah5">
+				                </span>
+				              </label>
+				              <label>
+				              	<span class="pilihan">
+				              		<input type="radio" name="pilih5" value="1" onclick="benar5()">
+				                	<img src="../img/t1s5a.png" class="gambar2" id="benar5">
+				            	</span>
+				              </label>
+				              <span id="icon53"></span>
+				            </div>
+				            <button class="cekulang hilang" onclick="ulang53()" id="ulang53"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjut53">
+						<span class="bnr">Jawaban kamu benar</span>. Diketahui S = {1, 2, 3, 4, 5, 6, 7, 8} dan E = {1, 3, 5, 7} dengan diagram venn sebagai berikut :<br>
+						<center>
+							<img src="../img/t1s5a.png" class="gambar2">
+						</center>
+					</div>
+				</div>
 				
-
-				<!--nomor 2-->
-				<div class="hilang" id="lanjut2">
-					<br>
-					<hr>
-					<br>
-					Nomor 2<br>
-					<!-- petunjuk -->
-		      		<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
-		      		<div class="tjk1" id="tjk2">
-		      			<ul>
-		      				<li>Isilah bagian kosong pada tabel "Langkah" dengan cara menarik salah satu pilihan yang ada pada tabel "Keterangan" dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
-		      				<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
-					        <li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban kamu benar"</span></li>
-					        <li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban kamu salah"</span>.</li>
-					        <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
-					        <li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
-		      			</ul>
-					</div><br>
-					Urutkanlah langkah dalam menggambar diagram venn dengan melengkapi tabel <b>“Langkah”</b> di bawah ini!<br>
-					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
-					<center>
-					<table class="tabel3">
-						<tr>
-							<th>Keterangan</th>
-						</tr>
-						<tr>
-							<td id="ket1">
-								<span class='pilihan' id='langkah4' draggable='true' ondragstart='drag(event)'>
-									Tuliskan anggota himpunan S yang bukan merupakan anggota himpunan yang menjadi fokus pembicaran di luar lingkaran.
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td id="ket2">
-								<span class='pilihan' id='langkah1' draggable='true' ondragstart='drag(event)'>
-									Buatlah persegi panjang dan notasi S pada sudut kiri atas persegi panjang.
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td id="ket3">
-								<span class='pilihan' id='langkah3' draggable='true' ondragstart='drag(event)'>
-									Tuliskan anggota himpunan yang menjadi fokus pembicaraan dengan noktah/titik di dalam lingkaran.
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td id="ket4">
-								<span class='pilihan' id='langkah2' draggable='true' ondragstart='drag(event)'>
-									Gambarkan himpunan yang menjadi fokus pembicaraan dengan lingkaran/kurva tertutup.
-								</span>
-							</td>
-						</tr>
-					</table>
-					<br>
-					<table class="tabel3" id="tabel3">
-						<tr>
-							<th colspan="2">Langkah</th>
-						</tr>
-						<tr>
-							<th>Langkah ke-</th>
-							<th>Keterangan</th>
-						</tr>
-						<tr>
-							<td class="lebar1">
-								<center>1</center>
-							</td>
-							<td>
-								<span id="lang1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-								<span id="icon21"></span>
-							</td>
-						</tr>
-						<tr>
-							<td class="lebar1">
-								<center>2</center>
-							</td>
-							<td>
-								<span id="lang2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-								<span id="icon22"></span>
-							</td>
-						</tr>
-						<tr>
-							<td class="lebar1">
-								<center>3</center>
-							</td>
-							<td>
-								<span id="lang3" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-								<span id="icon23"></span>
-							</td>
-						</tr>
-						<tr>
-							<td class="lebar1">
-								<center>4</center>
-							</td>
-							<td>
-								<span id="lang4" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-								<span id="icon24"></span>
-							</td>
-						</tr>
-					</table>
-					<button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
-				    <button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
-				    <span id="info2"></span>
-					</center>
-				</div>
-
-				<!--nomor 3-->
-				<div class="hilang" id="lanjut3">
-					<br>
-					<hr>
-					<br>
-					Nomor 3<br>
-					<!-- petunjuk -->
-		      		<div class="kliktunjuk"><a href="#tjk2" onclick="tjk3('tjk3')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
-		      		<div class="tjk1" id="tjk3">
-		      			<ul>
-		      				<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
-	      					<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai menggambar diagram venn. Perhatikanlah setiap arahan yang ditampilkan.</li>
-	      					<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
-		      			</ul>
-					</div><br>
-					Gambarlah diagram venn dari himpunan yang ada pada nomor 1!<br>
-					<center>
-					<div class="divscratch" id="applet">
-						<iframe id="scratch" class="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/419243758/?autostart=true" frameborder="0" allowfullscreen></iframe>
-					</div>
-					</center>
-				</div>
+				<!--tombol nomor soal-->
+				<center>
+					Nomor Soal : 
+					<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        <button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+					<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+				</center>
 			</div>
 
 			<!--pertanyaan 2-->
 			<div class="pertanya" id="tanya2">
-				<!-- petunjuk -->
-		      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk4('tjk4')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan pertunjuk)<br></a></div>
-		      	<div class="tjk1" id="tjk4">
-		      		<ul>
-				        <li>Isilah kotak jawaban dengan jawaban yang tepat.</li>
-					    <li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
-					    <li>Jika jawaban kamu benar, maka akan muncul icon <img src="../img/true.png" width="15px"></li>
-					    <li>Jika jawaban kamu salah, maka akan muncul icon <img src="../img/false.png" width="15px"> dan tombol "Ulang"</li>
-					    <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
-					    <li>Pembahasan akan muncul jika semua jawaban kamu benar.</li>
-		      		</ul>
-		      	</div>
-		      	<br>
-		      	<hr>
-		      	<br>
-		      	Diberikan diagram venn sebagai berikut.<br>
-		      	<center><img src="../img/venn7.png" class="gambar2"></center>
-		      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan M dengan metode tabulasi!
-		      	<center>
-		      	<table class="tabel1">
-		      		<tr>
-		      			<th>Himpunan semesta</th>
-		      		</tr>
-		      		<tr>
-		      			<td>
-		      				<input type="text" class="input1" id="s11" maxlength="1"> = { <input type="text" class="input2" id="sa11"> }
-			            	<span id="ikon1"></span>
-			            	<br><br>
-			            	<button class="cekulang" onclick="cek31()"><b>Cek Jawaban</b></button>
-	            			<button class="cekulang hilang" onclick="ulang31()" id="ulang31"><b>Ulang</b></button>
-		      			</td>
-		      		</tr>
-		      	</table>
-		      	<br>
-		      	<table class="tabel1 hilang" id="lanjut4">
-		      		<tr>
-		      			<th>Himpunan M</th>
-		      		</tr>
-		      		<tr>
-		      			<td>
-		      				<input type="text" class="input1" id="m1" maxlength="1"> = { <input type="text" class="input2" id="ma1"> }
-			            	<span id="ikon2"></span>
-			            	<br><br>
-			            	<button class="cekulang" onclick="cek32()"><b>Cek Jawaban</b></button>
-	            			<button class="cekulang hilang" onclick="ulang32()" id="ulang32"><b>Ulang</b></button>
-		      			</td>
-		      		</tr>
-		      	</table>
-		      	<br>
-		      	<div class="bahas hilang" id="lanjut5">
-		      		<center><span class="bnr">Jawaban kamu benar</span></center>
-	            	Berdasarkan diagram venn yang diberikan, didapatkan :
-	            	<ol>
-	            		<li>
-	            			Himpunan semesta<br>
-	            			S = {1, 2, 3, 4, 5, 6, 7, 8, 9}
-	            		</li>
-	            		<li>
-	            			Himpunan M<br>
-	            			M = {1, 2, 3, 4, 5}
-	            		</li>
-	            	</ol>
-		      	</div>
-		      	</center>
+				
+				<!--soal 1-->
+				<div class="soall soalAktif" id="soall1">
+					Soal 1 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.<br>
+			      	<center><img src="../img/t2s1.png" class="gambar2"></center>
+			      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan J dengan metode tabulasi!
+			      	<br><br>
+			      	<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab11">
+							 = {
+							 <input type="text" class="input2" id="jawab12">
+							}
+							<span id="ikon11"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk11()" id="cekk11"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg11()" id="ulangg11"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjutt11">
+							Himpunan J dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab13">
+							 = {
+							 <input type="text" class="input2" id="jawab14">
+							}
+							<span id="ikon12"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk12()" id="cekk12"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg12()" id="ulangg12"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjutt12">
+						<span class="bnr">Jawaban kamu benar</span>. Berdasarkan diagram venn yang diberikan, didapatkan :
+		            	<ol>
+		            		<li>
+		            			Himpunan semesta<br>
+		            			S = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+		            		</li>
+		            		<li>
+		            			Himpunan J<br>
+		            			J = {1, 2, 3, 4, 5}
+		            		</li>
+		            	</ol>
+					</div>
+				</div>
+
+				<!--soal 2-->
+				<div class="soall" id="soall2">
+					Soal 2 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.<br>
+			      	<center><img src="../img/t2s2.png" class="gambar2"></center>
+			      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan K dengan metode tabulasi!
+			      	<br><br>
+			      	<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab21">
+							 = {
+							 <input type="text" class="input2" id="jawab22">
+							}
+							<span id="ikon21"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk21()" id="cekk21"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg21()" id="ulangg21"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjutt21">
+							Himpunan K dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab23">
+							 = {
+							 <input type="text" class="input2" id="jawab24">
+							}
+							<span id="ikon22"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk22()" id="cekk22"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg22()" id="ulangg22"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjutt22">
+						<span class="bnr">Jawaban kamu benar</span>. Berdasarkan diagram venn yang diberikan, didapatkan :
+		            	<ol>
+		            		<li>
+		            			Himpunan semesta<br>
+		            			S = {h, a, r, i}
+		            		</li>
+		            		<li>
+		            			Himpunan K<br>
+		            			K = {h, a, i}
+		            		</li>
+		            	</ol>
+					</div>
+				</div>
+
+				<!--soal 3-->
+				<div class="soall" id="soall3">
+					Soal 3 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.<br>
+			      	<center><img src="../img/t2s3.png" class="gambar2"></center>
+			      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan L dengan metode tabulasi!
+			      	<br><br>
+			      	<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab31">
+							 = {
+							 <input type="text" class="input2" id="jawab32">
+							}
+							<span id="ikon31"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk31()" id="cekk31"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg31()" id="ulangg31"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjutt31">
+							Himpunan L dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab33">
+							 = {
+							 <input type="text" class="input2" id="jawab34">
+							}
+							<span id="ikon32"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk32()" id="cekk32"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg32()" id="ulangg32"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjutt32">
+						<span class="bnr">Jawaban kamu benar</span>. Berdasarkan diagram venn yang diberikan, didapatkan :
+		            	<ol>
+		            		<li>
+		            			Himpunan semesta<br>
+		            			S = {h, i, m, p, u, n, a}
+		            		</li>
+		            		<li>
+		            			Himpunan L<br>
+		            			L = {h, i, m}
+		            		</li>
+		            	</ol>
+					</div>
+				</div>
+
+				<!--soal 4-->
+				<div class="soall" id="soall4">
+					Soal 4 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.<br>
+			      	<center><img src="../img/t2s4.png" class="gambar2"></center>
+			      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan M dengan metode tabulasi!
+			      	<br><br>
+			      	<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab41">
+							 = {
+							 <input type="text" class="input2" id="jawab42">
+							}
+							<span id="ikon41"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk41()" id="cekk41"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg41()" id="ulangg41"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjutt41">
+							Himpunan M dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab43">
+							 = {
+							 <input type="text" class="input2" id="jawab44">
+							}
+							<span id="ikon42"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk42()" id="cekk42"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg42()" id="ulangg42"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjutt42">
+						<span class="bnr">Jawaban kamu benar</span>. Berdasarkan diagram venn yang diberikan, didapatkan :
+		            	<ol>
+		            		<li>
+		            			Himpunan semesta<br>
+		            			S = {s, u, n, g, a, i}
+		            		</li>
+		            		<li>
+		            			Himpunan M<br>
+		            			M = {s, u}
+		            		</li>
+		            	</ol>
+					</div>
+				</div>
+
+				<!--soal 5-->
+				<div class="soall" id="soall5">
+					Soal 5 dari 5<br>
+					<br>
+					Diberikan diagram venn sebagai berikut.<br>
+			      	<center><img src="../img/t2s5.png" class="gambar2"></center>
+			      	Berdasarkan diagram venn di atas, nyatakanlah himpunan semesta dan himpunan N dengan metode tabulasi!
+			      	<br><br>
+			      	<ol type="a">
+						<li>
+							Himpunan semesta dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab51">
+							 = {
+							 <input type="text" class="input2" id="jawab52">
+							}
+							<span id="ikon51"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk51()" id="cekk51"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg51()" id="ulangg51"><b>Ulang</b></button>
+						</li>
+						<li class="hilang" id="lanjutt51">
+							Himpunan N dengan metode tabulasi<br>
+							<input type="text" class="input1" id="jawab53">
+							 = {
+							 <input type="text" class="input2" id="jawab54">
+							}
+							<span id="ikon52"></span>
+			            	<br>
+			            	<button class="cekulang" onclick="cekk52()" id="cekk52"><b>Cek Jawaban</b></button>
+	            			<button class="cekulang hilang" onclick="ulangg52()" id="ulangg52"><b>Ulang</b></button>
+						</li>
+					</ol>
+					<br>
+					<div class="bahas hilang" id="lanjutt52">
+						<span class="bnr">Jawaban kamu benar</span>. Berdasarkan diagram venn yang diberikan, didapatkan :
+		            	<ol>
+		            		<li>
+		            			Himpunan semesta<br>
+		            			S = {1, 2, 3, 4, 5, 6, 7}
+		            		</li>
+		            		<li>
+		            			Himpunan N<br>
+		            			N = {2, 3, 5, 7}
+		            		</li>
+		            	</ol>
+					</div>
+				</div>
+
+		      	<!--tombol nomor soal-->
+				<center>
+					Nomor Soal : 
+					<button class="stnomor nomorsoal2 nmrAktif" onclick="bukaSoal2(event, 'soall1')">1</button>
+			        <button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall2')">2</button>
+			        <button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall3')">3</button>
+			        <button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall4')">4</button>
+			        <button class="stnomor nomorsoal2" onclick="bukaSoal2(event, 'soall5')">5</button>
+				</center>
 			</div>
 	      	<br>
 			<!--rangkuman-->
@@ -360,7 +672,6 @@
 				<a href="../3/materi3_1(3).html" class="tmbl">3</a>
 				<a href="../4/materi3_1(4).html" class="tmbl">4</a>
 				<a href="materi3_1(5).html" class="tmbl navaktif">5</a>
-				<a href="../../materi3_2/1/materi3_2(1).html" class="tmbl">Materi Selanjutnya</a>
 			</center>
 		</div>
 		

@@ -353,15 +353,9 @@ main{
   color: red;
 }
 
-.input1{
+.input1, .input2, .input3{
   text-align: center;
   width: 3%;
-  height: 25px;
-}
-
-.input2{
-  text-align: center;
-  width: 100%;
   height: 25px;
 }
 
@@ -616,13 +610,9 @@ main{
     width: 93%;
     font-size: 12px;
   }
-  .input1{
+  .input1, .input2, .input3{
     height: 20px;
     width: 8%;
-  }
-  .input2{
-    height: 20px;
-    width: 100%;
   }
   .jawab3, .jawab4{
     height: 20px;

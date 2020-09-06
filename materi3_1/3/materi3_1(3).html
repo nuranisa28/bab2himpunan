@@ -22,24 +22,24 @@
 			<a href="">Apersepsi</a>
 	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
 	  			<div class="dropdown-container">
-	    			<a href="">1.1 Pengertian Himpunan</a>
-	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
-	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
-	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
-	    			<a href="">1.5 Kuis 1</a>
+	    			<a href="../../materi1_1/1/materi1_1(1).html">1.1 Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="../../kuiss1/kuis_1.html">1.5 Kuis 1</a>
 	  			</div>
 	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
 	  			<div class="dropdown-container">
-	    			<a href="">2.1 Himpunan Kosong</a>
-	    			<a href="">2.2 Himpunan Semesta</a>
-	    			<a href="">2.3 Kuis 2</a>
+	    			<a href="../../materi2_1/1/materi2_1(1).html">2.1 Himpunan Kosong</a>
+	    			<a href="../../materi2_2/1/materi2_2(1).html">2.2 Himpunan Semesta</a>
+	    			<a href="../../kuiss2/kuis_2.html">2.3 Kuis 2</a>
 	  			</div>
 	  		<button class="dropdown-btn aktif" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
 	  			<div class="dropdown-containerr">
 	    			<div class="aktif2"><a href="../1/materi3_1(1).html" style="color: white;">3.1 Pengertian Diagram Venn</a></div>
-	    			<a href="../../materi3_2/1/materi3_2(1).html">3.2 Himpunan Bagian</a>
-	          		<a href="../../materi3_3/1/materi3_3(1).html">3.3 Himpunan Kuasa</a>
-	    			<a href="../../materi3_4/1/materi3_4(1).html">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
 	    			<a href="">3.5 Kuis 3</a>
 	  			</div>
 	  		<button class="dropdown-btn" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
@@ -70,77 +70,86 @@
 		<div class="konten">
 			<!--isi-->
 			<img src="../img/mencoba.png" class="gambar"><br>
-			Cobalah jawab soal di bawah ini!<br>
 			<!-- petunjuk -->
 	      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan pertunjuk)<br></a></div>
 	      	<div class="tjk1" id="tjk1">
 	      		<ul>
-			        <li>Isilah kotak jawaban dengan jawaban yang tepat.</li>
-			        <li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
-			        <li>Jika jawaban kamu benar, maka akan muncul icon <img src="../img/true.png" width="15px"></li>
-			        <li>Jika jawaban kamu salah, maka akan muncul icon <img src="../img/false.png" width="15px"> dan tombol "Ulang"</li>
-			        <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
-			        <li>Soal selanjutnya akan muncul jika jawaban kamu benar.</li>
+			        <li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
+	      			<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai. Perhatikanlah setiap arahan yang ditampilkan</li>
+	      			<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
 	      		</ul>
 	      	</div>
-	      	<p class="prf">Diketahui S = {x | x &le; 5, x &isin; bilangan asli} dan N = {x | x < 7, x &isin; bilangan prima}. Nyatakanlah himpunan semesta dan anggota himpunan N dengan metode tabulasi, serta gambarlah diagram venn dari himpunan tersebut!</p>
-	      	<br>
-	      	<b>Jawaban :</b>
-	      	<br>
-	      	<center>
-	      	<table id="tabel1" class="tabel1">
-		        <tr>
-		          <th>Himpunan semesta</th>
-		        </tr>
-		        <tr>
-		          <td>
-		            <input type="text" class="input1" id="s1" maxlength="1"> = { <input type="text" class="input2" id="sa1"> }
-		            <span id="icon1"></span>
-		          </td>
-		        </tr>
-	    	</table>
-	    	<br>
-			<button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
-            <button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button>
-            <div id="tabel2" class="hilang">
-            	<br>
-            	<br>
-            	<table class="tabel1">
-			        <tr>
-			          <th>Himpunan N</th>
-			        </tr>
-			        <tr>
-			          <td>
-			            <input type="text" class="input1" id="n1" maxlength="1"> = { <input type="text" class="input2" id="na1"> }
-			            <span id="icon2"></span>
-			          </td>
-			        </tr>
-		    	</table>
-		    	<br>
-				<button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
-	            <button class="cekulang hilang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button>
-            </div>
-            </center>
-            <!--Soal gambar-->
-            <div class="hilang" id="soalgambar">
-            	<br><br>
-            	Gambarlah diagram venn dari himpunan semesta dan himpunan N di atas!<br>
-            	<!-- petunjuk -->
-		      	<div class="kliktunjuk"><a href="#tjk2" onclick="tjk2('tjk2')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
-		      	<div class="tjk1" id="tjk2">
-		      		<ul>
-		      			<li>Tekan icon <img src="../img/flag.png" width="16px">. Jika animasi belum muncul, harap tunggu sebentar ya &#128516;</li>
-	      				<li>Tekan tombol <b>"Mulai"</b> pada layar animasi interaktif untuk memulai. Perhatikanlah setiap arahan yang ditampilkan</li>
-	      				<li>Praktikanlah juga pada buku catatanmu &#128516;</li>
-		      		</ul>
-		      	</div>
-		      	<center>
+
+	      	<div class="pertanyaan">
+				<!--nomor pertanyaan-->
+				<div class="number">
+			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1','scratch1')">1</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2','scratch2')">2</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya3','scratch3')">3</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya4','scratch4')">4</button>
+			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya5','scratch5')">5</button>
+			    </div>
+			</div>
+	      	
+	      	<!--pertanyaan 1-->
+			<div class="pertanya tanyaAktif" id="tanya1">
+				Soal 1 dari 5<br>
+				<br>
+				Diketahui S = {a, b, c, d, e, f} dan A = {a, e}. Bagaimana diagram venn dari himpunan tersebut? Mainkan animasi interaktif di bawah ini untuk menggambar diagram venn. Perhatikanlah setiap langkahnya dan coba praktikkan juga pada buku catatanmu!<br>
+				<center>
 		      	<div class="divscratch" id="applet">
-					<iframe class="scratch" id="scratch" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/419243366/?autostart=true" frameborder="0" allowfullscreen></iframe>
+					<iframe class="scratch" id="scratch1" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/422913659/?autostart=true" frameborder="0" allowfullscreen></iframe>
 				</div>
 				</center>
-            </div>
+			</div>
+
+			<!--pertanyaan 2-->
+			<div class="pertanya" id="tanya2">
+				Soal 2 dari 5<br>
+				<br>
+				Diketahui S = {1, 2, 3, 4, 5, 6, 7, 8} dan B = {3, 4, 6, 7}. Bagaimana diagram venn dari himpunan tersebut? Mainkan animasi interaktif di bawah ini untuk menggambar diagram venn. Perhatikanlah setiap langkahnya dan coba praktikkan juga pada buku catatanmu!<br>
+				<center>
+		      	<div class="divscratch" id="applet">
+					<iframe class="scratch" id="scratch2" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/422914033/?autostart=true" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</center>
+			</div>
+
+			<!--pertanyaan 3-->
+			<div class="pertanya" id="tanya3">
+				Soal 3 dari 5<br>
+				<br>
+				Diketahui S = {5, 10, 15, 20, 25, 30} dan C = {15, 30}. Bagaimana diagram venn dari himpunan tersebut? Mainkan animasi interaktif di bawah ini untuk menggambar diagram venn. Perhatikanlah setiap langkahnya dan coba praktikkan juga pada buku catatanmu!<br>
+				<center>
+		      	<div class="divscratch" id="applet">
+					<iframe class="scratch" id="scratch3" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/422914292/?autostart=true" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</center>
+			</div>
+
+			<!--pertanyaan 4-->
+			<div class="pertanya" id="tanya4">
+				Soal 4 dari 5<br>
+				<br>
+				Diketahui S = {3, 6, 9, 12, 15, 18, 21} dan D = {3, 9, 15, 21}. Bagaimana diagram venn dari himpunan tersebut? Mainkan animasi interaktif di bawah ini untuk menggambar diagram venn. Perhatikanlah setiap langkahnya dan coba praktikkan juga pada buku catatanmu!<br>
+				<center>
+		      	<div class="divscratch" id="applet">
+					<iframe class="scratch" id="scratch4" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/422914480/?autostart=true" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</center>
+			</div>
 	      	
+	      	<!--pertanyaan 5-->
+			<div class="pertanya" id="tanya5">
+				Soal 5 dari 5<br>
+				<br>
+				Diketahui S = {g, h, i, j, k, l, m, n} dan E = {j, k, m, n}. Bagaimana diagram venn dari himpunan tersebut? Mainkan animasi interaktif di bawah ini untuk menggambar diagram venn. Perhatikanlah setiap langkahnya dan coba praktikkan juga pada buku catatanmu!<br>
+				<center>
+		      	<div class="divscratch" id="applet">
+					<iframe class="scratch" id="scratch5" allowtransparency="true" src="https://scratch.mit.edu/projects/embed/422914704/?autostart=true" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</center>
+			</div>
 
 		</div>
 

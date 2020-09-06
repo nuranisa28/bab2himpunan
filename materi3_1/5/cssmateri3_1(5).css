@@ -227,6 +227,10 @@ main{
   display: none;
 }
 
+.soal li, .soall li{
+  margin: 0px 0px 5px 19px;
+}
+
 .soalAktif{
   display: block;
 }
@@ -302,13 +306,25 @@ main{
 
 .input1{
   text-align: center;
-  width: 8%;
+  width: 3%;
   height: 25px;
 }
 
 .input2{
   text-align: center;
-  width: 53%;
+  width: 15%;
+  height: 25px;
+}
+
+.input3{
+  text-align: center;
+  width: 30%;
+  height: 25px;
+}
+
+.input4{
+  text-align: center;
+  width: 20%;
   height: 25px;
 }
 
@@ -375,12 +391,42 @@ main{
   padding: 10px;
   margin-top: 5px;
   text-align: justify;
-  width: 60%;
+  width: 97%;
 
 }
 
 .bahas li{
   margin: 0px 25px 5px 35px;
+}
+
+.pilihan{
+  margin-right: 10px;
+}
+
+/* HIDE RADIO */
+.hiddenradio [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+.hiddenradio [type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.hiddenradio [type=radio]:checked + img {
+  /*outline: 2px solid blue;*/
+}
+
+.hijau{
+  outline: 2px solid green;
+}
+
+.merah{
+  outline: 2px solid red;
 }
 
 .rangkum{
@@ -490,7 +536,20 @@ main{
   .tabel1, .tabel3{
     width: 100%;
   }
-  .input1, .input2{
+  .input1{
+    width: 8%;
+    height: 20px;
+  }
+  .input2{
+    width: 30%;
+    height: 20px;
+  }
+  .input3{
+    width: 65%;
+    height: 20px;
+  }
+  .input4{
+    width: 50%;
     height: 20px;
   }
   .cekulang{
@@ -512,10 +571,10 @@ main{
     height: 302px;
   }
   .gambar2{
-    width: 50%;
+    width: 45%;
   }
   .bahas{
-    width: 90%;
+    width: 92%;
   }
   .rangkum{
     width: 90%;
