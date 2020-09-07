@@ -691,3 +691,269 @@ for(let i=0; i<jawab3.length; i++){
   })
 
 }
+
+///////soal 4
+let jawab4 = document.querySelectorAll('.jawab4');
+
+for(let i=0; i<jawab4.length; i++){
+
+  // function agar saat di enter tidak dijalankan 
+  jawab4[i].addEventListener('keypress', function(e){
+    if (e.keyCode == 13) {
+              e.preventDefault();
+              return false;
+          }
+  });
+
+  jawab4[i].addEventListener('keyup', function(){
+
+    if (jawab4[i].value.length == 0) {
+      if(jawab4[i].className.indexOf('boxhijau') == -1){
+        jawab4[i].className = jawab4[i].className.replace('boxmerah', "");
+      }
+      if (jawab4[i].className.indexOf('boxmerah') == -1){
+        jawab4[i].className = jawab4[i].className.replace('boxhijau', "");
+      }
+      document.getElementById('ikon4'+i).innerHTML = "";
+    }
+
+    if (jawab4[i].value.length == 1 || jawab4[i].value.length == 2 || jawab4[i].value.length == 3){
+
+      if(i==0){
+
+        if(jawab4[0].value==8){
+          if (jawab4[0].className.indexOf('boxhijau') == -1) {
+            if (jawab4[0].className.indexOf('boxmerah') == -1) {
+              jawab4[0].className += ' boxhijau';
+            } else {
+              jawab4[0].className = jawab4[0].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut41').className = document.getElementById('lanjut41').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab4[0].className.indexOf('boxmerah') == -1) {
+            if (jawab4[0].className.indexOf('boxhijau') == -1) {
+              jawab4[0].className += ' boxmerah';
+            } else {
+              jawab4[0].className = jawab4[0].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+      if(i==1){
+
+        if(jawab4[1].value==256){
+          if (jawab4[1].className.indexOf('boxhijau') == -1) {
+            if (jawab4[1].className.indexOf('boxmerah') == -1) {
+              jawab4[1].className += ' boxhijau';
+            } else {
+              jawab4[1].className = jawab4[1].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut42').className = document.getElementById('lanjut42').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab4[1].className.indexOf('boxmerah') == -1) {
+            if (jawab4[1].className.indexOf('boxhijau') == -1) {
+              jawab4[1].className += ' boxmerah';
+            } else {
+              jawab4[1].className = jawab4[1].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+      if(i==2){
+
+        if(jawab4[2].value==70){
+          if (jawab4[2].className.indexOf('boxhijau') == -1) {
+            if (jawab4[2].className.indexOf('boxmerah') == -1) {
+              jawab4[2].className += ' boxhijau';
+            } else {
+              jawab4[2].className = jawab4[2].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut43').className = document.getElementById('lanjut43').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab4[2].className.indexOf('boxmerah') == -1) {
+            if (jawab4[2].className.indexOf('boxhijau') == -1) {
+              jawab4[2].className += ' boxmerah';
+            } else {
+              jawab4[2].className = jawab4[2].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+      if(i==3){
+
+        if(jawab4[3].value==93){
+          if (jawab4[3].className.indexOf('boxhijau') == -1) {
+            if (jawab4[3].className.indexOf('boxmerah') == -1) {
+              jawab4[3].className += ' boxhijau';
+            } else {
+              jawab4[3].className = jawab4[3].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut44').className = document.getElementById('lanjut44').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon4'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab4[3].className.indexOf('boxmerah') == -1) {
+            if (jawab4[3].className.indexOf('boxhijau') == -1) {
+              jawab4[3].className += ' boxmerah';
+            } else {
+              jawab4[3].className = jawab4[3].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+    }
+
+  })
+
+}
+
+///////soal 5
+let jawab5 = document.querySelectorAll('.jawab5');
+
+for(let i=0; i<jawab5.length; i++){
+
+  // function agar saat di enter tidak dijalankan 
+  jawab5[i].addEventListener('keypress', function(e){
+    if (e.keyCode == 13) {
+              e.preventDefault();
+              return false;
+          }
+  });
+
+  jawab5[i].addEventListener('keyup', function(){
+
+    if (jawab5[i].value.length == 0) {
+      if(jawab5[i].className.indexOf('boxhijau') == -1){
+        jawab5[i].className = jawab5[i].className.replace('boxmerah', "");
+      }
+      if (jawab5[i].className.indexOf('boxmerah') == -1){
+        jawab5[i].className = jawab5[i].className.replace('boxhijau', "");
+      }
+      document.getElementById('ikon5'+i).innerHTML = "";
+    }
+
+    if (jawab5[i].value.length == 1 || jawab5[i].value.length == 2 || jawab5[i].value.length == 3){
+
+      if(i==0){
+
+        if(jawab5[0].value==7){
+          if (jawab5[0].className.indexOf('boxhijau') == -1) {
+            if (jawab5[0].className.indexOf('boxmerah') == -1) {
+              jawab5[0].className += ' boxhijau';
+            } else {
+              jawab5[0].className = jawab5[0].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut51').className = document.getElementById('lanjut51').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab5[0].className.indexOf('boxmerah') == -1) {
+            if (jawab5[0].className.indexOf('boxhijau') == -1) {
+              jawab5[0].className += ' boxmerah';
+            } else {
+              jawab5[0].className = jawab5[0].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+      if(i==1){
+
+        if(jawab5[1].value==128){
+          if (jawab5[1].className.indexOf('boxhijau') == -1) {
+            if (jawab5[1].className.indexOf('boxmerah') == -1) {
+              jawab5[1].className += ' boxhijau';
+            } else {
+              jawab5[1].className = jawab5[1].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut52').className = document.getElementById('lanjut52').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab5[1].className.indexOf('boxmerah') == -1) {
+            if (jawab5[1].className.indexOf('boxhijau') == -1) {
+              jawab5[1].className += ' boxmerah';
+            } else {
+              jawab5[1].className = jawab5[1].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+      if(i==2){
+
+        if(jawab5[2].value==35){
+          if (jawab5[2].className.indexOf('boxhijau') == -1) {
+            if (jawab5[2].className.indexOf('boxmerah') == -1) {
+              jawab5[2].className += ' boxhijau';
+            } else {
+              jawab5[2].className = jawab5[2].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut53').className = document.getElementById('lanjut53').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab5[2].className.indexOf('boxmerah') == -1) {
+            if (jawab5[2].className.indexOf('boxhijau') == -1) {
+              jawab5[2].className += ' boxmerah';
+            } else {
+              jawab5[2].className = jawab5[2].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+      if(i==3){
+
+        if(jawab5[3].value==120){
+          if (jawab5[3].className.indexOf('boxhijau') == -1) {
+            if (jawab5[3].className.indexOf('boxmerah') == -1) {
+              jawab5[3].className += ' boxhijau';
+            } else {
+              jawab5[3].className = jawab5[3].className.replace('boxmerah', 'boxhijau');
+            }
+          }
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/true.png' width='15px'>";
+          document.getElementById('lanjut54').className = document.getElementById('lanjut54').className.replace('hilang','');
+        } else{
+          document.getElementById('ikon5'+i).innerHTML = "<img src='../img/false.png' width='15px'>";
+          if (jawab5[3].className.indexOf('boxmerah') == -1) {
+            if (jawab5[3].className.indexOf('boxhijau') == -1) {
+              jawab5[3].className += ' boxmerah';
+            } else {
+              jawab5[3].className = jawab5[3].className.replace('boxhijau', 'boxmerah');
+            }
+          }
+        }
+
+      }
+
+    }
+
+  })
+
+}

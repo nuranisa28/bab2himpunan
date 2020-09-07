@@ -356,7 +356,7 @@ main{
   margin-left: 10px;
 }
 
-.jawab1, .jawab2, .jawab3{
+.jawab1, .jawab2, .jawab3, .jawab4, .jawab5{
   text-align: center;
   width: 5%;
   height: 25px;
@@ -475,7 +475,7 @@ main{
     width: 15%;
     padding-left: 10%;
   }
-  .jawab1, .jawab2, .jawab3{
+  .jawab1, .jawab2, .jawab3, .jawab4, .jawab5{
     height: 20px;
     width: 12%;
   }

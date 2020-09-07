@@ -126,6 +126,7 @@ function cek1(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -148,6 +149,7 @@ function cek1(){
   if(benar==3){
     document.getElementById('icon1').innerHTML = "<img src='../img/true.png' width='15px'>";
     document.getElementById('bnr1').className = document.getElementById('bnr1').className.replace('hilang','');
+    document.getElementById('kom1').innerHTML = komp.value;
   } else{
     document.getElementById('icon1').innerHTML = "<img src='../img/false.png' width='15px'>";
     document.getElementById('slh1').className = document.getElementById('slh1').className.replace('hilang','');
@@ -199,6 +201,7 @@ function cek2(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -221,6 +224,7 @@ function cek2(){
   if(benar==3){
     document.getElementById('icon2').innerHTML = "<img src='../img/true.png' width='15px'>";
     document.getElementById('bnr2').className = document.getElementById('bnr1').className.replace('hilang','');
+    document.getElementById('kom2').innerHTML = komp.value;
   } else{
     document.getElementById('icon2').innerHTML = "<img src='../img/false.png' width='15px'>";
     document.getElementById('slh2').className = document.getElementById('slh1').className.replace('hilang','');

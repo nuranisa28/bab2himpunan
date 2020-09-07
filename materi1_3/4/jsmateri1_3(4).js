@@ -266,6 +266,7 @@ function cek13(){
     for (var j = 0; j < 7; j++) {
       if (anggota[i]==anghimp[j]) {
         a=a+1;
+        anggota[i]="";
       }
     }
   }
@@ -496,6 +497,7 @@ function cek23(){
     for (var j = 0; j < 2; j++) {
       if (anggota[i]==anghimp[j]) {
         a=a+1;
+        anggota[i]="";
       }
     }
   }
@@ -732,6 +734,7 @@ function cek33(){
     for (var j = 0; j < 7; j++) {
       if (anggota[i]==anghimp[j]) {
         a=a+1;
+        anggota[i]="";
       }
     }
   }

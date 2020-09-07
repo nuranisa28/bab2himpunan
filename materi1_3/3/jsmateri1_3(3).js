@@ -329,6 +329,7 @@ function bukaTanya(evt, nmrTanya) {
       for (var j = 0; j < 5; j++) {
         if (anggota3[i]==anghimp3[j]) {
           a=a+1;
+          anggota3[i]="";
         }
       }
     }

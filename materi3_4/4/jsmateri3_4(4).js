@@ -163,6 +163,7 @@ function cek1(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -230,6 +231,7 @@ function cek2(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -298,6 +300,7 @@ function cek3(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -364,6 +367,7 @@ function cek4(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -430,6 +434,7 @@ function cek5(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -513,6 +518,7 @@ function cekk1(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -581,6 +587,7 @@ function cekk2(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -649,6 +656,7 @@ function cekk3(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -717,6 +725,7 @@ function cekk4(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }
@@ -782,6 +791,7 @@ function cekk5(){
     for(var k=0; k<angg.length; k++){
       if(anggota[j]==angg[k]){
         ada+=1;
+        anggota[j]="";
       }
     }
   }

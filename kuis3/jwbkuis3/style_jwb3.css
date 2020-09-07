@@ -5,8 +5,9 @@
 
 body {
     background-image: url(../img/bg1.png);
-	background-size: 35%;
-  font-family: Tahoma;
+    background-size: 35%;
+    background-attachment: fixed;
+    font-family: Tahoma;
 }
 
 .bg {
@@ -32,6 +33,7 @@ h1 {
 .kiri {
     width: 100%;
     box-sizing: border-box;
+    padding-top: 15px;
 }
 
 .kiri p {
@@ -39,7 +41,7 @@ h1 {
     font-size: 8vw;
     font-weight: bold;
     text-align: center;
-    padding-top: 10px;
+    
 }
 
 
@@ -50,14 +52,13 @@ h1 {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: white;
-    margin: 10px;
+    margin: 10px 10px 10px 30px;
 }
 
 .isinya {
     padding: 10px;
     font-size: 18px;
 }
-
 
 a {
     color: black;
@@ -140,6 +141,10 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+.nah {
+    background-color: lightblue;
+}
+
 /* ss---------------------------------------------------------- */
 
 .kirinih {
@@ -168,14 +173,13 @@ label {
 }
 
 .mundur {
-    font-size: 14px;
+    font-size: 14px;;
     height: 25px;
     padding: 2px 5px;
     font-size: 18px;
     display: inline-block;
     text-align: center;
     width: 90%;
-    display: inline-block;
 }
 
 .cari {
@@ -187,6 +191,22 @@ label {
     color: white;
     border-radius: 5px;
     width: 90px;
+}
+
+.cah_semua {
+    display: inline-block;
+    padding: 2px 20px;
+    background-color: rgb(14, 118, 153);
+    position: relative;
+    top: -5px;
+    border-radius: 5px;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.cah_semua:hover {
+    cursor: pointer;
+    background-color: lightblue;
 }
 
 .cari:hover {
@@ -203,33 +223,80 @@ table,
 td {
     border: 2px solid black;
     border-collapse: collapse;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.benar {
+    background-color: lightgreen;
+
+}
+
+.salah {
+    background-color: lightcoral;
+}
+
+.ukr0 {
+    width: 900px;
 }
 
 .ukr1 {
     width: 300px;
-    font-size: 14px;
-    padding: 10px;
 }
 
 .ukr2 {
     width: 200px;
-    font-size: 14px;
-    padding: 10px;
 }
 
 .ukr3 {
     width: 90px;
-    font-size: 14px;
-    padding: 10px;
+}
+
+.ukr4 {
+    width: 50px;
+    padding: 5px;
+}
+
+.hps {
+
+    background-color: rgb(14, 118, 153);
+
+}
+
+.hps:hover {
+    cursor: pointer;
+    background-color: lightblue;
 }
 
 .jrkbawah {
     margin-bottom: 2px;
-    background-color:rgb(168, 194, 251);
+    background-color: rgb(168, 194, 251);
 }
 
 .hilang{
     display: none !important;
+}
+
+.navigasi {
+    padding: 10px 20px;
+    font-size: 2vw;
+
+}
+
+.navigasi a {
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid rgb(1, 59, 78);
+
+}
+
+.navigasi a:hover {
+    cursor: pointer;
+    background-color: rgb(1, 59, 78);
+}
+
+.aktif {
+    background-color: rgb(1, 59, 78) !important;
 }
 
 .tombol{
@@ -253,7 +320,7 @@ td {
 
 /* ------------------------------------------------------------- */
 
-@media (min-width: 992px) {
+@media (min-width : 992px) {
     label {
         font-size: 18px;
     }
@@ -285,7 +352,6 @@ td {
     .kembali {
         margin: 0px;
         margin-top: 5px;
-        margin-left: 45%;
         margin-bottom: 0;
     }
 
