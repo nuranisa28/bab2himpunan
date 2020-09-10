@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Selisih Dua Himpunan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri4_3(4).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		4. OPERASI HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">1.1 Pengertian Himpunan</a>
+	    			<a href="">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="">1.5 Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">2.1 Himpunan Kosong</a>
+	    			<a href="">2.2 Himpunan Semesta</a>
+	    			<a href="">2.3 Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">3.1 Pengertian Diagram Venn</a>
+	    			<a href="">3.2 Himpunan Bagian</a>
+	          		<a href="">3.3 Himpunan Kuasa</a>
+	    			<a href="">3.4 Komplemen Himpunan</a>
+	    			<a href="">3.5 Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<a href="../../materi4_1/1/materi4_1(1).html" >4.1 Irisan Himpunan</a>
+	    			<a href="../../materi4_2/1/materi4_2(1).html">4.2 Gabungan Himpunan</a>
+	          		<div class="aktif2"><a href="../1/materi4_3(1).html" style="color: white;">4.3 Selisih Dua Himpunan</a></div>
+	    			<a href="">4.4 Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">5. Penerapan Konsep Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
+	    			<a href="">5.2 Kuis 5</a>
+	  			</div>
+	  		<a href="">6. Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				4.3 SELISIH DUA HIMPUNAN
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/pertanyaan.png" class="gambar"><br>
+			Jawablah pertanyaan di bawah ini!
+			<!-- petunjuk -->
+	      	<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+	      	<div class="tjk1" id="tjk1">
+	      		<ul>
+	      			<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+	      			<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
+			      	<li>Jika jawaban kamu benar, akan muncul icon <img src="../img/true.png" width="15px">.</li>
+			      	<li>Jika jawaban kamu salah, akan muncul icon <img src="../img/false.png" width="15px">, dan tombol "Ulang".</li>
+			      	<li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
+	      		</ul>
+			</div>
+
+			<!--pertanyaan 1--> 
+			<div class="pertanya">
+				Diberikan himpunan sebagai berikut.
+				<ul class="anaksoal">
+					<li>A = {x | x ≤ 8, x ∈ bilangan asli}</li>
+					<li>B = {x | x ≤ 8, x ∈ bilangan genap}</li>
+					<li>C = {x | x < 8, x ∈ bilangan ganjil}</li>
+					<li>D = {x | x < 8, x ∈ bilangan prima}</li>
+				</ul>
+				
+				Berdasarkan beberapa himpunan yang diberikan di atas, tentukanlah :
+				<ol class="anaksoal" type="a">
+					<li>
+						A &minus; B = {<input type="text" class="input2" id="jwb1">}
+						 <span class="icon" id="icon1"></span>
+						 <br>
+						 <button class="cekulang" id="cek1" onclick="cek1()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button>
+						<div class="ket" id="ket1"></div>
+					</li>
+					<li class="hilang" id="lanjut1">
+						A &minus; C = {<input type="text" class="input2" id="jwb2">} 
+						<span class="icon" id="icon2"></span>
+						<br>
+						<button class="cekulang" id="cek2" onclick="cek2()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button>
+						<div class="ket" id="ket2"></div>
+					</li>
+					<li class="hilang" id="lanjut2">
+						A &minus; D = {<input type="text" class="input2" id="jwb3">} 
+						<span class="icon" id="icon3"></span>
+						<br>
+						<button class="cekulang" id="cek3" onclick="cek3()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button>
+						<div class="ket" id="ket3"></div>
+					</li>
+					<li class="hilang" id="lanjut3">
+						C &minus; D = {<input type="text" class="input2" id="jwb4">} 
+						<span class="icon" id="icon4"></span>
+						<br>
+						<button class="cekulang" id="cek4" onclick="cek4()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button>
+						<div class="ket" id="ket4"></div>
+					</li>
+					<li class="hilang" id="lanjut4">
+						B &minus; D = {<input type="text" class="input2" id="jwb5">} 
+						<span class="icon" id="icon5"></span>
+						<br>
+						<button class="cekulang" id="cek5" onclick="cek5()"><b>Cek Jawaban</b></button>
+						<button class="cekulang hilang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button>
+						<div class="ket" id="ket5"></div>
+					</li>
+				</ol>
+				<div class="hilang" id="lanjut5">
+					<span class="bnr"><b>Jawaban kamu benar.</b></span>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../3/materi4_3(3).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi4_3(1).html" class="tmbl">1</a>
+				<a href="../2/materi4_3(2).html" class="tmbl">2</a>
+				<a href="../3/materi4_3(3).html" class="tmbl">3</a>
+				<a href="materi4_3(4).html" class="tmbl navaktif">4</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri4_3(4).js"></script>
+</body>
+</html>

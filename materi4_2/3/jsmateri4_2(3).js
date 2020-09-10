@@ -159,6 +159,7 @@ function cek11(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -287,6 +288,7 @@ function cek21(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -415,6 +417,7 @@ function cek31(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }

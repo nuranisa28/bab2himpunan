@@ -131,6 +131,7 @@ function cek11(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -175,6 +176,7 @@ function cek12(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -218,6 +220,7 @@ function cek21(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -262,6 +265,7 @@ function cek22(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -282,7 +286,7 @@ function cek22(){
 
 function ulang22(){
   document.getElementById('jwb22').value= "";
-  document.getElementById('jwb22').className = document.getElementById('jwb12').className.replace('boxmerah', "");
+  document.getElementById('jwb22').className = document.getElementById('jwb22').className.replace('boxmerah', "");
   document.getElementById('icon22').innerHTML = "";
   document.getElementById('ulang22').className += ' hilang';
   document.getElementById('ket22').innerHTML = "";
@@ -305,6 +309,7 @@ function cek31(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -349,6 +354,7 @@ function cek32(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -369,7 +375,7 @@ function cek32(){
 
 function ulang32(){
   document.getElementById('jwb32').value= "";
-  document.getElementById('jwb32').className = document.getElementById('jwb12').className.replace('boxmerah', "");
+  document.getElementById('jwb32').className = document.getElementById('jwb32').className.replace('boxmerah', "");
   document.getElementById('icon32').innerHTML = "";
   document.getElementById('ulang32').className += ' hilang';
   document.getElementById('ket32').innerHTML = "";
@@ -393,6 +399,7 @@ function cek41(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -471,6 +478,7 @@ function cek51(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }
@@ -515,6 +523,7 @@ function cek52(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada+=1;
+          anggota[j]="";
         }
       }
     }

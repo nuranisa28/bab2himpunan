@@ -159,6 +159,7 @@ function cek11(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -288,6 +289,7 @@ function cek21(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -349,13 +351,6 @@ jwb24.addEventListener('keyup',function(){
 
     if(jwb24.value==3){
       setTimeout(function(){
-            if (jwb24.className.indexOf('boxhijau') == -1) {
-              if (jwb24.className.indexOf('boxmerah') == -1) {
-                jwb24.className += ' boxhijau';
-              } else {
-                jwb24.className = jwb24.className.replace('boxmerah', 'boxhijau');
-              }
-            }
             document.getElementById('icon22').innerHTML = "<img src='../img/true.png' width='15px'>";
             document.getElementById('lanjut22').className = document.getElementById('lanjut22').className.replace('hilang','');
             document.getElementById('scratch2').src = document.getElementById('scratch2').src;
@@ -422,6 +417,7 @@ function cek31(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }

@@ -176,6 +176,7 @@ function cek11(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -253,6 +254,7 @@ function cek12(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -330,6 +332,7 @@ function cek13(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -408,6 +411,7 @@ function cek14(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -486,6 +490,7 @@ function cek15(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -582,6 +587,7 @@ function cek21(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -659,6 +665,7 @@ function cek22(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -736,6 +743,7 @@ function cek23(){
       for(var k=0; k<ang2.length; k++){
         if(anggota[j]==ang2[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -814,6 +822,7 @@ function cek24(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
@@ -892,6 +901,7 @@ function cek25(){
       for(var k=0; k<angg.length; k++){
         if(anggota[j]==angg[k]){
           ada2+=1;
+          anggota[j]="";
         }
       }
     }
