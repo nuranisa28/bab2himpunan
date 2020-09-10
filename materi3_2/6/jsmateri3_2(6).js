@@ -118,180 +118,147 @@ function bukaSoal2(evt, nmrSoal) {
   evt.currentTarget.className += " nmrAktif";
 }
 
-/*drag and drop*/
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
-
 /*soal 1*/
-function cek1(){
-  var jwb = document.getElementById("no1").innerText;
-  var p1 = document.getElementById("p11").innerText;
-  var ulang = document.getElementById("ulang1");
+function bnr1(){
+  var salah = document.getElementById("slh1");
   var bahasbnr = document.getElementById("bahasbnr1");
+  document.getElementById('icon1').innerHTML = "<img src='../img/true.png' width='15px'>";
+  salah.className += " hilang";
+  bahasbnr.className += " tampil";
+  
+}
+function slh1(){
+  var benar = document.getElementById("bnr1");
   var bahasslh = document.getElementById("bahasslh1");
-  //cek
-  if(jwb == p1){
-    document.getElementById("icon1").innerHTML = "<img src='../img/true.png' style='width:15px'>";
-    bahasbnr.className += " tampil";
-  } else if(jwb==""){
-    alert("Jawabanmu masih kosong! Isi jawabanmu terlebih dahulu ya~");
-  }else{
-    ulang.className += " tampil";
-    document.getElementById("icon1").innerHTML = "<img src='../img/false.png' style='width:15px'>";
-    bahasslh.className += " tampil";
-  }
+  var ulang = document.getElementById("ulang1");
+  document.getElementById('icon1').innerHTML = "<img src='../img/false.png' width='15px'>";
+  benar.className += " hilang";
+  ulang.className += " tampil";
+  bahasslh.className += " tampil";
 }
 function ulang1(){
-  var pil1 = "<td draggable='true' ondragstart='drag(event)' id='p11' class='pilihan'>⊂</td>";
-  var pil2 = "<td draggable='true' ondragstart='drag(event)' id='p12' class='pilihan'>⊄</td>";
-  var ulang = document.getElementById("ulang1");
+  var benar = document.getElementById("bnr1");
   var bahasslh = document.getElementById("bahasslh1");
-  //menghapus semua
-  document.getElementById("no1").innerHTML="";
-  document.getElementById("pil1").innerHTML = pil1 + pil2;
-  document.getElementById("icon1").innerHTML = "";
-  ulang.className = ulang.className.replace("tampil", "");
-  bahasslh.className = bahasslh.className.replace("tampil", "");
+  var ulang = document.getElementById("ulang1");
+  document.getElementById('icon1').innerHTML = "";
+  benar.className = benar.className.replace("hilang","");
+  ulang.className = ulang.className.replace("tampil","");
+  bahasslh.className = bahasslh.className.replace("tampil","");
 }
 
 /*soal 2*/
-function cek2(){
-  var jwb = document.getElementById("no2").innerText;
-  var p2 = document.getElementById("p22").innerText;
-  var ulang = document.getElementById("ulang2");
+function bnr2(){
+  var salah = document.getElementById("slh2");
   var bahasbnr = document.getElementById("bahasbnr2");
+  document.getElementById('icon2').innerHTML = "<img src='../img/true.png' width='15px'>";
+  salah.className += " hilang";
+  bahasbnr.className += " tampil";
+  
+}
+function slh2(){
+  var benar = document.getElementById("bnr2");
   var bahasslh = document.getElementById("bahasslh2");
-  //cek
-  if(jwb == p2){
-    document.getElementById("icon2").innerHTML = "<img src='../img/true.png' style='width:15px'>";
-    bahasbnr.className += " tampil";
-  } else if(jwb==""){
-    alert("Jawabanmu masih kosong! Isi jawabanmu terlebih dahulu ya~");
-  }else{
-    ulang.className += " tampil";
-    document.getElementById("icon2").innerHTML = "<img src='../img/false.png' style='width:15px'>";
-    bahasslh.className += " tampil";
-  }
+  var ulang = document.getElementById("ulang2");
+  document.getElementById('icon2').innerHTML = "<img src='../img/false.png' width='15px'>";
+  benar.className += " hilang";
+  ulang.className += " tampil";
+  bahasslh.className += " tampil";
 }
 function ulang2(){
-  var pil1 = "<td draggable='true' ondragstart='drag(event)' id='p21' class='pilihan'>⊂</td>";
-  var pil2 = "<td draggable='true' ondragstart='drag(event)' id='p22' class='pilihan'>⊄</td>";
-  var ulang = document.getElementById("ulang2");
+  var benar = document.getElementById("bnr2");
   var bahasslh = document.getElementById("bahasslh2");
-  //menghapus semua
-  document.getElementById("no2").innerHTML="";
-  document.getElementById("pil2").innerHTML = pil1 + pil2;
-  document.getElementById("icon2").innerHTML = "";
-  ulang.className = ulang.className.replace("tampil", "");
-  bahasslh.className = bahasslh.className.replace("tampil", "");
+  var ulang = document.getElementById("ulang2");
+  document.getElementById('icon2').innerHTML = "";
+  benar.className = benar.className.replace("hilang","");
+  ulang.className = ulang.className.replace("tampil","");
+  bahasslh.className = bahasslh.className.replace("tampil","");
 }
 
 /*soal 3*/
-function cek3(){
-  var jwb = document.getElementById("no3").innerText;
-  var p1 = document.getElementById("p31").innerText;
-  var ulang = document.getElementById("ulang3");
+function bnr3(){
+  var salah = document.getElementById("slh3");
   var bahasbnr = document.getElementById("bahasbnr3");
+  document.getElementById('icon3').innerHTML = "<img src='../img/true.png' width='15px'>";
+  salah.className += " hilang";
+  bahasbnr.className += " tampil";
+  
+}
+function slh3(){
+  var benar = document.getElementById("bnr3");
   var bahasslh = document.getElementById("bahasslh3");
-  //cek
-  if(jwb == p1){
-    document.getElementById("icon3").innerHTML = "<img src='../img/true.png' style='width:15px'>";
-    bahasbnr.className += " tampil";
-  } else if(jwb==""){
-    alert("Jawabanmu masih kosong! Isi jawabanmu terlebih dahulu ya~");
-  }else{
-    ulang.className += " tampil";
-    document.getElementById("icon3").innerHTML = "<img src='../img/false.png' style='width:15px'>";
-    bahasslh.className += " tampil";
-  }
+  var ulang = document.getElementById("ulang3");
+  document.getElementById('icon3').innerHTML = "<img src='../img/false.png' width='15px'>";
+  benar.className += " hilang";
+  ulang.className += " tampil";
+  bahasslh.className += " tampil";
 }
 function ulang3(){
-  var pil1 = "<td draggable='true' ondragstart='drag(event)' id='p31' class='pilihan'>⊂</td>";
-  var pil2 = "<td draggable='true' ondragstart='drag(event)' id='p32' class='pilihan'>⊄</td>";
-  var ulang = document.getElementById("ulang3");
+  var benar = document.getElementById("bnr3");
   var bahasslh = document.getElementById("bahasslh3");
-  //menghapus semua
-  document.getElementById("no3").innerHTML="";
-  document.getElementById("pil3").innerHTML = pil1 + pil2;
-  document.getElementById("icon3").innerHTML = "";
-  ulang.className = ulang.className.replace("tampil", "");
-  bahasslh.className = bahasslh.className.replace("tampil", "");
+  var ulang = document.getElementById("ulang3");
+  document.getElementById('icon3').innerHTML = "";
+  benar.className = benar.className.replace("hilang","");
+  ulang.className = ulang.className.replace("tampil","");
+  bahasslh.className = bahasslh.className.replace("tampil","");
 }
 
 /*soal 4*/
-function cek4(){
-  var jwb = document.getElementById("no4").innerText;
-  var p1 = document.getElementById("p41").innerText;
-  var ulang = document.getElementById("ulang4");
+function bnr4(){
+  var salah = document.getElementById("slh4");
   var bahasbnr = document.getElementById("bahasbnr4");
+  document.getElementById('icon4').innerHTML = "<img src='../img/true.png' width='15px'>";
+  salah.className += " hilang";
+  bahasbnr.className += " tampil";
+  
+}
+function slh4(){
+  var benar = document.getElementById("bnr4");
   var bahasslh = document.getElementById("bahasslh4");
-  //cek
-  if(jwb == p1){
-    document.getElementById("icon4").innerHTML = "<img src='../img/true.png' style='width:15px'>";
-    bahasbnr.className += " tampil";
-  } else if(jwb==""){
-    alert("Jawabanmu masih kosong! Isi jawabanmu terlebih dahulu ya~");
-  }else{
-    ulang.className += " tampil";
-    document.getElementById("icon4").innerHTML = "<img src='../img/false.png' style='width:15px'>";
-    bahasslh.className += " tampil";
-  }
+  var ulang = document.getElementById("ulang4");
+  document.getElementById('icon4').innerHTML = "<img src='../img/false.png' width='15px'>";
+  benar.className += " hilang";
+  ulang.className += " tampil";
+  bahasslh.className += " tampil";
 }
 function ulang4(){
-  var pil1 = "<td draggable='true' ondragstart='drag(event)' id='p41' class='pilihan'>⊂</td>";
-  var pil2 = "<td draggable='true' ondragstart='drag(event)' id='p42' class='pilihan'>⊄</td>";
-  var ulang = document.getElementById("ulang4");
+  var benar = document.getElementById("bnr4");
   var bahasslh = document.getElementById("bahasslh4");
-  //menghapus semua
-  document.getElementById("no4").innerHTML="";
-  document.getElementById("pil4").innerHTML = pil1 + pil2;
-  document.getElementById("icon4").innerHTML = "";
-  ulang.className = ulang.className.replace("tampil", "");
-  bahasslh.className = bahasslh.className.replace("tampil", "");
+  var ulang = document.getElementById("ulang4");
+  document.getElementById('icon4').innerHTML = "";
+  benar.className = benar.className.replace("hilang","");
+  ulang.className = ulang.className.replace("tampil","");
+  bahasslh.className = bahasslh.className.replace("tampil","");
 }
 
 /*soal 5*/
-function cek5(){
-  var jwb = document.getElementById("no5").innerText;
-  var p2 = document.getElementById("p52").innerText;
-  var ulang = document.getElementById("ulang5");
+function bnr5(){
+  var salah = document.getElementById("slh5");
   var bahasbnr = document.getElementById("bahasbnr5");
+  document.getElementById('icon5').innerHTML = "<img src='../img/true.png' width='15px'>";
+  salah.className += " hilang";
+  bahasbnr.className += " tampil";
+  
+}
+function slh5(){
+  var benar = document.getElementById("bnr5");
   var bahasslh = document.getElementById("bahasslh5");
-  //cek
-  if(jwb == p2){
-    document.getElementById("icon5").innerHTML = "<img src='../img/true.png' style='width:15px'>";
-    bahasbnr.className += " tampil";
-  } else if(jwb==""){
-    alert("Jawabanmu masih kosong! Isi jawabanmu terlebih dahulu ya~");
-  }else{
-    ulang.className += " tampil";
-    document.getElementById("icon5").innerHTML = "<img src='../img/false.png' style='width:15px'>";
-    bahasslh.className += " tampil";
-  }
+  var ulang = document.getElementById("ulang5");
+  document.getElementById('icon5').innerHTML = "<img src='../img/false.png' width='15px'>";
+  benar.className += " hilang";
+  ulang.className += " tampil";
+  bahasslh.className += " tampil";
 }
 function ulang5(){
-  var pil1 = "<td class='pilihan' id='p51' draggable='true' ondragstart='drag(event)'>⊂</td>";
-  var pil2 = "<td class='pilihan' id='p52' draggable='true' ondragstart='drag(event)'>⊄</td>";
-  var ulang = document.getElementById("ulang5");
+  var benar = document.getElementById("bnr5");
   var bahasslh = document.getElementById("bahasslh5");
-  //menghapus semua
-  document.getElementById("no5").innerHTML="";
-  document.getElementById("pil5").innerHTML = pil1 + pil2;
-  document.getElementById("icon5").innerHTML = "";
-  ulang.className = ulang.className.replace("tampil", "");
-  bahasslh.className = bahasslh.className.replace("tampil", "");
+  var ulang = document.getElementById("ulang5");
+  document.getElementById('icon5').innerHTML = "";
+  benar.className = benar.className.replace("hilang","");
+  ulang.className = ulang.className.replace("tampil","");
+  bahasslh.className = bahasslh.className.replace("tampil","");
 }
+
+
 
 /////////soal 1
 let jawab1 = document.querySelectorAll('.jawab1');

@@ -81,37 +81,27 @@
       				<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
       				<div class="tjk1" id="tjk1">
       					<ul>
-      						<li>Pertanyaan ini terdiri dari 5 soal.</li>
-      						<li>Isilah bagian kosong pada soal dengan cara menarik salah satu pilihan yang ada pada kotak abu-abu dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
-      						<li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
-      						<li>Jika jawabanmu benar, akan muncul icon <img src="../img/true.png" width="15px"> dan tulisan <span class="bnr">"Jawaban kamu benar"</span></li>
-          					<li>Jika jawabanmu salah, akan muncul icon <img src="../img/false.png" width="15px">, tombol "Ulang", dan tulisan <span class="slh">"Jawaban kamu salah"</span></li>
+      						<li>Pertanyaan ini terdiri dari 5 soal. Jawablah dengan memilih pilihan yang diberikan.</li>
+      						<li>Jika jawabanmu benar, akan muncul tulisan <span class="bnr">"Jawaban kamu benar"</span> disertai dengan pembahasan</li>
+      						<li>Jika jawabanmu salah, akan muncul tombol "Ulang" dan tulisan <span class="slh">"Jawaban kamu salah"</span></li>
       						<li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
       					</ul>
 			        </div>
 			        <br>
 					<hr>
-					<h5>*jika kamu menggunakan perangkat <i>handphone</i>, tekan sedikit agak lama untuk menarik pilihan</h5>
 					<br>
 
 					<!-- isi pertanyaan -->
 					<!--soal 1-->
 					<div class="soal soalAktif" id="soal1">
-						Soal 1 dari 5
-						
-						<table class="kotak">
-		                	<tr id="pil1" ondragover="allowDrop(event)">
-		                		<td draggable='true' ondragstart='drag(event)' id='p11' class='pilihan'>⊂</td>
-		                		<td draggable='true' ondragstart='drag(event)' id='p12' class='pilihan'>⊄</td>
-		                	</tr>
-	              		</table>
-	              		
-	              		Diketahui C = {1, 2, 3, 4, 5} dan B = {1, 5}, maka B <span id="no1" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> C
-	              		<span id="icon1" class="icon"></span>
+						Soal 1 dari 5<br><br>
+	              		Diketahui C = {1, 2, 3, 4, 5} dan B = {1, 5}, maka ...
 	              		<br>
-	              		<br>
-	              		<button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
-						<button class="cekulang hilang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
+	              		<button class="cekulang" id="bnr1" onclick="bnr1()"><b>B ⊂ C</b></button>
+						<button class="cekulang" id="slh1" onclick="slh1()"><b>B ⊄ C</b></button>
+						<span class="icon" id="icon1"></span>
+						<br>
+						<button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br>
 						<div class="bahas" id="bahasbnr1">
 							<span class="bnr">Jawaban kamu benar</span>. Himpunan B merupakan himpunan bagian dari himpunan C, karena himpunan C <b>memuat semua</b> anggota himpunan B. B = {<span class="slh"><b>1, 5</b></span>} dan C = {<span class="slh"><b>1</b></span>, 2, 3, 4, <span class="slh"><b>5</b></span>}
 						</div>
@@ -124,19 +114,14 @@
 					<!--soal 2-->
 					<div class="soal" id="soal2">
 						Soal 2 dari 5
-						
-						<table class="kotak">
-		                	<tr id="pil2" ondragover="allowDrop(event)">
-		                		<td draggable='true' ondragstart='drag(event)' id='p21' class='pilihan'>⊂</td>
-		                		<td draggable='true' ondragstart='drag(event)' id='p22' class='pilihan'>⊄</td>
-		                	</tr>
-	              		</table>
-	              		Diketahui A = {s, a, p, i} dan P = {p, i, s, a, n, g}, maka P <span id="no2" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> A
-	              		<span id="icon2" class="icon"></span>
+						<br><br>
+	              		Diketahui A = {s, a, p, i} dan P = {p, i, s, a, n, g}, maka ...
 	              		<br>
-	              		<br>
-	              		<button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
-						<button class="cekulang hilang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
+	              		<button class="cekulang" id="slh2" onclick="slh2()"><b>P ⊂ A</b></button>
+						<button class="cekulang" id="bnr2" onclick="bnr2()"><b>P ⊄ A</b></button>
+						<span class="icon" id="icon2"></span>
+						<br>
+						<button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br>
 						<div class="bahas" id="bahasbnr2">
 							<span class="bnr">Jawaban Kamu Benar</span>. Himpunan P bukan merupakan himpunan bagian dari himpunan A, karena himpunan A <b>tidak memuat semua</b> anggota himpunan P. P = {<span class="slh"><b>p, i, s, a</b></span>, n, g} dan A = {<span class="slh"><b>s, a, p, i</b></span>}
 						</div>
@@ -148,19 +133,13 @@
 
 					<!--soal 3-->
 					<div class="soal" id="soal3">
-						Soal 3 dari 5
-						
-						<table class="kotak">
-		                	<tr id="pil3" ondragover="allowDrop(event)">
-		                		<td draggable='true' ondragstart='drag(event)' id='p31' class='pilihan'>⊂</td>
-		                		<td draggable='true' ondragstart='drag(event)' id='p32' class='pilihan'>⊄</td>
-		                	</tr>
-	              		</table>
-	              		Diketahui L = {h, a, l, o} dan K = {s, e, k, o, l, a, h}, maka L <span id="no3" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> K
-	              		<span id="icon3" class="icon"></span>
+						Soal 3 dari 5<br><br>
+	              		Diketahui L = {h, a, l, o} dan K = {s, e, k, o, l, a, h}, maka ...
 	              		<br>
-	              		<br>
-	              		<button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+	              		<button class="cekulang" id="bnr3" onclick="bnr3()"><b>L ⊂ K</b></button>
+						<button class="cekulang" id="slh3" onclick="slh3()"><b>L ⊄ K</b></button>
+						<span class="icon" id="icon3"></span>
+						<br>
 						<button class="cekulang hilang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br>
 						<div class="bahas" id="bahasbnr3">
 							<span class="bnr">Jawaban Kamu Benar</span>. Himpunan L merupakan himpunan bagian dari himpunan K, karena himpunan K <b>memuat semua</b> anggota himpunan L. L = {<span class="slh"><b>h, a, l, o</b></span>} dan K = {s, e, k, <span class="slh"><b>o, l, a, h</b></span>}
@@ -173,19 +152,13 @@
 
 					<!--soal 4-->
 					<div class="soal" id="soal4">
-						Soal 4 dari 5
-						
-						<table class="kotak">
-		                	<tr id="pil4" ondragover="allowDrop(event)">
-		                		<td draggable='true' ondragstart='drag(event)' id='p41' class='pilihan'>⊂</td>
-		                		<td draggable='true' ondragstart='drag(event)' id='p42' class='pilihan'>⊄</td>
-		                	</tr>
-	              		</table>
-	              		Diketahui A = {huruf alfabet} dan B = {huruf vokal}, maka B <span id="no4" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> A
-	              		<span id="icon4" class="icon"></span>
+						Soal 4 dari 5<br><br>
+	              		Diketahui A = {huruf alfabet} dan B = {huruf vokal}, maka ...
 	              		<br>
-	              		<br>
-	              		<button class="cekulang" onclick="cek4()"><b>Cek Jawaban</b></button>
+	              		<button class="cekulang" id="bnr4" onclick="bnr4()"><b>B ⊂ A</b></button>
+						<button class="cekulang" id="slh4" onclick="slh4()"><b>B ⊄ A</b></button>
+						<span class="icon" id="icon4"></span>
+						<br>
 						<button class="cekulang hilang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button><br>
 						<div class="bahas" id="bahasbnr4">
 							<span class="bnr">Jawaban Kamu Benar</span>. Himpunan B merupakan himpunan bagian dari himpunan A, karena himpunan A <b>memuat semua</b> anggota himpunan B.
@@ -198,19 +171,13 @@
 
 					<!--soal 5-->
 					<div class="soal" id="soal5">
-						Soal 5 dari 5
-						
-						<table class="kotak">
-		                	<tr id="pil5" ondragover="allowDrop(event)">
-		                		<td draggable='true' ondragstart='drag(event)' id='p51' class='pilihan'>⊂</td>
-		                		<td draggable='true' ondragstart='drag(event)' id='p52' class='pilihan'>⊄</td>
-		                	</tr>
-	              		</table>
-	              		Diketahui C = {x | x &le; 7, x &isin; bilangan cacah} dan D = {x | x &le; 7, x &isin; bilangan prima}, maka C <span id="no5" class="jwb" ondrop="drop(event)" ondragover="allowDrop(event)"></span> D
-	              		<span id="icon5" class="icon"></span>
+						Soal 5 dari 5<br><br>
+	              		Diketahui C = {x | x &le; 7, x &isin; bilangan cacah} dan D = {x | x &le; 7, x &isin; bilangan prima}, maka ...
 	              		<br>
-	              		<br>
-	              		<button class="cekulang" onclick="cek5()"><b>Cek Jawaban</b></button>
+	              		<button class="cekulang" id="slh5" onclick="slh5()"><b>C ⊂ D</b></button>
+						<button class="cekulang" id="bnr5" onclick="bnr5()"><b>C ⊄ D</b></button>
+						<span class="icon" id="icon5"></span>
+						<br>
 						<button class="cekulang hilang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button><br>
 						<div class="bahas" id="bahasbnr5">
 							<span class="bnr">Jawaban Kamu Benar</span>. Himpunan C bukan merupakan himpunan bagian dari himpunan D, karena himpunan D <b>tidak memuat semua</b> anggota himpunan C. C = {0, 1, <span class="slh"><b>2, 3</b></span>, 4, <span class="slh"><b>5</b></span>, 6, <span class="slh"><b>7</b></span>} dan D = {<span class="slh"><b>2, 3, 5, 7</b></span>}
