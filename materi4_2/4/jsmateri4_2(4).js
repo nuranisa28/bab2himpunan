@@ -546,7 +546,7 @@ function cek21(){
   var himp1 = document.getElementById('jwb21');
   var himp2 = document.getElementById('jwb22');
   var ang = document.getElementById('jwb23');
-  var anggota = [0,1,2,3,4,5,6,7,8,9,10];
+  var anggota = [0,1,2,3,4,5,6,7,8,10];
   var himpunan = ['A','B'];
   var ada1 = 0;
   var ada2 = 0;
@@ -591,7 +591,7 @@ function cek21(){
         }
       }
     }
-    if(ada2==11){
+    if(ada2==10){
       benar+=1;
     } else{
       ang.className += " boxmerah";
