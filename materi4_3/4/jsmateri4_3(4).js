@@ -184,6 +184,7 @@ function cek2(){
     if(ada==4){
       document.getElementById('icon2').innerHTML = "<img src='../img/true.png' width='15px'>";
       document.getElementById('cek2').className += " hilang";
+      document.getElementById('lanjut2').className = document.getElementById('lanjut2').className.replace('hilang','');
       document.getElementById('ket2').innerHTML = "<span class='bnr'>Jawaban kamu benar</span>. A &minus; C = {" + ang2 + "}";
     } else{
       ang.className += " boxmerah";
@@ -260,6 +261,7 @@ function cek4(){
     if(ang.value==1){
       document.getElementById('icon4').innerHTML = "<img src='../img/true.png' width='15px'>";
       document.getElementById('cek4').className += " hilang";
+      document.getElementById('lanjut4').className = document.getElementById('lanjut4').className.replace('hilang','');
       document.getElementById('ket4').innerHTML = "<span class='bnr'>Jawaban kamu benar</span>. C &minus; D = {" + ang.value + "}";
     } else{
       ang.className += " boxmerah";
