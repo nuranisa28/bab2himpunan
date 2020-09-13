@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="../img/logo1.png">
+	<title>HIMPUNAN | Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cssmateri5_1(2).css">
+</head>
+<body>
+	
+
+
+	<header>
+		<a href="#" onclick="dafis()"><img src="../img/bar.png" class="bar"></a>
+		5. PENERAPAN KONSEP HIMPUNAN
+		<a href=""><img src="../img/home2.png" class="home"></a>
+	</header>
+
+	<aside class="" id="dafis">
+		<div class="sidenav">
+			<center><h1>DAFTAR ISI</h1></center>
+			<a href="">Apersepsi</a>
+	  		<button class="dropdown-btn" onclick="ftampil()">1. Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="../../materi1_1/1/materi1_1(1).html">1.1 Pengertian Himpunan</a>
+	    			<a href="../../materi1_2/1/materi1_2(1).html">1.2 Notasi dan Anggota Himpunan</a>
+	    			<a href="../../materi1_3/1/materi1_3(1).html">1.3 Menyatakan Suatu Himpunan</a>
+	    			<a href="../../materi1_4/1/materi1_4(1).html">1.4 Himpunan Berhingga dan Himpunan tak Berhingga</a>
+	    			<a href="../../kuiss1/kuis_1.html">1.5 Kuis 1</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">2. Himpunan Kosong dan Himpunan Semesta<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="../../materi2_1/1/materi2_1(1).html">2.1 Himpunan Kosong</a>
+	    			<a href="../../materi2_2/1/materi2_2(1).html">2.2 Himpunan Semesta</a>
+	    			<a href="../../kuiss2/kuis_2.html">2.3 Kuis 2</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">3. Diagram Venn<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="../../materi3_1/1/materi3_1(1).html">3.1 Pengertian Diagram Venn</a>
+	    			<a href="../../materi3_2/1/materi3_2(1).html">3.2 Himpunan Bagian</a>
+	          		<a href="../../materi3_3/1/materi3_3(1).html">3.3 Himpunan Kuasa</a>
+	    			<a href="../../materi3_4/1/materi3_4(1).html">3.4 Komplemen Himpunan</a>
+	    			<a href="../../kuis3/kuis3.html">3.5 Kuis 3</a>
+	  			</div>
+	  		<button class="dropdown-btn" onclick="ftampil()">4. Operasi Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-container">
+	    			<a href="../../materi4_1/1/materi4_1(1).html">4.1 Irisan Himpunan</a>
+	    			<a href="../../materi4_2/1/materi4_2(1).html">4.2 Gabungan Himpunan</a>
+	          		<a href="../../materi4_3/1/materi4_3(1).html">4.3 Selisih Dua Himpunan</a>
+	    			<a href="../../kuis4/kuis4.html">4.4 Kuis 4</a>
+	  			</div>
+	  		<button class="dropdown-btn aktif" onclick="ftampil()">5. Penerapan Konsep Himpunan<i class="arrow down"></i></button>
+	  			<div class="dropdown-containerr">
+	    			<div class="aktif2"><a href="../1/materi5_1(1).html" style="color: white;">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a></div>
+	    			<a href="">5.2 Kuis 5</a>
+	  			</div>
+	  		<a href="">6. Latihan</a>
+		</div>
+	</aside>
+	
+
+	<main class="main" id="main">
+		<!--tombol TOP-->
+		<button onclick="scrollToTop()" class="top" id="js-top" title="Kembali ke atas">&#8593;</button>
+		<center>
+			<div class="subbab">
+				5.1 PENERAPAN KONSEP HIMPUNAN DALAM KEHIDUPAN SEHARI-HARI
+			</div>
+		</center>
+		<div class="konten">
+			<!--isi-->
+			<img src="../img/mencoba.png" class="gambar"><br>
+			Cobalah jawab 5 soal di bawah ini!
+			<!-- petunjuk-->
+			<div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"><img src="../img/tjk.png" width="15px" height="15px"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div>
+		    <div class="tjk1" id="tjk1">
+		      	<ul>
+		      		<li>Isilah kotak kosong dengan jawaban yang tepat.</li>
+		      		<li>Jika jawaban kamu benar, kotak akan berubah warna menjadi <b class="bnr">hijau</b>.</li>
+		      		<li>Jika jawaban kamu salah, kotak akan berubah warna menjadi <b class="slh">merah</b>.</li>
+		      		<li>Pertanyaan selanjutnya akan muncul jika jawaban kamu benar.</li>
+		      	</ul>
+			</div>
+			<!--nomor pertanyaan-->
+			<div class="number">
+			    <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">1</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">2</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya3')">3</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya4')">4</button>
+			    <button class="nomortanya" onclick="bukaTanya(event, 'tanya5')">5</button>
+			</div>
+
+			<!--pertanyaan 1--> 
+			<div class="pertanya tanyaAktif" id="tanya1">
+				Soal 1 dari 5<br>
+				<br>
+				Kelas 7A terdiri dari 40 siswa. Diketahui ada 24 siswa menyukai olahraga basket, 23 siswa menyukai olahraga voli, dan 4 siswa tidak menyukai olahraga basket maupun voli. Berdasarkan data tersebut, tentukanlah :
+				<ol class="anaksoal" type="a">
+					<li>Banyak siswa yang menyukai olahraga basket dan voli</li>
+					<li>Banyak siswa yang menyukai olahraga basket saja</li>
+					<li>Banyak siswa yang menyukai olahraga voli saja</li>
+				</ol>
+				<br>
+				<b>Jawaban :</b><br>
+				Misalkan A adalah himpunan siswa yang menyukai olahraga basket dan B adalah himpunan siswa yang menyukai olahraga voli, maka :<br>
+
+				<!--area kiri-->
+				<div class="kiri">
+					<center><img src="../img/con1.png" usemap="#workmap" class="gambar2">
+					<map name="workmap">
+				      <area coords="136,47,117,70,108,105,116,133,134,159,158,133,165,98,157,70" shape="poly" onclick="penjelasan(event,'n0')" class="klik">
+				      <area coords="134,45,93,34,46,53,26,101,34,133,63,164,109,170,133,160,114,131,108,105,115,70" shape="poly" onclick="penjelasan(event,'n1')" class="klik">
+				      <area coords="136,44,175,34,223,52,244,99,234,139,196,168,159,168,137,158,158,131,167,98,160,71" shape="poly" onclick="penjelasan(event,'n2')" class="klik">
+				      <area coords="245,165,24" shape="circle" onclick="penjelasan(event,'n3')" class="klik">
+				    </map>
+				    </center>
+					<h5>Angka yang ditulis pada diagram venn tidak memakai noktah/titik karena yang ditulis adalah <u>banyak anggota</u>.</h5>
+				</div>
+					
+				<!--area kanan-->
+				<div class="kanan">
+					<div class="isijls">
+					<h5>(*tekan angka pada diagram venn untuk melihat keterangan)</h5>
+					keterangan :<br>
+					<div class="jelas" id="n0">
+						x dimisalkan sebagai banyak siswa yang menyukai olahraga basket dan voli. (irisan himpunan)
+					</div>
+					<div class="jelas" id="n1">
+						24 &minus; x merupakan banyak siswa yang menyukai olahraga basket saja. (selisih himpunan)
+					</div>
+					<div class="jelas" id="n2">
+						23 &minus; x merupakan siswa yang menyukai olahraga voli saja. (selisih himpunan)
+					</div>
+					<div class="jelas" id="n3">
+						4 merupakan banyak siswa yang tidak menyukai olahraga basket maupun voli dan diletakkan di luar lingkaran. (komplemen dari gabungan himpunan)
+					</div>
+					</div>
+				</div>
+
+				
+				<ol class="anaksoal" type="a">
+					<li>
+						Banyak siswa yang menyukai olahraga basket dan voli<br>
+						(24 &minus; x) + x + (23 &minus; x) + 4 = 40<br>
+						<p class="mundur1">(24 + 23 + 4) &minus; x = 40</p>
+						<p class="mundur2">
+							<input type="text" class="input1" maxlength="2"> &minus; x = 40
+						</p>
+						<p class="mundur3 hilang" id="lanjut1">
+							x = 51 &minus; 40<br>
+						</p>
+						<p class="mundur3 hilang" id="lanjutt1">
+							x = <input type="text" class="input1" maxlength="2">
+							<span class="icon" id="icon1"></span>
+						</p>
+						<p class="hilang" id="lanjut2">
+							Banyak siswa yang menyukai olahraga basket dan voli adalah 11 siswa.
+						</p>
+					</li>
+					<li class="hilang" id="lanjut3">
+						Banyak siswa yang menyukai olahraga basket saja<br>
+						24 &minus; x = 24 &minus; <input type="text" class="input1" maxlength="2"> <span class="hilang" id="lanjut4"> = 
+						<input type="text" class="input1" maxlength="2">
+						<span class="icon" id="icon2"></span>
+						</span>
+						<p class="hilang" id="lanjut5">
+							Banyak siswa yang menyukai olahraga basket saja adalah 13 siswa.
+						</p>
+					</li>
+					<li class="hilang" id="lanjut6">
+						Banyak siswa yang menyukai olahraga voli saja<br>
+						23 &minus; x = 23 &minus; <input type="text" class="input1" maxlength="2"> <span class="hilang" id="lanjut7"> = 
+						<input type="text" class="input1" maxlength="2">
+						<span class="icon" id="icon3"></span>
+						</span>
+						<p class="hilang" id="lanjut8">
+							Banyak siswa yang menyukai olahraga voli saja adalah 12 siswa.
+						</p>
+					</li>
+				</ol>
+				<p class="bnr hilang" id="lanjut9">
+					<br>
+					<b>Jawaban kamu benar</b>
+				</p>
+			</div>
+
+			<!--pertanyaan 2--> 
+			<div class="pertanya" id="tanya2">
+				Soal 2 dari 5<br>
+				<br>
+				Dalam suatu kelas yang terdiri dari 35 siswa, terdapat 13 siswa yang menyukai mata pelajaran matematika dan IPA, 20 siswa menyukai mata pelajaran IPA, dan 3 siswa tidak menyukai keduanya. Berdasarkan data tersebut, tentukanlah :
+				<ol type="a" class="anaksoal">
+					<li>Banyak siswa yang menyukai mata pelajaran IPA saja</li>
+					<li>Banyak siswa yang menyukai mata pelajaran matematika</li>
+					<li>Banyak siswa yang menyukai mata pelajaran matematika saja</li>
+				</ol>
+				<br>
+				<b>Jawaban :</b><br>
+				Misalkan B adalah himpunan siswa yang menyukai mata pelajaran matematika dan C adalah himpunan siswa yang menyukai mata pelajaran IPA, maka :<br>
+
+				<!--area kiri-->
+				<div class="kiri">
+					<center><img src="../img/con2.png" usemap="#workmap2" class="gambar2">
+					<map name="workmap2">
+				      <area coords="136,47,117,70,108,105,116,133,134,159,158,133,165,98,157,70" shape="poly" onclick="penjelasan2(event,'b0')" class="klik">
+				      <area coords="134,45,93,34,46,53,26,101,34,133,63,164,109,170,133,160,114,131,108,105,115,70" shape="poly" onclick="penjelasan2(event,'b1')" class="klik">
+				      <area coords="136,44,175,34,223,52,244,99,234,139,196,168,159,168,137,158,158,131,167,98,160,71" shape="poly" onclick="penjelasan2(event,'b2')" class="klik">
+				      <area coords="245,165,24" shape="circle" onclick="penjelasan2(event,'b3')" class="klik">
+				    </map>
+				    </center>
+					<h5>Angka yang ditulis pada diagram venn tidak memakai noktah/titik karena yang ditulis adalah <u>banyak anggota</u>.</h5>
+				</div>
+					
+				<!--area kanan-->
+				<div class="kanan">
+					<div class="isijls">
+					<h5>(*tekan angka pada diagram venn untuk melihat keterangan)</h5>
+					keterangan :<br>
+					<div class="jelas2" id="b0">
+						13 merupakan banyak siswa yang menyukai mata pelajaran matematika dan IPA. (irisan himpunan)
+					</div>
+					<div class="jelas2" id="b1">
+						<ul class="anaksoal">
+							<li>x &minus; 13 merupakan banyak siswa yang menyukai mata pelajaran matematika saja. (selisih himpunan)</li>
+							<li>x dimisalkan sebagai banyak siswa yang menyukai mata pelajaran matematika.</li>
+						</ul>
+					</div>
+					<div class="jelas2" id="b2">
+						20 &minus; 13 merupakan siswa yang menyukai mata pelajaran IPA saja. (selisih himpunan)
+					</div>
+					<div class="jelas2" id="b3">
+						3 merupakan banyak siswa yang tidak menyukai mata pelajaran matematika maupun IPA dan diletakkan di luar lingkaran. (komplemen dari gabungan himpunan)
+					</div>
+					</div>
+				</div>
+
+				
+				<ol class="anaksoal" type="a">
+					<li>
+						Banyak siswa yang menyukai mata pelajaran IPA saja<br>
+						20 &minus; 13 = <input type="text" class="input2" maxlength="1">
+						<span class="icon2" id="icon21"></span>
+						<p class="hilang" id="lan21">
+							Banyak siswa yang menyukai mata pelajaran IPA saja adalah 7 siswa.
+						</p>
+					</li>
+					<li class="hilang" id="lan22">
+						Banyak siswa yang menyukai mata pelajaran matematika<br>
+						(x &minus; 13) + 13 + (20 &minus; 13) + 3 = 35<br>
+						<p class="mundur6">
+							(x &minus; 13) + 13 + <input type="text" class="input2" maxlength="1"> + 3 = 35
+						</p>
+						<p class="mundur7 hilang" id="lan23">
+							x + (&minus;13 + 13 + 7 + 3) = 35
+						</p>
+						<p class="mundur8 hilang" id="lan24">
+							x + <input type="text" class="input2" maxlength="2"> = 35
+						</p>
+						<p class="mundur9 hilang" id="lan25">
+							x = 35 &minus; 10
+						</p>
+						<p class="mundur9 hilang" id="lan26">
+							x = <input type="text" class="input2" maxlength="2">
+							<span class="icon2" id="icon22"></span>
+						</p>
+						<p class="hilang" id="lan27">
+							Banyak siswa yang menyukai mata pelajaran matematika adalah 25 siswa.
+						</p>
+					</li>
+					<li class="hilang" id="lan28">
+						Banyak siswa yang menyukai mata pelajaran matematika saja<br>
+						x &minus; 13 = <input type="text" class="input2" maxlength="2"> &minus; 13 
+						<span class="hilang" id="lan29">
+							= <input type="text" class="input2" maxlength="2">
+							<span class="icon2" id="icon23"></span>
+						</span>
+						<p class="hilang" id="lan210">
+							Banyak siswa yang menyukai mata pelajaran matematika saja adalah 12 siswa.
+						</p>
+					</li>
+				</ol>
+				<p class="bnr hilang" id="lan211">
+					<br>
+					<b>Jawaban kamu benar</b>
+				</p>
+			</div>
+
+			<!--pertanyaan 3--> 
+			<div class="pertanya" id="tanya3">
+				Soal 3 dari 5<br>
+				<br>
+				Kelas 7G terdiri dari 31 siswa, 15 siswa mengikuti kompetensi matematika, 4 siswa mengikuti kompetensi matematika dan fisika, sedangkan 7 siswa tidak mengikuti kedua kompetensi tersebut. Berdasarkan data tadi, tentukanlah :
+				<ol type="a" class="anaksoal">
+					<li>Banyak siswa mengikuti kompetensi matematika saja</li>
+					<li>Banyak siswa mengikuti kompetensi fisika</li>
+					<li>Banyak siswa mengikuti kompetensi fisika saja</li>
+				</ol>
+				<br>
+				<b>Jawaban :</b><br>
+				Misalkan C adalah himpunan siswa yang mengikuti kompetensi matematika dan D adalah himpunan siswa yang mengikuti kompetensi fisika, maka :<br>
+
+				<!--area kiri-->
+				<div class="kiri">
+					<center><img src="../img/con3.png" usemap="#workmap3" class="gambar2">
+					<map name="workmap3">
+				      <area coords="136,47,117,70,108,105,116,133,134,159,158,133,165,98,157,70" shape="poly" onclick="penjelasan3(event,'c0')" class="klik">
+				      <area coords="134,45,93,34,46,53,26,101,34,133,63,164,109,170,133,160,114,131,108,105,115,70" shape="poly" onclick="penjelasan3(event,'c1')" class="klik">
+				      <area coords="136,44,175,34,223,52,244,99,234,139,196,168,159,168,137,158,158,131,167,98,160,71" shape="poly" onclick="penjelasan3(event,'c2')" class="klik">
+				      <area coords="245,165,24" shape="circle" onclick="penjelasan3(event,'c3')" class="klik">
+				    </map>
+				    </center>
+					<h5>Angka yang ditulis pada diagram venn tidak memakai noktah/titik karena yang ditulis adalah <u>banyak anggota</u>.</h5>
+				</div>
+					
+				<!--area kanan-->
+				<div class="kanan">
+					<div class="isijls">
+					<h5>(*tekan angka pada diagram venn untuk melihat keterangan)</h5>
+					keterangan :<br>
+					<div class="jelas3" id="c0">
+						4 merupakan banyak siswa yang mengikuti kompetensi matematika dan fisika. (irisan himpunan)
+					</div>
+					<div class="jelas3" id="c1">
+						15 &minus; 4 merupakan siswa yang mengikuti kompetensi matematika saja. (selisih himpunan)
+					</div>
+					<div class="jelas3" id="c2">
+						<ul class="anaksoal">
+							<li>x &minus; 4 merupakan banyak siswa yang mengikuti kompetensi fisika saja. (selisih himpunan)</li>
+							<li>x dimisalkan sebagai banyak siswa yang mengikuti kompetensi fisika.</li>
+						</ul>
+					</div>
+					<div class="jelas3" id="c3">
+						7 merupakan banyak siswa yang tidak mengikuti kompetensi matematika maupun fisika dan diletakkan di luar lingkaran. (komplemen dari gabungan himpunan)
+					</div>
+					</div>
+				</div>
+
+				
+				<ol class="anaksoal" type="a">
+					<li>
+						Banyak siswa mengikuti kompetensi matematika saja<br>
+						15 &minus; 4 = <input type="text" class="input3" maxlength="2">
+						<span class="icon" id="icon31"></span>
+						<p class="hilang" id="lan31">
+							Banyak siswa mengikuti kompetensi matematika saja adalah 11 siswa.
+						</p>
+					</li>
+					<li class="hilang" id="lan32">
+						Banyak siswa mengikuti kompetensi fisika<br>
+						(15 &minus; 4) + 4 + (x &minus; 4) + 7 = 31
+						<p class="mundur10">
+							<input type="text" class="input3" maxlength="2"> + 4 + (x &minus; 4) + 7 = 31
+						</p>
+						<p class="mundur11 hilang" id="lan33">
+							x + (11 + 4 &minus; 4 + 7) = 31
+						</p>
+						<p class="mundur12 hilang" id="lan34">
+							x + <input type="text" class="input3" maxlength="2"> = 31
+						</p>
+						<p class="mundur13 hilang" id="lan35">
+							x = 31 &minus; 18
+						</p>
+						<p class="mundur13 hilang" id="lan36">
+							x = <input type="text" class="input3" maxlength="2">
+							<span class="icon" id="icon32"></span>
+						</p>
+						<p class="hilang" id="lan37">
+							Banyak siswa mengikuti kompetensi fisika adalah 13 siswa.
+						</p>
+					</li>
+					<li class="hilang" id="lan38">
+						Banyak siswa mengikuti kompetensi fisika saja<br>
+						x &minus; 4 = <input type="text" class="input3" maxlength="2"> &minus; 4 
+						<span class="hilang" id="lan39">
+							= <input type="text" class="input3" maxlength="1">
+							<span class="icon" id="icon33"></span>
+						</span>
+						<p class="hilang" id="lan310">
+							Banyak siswa mengikuti kompetensi fisika saja adalah 9 siswa.
+						</p>
+					</li>
+				</ol>
+				<p class="bnr hilang" id="lan311">
+					<br>
+					<b>Jawaban kamu benar</b>
+				</p>
+			</div>
+
+			<!--pertanyaan 4--> 
+			<div class="pertanya" id="tanya4">
+				Soal 4 dari 5<br>
+				<br>
+				Dari 143 siswa, 95 siswa memiliki peliharaan kucing, 87 siswa memiliki peliharaan kelinci, dan 60 siswa memiliki peliharaan kucing dan kelinci. Berdasarkan data tersebut, tentukanlah :
+				<ol type="a" class="anaksoal">
+					<li>Banyak siswa yang memiliki peliharaan kucing saja</li>
+					<li>Banyak siswa yang memiliki peliharaan kelinci saja</li>
+					<li>Banyak siswa yang tidak memiliki peliharaan kucing maupun kelinci</li>
+				</ol>
+				<br>
+				<b>Jawaban :</b><br>
+				Misalkan D adalah himpunan siswa yang memiliki peliharaan kucing dan E adalah himpunan siswa yang memiliki peliharaan kelinci, maka :<br>
+
+				<!--area kiri-->
+				<div class="kiri">
+					<center><img src="../img/con4.png" usemap="#workmap4" class="gambar2">
+					<map name="workmap4">
+				      <area coords="136,47,117,70,108,105,116,133,134,159,158,133,165,98,157,70" shape="poly" onclick="penjelasan4(event,'d0')" class="klik">
+				      <area coords="134,45,93,34,46,53,26,101,34,133,63,164,109,170,133,160,114,131,108,105,115,70" shape="poly" onclick="penjelasan4(event,'d1')" class="klik">
+				      <area coords="136,44,175,34,223,52,244,99,234,139,196,168,159,168,137,158,158,131,167,98,160,71" shape="poly" onclick="penjelasan4(event,'d2')" class="klik">
+				      <area coords="245,165,24" shape="circle" onclick="penjelasan4(event,'d3')" class="klik">
+				    </map>
+				    </center>
+					<h5>Angka yang ditulis pada diagram venn tidak memakai noktah/titik karena yang ditulis adalah <u>banyak anggota</u>.</h5>
+				</div>
+					
+				<!--area kanan-->
+				<div class="kanan">
+					<div class="isijls">
+					<h5>(*tekan angka pada diagram venn untuk melihat keterangan)</h5>
+					keterangan :<br>
+					<div class="jelas4" id="d0">
+						60 merupakan banyak siswa yang memiliki peliharaan kucing dan kelinci. (irisan himpunan)
+					</div>
+					<div class="jelas4" id="d1">
+						95 &minus; 60 merupakan siswa yang memiliki peliharaan kucing saja. (selisih himpunan)
+					</div>
+					<div class="jelas4" id="d2">
+						87 &minus; 60 merupakan banyak siswa yang memiliki peliharaan kelinci saja. (selisih himpunan)
+					</div>
+					<div class="jelas4" id="d3">
+						x dimisalkan sebagai banyak siswa yang tidak memiliki peliharaan kucing maupun kelinci dan diletakkan di luar lingkaran. (komplemen dari gabungan himpunan)
+					</div>
+					</div>
+				</div>
+
+				
+				<ol class="anaksoal" type="a">
+					<li>
+						Banyak siswa yang memiliki peliharaan kucing saja<br>
+						95 &minus; 60 = <input type="text" class="input4" maxlength="2">
+						<span class="icon" id="icon41"></span>
+						<p class="" id="lan41">
+							Banyak siswa yang memiliki peliharaan kucing saja adalah 35 siswa.
+						</p>
+					</li>
+					<li class="" id="lan42">
+						Banyak siswa yang memiliki peliharaan kelinci saja<br>
+						87 &minus; 60 = <input type="text" class="input4" maxlength="2">
+						<span class="icon" id="icon42"></span>
+						<p class="" id="lan43">
+							Banyak siswa yang memiliki peliharaan kelinci saja adalah 27 siswa.
+						</p>
+					</li>
+					<li class="" id="lan44">
+						Banyak siswa yang tidak memiliki peliharaan kucing maupun kelinci<br>
+						(95 &minus; 60) + 60 + (87 &minus; 60) + x = 143
+						<p class="mundur1">
+							<input type="text" class="input4" maxlength="2"> + 60 + <input type="text" class="input4" maxlength="2"> + x = 143 
+						</p>
+						<p class="mundur14" id="lan45">
+							<input type="text" class="input4" maxlength="3"> + x = 143
+						</p>
+						<p class="mundur15" id="lan46">
+							x = 143 &minus; 122
+						</p>
+						<p class="mundur15" id="lan47">
+							x = <input type="text" class="input4" maxlength="2">
+							<span class="icon" id="icon43"></span>
+						</p>
+						<p class="" id="lan48">
+							Banyak siswa yang tidak memiliki peliharaan kucing maupun kelinci adalah 21 siswa.
+						</p>
+					</li>
+				</ol>
+				<p class="bnr" id="lan49">
+					<br>
+					<b>Jawaban kamu benar</b>
+				</p>
+			</div>
+
+			<!--pertanyaan 5--> 
+			<div class="pertanya" id="tanya5">
+				Soal 5 dari 5<br>
+				<br>
+				Siswa kelas 7D ditanya mengenai hobi mereka. 25 siswa hobi membaca, 30 siswa hobi mendengarkan musik, 12 siswa hobi membaca dan mendengarkan musik, sedangkan 2 siswa tidak hobi membaca maupun mendengarkan musik. Berdasarkan data tersebut, tentukanlah :
+				<ol type="a" class="anaksoal">
+					<li>Banyak siswa yang hobi membaca saja</li>
+					<li>Banyak siswa yang hobi mendengarkan musik saja</li>
+					<li>Banyak siswa kelas 7D</li>
+				</ol>
+				<br>
+				<b>Jawaban :</b><br>
+				Misalkan E adalah himpunan siswa yang hobi membaca dan F adalah himpunan siswa yang hobi mendengarkan musik, maka :<br>
+
+				<!--area kiri-->
+				<div class="kiri">
+					<center><img src="../img/con5.png" usemap="#workmap5" class="gambar2">
+					<map name="workmap5">
+				      <area coords="136,47,117,70,108,105,116,133,134,159,158,133,165,98,157,70" shape="poly" onclick="penjelasan5(event,'e0')" class="klik">
+				      <area coords="134,45,93,34,46,53,26,101,34,133,63,164,109,170,133,160,114,131,108,105,115,70" shape="poly" onclick="penjelasan5(event,'e1')" class="klik">
+				      <area coords="136,44,175,34,223,52,244,99,234,139,196,168,159,168,137,158,158,131,167,98,160,71" shape="poly" onclick="penjelasan5(event,'e2')" class="klik">
+				      <area coords="245,165,24" shape="circle" onclick="penjelasan5(event,'e3')" class="klik">
+				    </map>
+				    </center>
+					<h5>Angka yang ditulis pada diagram venn tidak memakai noktah/titik karena yang ditulis adalah <u>banyak anggota</u>.</h5>
+				</div>
+					
+				<!--area kanan-->
+				<div class="kanan">
+					<div class="isijls">
+					<h5>(*tekan angka pada diagram venn untuk melihat keterangan)</h5>
+					keterangan :<br>
+					<div class="jelas5" id="e0">
+						12 merupakan banyak siswa yang hobi membaca dan mendengarkan musik. (irisan himpunan)
+					</div>
+					<div class="jelas5" id="e1">
+						25 &minus; 12 merupakan siswa yang hobi membaca saja. (selisih himpunan)
+					</div>
+					<div class="jelas5" id="e2">
+						30 &minus; 12 merupakan banyak siswa yang hobi mendengarkan musik saja. (selisih himpunan)
+					</div>
+					<div class="jelas5" id="e3">
+						2 merupakan banyak siswa yang tidak hobi membaca maupun mendengarkan musik dan diletakkan di luar lingkaran. (komplemen dari gabungan himpunan)
+					</div>
+					</div>
+				</div>
+
+				
+				<ol class="anaksoal" type="a">
+					<li>
+						Banyak siswa yang hobi membaca saja<br>
+						25 &minus; 12 = <input type="text" class="input5" maxlength="2">
+						<span class="icon" id="icon51"></span>
+						<p class="" id="lan51">
+							Banyak siswa yang hobi membaca saja adalah 13 siswa.
+						</p>
+					</li>
+					<li class="" id="lan52">
+						Banyak siswa yang hobi mendengarkan musik saja<br>
+						30 &minus; 12 = <input type="text" class="input5" maxlength="2">
+						<span class="icon" id="icon52"></span>
+						<p class="" id="lan53">
+							Banyak siswa yang hobi mendengarkan musik saja adalah 18 siswa.
+						</p>
+					</li>
+					<li class="" id="lan54">
+						Banyak siswa kelas 7D<br>
+						(25 &minus; 12) + 12 + (30 &minus; 12) + 2<br>
+						= <input type="text" class="input5" maxlength="2"> + 12 + <input type="text" class="input5" maxlength="2"> + 2
+						<p class="" id="lan55">
+							= <input type="text" class="input5" maxlength="2">
+							<span class="icon" id="icon53"></span>
+						</p>
+						<p class="" id="lan56">
+							Banyak siswa kelas 7D adalah 45 siswa.
+						</p>
+					</li>
+				</ol>
+				<p class="bnr" id="lan57">
+					<br>
+					<b>Jawaban kamu benar</b>
+				</p>
+			</div>
+		
+		</div>
+
+		<!--navigasi-->
+		<div class="nav">
+			<center>
+				<a href="../1/materi5_1(1).html" class="tmbl">Sebelumnya</a>
+				<a href="../1/materi5_1(1).html" class="tmbl">1</a>
+				<a href="materi5_1(2).html" class="tmbl navaktif">2</a>
+				<a href="../3/materi5_1(3).html" class="tmbl">3</a>
+				<a href="../3/materi5_1(3).html" class="tmbl">Selanjutnya</a>
+			</center>
+		</div>
+		
+	</main>
+	<script src="jsmateri5_1(2).js"></script>
+</body>
+</html>

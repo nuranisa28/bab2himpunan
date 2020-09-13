@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-image: url(../img/bg1.png);
+	background-size: 35%;
+  font-family: Bahnschrift;
+}
+
+header{
+	width: 100%;
+	min-height: 10px;
+	background-color: rgb(3, 31, 75);
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+  font-family: Tahoma;
+}
+
+.bar{
+  float: left;
+  margin: 0px 20px 0px 10px;
+  width: 8%;
+}
+
+.home{
+	width: 3%;
+	float: right;
+	margin-right: 10px;
+}
+
+aside{
+	width: 18%;
+	float: left;
+	height: 567px;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(168, 194, 251);
+  padding-top: 5%;
+  overflow: auto;
+  display: block;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 3% 0px 3% 10%;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: Bahnschrift;
+}
+
+.sidenav a{
+	width: 90%;
+}
+
+.dropdown-btn{
+	width: 100%;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+  color: white;
+  background-color: rgb(3, 31, 75);
+}
+
+.aktif {
+  background-color: rgb(3, 31, 75);
+  color: white;
+}
+
+.sidenav a:hover{
+  background-color: #187bcd;
+  color: white;
+}
+
+.aktif2 {
+  background-color: #187bcd;
+  color: white;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(3, 31, 75);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: rgb(208, 223, 255);
+  padding-left: 8px;
+}
+
+.dropdown-containerr {
+  display: block;
+  background-color: rgb(208, 223, 255);
+  padding-left: 8px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 20px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dafis-hilang{
+  display: none;
+}
+
+main{
+	height: 100%;
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.main{
+  width: 82%;
+}
+
+.main-penuh{
+  width: 100%;
+  float: none;
+  padding: 0px;
+}
+
+.subbab{
+  width: 100%;
+  background-color: #187bcd;
+  color: white;
+  padding: 5px 0px 5px 0px;
+  font-size: 26px;
+}
+
+.konten{
+	margin: 10px;
+  background-color: white;
+  height: 447px;
+  padding: 15px 15px 15px 15px;
+  overflow: auto;
+  border: 3px dotted rgb(168, 194, 251);
+  text-align: justify;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.hilang {
+    display: none !important;
+}
+
+.kliksyarat{
+  margin-bottom: 5px;
+  background-color: rgb(168, 194, 251);
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 16%;
+}
+
+.kliksyarat a{
+  text-decoration: none;
+  color: black;
+}
+
+.syarat{
+  width: 96.5%;
+  min-height: 10px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  margin: 0px 10px 10px 10px;
+  background-color: #f2f2f2;
+}
+
+.syarat li{
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.kliktujuan{
+  margin-bottom: 5px;
+  background-color: rgb(168, 194, 251);
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 24%;
+}
+
+.kliktujuan a{
+  text-decoration: none;
+  color: black;
+}
+
+.tujuan{
+  width: 96.5%;
+  min-height: 10px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  margin: 0px 10px 10px 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.tujuan li{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.prf{
+  text-indent: 30px;
+}
+
+.gambar{
+  width: 17%;
+  margin-bottom: 3px;
+}
+
+.kuasa li{
+  margin-left: 35px;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.tabel1{
+  border-collapse: collapse;
+  text-align: center;
+  width: 70%;
+}
+
+.tabel1 td, .tabel1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tabel2 td, .tabel2 th {
+  border: 1px solid rgb(3, 31, 75);
+  padding: 8px;
+}
+
+.tabel2{
+  width: 85%;
+  text-align: justify;
+}
+
+.tabel1 tr:nth-child(even){background-color: #f2f2f2;}
+
+.tabel1 th{
+  padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(168, 194, 251);
+}
+
+.cekulang{
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.icon{
+  margin-left: 5px;
+}
+
+.merah{
+  color: red;
+  font-weight: bold;
+}
+
+.pengertian{
+  width: 97%;
+  min-height: 10px;
+  border : 3px solid rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.pengertian li{
+  margin: 5px 0px 5px 20px;
+}
+
+.kliktunjuk{
+  margin: 5px 0px 5px 0px;
+  background-color: rgb(168, 194, 251);
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 16px;
+}
+
+.kliktunjuk a{
+  text-decoration: none;
+  color: black;
+}
+
+.tjk1{
+  min-height: 5px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px 0px 5px 0px;
+  display: block !important;
+  margin-bottom: 10px;
+}
+
+.tjk1 li{
+  margin: 0px 25px 5px 35px;
+}
+
+.hilang {
+    display: none !important;
+}
+
+.bnr{
+  color: green;
+}
+
+.slh{
+  color: red;
+}
+
+.input1{
+  text-align: center;
+  width: 3%;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.input2{
+  text-align: center;
+  width: 25%;
+  height: 25px;
+}
+
+.jawab3, .jawab4{
+  text-align: center;
+  width: 16%;
+  height: 25px;
+}
+
+.boxmerah{
+  border: 3px solid red;
+}
+
+.boxhijau{
+  border: 3px solid green;
+}
+
+.catat{
+  width: 96%;
+  min-height: 50px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 0px 15px 10px 15px;
+}
+
+.catat li{
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.gambar2{
+  width: 60%;
+}
+
+.divscratch{
+  overflow-y: hidden;
+  height: auto;
+}
+
+.scratch{
+  margin-top:-44px;
+  width: 60%;
+  height: 480px;
+}
+
+.contoh{
+  width: 60%;
+  min-height: 10px;
+  border : 2px solid rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contoh2{
+  width: 18%;
+  min-height: 10px;
+  border : 2px solid rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mundur1{
+  text-indent: 72px;
+}
+
+.mundur2{
+  text-indent: 138px;
+}
+
+.mundur3{
+  text-indent: 195px;
+}
+
+.mundur4{
+  text-indent: 63px;
+}
+
+.mundur5{
+  text-indent: 118px;
+}
+
+.kiri{
+  width: 45%;
+  height: 200px;
+  float: left;
+}
+
+.kanan{
+  width: 53%;
+  height: 250px;
+  float: left;
+  overflow: auto;
+}
+
+.isijls, .isijlss{
+  border-left: 3px solid rgb(3, 31, 75);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.klik{
+  cursor: pointer;
+}
+
+.jelas, .jelass{
+  display: none;
+}
+
+.tmbl{
+  height: 20px;
+  background-color: rgb(168, 194, 251);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.nav a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 13px;
+  font-size: 14px;
+}
+
+.navaktif{
+  background-color: #187bcd;
+  color: white;
+}
+
+.top{
+  display: none;
+}
+
+@media screen and (max-width: 992px){
+  header{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+  }
+  .bar{
+    width: 22%;
+    margin-top: 3px;
+  }
+  .home{
+    width: 8%;
+    margin-top: -18px;
+  }
+  aside{
+    display: none;
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .sidenav{
+    width: 100%;
+    height: auto;
+    position: none;
+    margin-top: 0px;
+    padding-top: 2%;
+  }
+  .sidenav a, .dropdown-btn {
+    padding: 2% 0px 2% 7%;
+    font-size: 14px;
+  }
+  .dafis-hilang{
+    display: block;
+  }
+  main{
+    width: 100%;
+    float: none;
+    font-size: 14px;
+  }
+  .main{
+    width: 100%;
+  }
+  .subbab{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .konten{
+    margin: 0px 10px 10px 10px;
+    height: auto;
+    line-height: normal;
+  }
+  .kuasa li{
+    margin: 10px 10px 10px 20px;
+  }
+  .kliksyarat{
+    width: 50%;
+  }
+  .syarat{
+    width: 95%;
+    margin: 5px 5px 10px 2px;
+  }
+  .tujuan{
+    width: 90%;
+    margin: 5px 5px 0px 2px;
+  }
+  .kliktujuan{
+    width: 63%;
+  }
+  .tjk1{
+    padding: 10px;
+  }
+  .tjk1 li{
+    margin: 5px 10px 5px 20px;
+  }
+  .gambar{
+    width: 37%;
+  }
+  .pengertian li {
+    margin: 5px 0px 5px 15px;
+  }
+  .tabel1, .tabel2{
+    width: 100%;
+  }
+  .cekulang{
+    padding: 5px;
+  }
+  .pengertian{
+    width: 93%;
+    text-align: justify;
+  }
+  .kliktunjuk{
+    width: 93%;
+    font-size: 12px;
+  }
+  .input1{
+    height: 20px;
+    width: 8%;
+  }
+  .input2{
+    height: 20px;
+    width: 60%;
+  }
+  .jawab3, .jawab4{
+    height: 20px;
+    width: 22%;
+  }
+  .catat{
+    width: 91%;
+  }
+  .gambar2{
+    width: 85%;
+  }
+  .divscratch{
+    overflow-y: hidden;
+    height: auto;
+  }
+  .scratch{
+    margin-top:-46px;
+    width: 100%;
+    height: 302px;
+  }
+  .contoh{
+    width: 90%;
+  }
+  .contoh2{
+    width: 40%;
+  }
+  .mundur1{
+    text-indent: 63px;
+  }
+  .mundur2{
+    text-indent: 120px;
+  }
+  .mundur3{
+    text-indent: 168px;
+  }
+  .mundur4{
+    text-indent: 55px;
+  }
+  .mundur5{
+    text-indent: 105px;
+  }
+  .kiri{
+    width: 100%;
+    float: none;
+    height: auto;
+    padding: 0px;
+  }
+  .kanan, .kanann{
+    width: 100%;
+    float: none;
+    height: auto;
+    overflow: none;
+  }
+  .tmbl{
+    height: 15px;
+  }
+  .nav a{
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+  .top {
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    border: 0px;
+    border-radius: 65px;
+    background-color: #187bcd;
+  }
+  .top:hover {
+    background-color: rgb(168, 194, 251);
+    color: black;
+  }
+}
