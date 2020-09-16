@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Dari 38 siswa didapatkan data mengenai hewan yang mereka pelihara. 19 siswa memelihara kucing, 22 siswa memelihara kelinci, dan 7 siswa tidak memelihara keduanya. Berdasarkan data tersebut, banyak siswa yang memelihara kucing dan kelinci adalah ....",
+        "a": "10 siswa",
+        "b": "9 siswa",
+        "c": "12 siswa",
+        "d": "22 siswa",
+        "benar": "a",
+        "nih": "10 siswa"
+    }
+}, {
+    "soal1": {
+        "soal": "Dari 40 peserta yang mengikuti lomba olahraga, ada 23 orang yang mengikuti lomba lari dan 12 orang mengikuti lomba lari dan tarik tambang. Banyak peserta yang mengikuti lomba tarik tambang saja adalah ....",
+        "a": "11 orang",
+        "b": "29 orang",
+        "c": "17 orang",
+        "d": "12 orang",
+        "benar": "c",
+        "nih": "17 orang"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Dari 40 siswa, terdapat 15 siswa yang memiliki hobi mendengarkan musik, 20 siswa memiliki hobi menyanyi, dan 5 siswa memiliki hobi keduanya. Banyak siswa yang tidak memiliki hobi mendengarkan musik maupun menyanyi adalah  ....",
+        "a": "5 siswa",
+        "b": "10 siswa",
+        "c": "15 siswa",
+        "d": "20 siswa",
+        "benar": "b",
+        "nih": "10 siswa"
+    }
+}, {
+    "soal3": {
+        "soal": "Sekelompok siswa yang terdiri dari 20 siswa ditanya mengenai buah yang mereka sukai. 9 siswa menyukai buah semangka, 10 siswa menyukai buah anggur, dan 6 siswa tidak menyukai buah semangka maupun buah anggur. Banyak siswa yang menyukai buah semangka dan anggur adalah  ....",
+        "a": "4 siswa",
+        "b": "6 siswa",
+        "c": "10 siswa",
+        "d": "5 siswa",
+        "benar": "d",
+        "nih": "5 siswa"
+    }
+}, {
+    "soal4": {
+        "soal": "Berdasarkan data keluarga di RT 21, didapatkan informasi bahwa 15 keluarga mempunyai anak laki-laki, 20 keluarga mempunyai anak perempuan, 5 keluarga mempunyai anak laki-laki dan anak perempuan, dan 10 keluarga tidak memiliki anak. Banyaknya keluarga di RT 21 adalah ....",
+        "a": "40 keluarga",
+        "b": "30 keluarga",
+        "c": "35 keluarga",
+        "d": "45 keluarga",
+        "benar": "a",
+        "nih": "40 keluarga"
+    }
+}, {
+    "soal5": {
+        "soal": "Di sebuah kelas terdapat 20 siswa. 10 siswa mempunyai adik, 5 siswa mempunyai kakak dan adik, sedangkan 6 siswa tidak mempunyai kakak maupun adik. Banyak siswa yang mempunyai kakak saja adalah ....",
+        "a": "6 siswa",
+        "b": "9 siswa",
+        "c": "4 siswa",
+        "d": "5 siswa",
+        "benar": "c",
+        "nih": "4 siswa"
+    }
+}, {
+    "soal6": {
+        "soal": "Dari 40 siswa dalam suatu kelas, 26 siswa gemar matematika, 13 siswa gemar matematika dan IPA, sedangkan 7 siswa tidak gemar matematika maupun IPA. Banyak siswa yang gemar IPA saja adalah ....",
+        "a": "13 siswa",
+        "b": "7 siswa",
+        "c": "8 siswa",
+        "d": "20 siswa",
+        "benar": "b",
+        "nih": "7 siswa"
+    }
+}, {
+    "soal7": {
+        "soal": "Dari 143 siswa SMP Cinta Indonesia, terdapat 95 siswa yang mengikuti ekstrakurikuler pramuka, 87 siswa yang mengikuti ekstrakurikuler paskibra, dan 60 siswa yang mengikuti keduanya. Banyak siswa yang tidak mengikuti ekstrakurikuler pramuka maupun paskibra adalah ....",
+        "a": "36 siswa",
+        "b": "27 siswa",
+        "c": "35 siswa",
+        "d": "21 siswa",
+        "benar": "d",
+        "nih": "21 siswa"
+    }
+}, {
+    "soal8": {
+        "soal": "Di suatu kelas terdapat 25 siswa memiliki handphone, 30 siswa memiliki laptop, dan 12 siswa mempunyai handphone dan laptop. Banyak siswa pada kelas tersebut adalah ....",
+        "a": "43 siswa",
+        "b": "55 siswa",
+        "c": "67 siswa",
+        "d": "37 siswa",
+        "benar": "a",
+        "nih": "43 siswa"
+    }
+}, {
+    "soal9": {
+        "soal": "Kelas 7B terdiri dari 31 siswa, 15 siswa menyukai sayur bayam, 13 siswa menyukai sayur kangkung, dan 7 siswa tidak menyukai sayuran. Banyak siswa yang menyukai sayur bayam dan kangkung adalah ....",
+        "a": "4 siswa",
+        "b": "15 siswa",
+        "c": "11 siswa",
+        "d": "10 siswa",
+        "benar": "a",
+        "nih": "4 siswa"
+    }
+}]

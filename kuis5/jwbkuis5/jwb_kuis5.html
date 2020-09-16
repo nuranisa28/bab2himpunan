@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../img/logo1.png">
+    <title>HIMPUNAN | Jawaban Kuis 5</title>
+    <link href="style_jwb5.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="atas">
+            <div class="kiri">
+                <center><img src="../img/head.png" width="25%"></center>
+            </div>
+        </div>
+
+        <center>
+            <a href="../hasil_kuis5/hasil5.html" class="tombol ">Hasil Kuis 5</a>
+            <a href="#" class="tombol tmblAktif">Jawaban Kuis 5</a>
+            <a href="../soal5/soalkuis5.html" class="tombol">Soal Kuis 5</a>
+        </center>
+
+
+        <div class="konten batsatas">
+            <div class="isinya">
+                <h1>JAWABAN KUIS 5</h1>
+                <hr>
+                <div class="bgnya">
+
+                    <label for="nama"> Sekolah :
+                        <select id="sekolah" name="sekolah" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                            <option value="0" selected="selected">-- PILIH SEKOLAH --</option>
+                            <option value="1">SMP Negeri 2 Banjarmasin</option>
+                            <option value="2">SMP Negeri 9 Banjarmasin</option>
+                        </select>
+                    </label>
+                    <label for="nama"> Kelas :
+                        <select id="kelas" name="kelas" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                            <option value="0" selected="selected">-- PILIH KELAS --</option>
+                            <option value="1">7A</option>
+                            <option value="2">7B</option>
+                            <option value="3">7C</option>
+                            <option value="4">7D</option>
+                            <option value="5">7E</option>
+                            <option value="6">7F</option>
+                            <option value="7">7G</option>
+                            <option value="8">7H</option>
+                            <option value="9">7I</option>
+                        </select>
+                    </label>
+                    <div class="cari" onclick="readlah()">
+                        <img src="../img/cari.png" width="20%"> Cari
+                    </div>
+                    <!-- tombol cetak -->
+                    <div class="download cari hilang" id="btnExport">
+                        <img src="../img/save.png" width="20%"> Simpan
+                    </div>
+
+
+
+                </div>
+                <br><br>
+
+                <div>
+                    <table id='table_wrapper'>
+                        <thead class="jrkbawah">
+                            <tr>
+                                <td class="ukr1" colspan="" rowspan="2">Nama</td>
+                                <td class="ukr3" colspan="" rowspan="2">Nilai</td>
+                                <td class="ukr0" colspan="10">Nomor</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                        </thead>
+                        <tbody class="disini"></tbody>
+                    </table>
+                    <center class="ha">
+                    </center>
+
+
+
+                </div>
+
+
+
+                <div class=" clear"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+    <script src="script_jwb5.js"></script>
+
+
+
+</body>
+
+</html>
