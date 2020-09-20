@@ -1,102 +1,203 @@
 [{
     "soal0": {
-        "soal": "Dari 38 siswa didapatkan data mengenai hewan yang mereka pelihara. 19 siswa memelihara kucing, 22 siswa memelihara kelinci, dan 7 siswa tidak memelihara keduanya. Berdasarkan data tersebut, banyak siswa yang memelihara kucing dan kelinci adalah ....",
-        "a": "10 siswa",
-        "b": "9 siswa",
-        "c": "12 siswa",
-        "d": "22 siswa",
-        "benar": "a",
-        "nih": "10 siswa"
+        "soal": "Di antara kumpulan berikut yang bukan merupakan himpunan adalah ....",
+        "a": "Kumpulan hewan karnivora",
+        "b": "Kumpulan ikan sungai",
+        "c": "Kumpulan alat makan",
+        "d": "Kumpulan boneka yang lucu",
+        "benar": "d",
+        "nih": "Kumpulan boneka yang lucu"
     }
 }, {
     "soal1": {
-        "soal": "Dari 40 peserta yang mengikuti lomba olahraga, ada 23 orang yang mengikuti lomba lari dan 12 orang mengikuti lomba lari dan tarik tambang. Banyak peserta yang mengikuti lomba tarik tambang saja adalah ....",
-        "a": "11 orang",
-        "b": "29 orang",
-        "c": "17 orang",
-        "d": "12 orang",
-        "benar": "c",
-        "nih": "17 orang"
+        "soal": "Perhatikan himpunan dibawah ini.<br>D = {1, 2, 3, 4, 5, 6}<br>Di antara pernyataan berikut, yang merupakan pernyataan yang benar berdasarkan himpunan di atas adalah ....",
+        "a": "Angka 1 sampai 6 merupakan anggota himpunan angka dadu",
+        "b": "Angka lebih dari 6 merupakan anggota himpunan angka dadu",
+        "c": "Angka 1 sampai 6 bukan anggota himpunan angka dadu",
+        "d": "Angka 1 sampai 6 merupakan anggota himpunan bilangan genap",
+        "benar": "a",
+        "nih": "Angka 1 sampai 6 merupakan anggota himpunan angka dadu"
     }
 
 }, {
     "soal2": {
-        "soal": "Dari 40 siswa, terdapat 15 siswa yang memiliki hobi mendengarkan musik, 20 siswa memiliki hobi menyanyi, dan 5 siswa memiliki hobi keduanya. Banyak siswa yang tidak memiliki hobi mendengarkan musik maupun menyanyi adalah  ....",
-        "a": "5 siswa",
-        "b": "10 siswa",
-        "c": "15 siswa",
-        "d": "20 siswa",
-        "benar": "b",
-        "nih": "10 siswa"
+        "soal": "Di antara himpunan di bawah ini, yang merupakan himpunan pembentuk kata MATAHARI adalah  ....",
+        "a": "A = {M, A, T, A, H, A, R, I}",
+        "b": "B = {M, A, T, A, H, R, I}",
+        "c": "C = {M, A, T, H, R, I}",
+        "d": "D = {M, A, T, H, R}",
+        "benar": "c",
+        "nih": "C = {M, A, T, H, R, I}"
     }
 }, {
     "soal3": {
-        "soal": "Sekelompok siswa yang terdiri dari 20 siswa ditanya mengenai buah yang mereka sukai. 9 siswa menyukai buah semangka, 10 siswa menyukai buah anggur, dan 6 siswa tidak menyukai buah semangka maupun buah anggur. Banyak siswa yang menyukai buah semangka dan anggur adalah  ....",
-        "a": "4 siswa",
-        "b": "6 siswa",
-        "c": "10 siswa",
-        "d": "5 siswa",
-        "benar": "d",
-        "nih": "5 siswa"
+        "soal": "Diketahui D = {x | 1 < x &le; 10, x &isin; bilangan ganjil}. Bentuk metode tabulasi dari himpunan D adalah ....",
+        "a": "D = {1, 3, 5, 7, 9}",
+        "b": "D = {3, 5, 7, 9, 10}",
+        "c": "D = {3, 5, 7, 9}",
+        "d": "D = {1, 3, 5, 7, 9, 10}",
+        "benar": "c",
+        "nih": "D = {3, 5, 7, 9}"
     }
 }, {
     "soal4": {
-        "soal": "Berdasarkan data keluarga di RT 21, didapatkan informasi bahwa 15 keluarga mempunyai anak laki-laki, 20 keluarga mempunyai anak perempuan, 5 keluarga mempunyai anak laki-laki dan anak perempuan, dan 10 keluarga tidak memiliki anak. Banyaknya keluarga di RT 21 adalah ....",
-        "a": "40 keluarga",
-        "b": "30 keluarga",
-        "c": "35 keluarga",
-        "d": "45 keluarga",
+        "soal": "Diketahui B = {x | x &le; 7, x &isin; bilangan cacah}. Banyaknya anggota himpunan dari himpunan B adalah ....",
+        "a": "n(B) = 8",
+        "b": "n(B) = 7",
+        "c": "n(B) = 6",
+        "d": "n(B) = 9",
         "benar": "a",
-        "nih": "40 keluarga"
+        "nih": "n(B) = 8"
     }
 }, {
     "soal5": {
-        "soal": "Di sebuah kelas terdapat 20 siswa. 10 siswa mempunyai adik, 5 siswa mempunyai kakak dan adik, sedangkan 6 siswa tidak mempunyai kakak maupun adik. Banyak siswa yang mempunyai kakak saja adalah ....",
-        "a": "6 siswa",
-        "b": "9 siswa",
+        "soal": "Di antara himpunan berikut yang merupakan himpunan kosong adalah ....",
+        "a": "C = {nama bulan dalam setahun yang memiliki kurang dari 31 hari}",
+        "b": "D = {nama hari yang berawalan dengan huruf N}",
+        "c": "B = {hewan yang memiliki sayap}",
+        "d": "A = {bilangan cacah kurang dari 1}",
+        "benar": "b",
+        "nih": "D = {nama hari yang berawalan dengan huruf N}"
+    }
+}, {
+    "soal6": {
+        "soal": "Himpunan semesta yang mungkin untuk B = {trapesium, persegi, persegi panjang} adalah ....",
+        "a": "S = {bangun ruang}",
+        "b": "S = {bangun datar}",
+        "c": "S = {bangun datar yang memiliki sudut 45<sup>o</sup>}",
+        "d": "S = {bangun ruang yang dibangun oleh 4 buah bangun datar}",
+        "benar": "b",
+        "nih": "S = {bangun datar}"
+    }
+}, {
+    "soal7": {
+        "soal": "Perhatikan himpunan berikut.<br>S = {x | x &le; 10, x &isin; bilangan cacah}<br>A = {x | x &le; 5, x &isin; bilangan asli}<br>B = {x | x &le; 10, x &isin; bilangan genap}<br>Diagram venn yang tepat berdasarkan himpunan di atas adalah ....",
+        "a": "<img src='img/latven1a.png' class='gambar2'>",
+        "b": "<img src='img/latven1b.png' class='gambar2'>",
+        "c": "<img src='img/latven1c.png' class='gambar2'>",
+        "d": "<img src='img/latven1d.png' class='gambar2'>",
+        "benar": "a",
+        "nih": "<img src='img/latven1a.png' class='gambar2'>"
+    }
+}, {
+    "soal8": {
+        "soal": "Perhatikan diagram venn berikut.<br><img src='img/latven2.png' class='gambar2'><br>Berdasarkan diagram venn di atas pernyataan berikut benar, kecuali ....",
+        "a": "D &cap; E = {2}",
+        "b": "D &minus; E = {3, 5, 7}",
+        "c": "D &cup; E = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}",
+        "d": "E &minus; D = {4, 6, 8, 10}",
+        "benar": "c",
+        "nih": "D &cup; E = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}"
+    }
+}, {
+    "soal9": {
+        "soal": "Diketahui A = {2, 4, 6}. Himpunan berikut merupakan himpunan bagian dari A, kecuali ....",
+        "a": "{2}, {4}, {6}",
+        "b": "{2, 4, 5}",
+        "c": "{2, 4, 6}",
+        "d": "{2,6}, {4,6}",
+        "benar": "b",
+        "nih": "{2, 4, 5}"
+    }
+}, {
+    "soal10": {
+        "soal": "Jika A = {10, 20, 30, 40}, banyak himpunan bagian dari A dengan 3 anggota adalah ....",
+        "a": "4",
+        "b": "6",
+        "c": "1",
+        "d": "16",
+        "benar": "a",
+        "nih": "4"
+    }
+}, {
+    "soal11": {
+        "soal": "Perhatikan himpunan berikut.<br>J = {x | x &le; 20, x &isin; bilangan prima}<br>K = {bilangan genap kurang dari 15}<br>L = {x | 5 &le; x &le; 40, x &isin; bilangan asli kelipatan 5}<br>Dari himpunan di atas yang merupakan himpunan bagian dari M jika M = {1, 2, 3, ..., 30} adalah ....",
+        "a": "J dan K",
+        "b": "J dan L",
+        "c": "K dan L",
+        "d": "J, K, dan L",
+        "benar": "a",
+        "nih": "J dan K"
+    }
+
+}, {
+    "soal12": {
+        "soal": "Diketahui A = {15, 16}. Himpunan kuasa dari himpunan A adalah ....",
+        "a": "P(A) = {{ }, {15}, {16}, {15,16}}",
+        "b": "P(A) = {{15}, {16}, {15,16}}",
+        "c": "P(A) = {{15,16}}",
+        "d": "P(A) = {{ }, {15}, {16}}",
+        "benar": "a",
+        "nih": "P(A) = {{ }, {15}, {16}, {15,16}}"
+    }
+}, {
+    "soal13": {
+        "soal": "Perhatikan himpunan berikut.<br>S = {bilangan cacah kurang dari 10}<br>G = {bilangan asli kurang dari 6}<br>Komplemen dari himpunan G adalah ....",
+        "a": "G’  = {0, 6, 7, 8, 9}",
+        "b": "G’ = {6, 7, 8, 9}",
+        "c": "G’ = {0, 6, 7, 8, 9, 10}",
+        "d": "G’ = {6, 7, 8, 9, 10}",
+        "benar": "a",
+        "nih": "G’  = {0, 6, 7, 8, 9}"
+    }
+}, {
+    "soal14": {
+        "soal": "Diketahui A = {1, 2, 4, 6, 8, 11, 13, 15, 16} dan B = {2, 5, 6, 8, 9, 10, 11}, maka ....",
+        "a": "A &minus; B = {1, 4, 13, 15, 16}",
+        "b": "A &minus; B = {2, 6, 8, 11}",
+        "c": "A &minus; B = {5, 9, 10}",
+        "d": "A &minus; B = {1, 4, 9, 10}",
+        "benar": "a",
+        "nih": "A &minus; B = {1, 4, 13, 15, 16}"
+    }
+}, {
+    "soal15": {
+        "soal": "Perhatikan himpunan berikut<br>S = {1, 2, 3, 4, 5, 6, 7, 8}<br>C = {3, 4, 5}<br>D = {4, 5, 6, 7}<br>Berdasarkan himpunan di atas, (C &cup; D)’ adalah ....",
+        "a": "{3, 4, 5, 6, 7}",
+        "b": "{2, 3, 6, 7}",
+        "c": "{1, 2, 8}",
+        "d": "{4, 5, 6, 7}",
+        "benar": "c",
+        "nih": "{1, 2, 8}"
+    }
+}, {
+    "soal16": {
+        "soal": "Perhatikan himpunan berikut<br>A = {b, d, e, f}<br>B = {a, b, e, g, h, i}<br>C = {b, c, d, h, i, k}<br>Dari himpunan di atas, (A &cup; B) &cap; C adalah ....",
+        "a": "{b, d, h, k}",
+        "b": "{b, d, h, i}",
+        "c": "{a, b, c, d}",
+        "d": "{d, g, h, i}",
+        "benar": "b",
+        "nih": "{b, d, h, i}"
+    }
+}, {
+    "soal17": {
+        "soal": "Dari 35 remaja yang didata, terdapat 25 remaja yang menyukai film bergenre komedi dan 20 remaja yang menyukai film bergenre horor. Jika 3 remaja tidak menyukai film genre komedi maupun horor, maka banyak remaja yang menyukai kedua genre film tersebut adalah ....",
+        "a": "13 remaja",
+        "b": "9 remaja",
+        "c": "17 remaja",
+        "d": "20 remaja",
+        "benar": "a",
+        "nih": "13 remaja"
+    }
+}, {
+    "soal18": {
+        "soal": "Kelas 7C terdiri dari 40 siswa. Mereka ditanya mengenai kartun yang mereka sukai. 24 siswa menyukai kartun doraemon, 23 siswa menyukai kartun spongebob, dan 11 siswa menyukai keduanya. Banyak siswa yang tidak menyukai kartun doraemon maupun spongebob adalah ....",
+        "a": "9 siswa",
+        "b": "10 siswa",
         "c": "4 siswa",
-        "d": "5 siswa",
+        "d": "13 siswa",
         "benar": "c",
         "nih": "4 siswa"
     }
 }, {
-    "soal6": {
-        "soal": "Dari 40 siswa dalam suatu kelas, 26 siswa gemar matematika, 13 siswa gemar matematika dan IPA, sedangkan 7 siswa tidak gemar matematika maupun IPA. Banyak siswa yang gemar IPA saja adalah ....",
-        "a": "13 siswa",
-        "b": "7 siswa",
-        "c": "8 siswa",
+    "soal19": {
+        "soal": "Dari 36 siswa kelas 7G, didapatkan data bahwa 7 siswa menyukai olahraga renang, 9 siswa menyukai olahraga bulutangkis, dan 5 siswa menyukai keduanya. Banyak siswa yang tidak menyukai olahraga renang maupun bulutangkis adalah ....",
+        "a": "30 siswa",
+        "b": "45 siswa",
+        "c": "25 siswa",
         "d": "20 siswa",
         "benar": "b",
-        "nih": "7 siswa"
-    }
-}, {
-    "soal7": {
-        "soal": "Dari 143 siswa SMP Cinta Indonesia, terdapat 95 siswa yang mengikuti ekstrakurikuler pramuka, 87 siswa yang mengikuti ekstrakurikuler paskibra, dan 60 siswa yang mengikuti keduanya. Banyak siswa yang tidak mengikuti ekstrakurikuler pramuka maupun paskibra adalah ....",
-        "a": "36 siswa",
-        "b": "27 siswa",
-        "c": "35 siswa",
-        "d": "21 siswa",
-        "benar": "d",
-        "nih": "21 siswa"
-    }
-}, {
-    "soal8": {
-        "soal": "Di suatu kelas terdapat 25 siswa memiliki handphone, 30 siswa memiliki laptop, dan 12 siswa mempunyai handphone dan laptop. Banyak siswa pada kelas tersebut adalah ....",
-        "a": "43 siswa",
-        "b": "55 siswa",
-        "c": "67 siswa",
-        "d": "37 siswa",
-        "benar": "a",
-        "nih": "43 siswa"
-    }
-}, {
-    "soal9": {
-        "soal": "Kelas 7B terdiri dari 31 siswa, 15 siswa menyukai sayur bayam, 13 siswa menyukai sayur kangkung, dan 7 siswa tidak menyukai sayuran. Banyak siswa yang menyukai sayur bayam dan kangkung adalah ....",
-        "a": "4 siswa",
-        "b": "15 siswa",
-        "c": "11 siswa",
-        "d": "10 siswa",
-        "benar": "a",
-        "nih": "4 siswa"
+        "nih": "45 siswa"
     }
 }]

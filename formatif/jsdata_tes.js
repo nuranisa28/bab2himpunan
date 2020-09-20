@@ -121,7 +121,7 @@ dat.onreadystatechange = function () {
         // ---------------------------------
         // acak urutan soal
         //random urutan
-        for (let x = 0; x < 100; x++) {
+        for (let x = 0; x < 500; x++) {
             // acak angka dengan batas length.data dan minimum 0
             let angka = Math.floor(Math.random() * data.length) + 0;
             cek.push(angka);
@@ -367,10 +367,9 @@ dat.onreadystatechange = function () {
                 datanya.className = datanya.className.replace('hilang', '');
 
                 if(hasilakhir<75){
-                    let ulang = document.getElementById("ulang");
-                    ulang.className = ulang.className.replace("hilang","");
+                    
                 } else{
-                    document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Kuis 5 &#128516;";
+                    document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Tes Formatif &#128516;";
                 }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');

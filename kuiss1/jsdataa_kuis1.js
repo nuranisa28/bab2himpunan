@@ -427,7 +427,7 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
         hari: hari
     }
 
-    let db = firebase.database().ref("kuis1/" + counter);
+    let db = firebase.database().ref("kuis1_sebelumtes/" + counter);
     db.set(task);
 
 }
