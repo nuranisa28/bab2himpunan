@@ -65,9 +65,6 @@ a {
     text-decoration: none;
 }
 
-.kembali:hover {
-    background-color: rgb(1, 59, 78);
-}
 
 .batsatas {
     margin-top: 30px;
@@ -318,9 +315,36 @@ td {
     color: white;
 }
 
+.kembali {
+    display: inline-block;
+    padding: 10px 5px 10px 10px;
+    background-color: #658396;
+    margin: 10px 0px 0px 10px;
+    border-radius: 5px;
+    color: white;
+    width: 10%;
+    display: inline=block;
+    margin: 0px;
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        position: absolute;
+}
+
+.kembali:hover {
+    cursor: pointer;
+}
+
 /* ------------------------------------------------------------- */
 
 @media (min-width : 992px) {
+    .kembali {
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        width: 7%;
+    }
     label {
         font-size: 18px;
     }
@@ -349,11 +373,6 @@ td {
         font-size: 20px !important;
     }
 
-    .kembali {
-        margin: 0px;
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
 
     /* toggle --------------------------------------------------------------------------------------------------*/
     .switch {

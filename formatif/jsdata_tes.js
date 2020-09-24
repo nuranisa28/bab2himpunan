@@ -88,6 +88,26 @@ selanjutnya.addEventListener('click', function () {
     }
 });
 
+function readlah() {
+    var task = firebase.database().ref("kontroltes/");
+    let tmp = document.querySelector('body');
+
+    task.on("child_added", function (data) {
+        var taskvalue = data.val();
+
+        if ((taskvalue.id == "7820658910") && (taskvalue.nilai == 0)) {
+            tmp.innerHTML += '<div class = "full" > <p>HALAMAN TIDAK DAPAT DIAKSES</p> </div>'
+            // console.log('0');
+        } else {
+            // console.log('1');
+        }
+
+
+
+    });
+}
+
+
 window.onload = function () {
     namanya.value = "";
     kelasnya.value = value = "0";
@@ -97,6 +117,7 @@ window.onload = function () {
     document.getElementById('kiri').className += ' hilang';
     document.getElementById('kanan').className += ' hilang';
 
+    readlah();
 
 }
 
@@ -121,7 +142,7 @@ dat.onreadystatechange = function () {
         // ---------------------------------
         // acak urutan soal
         //random urutan
-        for (let x = 0; x < 500; x++) {
+        for (let x = 0; x < 700; x++) {
             // acak angka dengan batas length.data dan minimum 0
             let angka = Math.floor(Math.random() * data.length) + 0;
             cek.push(angka);
@@ -307,7 +328,7 @@ dat.onreadystatechange = function () {
                             checked = true;
                             pil_user.push(namaradio[j].value);
                             if(namaradio[j].value == jwbs[i]){
-                                hasilakhir = hasilakhir + 10;
+                                hasilakhir = hasilakhir + 5;
                                 benarr = benarr + 1;
                             } else {
                                 hasilakhir = hasilakhir;
@@ -366,11 +387,11 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-                if(hasilakhir<75){
+                // if(hasilakhir<75){
                     
-                } else{
-                    document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Tes Formatif &#128516;";
-                }
+                // } else{
+                //     document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Tes Formatif &#128516;";
+                // }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
             }

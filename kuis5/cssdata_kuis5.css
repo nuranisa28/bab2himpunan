@@ -364,9 +364,51 @@ p{
     width: 25%;
 }
 
+.full {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(134, 133, 133, 0.8);
+    position: fixed;
+    text-align: center;
+}
+
+.full p {
+    
+
+    display: inline-block;
+        font-size: 80px;
+        margin-top: 240px;
+        color: white;
+}
+
+.full a {
+    
+
+    display: inline-block;
+        font-size: 80px;
+        margin-top: 240px;
+        color: white;
+}
+
 
 /*TAMPILAN HP*/
 @media screen and (max-width: 992px){
+    .full p {
+        display: inline-block;
+    font-size: 45px;
+    margin-top: 200px;
+    color: white;
+    }
+    .full a {
+        display: inline-block;
+    font-size: 45px;
+    margin-top: 200px;
+    color: white;
+    }
     .data_diri{
         width: 90%;
     }
