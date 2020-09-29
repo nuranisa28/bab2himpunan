@@ -387,11 +387,11 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-                // if(hasilakhir<75){
-                    
-                // } else{
-                //     document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Tes Formatif &#128516;";
-                // }
+                if(hasilakhir<75){
+                    document.getElementById('lulus').innerHTML = "Nilai tes formatif kamu adalah : " + hasilakhir + " &#128546"; //sedih
+                } else{
+                    document.getElementById('lulus').innerHTML = "Nilai tes formatif kamu adalah : " + hasilakhir + " &#128516;"; //senang
+                }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
             }
