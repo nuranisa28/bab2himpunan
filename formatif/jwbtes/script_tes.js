@@ -11,6 +11,19 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+// // Your web app's Firebase configuration
+// var firebaseConfig = {
+//     apiKey: "AIzaSyAk0P_VKEPe3wNgNVldkvo7kJMiOCM5l6g",
+//     authDomain: "bab2himpunan.firebaseapp.com",
+//     databaseURL: "https://bab2himpunan.firebaseio.com",
+//     projectId: "bab2himpunan",
+//     storageBucket: "bab2himpunan.appspot.com",
+//     messagingSenderId: "742624929752",
+//     appId: "1:742624929752:web:0bdd95bc44453b5eec74ad"
+//   };
+//   // Initialize Firebase
+//   firebase.initializeApp(firebaseConfig);
+
 window.load = function () {
 
 

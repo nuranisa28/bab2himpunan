@@ -53,7 +53,7 @@
 	    			<a href="../../materi5_1/1/materi5_1(1).html">5.1 Penerapan Konsep Himpunan dalam Kehidupan Sehari-hari</a>
 	    			<a href="../../kuis5/kuis5.html">5.2 Kuis 5</a>
 	  			</div>
-	  		<a href="">6. Tes Formatif</a>
+	  		<a href="../../formatif/tesformatif.html">6. Tes Formatif</a>
 		</div>
 	</aside>
 	
@@ -98,16 +98,10 @@
 			</div>
 			<h5>*jika kamu menggunakan perangkat HP, tekan sedikit agak lama untuk menarik pilihan yang ada pada kotak abu-abu</h5>
 			<div class="pertanyaan">
-				<!--nomor pertanyaan-->
-				<div class="number">
-			        <button class="nomortanya tmblAktif" onclick="bukaTanya(event, 'tanya1')">1</button>
-			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya2')">2</button>
-			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya3')">3</button>
-			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya4')">4</button>
-			        <button class="nomortanya" onclick="bukaTanya(event, 'tanya5')">5</button>
-			    </div>
+				
 			    <!--pertanyaan 1-->
-			    <div class="pertanya tanyaAktif" id="tanya1">
+			    <div class="soal soalAktif" id="soal1">
+			    	Soal 1 dari 5
 			    	<center>
 	                <table class="kotak">
 	                	<tr id="pil1" ondragover="allowDrop(event)">
@@ -133,7 +127,8 @@
 			    </div>
 
 			    <!--pertanyaan 2-->
-			    <div class="pertanya" id="tanya2">
+			    <div class="soal" id="soal2">
+			    	Soal 2 dari 5
 			    	<center>
 			    	<table class="kotak">
 			    		<tr id="pil2" ondragover="allowDrop(event)">
@@ -159,7 +154,8 @@
 				</div>
 
 				<!--pertanyaan 3-->
-			    <div class="pertanya" id="tanya3">
+			    <div class="soal" id="soal3">
+			    	Soal 3 dari 5
 			    	<center>
 			    	<table class="kotak2">
 			    		<tr id="pil3"  ondragover="allowDrop(event)">
@@ -186,7 +182,8 @@
 				</div>
 
 				<!--pertanyaan 4-->
-			    <div class="pertanya" id="tanya4">
+			    <div class="soal" id="soal4">
+			    	Soal 4 dari 5
 			    	<center>
 			    	<table class="kotak3">
 			    		<tr id="pil4" ondragover="allowDrop(event)">
@@ -212,7 +209,8 @@
 				</div>
 
 				<!--pertanyaan 5-->
-			    <div class="pertanya" id="tanya5">
+			    <div class="soal" id="soal5">
+			    	Soal 5 dari 5
 			    	<center>
 			    	<table class="kotak3">
 			    		<tr id="pil5" ondragover="allowDrop(event)">
@@ -235,7 +233,17 @@
 					<div class="bahas" id="bahasslh5">
 						<span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
 					</div>
+
 				</div>
+				<!--tombol nomor soal-->
+					<center>
+						Nomor Soal : 
+						<button class="stnomor nomorsoal nmrAktif" onclick="bukaSoal(event, 'soal1')">1</button>
+			        	<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal2')">2</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal3')">3</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal4')">4</button>
+						<button class="stnomor nomorsoal" onclick="bukaSoal(event, 'soal5')">5</button>
+					</center>
 			</div>
 			<br>
 			<br>

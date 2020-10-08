@@ -64,6 +64,23 @@ function bukaTanya(evt, nmrTanya) {
   evt.currentTarget.className += " tmblAktif";
 }
 
+/*buka soal*/
+function bukaSoal(evt, nmrSoal) {
+  var i, soal, nomorsoal;
+  //isi soal
+  soal = document.getElementsByClassName("soal");
+  for (i = 0; i < soal.length; i++) {
+    soal[i].style.display = "none";
+  }
+  //nomor soal
+  nomorsoal = document.getElementsByClassName("nomorsoal");
+  for (i = 0; i < nomorsoal.length; i++) {
+    nomorsoal[i].className = nomorsoal[i].className.replace(" nmrAktif", "");
+  }
+  document.getElementById(nmrSoal).style.display = "block";
+  evt.currentTarget.className += " nmrAktif";
+}
+
 function tjk1(tjk1) {
   var x = document.getElementById(tjk1);
 

@@ -11,6 +11,19 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+// // Your web app's Firebase configuration
+// var firebaseConfig = {
+//     apiKey: "AIzaSyAk0P_VKEPe3wNgNVldkvo7kJMiOCM5l6g",
+//     authDomain: "bab2himpunan.firebaseapp.com",
+//     databaseURL: "https://bab2himpunan.firebaseio.com",
+//     projectId: "bab2himpunan",
+//     storageBucket: "bab2himpunan.appspot.com",
+//     messagingSenderId: "742624929752",
+//     appId: "1:742624929752:web:0bdd95bc44453b5eec74ad"
+//   };
+//   // Initialize Firebase
+//   firebase.initializeApp(firebaseConfig);
+
 
 let selanjutnya = document.querySelector('.lanjut');
 let datadiri = document.querySelector('.data_diri');
@@ -149,6 +162,7 @@ dat.onreadystatechange = function () {
         }
         // membuang angka yang sama
         cek = Array.from(new Set(cek));
+        // cek = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
         console.log(cek);
         // ---------------------------------
         // ambil data tertentu
@@ -450,7 +464,8 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
         jawabannya: jwb
     }
 
-    let db = firebase.database().ref("tesformatif/" + counter);
+    // let db = firebase.database().ref("tesformatif/" + counter);
+    let db = firebase.database().ref("tesformatif2/" + counter);
     db.set(task);
 
 }
