@@ -165,7 +165,7 @@ main{
 }
 
 .video{
-  width: 45%;
+  width: 38%;
 }
 
 .mulai {
@@ -218,9 +218,9 @@ main{
 	  padding: 2% 0px 2% 7%;
 	  font-size: 14px;
 	}
-	.dafis-hilang{
+	/*.dafis-hilang{
 		display: block;
-	}
+	}*/
 	main{
 		width: 100%;
 		float: none;

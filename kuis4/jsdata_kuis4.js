@@ -389,7 +389,8 @@ dat.onreadystatechange = function () {
                     let ulang = document.getElementById("ulang");
                     ulang.className = ulang.className.replace("hilang","");
                 } else{
-                    document.getElementById('lulus').innerHTML = "Selamat! Kamu telah berhasil menyelesaikan Kuis 4 &#128516;";
+                    let materi = document.getElementById("materi");
+                    materi.className = materi.className.replace("hilang","");
                 }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');

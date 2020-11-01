@@ -402,9 +402,11 @@ dat.onreadystatechange = function () {
                 datanya.className = datanya.className.replace('hilang', '');
 
                 if(hasilakhir<75){
-                    document.getElementById('lulus').innerHTML = "Nilai tes formatif kamu adalah : " + hasilakhir + " &#128546"; //sedih
+                    let ulang = document.getElementById("ulang");
+                    ulang.className = ulang.className.replace("hilang","");
                 } else{
-                    document.getElementById('lulus').innerHTML = "Nilai tes formatif kamu adalah : " + hasilakhir + " &#128516;"; //senang
+                    let materi = document.getElementById("materi");
+                    materi.className = materi.className.replace("hilang","");
                 }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');

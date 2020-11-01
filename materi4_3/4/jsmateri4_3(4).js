@@ -307,6 +307,7 @@ function cek5(){
       document.getElementById('icon5').innerHTML = "<img src='../img/true.png' width='15px'>";
       document.getElementById('cek5').className += " hilang";
       document.getElementById('lanjut5').className = document.getElementById('lanjut5').className.replace('hilang','');
+      document.getElementById('rangkum').className = document.getElementById('rangkum').className.replace('hilang','');
       document.getElementById('ket5').innerHTML = "<span class='bnr'>Jawaban kamu benar</span>. C &minus; D = {" + ang2 + "}";
     } else{
       ang.className += " boxmerah";

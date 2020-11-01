@@ -24,7 +24,8 @@ function dafis(){
   if (dafis.className.indexOf("dafis-hilang") == -1){
     dafis.className += "dafis-hilang";
     main.className = main.className.replace("main","main-penuh");
-  } else{
+  } 
+  else{
     dafis.className = dafis.className.replace("dafis-hilang","");
     main.className = main.className.replace("main-penuh","main");
   }
