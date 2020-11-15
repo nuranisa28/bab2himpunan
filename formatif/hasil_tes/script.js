@@ -108,6 +108,6 @@ download.addEventListener('click', function(){
 
     var a = document.createElement('a');
     a.href = data_type + ', ' + table_html;
-    a.download  = 'tesformatif_' + kelasfix + '_' + sekolahfix + '.xls';
+    a.download  = 'latihan_' + kelasfix + '_' + sekolahfix + '.xls';
     a.click();
 })
