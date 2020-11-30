@@ -467,7 +467,7 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
     }
 
     // let db = firebase.database().ref("tesformatif/" + counter);
-    let db = firebase.database().ref("tesformatif2/" + counter);
+    let db = firebase.database().ref("tesformatif/" + counter);
     db.set(task);
 
 }
